@@ -40,11 +40,11 @@ def main(command, path):
 #    command = 'uijson'
     path = '../docs'
 # *******************
-    input1 = "SESAR_material_extension_rock_sediment"
+    input1 = "SESAR_material_extension_rock_sediment|SESAR_sampled_feature_extension"
     inputttl = input1.split('|')
 # inputttl is a list of skos rdf vocabulary filenames with Turtle serialization
 # vocab_source_dir is the path to the directory that contains the source files
-    input1 = "sesrs:rocksedimentvocabulary"
+    input1 = "sesrs:rocksedimentvocabulary|essf:essfvocabulary"
     inputvocaburi = input1.split('|')
 # make sure have cache directory -- this is where the sqlAlchemy db will be
     cachepath = "../cache/vocabularies.db"

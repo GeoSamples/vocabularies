@@ -29,9 +29,20 @@ Namespace:
 
 * 2024-08-19 SMR generate vocabulary by merging with GSO Rock_Material vocabulary .
 
-- [Rock Material](#rock_material)
-    - [rock](#rock)
+- [Rock or sediment](#rockorsediment)
+    - [Breccia](#breccia)
+    - [Rock](#rock)
         - [Aphanite](#aphanite)
+        - [Breccia](#breccia)
+        - [Fault related material](#fault_related_material)
+            - [cataclasite series](#cataclasite_series)
+            - [mylonitic rock](#mylonitic_rock)
+                - [phyllonite](#phyllonite)
+            - [breccia gouge series](#breccia_gouge_series)
+        - [fragmental igneous rock](#fragmental_igneous_rock)
+            - [pyroclastic rock](#pyroclastic_rock)
+                - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
+                - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
         - [Igneous rock](#igneous_rock)
             - [acidic igneous rock](#acidic_igneous_rock)
                 - [dacite](#dacite)
@@ -54,6 +65,7 @@ Namespace:
                     - [foid bearing gabbro](#foid_bearing_gabbro)
                     - [gabbro](#gabbro)
                     - [quartz gabbro](#quartz_gabbro)
+            - [doleritic rock](#doleritic_rock)
             - [exotic composition igneous rock](#exotic_composition_igneous_rock)
                 - [carbonatite](#carbonatite)
                 - [exotic alkaline rock](#exotic_alkaline_rock)
@@ -98,6 +110,9 @@ Namespace:
                         - [quartz trachyte](#quartz_trachyte)
                         - [trachyte](#trachyte)
             - [fragmental igneous rock](#fragmental_igneous_rock)
+                - [pyroclastic rock](#pyroclastic_rock)
+                    - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
+                    - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
             - [glass rich igneous rock](#glass_rich_igneous_rock)
                 - [glassy igneous rock](#glassy_igneous_rock)
             - [hypabyssal intrusive rock](#hypabyssal_intrusive_rock)
@@ -180,9 +195,70 @@ Namespace:
                 - [peridotite](#peridotite)
                 - [pyroxenite](#pyroxenite)
                 - [komatiitic rock](#komatiitic_rock)
+            - [volcanic rock ](#volcanic_rock)
+                - [pyroclastic rock](#pyroclastic_rock)
+                    - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
+                    - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
+                - [Lava ](#lava)
+        - [Impact generated material](#impact_generated_material)
         - [Massive sulphide](#massive_sulphide)
             - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
             - [Sedimentary Massive Sulphide](#sedimentary_massive_sulphide)
+        - [Metamorphic rock](#metamorphic_rock)
+            - [amphibolite](#amphibolite)
+            - [Argillite ](#argillite)
+            - [calc silicate metamorphic rock](#calcsilicate_metamorphic_rock)
+            - [chlorite actinolite epidote metamorphic rock](#chlorite_actinolite_epidote_metamorphic_rock)
+            - [eclogite](#eclogite)
+            - [foliated metamorphic rock](#foliated_metamorphic_rock)
+                - [mylonitic rock](#mylonitic_rock)
+                    - [phyllonite](#phyllonite)
+                - [gneiss](#gneiss)
+                    - [orthogneiss](#orthogneiss)
+                    - [paragneiss](#paragneiss)
+                - [phyllite](#phyllite)
+                - [schist](#schist)
+                    - [mica schist](#mica_schist)
+                - [slate](#slate)
+            - [glaucophane lawsonite epidote metamorphic rock](#glaucophane_lawsonite_epidote_metamorphic_rock)
+            - [granofels](#granofels)
+                - [hornfels](#hornfels)
+            - [granulite](#granulite)
+            - [marble](#marble)
+            - [metaplutonic rock](#metaplutonic_rock)
+            - [metasedimentary rock](#metasedimentary_rock)
+            - [metavolcanic rock](#metavolcanic_rock)
+            - [migmatite](#migmatite)
+            - [quartzite](#quartzite)
+            - [serpentinite](#serpentinite)
+        - [metasomatic rock](#metasomatic_rock)
+            - [Altered, type not specified ](#altered_rock)
+                - [advanced argillic altered rock](#advanced_argillic_altered_rock)
+                - [albitic altered rock](#albitic_altered_rock)
+                - [alunitic altered rock](#alunitic_altered_rock)
+                - [argillic altered rock](#argillic_altered_rock)
+                - [calcsilicate altered rock](#calcsilicate_altered_rock)
+                - [carbonate altered rock](#carbonate_altered_rock)
+                - [chloritic altered rock](#chloritic_altered_rock)
+                - [deuteric altered rock](#deuteric_altered_rock)
+                - [epidote altered rock](#epidote_altered_rock)
+                - [greisen](#greisen)
+                - [hematitic altered rock](#hematitic_altered_rock)
+                - [kaolinitic altered rock](#kaolinitic_altered_rock)
+                - [phyllic altered rock](#phyllic_altered_rock)
+                - [potassic altered rock](#potassic_altered_rock)
+                - [propylitic altered rock](#propylitic_altered_rock)
+                - [pyritic altered rock](#pyritic_altered_rock)
+                - [red rock altered rock](#red_rock_altered_rock)
+                - [saussuritised rock](#saussuritised_rock)
+                - [sericitic altered rock](#sericitic_altered_rock)
+                - [serpentinised rock](#serpentinised_rock)
+                - [silicificed rock](#silicified_rock)
+                - [uralitised rock](#uralitised_rock)
+                - [zeolitic altered rock](#zeolitic_altered_rock)
+            - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
+            - [skarn](#skarn)
+            - [spilite](#spilite)
         - [Sedimentary rock](#sedimentary_rock)
             - [carbonate sedimentary rock](#carbonate_sedimentary_rock)
                 - [boundstone](#boundstone)
@@ -246,6 +322,7 @@ Namespace:
                     - [lignite](#lignite)
             - [phosphorite](#phosphorite)
         - [Tuffite](#tuffite)
+        - [residual material](#residual_material)
         - [Composite genesis rock](#composite_genesis_rock)
             - [cataclasite series](#cataclasite_series)
             - [Metamorphic rock](#metamorphic_rock)
@@ -276,9 +353,6 @@ Namespace:
                 - [quartzite](#quartzite)
                 - [serpentinite](#serpentinite)
             - [metasomatic rock](#metasomatic_rock)
-                - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
-                - [skarn](#skarn)
-                - [spilite](#spilite)
                 - [Altered, type not specified ](#altered_rock)
                     - [advanced argillic altered rock](#advanced_argillic_altered_rock)
                     - [albitic altered rock](#albitic_altered_rock)
@@ -303,10 +377,10 @@ Namespace:
                     - [silicificed rock](#silicified_rock)
                     - [uralitised rock](#uralitised_rock)
                     - [zeolitic altered rock](#zeolitic_altered_rock)
+                - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
+                - [skarn](#skarn)
+                - [spilite](#spilite)
             - [Duricrust](#duricrust)
-    - [Anthropogenic material](#anthropogenic_material)
-        - [Anthropogenic unconsolidated material](#anthropogenic_unconsolidated_material)
-    - [Breccia](#breccia)
     - [Composite genesis material](#composite_genesis_material)
         - [Fault related material](#fault_related_material)
             - [cataclasite series](#cataclasite_series)
@@ -344,9 +418,6 @@ Namespace:
                 - [quartzite](#quartzite)
                 - [serpentinite](#serpentinite)
             - [metasomatic rock](#metasomatic_rock)
-                - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
-                - [skarn](#skarn)
-                - [spilite](#spilite)
                 - [Altered, type not specified ](#altered_rock)
                     - [advanced argillic altered rock](#advanced_argillic_altered_rock)
                     - [albitic altered rock](#albitic_altered_rock)
@@ -371,11 +442,15 @@ Namespace:
                     - [silicificed rock](#silicified_rock)
                     - [uralitised rock](#uralitised_rock)
                     - [zeolitic altered rock](#zeolitic_altered_rock)
+                - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
+                - [skarn](#skarn)
+                - [spilite](#spilite)
             - [Duricrust](#duricrust)
         - [material formed in surficial environment](#material_formed_in_surficial_environment)
             - [residual material](#residual_material)
-            - [Duricrust](#duricrust)
+            - [Soil](#soil)
             - [bauxite](#bauxite)
+            - [Duricrust](#duricrust)
     - [Igneous material](#igneous_material)
         - [Igneous rock](#igneous_rock)
             - [acidic igneous rock](#acidic_igneous_rock)
@@ -399,6 +474,7 @@ Namespace:
                     - [foid bearing gabbro](#foid_bearing_gabbro)
                     - [gabbro](#gabbro)
                     - [quartz gabbro](#quartz_gabbro)
+            - [doleritic rock](#doleritic_rock)
             - [exotic composition igneous rock](#exotic_composition_igneous_rock)
                 - [carbonatite](#carbonatite)
                 - [exotic alkaline rock](#exotic_alkaline_rock)
@@ -443,6 +519,9 @@ Namespace:
                         - [quartz trachyte](#quartz_trachyte)
                         - [trachyte](#trachyte)
             - [fragmental igneous rock](#fragmental_igneous_rock)
+                - [pyroclastic rock](#pyroclastic_rock)
+                    - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
+                    - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
             - [glass rich igneous rock](#glass_rich_igneous_rock)
                 - [glassy igneous rock](#glassy_igneous_rock)
             - [hypabyssal intrusive rock](#hypabyssal_intrusive_rock)
@@ -525,6 +604,11 @@ Namespace:
                 - [peridotite](#peridotite)
                 - [pyroxenite](#pyroxenite)
                 - [komatiitic rock](#komatiitic_rock)
+            - [volcanic rock ](#volcanic_rock)
+                - [pyroclastic rock](#pyroclastic_rock)
+                    - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
+                    - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
+                - [Lava ](#lava)
         - [acidic igneous material](#acidic_igneous_material)
             - [acidic igneous rock](#acidic_igneous_rock)
                 - [dacite](#dacite)
@@ -550,6 +634,9 @@ Namespace:
                     - [quartz gabbro](#quartz_gabbro)
         - [fragmental igneous material](#fragmental_igneous_material)
             - [fragmental igneous rock](#fragmental_igneous_rock)
+                - [pyroclastic rock](#pyroclastic_rock)
+                    - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
+                    - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
             - [pyroclastic material](#pyroclastic_material)
                 - [pyroclastic rock](#pyroclastic_rock)
                     - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
@@ -656,7 +743,7 @@ Namespace:
                     - [bituminous coal](#bituminous_coal)
                     - [lignite](#lignite)
             - [phosphorite](#phosphorite)
-        - [sediment](#sediment)
+        - [Sediment](#sediment)
             - [biogenic sediment](#biogenic_sediment)
                 - [ooze](#ooze)
                     - [carbonate ooze](#carbonate_ooze)
@@ -679,6 +766,16 @@ Namespace:
                 - [pure carbonate sediment](#pure_carbonate_sediment)
                     - [pure calcareous carbonate sediment](#pure_calcareous_carbonate_sediment)
                     - [pure dolomitic sediment](#pure_dolomitic_sediment)
+            - [chemical sedimentary material](#chemical_sedimentary_material)
+                - [evaporite](#evaporite)
+                    - [exotic evaporite](#exotic_evaporite)
+                    - [gypsum or anhydrite](#rock_gypsum_or_anhydrite)
+                    - [rock salt](#rock_salt)
+                - [iron rich sedimentary material](#iron_rich_sedimentary_material)
+                    - [iron rich sediment](#iron_rich_sediment)
+                    - [iron rich sedimentary rock](#iron_rich_sedimentary_rock)
+                - [Sedimentary Massive Sulphide](#sedimentary_massive_sulphide)
+                - [travertine](#travertine)
             - [clastic sediment](#clastic_sediment)
                 - [diamicton](#diamicton)
                 - [gravel](#gravel)
@@ -709,6 +806,9 @@ Namespace:
             - [phosphate rich sediment](#phosphate_rich_sediment)
             - [sand size sediment](#sand_size_sediment)
                 - [sand](#sand)
+            - [Tephra](#tephra)
+                - [ash and lapilli](#ash_and_lapilli)
+                - [ash breccia bomb or block tephra](#ash_breccia_bomb_or_block_tephra)
         - [Carbonate sedimentary material](#carbonate_sedimentary_material)
             - [carbonate sediment](#carbonate_sediment)
                 - [calcareous carbonate sediment](#calcareous_carbonate_sediment)
@@ -800,86 +900,151 @@ Namespace:
         - [phosphate rich sedimentary material](#phosphate_rich_sedimentary_material)
             - [phosphate rich sediment](#phosphate_rich_sediment)
             - [phosphorite](#phosphorite)
-    - [Unconsolidated material](#unconsolidated_material)
-        - [Anthropogenic unconsolidated material](#anthropogenic_unconsolidated_material)
-        - [Natural unconsolidated material](#natural_unconsolidated_material)
-            - [sediment](#sediment)
-                - [biogenic sediment](#biogenic_sediment)
-                    - [ooze](#ooze)
-                        - [carbonate ooze](#carbonate_ooze)
-                        - [siliceous ooze](#siliceous_ooze)
-                    - [organic rich sediment](#organic_rich_sediment)
-                        - [peat](#peat)
-                        - [sapropel](#sapropel)
-                - [carbonate sediment](#carbonate_sediment)
-                    - [calcareous carbonate sediment](#calcareous_carbonate_sediment)
-                        - [impure calcareous carbonate sediment](#impure_calcareous_carbonate_sediment)
-                        - [pure calcareous carbonate sediment](#pure_calcareous_carbonate_sediment)
-                    - [carbonate mud](#carbonate_mud)
-                        - [carbonate ooze](#carbonate_ooze)
-                    - [dolomitic sediment](#dolomitic_sediment)
-                        - [impure dolomitic sediment](#impure_dolomitic_sediment)
-                        - [pure dolomitic sediment](#pure_dolomitic_sediment)
-                    - [impure carbonate sediment](#impure_carbonate_sediment)
-                        - [impure calcareous carbonate sediment](#impure_calcareous_carbonate_sediment)
-                        - [impure dolomitic sediment](#impure_dolomitic_sediment)
-                    - [pure carbonate sediment](#pure_carbonate_sediment)
-                        - [pure calcareous carbonate sediment](#pure_calcareous_carbonate_sediment)
-                        - [pure dolomitic sediment](#pure_dolomitic_sediment)
-                - [clastic sediment](#clastic_sediment)
-                    - [diamicton](#diamicton)
-                    - [gravel](#gravel)
-                    - [mud](#mud)
-                        - [clay](#clay)
-                        - [silt](#silt)
-                    - [sand](#sand)
-                - [gravel size sediment](#gravel_size_sediment)
-                    - [boulder gravel size sediment](#boulder_gravel_size_sediment)
-                    - [cobble gravel size sediment](#cobble_gravel_size_sediment)
-                    - [gravel](#gravel)
-                    - [pebble gravel size sediment](#pebble_gravel_size_sediment)
-                - [Hybrid sediment](#hybrid_sediment)
-                - [iron rich sediment](#iron_rich_sediment)
-                - [mud size sediment](#mud_size_sediment)
-                    - [carbonate mud](#carbonate_mud)
-                        - [carbonate ooze](#carbonate_ooze)
-                    - [carbonate rich mud](#carbonate_rich_mud)
-                    - [mud](#mud)
-                        - [clay](#clay)
-                        - [silt](#silt)
-                    - [ooze](#ooze)
-                        - [carbonate ooze](#carbonate_ooze)
-                        - [siliceous ooze](#siliceous_ooze)
-                    - [silicate mud](#silicate_mud)
-                        - [siliceous ooze](#siliceous_ooze)
-                - [non clastic siliceous sediment](#non_clastic_siliceous_sediment)
-                - [phosphate rich sediment](#phosphate_rich_sediment)
-                - [sand size sediment](#sand_size_sediment)
-                    - [sand](#sand)
+
+- [Anthropogenic material](#anthropogenic_material)
+    - [Anthropogenic unconsolidated material](#anthropogenic_unconsolidated_material)
+    - [Concrete](#concrete)
+    - [Manufactured chemical substance](#manufactured_chemical_substance)
+    - [Mineral processing product](#mineral_processing_product)
+        - [Matte ](#matte)
+        - [Slag ](#slag)
+
+- [Unconsolidated material](#unconsolidated_material)
+    - [Anthropogenic unconsolidated material](#anthropogenic_unconsolidated_material)
+    - [Natural unconsolidated material](#natural_unconsolidated_material)
+        - [Sediment](#sediment)
+            - [biogenic sediment](#biogenic_sediment)
+                - [ooze](#ooze)
+                    - [carbonate ooze](#carbonate_ooze)
+                    - [siliceous ooze](#siliceous_ooze)
+                - [organic rich sediment](#organic_rich_sediment)
+                    - [peat](#peat)
+                    - [sapropel](#sapropel)
+            - [carbonate sediment](#carbonate_sediment)
+                - [calcareous carbonate sediment](#calcareous_carbonate_sediment)
+                    - [impure calcareous carbonate sediment](#impure_calcareous_carbonate_sediment)
+                    - [pure calcareous carbonate sediment](#pure_calcareous_carbonate_sediment)
+                - [carbonate mud](#carbonate_mud)
+                    - [carbonate ooze](#carbonate_ooze)
+                - [dolomitic sediment](#dolomitic_sediment)
+                    - [impure dolomitic sediment](#impure_dolomitic_sediment)
+                    - [pure dolomitic sediment](#pure_dolomitic_sediment)
+                - [impure carbonate sediment](#impure_carbonate_sediment)
+                    - [impure calcareous carbonate sediment](#impure_calcareous_carbonate_sediment)
+                    - [impure dolomitic sediment](#impure_dolomitic_sediment)
+                - [pure carbonate sediment](#pure_carbonate_sediment)
+                    - [pure calcareous carbonate sediment](#pure_calcareous_carbonate_sediment)
+                    - [pure dolomitic sediment](#pure_dolomitic_sediment)
+            - [chemical sedimentary material](#chemical_sedimentary_material)
+                - [evaporite](#evaporite)
+                    - [exotic evaporite](#exotic_evaporite)
+                    - [gypsum or anhydrite](#rock_gypsum_or_anhydrite)
+                    - [rock salt](#rock_salt)
+                - [iron rich sedimentary material](#iron_rich_sedimentary_material)
+                    - [iron rich sediment](#iron_rich_sediment)
+                    - [iron rich sedimentary rock](#iron_rich_sedimentary_rock)
+                - [Sedimentary Massive Sulphide](#sedimentary_massive_sulphide)
+                - [travertine](#travertine)
+            - [clastic sediment](#clastic_sediment)
+                - [diamicton](#diamicton)
+                - [gravel](#gravel)
+                - [mud](#mud)
+                    - [clay](#clay)
+                    - [silt](#silt)
+                - [sand](#sand)
+            - [gravel size sediment](#gravel_size_sediment)
+                - [boulder gravel size sediment](#boulder_gravel_size_sediment)
+                - [cobble gravel size sediment](#cobble_gravel_size_sediment)
+                - [gravel](#gravel)
+                - [pebble gravel size sediment](#pebble_gravel_size_sediment)
+            - [Hybrid sediment](#hybrid_sediment)
+            - [iron rich sediment](#iron_rich_sediment)
+            - [mud size sediment](#mud_size_sediment)
+                - [carbonate mud](#carbonate_mud)
+                    - [carbonate ooze](#carbonate_ooze)
+                - [carbonate rich mud](#carbonate_rich_mud)
+                - [mud](#mud)
+                    - [clay](#clay)
+                    - [silt](#silt)
+                - [ooze](#ooze)
+                    - [carbonate ooze](#carbonate_ooze)
+                    - [siliceous ooze](#siliceous_ooze)
+                - [silicate mud](#silicate_mud)
+                    - [siliceous ooze](#siliceous_ooze)
+            - [non clastic siliceous sediment](#non_clastic_siliceous_sediment)
+            - [phosphate rich sediment](#phosphate_rich_sediment)
+            - [sand size sediment](#sand_size_sediment)
+                - [sand](#sand)
+            - [Tephra](#tephra)
+                - [ash and lapilli](#ash_and_lapilli)
+                - [ash breccia bomb or block tephra](#ash_breccia_bomb_or_block_tephra)
+        - [Soil](#soil)
 
 **Concepts**
 
-[]{#rock_material}
+[]{#rockorsediment}
 
-##  Rock Material
+##  Rock or sediment
 
 
-- Concept URI token: Rock_Material
+- Material is rock or sediment.  For example core from boreholes that
+likely penetrate sediment near the surface and rock at greater depth,
+with descriptions that do not clearly distinguish non-consolidated
+sediment from rock.
+- Concept URI token: rockorsediment
+
+
+[]{#breccia}
+
+###  Breccia
+* `breccia`
+
+
+- Child of:
+ [`rock`](#rock)
+ [`rockorsediment`](#rockorsediment)
+
+- Coarse-grained material composed of angular broken rock fragments;
+the fragments typically have sharp edges and unworn corners. The
+fragments may be held together by a mineral cement or in a fine-
+grained matrix, and consolidated or nonconsolidated. Clasts may be of
+any composition or origin. In sedimentary environments, breccia is
+used for material that consists entirely of angular fragments, mostly
+derived from a single source rock body, as in a rock avalanche
+deposit, and matrix is interpreted to be the product of comminution of
+clasts during transport. Diamictite or diamicton is used when the
+material reflects mixing of rock from a variety of sources, some sub
+angular or subrounded clasts may be present, and matrix is pre-
+existing fine grained material that is not a direct product of the
+brecciation/deposition process.
+
+- **Source:**
+Neuendorf et al. 2005
+
+- Concept URI token: Breccia
 
 
 []{#rock}
 
-###  rock
+###  Rock
 
 
 - Child of:
- [`Rock_Material`](#rock_material)
+ [`rockorsediment`](#rockorsediment)
 
 - Consolidated aggregate of one or more EarthMaterials, or a body of
 undifferentiated mineral matter, or of solid organic material.
 Includes mineral aggregates such as granite, shale, marble; glassy
 matter such as obsidian; and organic material such a coal. Excludes
 unconsolidated materials.
+- Consolidated aggregate of particles (grains) of rock, mineral
+(including native elements), mineraloid, or solid organic material.
+Includes mineral aggregates such as granite, shale, marble; natural
+glass such as obsidian; organic material formed by geologic processes
+such a coal;  extraterrestrial material in meteorites; and  crushed
+rock fragments like drill cuttings from rock.  (based on
+http://resource.geosciml.org/classifier/cgi/lithology/rock, same as
+http://purl.obolibrary.org/obo/ENVO_00001995)
 
 - **Source:**
 Jackson, 1997; NADM C1 2004; Neuendorf et al 2005
@@ -896,6 +1061,7 @@ Jackson, 1997; NADM C1 2004; Neuendorf et al 2005
 - Child of:
  [`rock`](#rock)
 
+- Rock that is too fine grained to categorize in more detail.
 
 - **Source:**
 This vocabulary
@@ -903,16 +1069,229 @@ This vocabulary
 - Concept URI token: Aphanite
 
 
+[]{#breccia}
+
+####  Breccia
+* `breccia`
+
+
+- Child of:
+ [`rock`](#rock)
+ [`rockorsediment`](#rockorsediment)
+
+- Coarse-grained material composed of angular broken rock fragments;
+the fragments typically have sharp edges and unworn corners. The
+fragments may be held together by a mineral cement or in a fine-
+grained matrix, and consolidated or nonconsolidated. Clasts may be of
+any composition or origin. In sedimentary environments, breccia is
+used for material that consists entirely of angular fragments, mostly
+derived from a single source rock body, as in a rock avalanche
+deposit, and matrix is interpreted to be the product of comminution of
+clasts during transport. Diamictite or diamicton is used when the
+material reflects mixing of rock from a variety of sources, some sub
+angular or subrounded clasts may be present, and matrix is pre-
+existing fine grained material that is not a direct product of the
+brecciation/deposition process.
+
+- **Source:**
+Neuendorf et al. 2005
+
+- Concept URI token: Breccia
+
+
+[]{#fault_related_material}
+
+####  Fault related material
+* `fault related material`
+
+
+- Child of:
+ [`rock`](#rock)
+ [`Composite_Genesis_Material`](#composite_genesis_material)
+
+- Material formed as a result brittle faulting, composed of greater
+than 10 percent matrix; matrix is fine-grained material caused by
+tectonic grainsize reduction. Includes cohesive (cataclasite series,
+mylonitic rocks) and non-cohesive (breccia-gouge series) material.
+
+- **Source:**
+This vocabulary; SLTTm 2004
+
+- Concept URI token: Fault_Related_Material
+
+
+[]{#cataclasite_series}
+
+#####  cataclasite series
+
+
+- Child of:
+ [`Fault_Related_Material`](#fault_related_material)
+ [`Composite_Genesis_Rock`](#composite_genesis_rock)
+
+- Fault-related rock that maintained primary cohesion during
+deformation, with matrix comprising greater than 10 percent of rock
+mass; matrix is fine-grained material formed through grain size
+reduction by fracture as opposed to crystal plastic process that
+operate in mylonitic rock. Includes cataclasite, protocataclasite and
+ultracataclasite.
+
+- **Source:**
+Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NADM SLTTm, 2004
+
+- Concept URI token: Cataclasite_Series
+
+
+[]{#mylonitic_rock}
+
+#####  mylonitic rock
+
+
+- Child of:
+ [`Fault_Related_Material`](#fault_related_material)
+ [`Foliated_Metamorphic_Rock`](#foliated_metamorphic_rock)
+
+- Metamorphic rock characterised by a foliation resulting from
+tectonic grain size reduction, in which more than 10 percent of the
+rock volume has undergone grain size reduction. Includes
+protomylonite, mylonite, ultramylonite, and blastomylonite.
+
+- **Source:**
+Marshak and Mitra 1988
+
+- Concept URI token: Mylonitic_Rock
+
+
+[]{#phyllonite}
+
+######  phyllonite
+
+
+- Child of:
+ [`Mylonitic_Rock`](#mylonitic_rock)
+
+- Mylonitic rock composed largely of fine-grained mica that imparts a
+sheen to foliation surfaces; may have flaser lamination, isoclinal
+folding, and deformed veins, which indicate significant shearing.
+Macroscopically resembles phyllite, but formed by mechanical
+degradation of initially coarser rock.
+
+- **Source:**
+NADM metamorphic rock vocabulary SLTTm1.0; Marshak and Mitra 1988
+
+- Concept URI token: Phyllonite
+
+
+[]{#breccia_gouge_series}
+
+#####  breccia gouge series
+
+
+- Child of:
+ [`Fault_Related_Material`](#fault_related_material)
+
+- Fault-related material with features such as void spaces (filled or
+unfilled), or unconsolidated matrix material between fragments,
+indicating loss of cohesion during deformation. Includes fault-related
+breccia and gouge.
+
+- **Source:**
+SLTTm 2004
+
+- Concept URI token: breccia_gouge_series
+
+
+[]{#fragmental_igneous_rock}
+
+####  fragmental igneous rock
+
+
+- Child of:
+ [`Igneous_Rock`](#igneous_rock)
+ [`rock`](#rock)
+ [`Fragmental_Igneous_Material`](#fragmental_igneous_material)
+
+- Igneous rock in which greater than 75 percent of the rock consists
+of fragments produced as a result of igneous rock-forming process.
+Includes pyroclastic rocks, autobreccia associated with lava flows and
+intrusive breccias. Excludes deposits reworked by epiclastic processes
+(see Tuffite)
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Fragmental_Igneous_Rock
+
+
+[]{#pyroclastic_rock}
+
+#####  pyroclastic rock
+
+
+- Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
+ [`Volcanic_Rock`](#volcanic_rock)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Fragmental igneous rock that consists of greater than 75 percent
+fragments produced as a direct result of eruption or extrusion of
+magma from within the earth onto its surface. Includes autobreccia
+associated with lava flows and excludes deposits reworked by
+epiclastic processes.
+
+- **Source:**
+based on LeMaitre et al. 2002
+
+- Concept URI token: Pyroclastic_Rock
+
+
+[]{#ash_tuff_lapillistone_and_lapilli_tuff}
+
+######  ash tuff lapillistone and lapilli tuff
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which less than 25 percent of rock by volume are
+more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and
+lapillistone.
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+
+
+[]{#tuff_breccia_agglomerate_or_pyroclastic_breccia}
+
+######  tuff breccia agglomerate or pyroclastic breccia
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which greater than 25 percent of particles are
+greater than 64 mm in largest dimension. Includes agglomerate,
+pyroclastic breccia of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
+
+
 []{#igneous_rock}
 
 ####  Igneous rock
-* `igneous rock`
 
 
 - Child of:
  [`rock`](#rock)
  [`Igneous_Material`](#igneous_material)
 
+- rock formed as a result of igneous processes, for example intrusion
+and cooling of magma in the crust, or volcanic eruption.
 
 - **Source:**
 Neuendorf et al 2005
@@ -1189,18 +1568,12 @@ LeMaitre et al. 2002
 []{#basic_igneous_rock}
 
 #####  basic igneous rock
-* `doleritic rock`
 
 
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
  [`Basic_Igneous_Material`](#basic_igneous_material)
 
-- Dark colored gabbroic (basaltic) or dioritic (andesitic) rock
-intermediate in grain size between basalt and gabbro and composed of
-plagioclase, pyroxene and opaque minerals; often with ophitic texture.
-Typically occurs as hypabyssal intrusions. Includes dolerite,
-microdiorite, diabase and microgabbro.
 - Igneous rock with between 45 and 52 percent SiO2.
 
 - **Source:**
@@ -1247,6 +1620,11 @@ after LeMaitre et al. 2002
 - Child of:
  [`Basalt`](#basalt)
 
+- The definition of tholeiite and alkali basalt here are more
+prescriptive than those found in most reference authorities. This is
+to actually provide some descriptive criteria to allow assignment of
+rocks on a hand sample basis to the tholeiite or alkali basalt
+categories if detailed petrographic or chemical data are available.
 - Alkali olivine basalt is silica-undersaturated, characterized by the
 absence of orthopyroxene, absence of quartz, presence of olivine, and
 typically contains some feldspathoid mineral, alkali feldspar or
@@ -1254,11 +1632,6 @@ phlogopite in the groundmass. Feldspar phenocrysts typically are
 labradorite to andesine in composition. Augite is rich in titanium
 compared to augite in tholeiitic basalt. Alkali olivine basalt is
 relatively rich in sodium.
-- The definition of tholeiite and alkali basalt here are more
-prescriptive than those found in most reference authorities. This is
-to actually provide some descriptive criteria to allow assignment of
-rocks on a hand sample basis to the tholeiite or alkali basalt
-categories if detailed petrographic or chemical data are available.
 
 - **Source:**
 http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43.
@@ -1342,12 +1715,12 @@ LeMaitre et al. 2002
 - Child of:
  [`Gabbroic_Rock`](#gabbroic_rock)
 
-- Gabbroic rock that contains between 0 and 5 percent quartz and no
-feldspathoid mineral in the QAPF fraction. Includes rocks defined
-modally in QAPF Field 10 as gabbro.
 - Note that this category includes gabbro (sensu stricto) of LeMaitre
 et al. 2002, but is broader, including the other rock types defined by
 orthopyroxene-clinopyroxene-olivine-hornblende mineral ratios.
+- Gabbroic rock that contains between 0 and 5 percent quartz and no
+feldspathoid mineral in the QAPF fraction. Includes rocks defined
+modally in QAPF Field 10 as gabbro.
 
 - **Source:**
 LeMaitre et al. 2002
@@ -1370,6 +1743,26 @@ QAPF fraction. QAPF field 10*.
 LeMaitre et al. 2002
 
 - Concept URI token: Quartz_Gabbro
+
+
+[]{#doleritic_rock}
+
+#####  doleritic rock
+
+
+- Child of:
+ [`Igneous_Rock`](#igneous_rock)
+
+- Dark colored gabbroic (basaltic) or dioritic (andesitic) rock
+intermediate in grain size between basalt and gabbro and composed of
+plagioclase, pyroxene and opaque minerals; often with ophitic texture.
+Typically occurs as hypabyssal intrusions. Includes dolerite,
+microdiorite, diabase and microgabbro.
+
+- **Source:**
+Neuendorf et al 2005; LeMaitre et al. 2002; Gillespie and Styles 1999
+
+- Concept URI token: Doleritic_Rock
 
 
 []{#exotic_composition_igneous_rock}
@@ -1454,14 +1847,14 @@ based on LeMaitre et al. 2002
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
 
+- Need to make decision as to whether devitrified glass should be
+considered glass or microcrystalline framework for purposes of
+categorization
 - Igneous rock in which the framework of the rock consists of crystals
 that are too small to determine mineralogy with the unaided eye;
 framework may include up to 50 percent glass. A significant percentage
 of the rock by volume may be phenocrysts. Includes rocks that are
 generally called volcanic rocks.
-- Need to make decision as to whether devitrified glass should be
-considered glass or microcrystalline framework for purposes of
-categorization
 
 - **Alternate labels:**
 volcanic rock
@@ -1482,6 +1875,10 @@ Gillespie and Styles 1999; LeMaitre et al. 2002
  [`Fine_Grained_Igneous_Rock`](#fine_grained_igneous_rock)
  [`Intermediate_Composition_Igneous_Rock`](#intermediate_composition_igneous_rock)
 
+- Note the mela-andesite and leuco-basalt categories are not
+recommended in this system. If chemical analytical data are available
+to constrain the silica content, the basalt or andesite category
+should be used.
 - Fine-grained igneous rock with less than 20 percent quartz and less
 than 10 percent feldspathoid minerals in the QAPF fraction, in which
 the ratio of plagioclase to total feldspar is greater 0.65. Includes
@@ -1495,10 +1892,6 @@ than 35 percent mafic minerals by volume or greater than 40 percent
 mafic minerals by weight. Typically consists of plagioclase
 (frequently zoned from labradorite to oligoclase), pyroxene,
 hornblende and/or biotite. Fine grained equivalent of dioritic rock.
-- Note the mela-andesite and leuco-basalt categories are not
-recommended in this system. If chemical analytical data are available
-to constrain the silica content, the basalt or andesite category
-should be used.
 
 - **Source:**
 after LeMaitre et al. 2002
@@ -1563,6 +1956,11 @@ after LeMaitre et al. 2002
 - Child of:
  [`Basalt`](#basalt)
 
+- The definition of tholeiite and alkali basalt here are more
+prescriptive than those found in most reference authorities. This is
+to actually provide some descriptive criteria to allow assignment of
+rocks on a hand sample basis to the tholeiite or alkali basalt
+categories if detailed petrographic or chemical data are available.
 - Alkali olivine basalt is silica-undersaturated, characterized by the
 absence of orthopyroxene, absence of quartz, presence of olivine, and
 typically contains some feldspathoid mineral, alkali feldspar or
@@ -1570,11 +1968,6 @@ phlogopite in the groundmass. Feldspar phenocrysts typically are
 labradorite to andesine in composition. Augite is rich in titanium
 compared to augite in tholeiitic basalt. Alkali olivine basalt is
 relatively rich in sodium.
-- The definition of tholeiite and alkali basalt here are more
-prescriptive than those found in most reference authorities. This is
-to actually provide some descriptive criteria to allow assignment of
-rocks on a hand sample basis to the tholeiite or alkali basalt
-categories if detailed petrographic or chemical data are available.
 
 - **Source:**
 http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43.
@@ -2254,6 +2647,7 @@ LeMaitre et al. 2002
 
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
+ [`rock`](#rock)
  [`Fragmental_Igneous_Material`](#fragmental_igneous_material)
 
 - Igneous rock in which greater than 75 percent of the rock consists
@@ -2266,6 +2660,64 @@ intrusive breccias. Excludes deposits reworked by epiclastic processes
 This vocabulary
 
 - Concept URI token: Fragmental_Igneous_Rock
+
+
+[]{#pyroclastic_rock}
+
+######  pyroclastic rock
+
+
+- Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
+ [`Volcanic_Rock`](#volcanic_rock)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Fragmental igneous rock that consists of greater than 75 percent
+fragments produced as a direct result of eruption or extrusion of
+magma from within the earth onto its surface. Includes autobreccia
+associated with lava flows and excludes deposits reworked by
+epiclastic processes.
+
+- **Source:**
+based on LeMaitre et al. 2002
+
+- Concept URI token: Pyroclastic_Rock
+
+
+[]{#ash_tuff_lapillistone_and_lapilli_tuff}
+
+#######  ash tuff lapillistone and lapilli tuff
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which less than 25 percent of rock by volume are
+more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and
+lapillistone.
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+
+
+[]{#tuff_breccia_agglomerate_or_pyroclastic_breccia}
+
+#######  tuff breccia agglomerate or pyroclastic breccia
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which greater than 25 percent of particles are
+greater than 64 mm in largest dimension. Includes agglomerate,
+pyroclastic breccia of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
 
 
 []{#glass_rich_igneous_rock}
@@ -2292,10 +2744,10 @@ This vocabulary, based on Gillespie and Styles 1999
 - Child of:
  [`Glass_Rich_Igneous_Rock`](#glass_rich_igneous_rock)
 
-- Igneous rock that consists of greater than 80 percent massive glass.
 - Note that this category is used for massive glassy rocks. Much of
 the pyroclastic material in a pyroclastic rock may be composed of
 glass, but the rock is named based on its fragmental nature.
+- Igneous rock that consists of greater than 80 percent massive glass.
 
 - **Source:**
 This vocabulary
@@ -2348,6 +2800,10 @@ after LeMaitre et al. 2002
  [`Fine_Grained_Igneous_Rock`](#fine_grained_igneous_rock)
  [`Intermediate_Composition_Igneous_Rock`](#intermediate_composition_igneous_rock)
 
+- Note the mela-andesite and leuco-basalt categories are not
+recommended in this system. If chemical analytical data are available
+to constrain the silica content, the basalt or andesite category
+should be used.
 - Fine-grained igneous rock with less than 20 percent quartz and less
 than 10 percent feldspathoid minerals in the QAPF fraction, in which
 the ratio of plagioclase to total feldspar is greater 0.65. Includes
@@ -2361,10 +2817,6 @@ than 35 percent mafic minerals by volume or greater than 40 percent
 mafic minerals by weight. Typically consists of plagioclase
 (frequently zoned from labradorite to oligoclase), pyroxene,
 hornblende and/or biotite. Fine grained equivalent of dioritic rock.
-- Note the mela-andesite and leuco-basalt categories are not
-recommended in this system. If chemical analytical data are available
-to constrain the silica content, the basalt or andesite category
-should be used.
 
 - **Source:**
 after LeMaitre et al. 2002
@@ -2595,6 +3047,14 @@ Neuendorf et al. 2005
 - Child of:
  [`Phaneritic_Igneous_Rock`](#phaneritic_igneous_rock)
 
+- Anorthositic rock term invented to label the combined QAPF fields
+10, 10*, and 10', in order to construct hierarchy in this vocabulary.
+- Leucocratic phaneritic crystalline igneous rock consisting
+essentially of plagioclase, often with small amounts of pyroxene. By
+definition, colour index M is less than 10, and plagiclase to total
+feldspar ratio is greater than 0.9. Less than 20 percent quartz and
+less than 10 percent feldspathoid in the QAPF fraction. QAPF field 10,
+10*, and 10'.
 - Anorthositic rock term invented to label the combined QAPF fields
 10, 10*, and 10', in order to construct hierarchy in this vocabulary.
 - Leucocratic phaneritic crystalline igneous rock consisting
@@ -3101,12 +3561,12 @@ LeMaitre et al. 2002
 - Child of:
  [`Gabbroic_Rock`](#gabbroic_rock)
 
-- Gabbroic rock that contains between 0 and 5 percent quartz and no
-feldspathoid mineral in the QAPF fraction. Includes rocks defined
-modally in QAPF Field 10 as gabbro.
 - Note that this category includes gabbro (sensu stricto) of LeMaitre
 et al. 2002, but is broader, including the other rock types defined by
 orthopyroxene-clinopyroxene-olivine-hornblende mineral ratios.
+- Gabbroic rock that contains between 0 and 5 percent quartz and no
+feldspathoid mineral in the QAPF fraction. Includes rocks defined
+modally in QAPF Field 10 as gabbro.
 
 - **Source:**
 LeMaitre et al. 2002
@@ -3823,6 +4283,114 @@ LeMaitre et al. 2002
 - Concept URI token: Komatiitic_Rock
 
 
+[]{#volcanic_rock}
+
+#####  volcanic rock
+* `volcanic rock`
+
+
+- Child of:
+ [`Igneous_Rock`](#igneous_rock)
+ [`Volcanic_Material`](#volcanic_material)
+
+- Rock that exhibits direct evidence of extrusive igneous processes in
+its genesis.
+- Concept URI token: Volcanic_Rock
+
+
+[]{#pyroclastic_rock}
+
+######  pyroclastic rock
+
+
+- Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
+ [`Volcanic_Rock`](#volcanic_rock)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Fragmental igneous rock that consists of greater than 75 percent
+fragments produced as a direct result of eruption or extrusion of
+magma from within the earth onto its surface. Includes autobreccia
+associated with lava flows and excludes deposits reworked by
+epiclastic processes.
+
+- **Source:**
+based on LeMaitre et al. 2002
+
+- Concept URI token: Pyroclastic_Rock
+
+
+[]{#ash_tuff_lapillistone_and_lapilli_tuff}
+
+#######  ash tuff lapillistone and lapilli tuff
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which less than 25 percent of rock by volume are
+more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and
+lapillistone.
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+
+
+[]{#tuff_breccia_agglomerate_or_pyroclastic_breccia}
+
+#######  tuff breccia agglomerate or pyroclastic breccia
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which greater than 25 percent of particles are
+greater than 64 mm in largest dimension. Includes agglomerate,
+pyroclastic breccia of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
+
+
+[]{#lava}
+
+######  Lava
+* `Lava`
+
+
+- Child of:
+ [`Volcanic_Rock`](#volcanic_rock)
+
+- Volcanic Rock with features indicating origin by extrusive lava
+flow.
+- Concept URI token: Lava
+
+
+[]{#impact_generated_material}
+
+####  Impact generated material
+* `impact generated material`
+
+
+- Child of:
+ [`rock`](#rock)
+ [`Composite_Genesis_Material`](#composite_genesis_material)
+
+- Material that contains features indicative of shock metamorphism,
+such as microscopic planar deformation features within grains or
+shatter cones, interpreted to be the result of extraterrestrial bolide
+impact. Includes breccias and melt rocks.
+
+- **Source:**
+Stöffler and Grieve 2007; Jackson 1997
+
+- Concept URI token: Impact_Generated_Material
+
+
 []{#massive_sulphide}
 
 ####  Massive sulphide
@@ -3832,9 +4400,13 @@ LeMaitre et al. 2002
 - Child of:
  [`rock`](#rock)
 
+- rock consisting of greater than 50% sulphide or sulfosalt minerals
+formed by any processes. Includes hydrothermal and sedimentary
+ehalative sulfide.
 
 - **Alternate labels:**
-Massive Sulfide
+Massive Sulfide, 
+massive Sulfide, 
 
 
 - **Source:**
@@ -3887,6 +4459,1124 @@ smr provisional 2020-06-07
 - Concept URI token: Sedimentary_Massive_Sulphide
 
 
+[]{#metamorphic_rock}
+
+####  Metamorphic rock
+* `metamorphic rock`
+
+
+- Child of:
+ [`rock`](#rock)
+ [`Composite_Genesis_Rock`](#composite_genesis_rock)
+
+- Robertson (1999, Classification of metamorphic rocks: British
+Geological Survey Research Report, RR 99–02) defines the boundary
+between diagenesis and metamorphism in sedimentary rocks as follows:
+“…the boundary between diagenesis and metamorphism is somewhat
+arbitrary and strongly dependent on the lithologies involved. For
+example changes take place in organic materials at lower temperatures
+than in rocks dominated by silicate minerals. In mudrocks, a white
+mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
+obtained by X-ray diffraction analysis, is used to define the onset of
+metamorphism (Kisch, 1991). In this scheme, the first appearance of
+glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
+stilpnomelane is taken to indicate the lower limit of metamorphism
+(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
+1998). Most workers agree that such mineral growth starts at 150 +/-
+50° C in silicate rocks. Many lithologies may show no change in
+mineralogy under these conditions and hence the recognition of the
+onset of metamorphism will vary with bulk composition.”
+- Robertson (1999, Classification of metamorphic rocks: British
+Geological Survey Research Report, RR 99–02) defines the boundary
+between diagenesis and metamorphism in sedimentary rocks as follows:
+“…the boundary between diagenesis and metamorphism is somewhat
+arbitrary and strongly dependent on the lithologies involved. For
+example changes take place in organic materials at lower temperatures
+than in rocks dominated by silicate minerals. In mudrocks, a white
+mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
+obtained by X-ray diffraction analysis, is used to define the onset of
+metamorphism (Kisch, 1991). In this scheme, the first appearance of
+glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
+stilpnomelane is taken to indicate the lower limit of metamorphism
+(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
+1998). Most workers agree that such mineral growth starts at 150 +/-
+50° C in silicate rocks. Many lithologies may show no change in
+mineralogy under these conditions and hence the recognition of the
+onset of metamorphism will vary with bulk composition.”
+- Rock formed by solid-state mineralogical, chemical and/or structural
+changes to a pre-existing rock, in response to marked changes in
+temperature, pressure, shearing stress and chemical environment.
+
+- **Source:**
+Jackson 1997
+
+- Concept URI token: Metamorphic_Rock
+
+
+[]{#amphibolite}
+
+#####  amphibolite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Metamorphic rock mainly consisting of green, brown or black
+amphibole and plagioclase (including albite), which combined form 75
+percent or more of the rock, and both of which are present as major
+constituents. The amphibole constitutes 50 percent or more of the
+total mafic constituents and is present in an amount of 30 percent or
+more; other common minerals include quartz, clinopyroxene, garnet,
+epidote-group minerals, biotite, titanite and scapolite.
+
+- **Source:**
+Coutinho et al. 2007, IUGS SCMR chapter 8 (http://www.bgs.ac.uk/SCMR/)
+
+- Concept URI token: Amphibolite
+
+
+[]{#argillite}
+
+#####  Argillite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- A weakly metamorphosed argillaceous rock (Flawn, 1953, AAPG Bull v37
+p.563-664).  Rock is very fine-grained to aphanitic, compact,
+indurated, and massive (lacks fissility or cleavage) (Neuendorf et al,
+2004). Claystone and Siltstone are related, non-metamorphosed
+sedimentary rocks. Like Aphanite but sedimentary protolith is
+determined. In contact metamorphic environments would be Hornfels.
+
+- **Source:**
+Neuendorf et al, 2004, provisional SMR 2020-06-11
+
+- Concept URI token: Argillite
+
+
+[]{#calcsilicate_metamorphic_rock}
+
+#####  calc silicate metamorphic rock
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Overlaps into metasomatic rocks because of high mobility of Ca
+carbonates. Typically rich in epidote, diopside, tremolite, calcic-
+amphibole, talc, with quartz and calcite. Might be gneiss or
+granofels; lower metamorphic grade than granulite.
+- metamorphic rock containing abundant calcium-silicate minerals
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Calcsilicate_Metamorphic_Rock
+
+
+[]{#chlorite_actinolite_epidote_metamorphic_rock}
+
+#####  chlorite actinolite epidote metamorphic rock
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Rock classified as Greenschist is difficult to categorize in the CGI
+SimpleLithology scheme. This stems in part from the variation in usage
+and the general fuzzy definition of the term. The definition of
+greenschist is generally something along the lines of 'metamorphosed
+rock with a greenish colour, characterized by the presence of
+actinolite, chlorite and epidote, and containing a planar or linear
+fabric. The presence or absence of schistose fabric in rocks called
+'greenschist' is problematic. The fabric present in many rocks called
+greenschist is too weak or variably developed to meet the definition
+of 'schist' per CGI SimpleLithology. Generally if the rock has
+achieved metamorphic grade such that the term 'gneiss' is applicable,
+it would not be called greenschist. Thus, 'greenschist' would
+correspond most closely to a chlorite + actinolite rich 'Foliated
+metamorphic rock', but if it actually meets the definition of 'Schist'
+it would be a chlorite + actinolite 'Schist'.
+- Metamorphic rock characterized by 50 percent or more of combined
+chlorite, actinolite and epidote. Category for rocks generally named
+greenschist or greenstone.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Chlorite_Actinolite_Epidote_Metamorphic_Rock
+
+
+[]{#eclogite}
+
+#####  eclogite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Metamorphic rock composed of 75 percent or more (by volume)
+omphacite and garnet, both of which are present as major constituents,
+the amount of neither of them being higher than 75 percent (by
+volume); the presence of plagioclase precludes classification as an
+eclogite.
+
+- **Source:**
+IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)
+
+- Concept URI token: Eclogite
+
+
+[]{#foliated_metamorphic_rock}
+
+#####  foliated metamorphic rock
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Metamorphic rock in which 10 percent or more of the contained
+mineral grains are elements in a planar or linear fabric. Cataclastic
+or glassy character precludes classification with this concept.
+
+- **Source:**
+based on NADM SLTT metamorphic
+
+- Concept URI token: Foliated_Metamorphic_Rock
+
+
+[]{#mylonitic_rock}
+
+######  mylonitic rock
+
+
+- Child of:
+ [`Fault_Related_Material`](#fault_related_material)
+ [`Foliated_Metamorphic_Rock`](#foliated_metamorphic_rock)
+
+- Metamorphic rock characterised by a foliation resulting from
+tectonic grain size reduction, in which more than 10 percent of the
+rock volume has undergone grain size reduction. Includes
+protomylonite, mylonite, ultramylonite, and blastomylonite.
+
+- **Source:**
+Marshak and Mitra 1988
+
+- Concept URI token: Mylonitic_Rock
+
+
+[]{#phyllonite}
+
+#######  phyllonite
+
+
+- Child of:
+ [`Mylonitic_Rock`](#mylonitic_rock)
+
+- Mylonitic rock composed largely of fine-grained mica that imparts a
+sheen to foliation surfaces; may have flaser lamination, isoclinal
+folding, and deformed veins, which indicate significant shearing.
+Macroscopically resembles phyllite, but formed by mechanical
+degradation of initially coarser rock.
+
+- **Source:**
+NADM metamorphic rock vocabulary SLTTm1.0; Marshak and Mitra 1988
+
+- Concept URI token: Phyllonite
+
+
+[]{#gneiss}
+
+######  gneiss
+
+
+- Child of:
+ [`Foliated_Metamorphic_Rock`](#foliated_metamorphic_rock)
+
+- Foliated metamorphic rock with bands or lenticles rich in granular
+minerals alternating with bands or lenticles rich in minerals with a
+flaky or elongate prismatic habit. Mylonitic foliation or well
+developed, continuous schistosity (greater than 50 percent of the rock
+consists of grains participate in a planar or linear fabric) precludes
+classification with this concept.
+
+- **Source:**
+Neuendorf et al. 2005
+
+- Concept URI token: Gneiss
+
+
+[]{#orthogneiss}
+
+#######  orthogneiss
+
+
+- Child of:
+ [`Gneiss`](#gneiss)
+
+- A gneiss with mineralogy and texture indicating derivation from a
+phaneritic igneous rock protolith. Typically consists of abundant
+feldspar, with quartz, and variable hornblende, biotite, and
+muscovite, with a relatively homogeneous character.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Orthogneiss
+
+
+[]{#paragneiss}
+
+#######  paragneiss
+
+
+- Child of:
+ [`Gneiss`](#gneiss)
+
+- A gneiss with mineralogy and texture indicating derivation from a
+sedimentary rock protolith. Typically consists of abundant quartz,
+mica, or calcsilicate minerals; aluminosilicate minerals or garnet
+commonly present. composition of rock tends to be more variable on a
+decimetric scale that in orthogneiss.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Paragneiss
+
+
+[]{#phyllite}
+
+######  phyllite
+
+
+- Child of:
+ [`Foliated_Metamorphic_Rock`](#foliated_metamorphic_rock)
+
+- Rock with a well developed, continuous schistosity, an average grain
+size between 0.1 and 0.5 millimeters, and a silvery sheen on cleavage
+surfaces. Individual phyllosilicate grains are barely visible with the
+unaided eye.
+
+- **Source:**
+IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)
+
+- Concept URI token: Phyllite
+
+
+[]{#schist}
+
+######  schist
+
+
+- Child of:
+ [`Foliated_Metamorphic_Rock`](#foliated_metamorphic_rock)
+
+- Foliated phaneritic metamorphic rock with well developed, continuous
+schistosity, meaning that greater than 50 percent of the rock by
+volume is mineral grains with a thin tabular, lamellar, or acicular
+prismatic crystallographic habit that are oriented in a continuous
+planar or linear fabric.
+
+- **Source:**
+SLTTm 2004; Neuendorf et al. 2005
+
+- Concept URI token: Schist
+
+
+[]{#mica_schist}
+
+#######  mica schist
+
+
+- Child of:
+ [`Schist`](#schist)
+
+- Include single subcategory of schist to indicate this common kind of
+schist. 'Mica rich metamorphic rock' for compound use with schist
+fabric term would be more compatible with treatment of blueschist
+(Glaucophane lawsonite epidote metamorphic rock) and greenschist
+(Chlorite actinolite epidote metamorphic rock), but based on the
+assumption that schist is the only rock type that will meet the mica-
+rich criteria, it seems reasonable to include as a subtype of schist.
+- A schist that consists of more than 50 percent mica minerals,
+typically muscovite or biotite. Special type included to distinguish
+this common variety of schist.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Mica_Schist
+
+
+[]{#slate}
+
+######  slate
+
+
+- Child of:
+ [`Foliated_Metamorphic_Rock`](#foliated_metamorphic_rock)
+
+- compact, fine grained rock with an average grain size less than
+0.032 millimeter and a well developed schistosity (slaty cleavage),
+and hence can be split into slabs or thin plates.
+
+- **Source:**
+NADM metamorphic rock vocabulary SLTTm1.0; Neuendorf et al. 2005
+
+- Concept URI token: Slate
+
+
+[]{#glaucophane_lawsonite_epidote_metamorphic_rock}
+
+#####  glaucophane lawsonite epidote metamorphic rock
+* `glaukophanschiefer`
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Fabric is weakly developed in this rock in many cases, so the fabric
+categories 'foliated metamorphic rock, 'schist' or 'granofels' may
+apply.
+- A metamorphic rock of roughly basaltic composition, defined by the
+presence of glaucophane with lawsonite or epidote. Other minerals that
+may be present include jadeite, albite, chlorite, garnet, and
+muscovite (phengitic white mica). Typically fine-grained, dark
+colored. Category for rocks commonly referred to as blueschist.
+
+- **Alternate labels:**
+blauschiefer
+
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Glaucophane_Lawsonite_Epidote_Metamorphic_Rock
+
+
+[]{#granofels}
+
+#####  granofels
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Metamorphic rock with granoblastic fabric and very little or no
+foliation (less than 10 percent of the mineral grains in the rock are
+elements in a planar or linear fabric). Grainsize not specified.
+
+- **Source:**
+SLTTm 2004
+
+- Concept URI token: Granofels
+
+
+[]{#hornfels}
+
+######  hornfels
+
+
+- Child of:
+ [`Granofels`](#granofels)
+
+- Granofels formed by contact metamorphism, composed of a mosaic of
+equidimensional grains in a characteristically granoblastic or
+decussate matrix; porphyroblasts or relict phenocrysts may be present.
+Typically fine grained.
+
+- **Source:**
+IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)
+
+- Concept URI token: Hornfels
+
+
+[]{#granulite}
+
+#####  granulite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Wimmenauer (1985) requires granulite to consist of at least 20
+percent feldspar. Garnet is frequently present; some hornblende or
+biotite may be present. The rock has a granoblastic texture and
+gneissose to massive structure; grain size and fabric may be variable
+on a decimetric scale. Foliation is less well developed than in rock
+that would typically be called gneiss. The minerals present in a
+granulite vary depending on the protolith and the temperature and
+pressure conditions experienced during metamorphism. According to
+Fettes and Desmons (2007) the main calc-silicate minerals are calcic
+garnet, calcic plagioclase, calcic scapolite, diopside-hedenbergite,
+epidote group minerals, hydrogrossular, johannsenite, prehnite,
+pumpellyite, titanite, vesuvianite, wollastonite. Note that the shale
+and siltstone categories may apply to any of the mineralogically
+defined mudstone categories.
+- Metamorphic rock of high metamorphic grade in which Fe-Mg silicate
+minerals are dominantly hydroxl-free; feldspar must be present, and
+muscovite is absent; rock contains less than 90 percent mafic
+minerals, less than 75 percent calcite and/or dolomite, less than 75
+percent quartz, less than 50 percent iron-bearing minerals (hematite,
+magnetite, limonite-group, siderite, iron-sulfides), and less than 50
+percent calc-silicate minerals.
+
+- **Source:**
+Fettes and Desmons (2007). See also Wimmenauer (1985), Winkler (1979) (D.R. Bowes (1989), The Encyclopedia of Igneous and Metamorphic Petrology; Van Nostrand Reinhold ISBN: 0-442-20623-2 ; wikipedia, http://en.wikipedia.org/wiki/Granulite accessed 5/30/09
+
+- Concept URI token: Granulite
+
+
+[]{#marble}
+
+#####  marble
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Metamorphic rock consisting of greater than 75 percent fine- to
+coarse-grained recrystallized calcite and/or dolomite; usually with a
+granoblastic, saccharoidal texture.
+
+- **Source:**
+IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/), SLTTm1.0 2004
+
+- Concept URI token: Marble
+
+
+[]{#metaplutonic_rock}
+
+#####  metaplutonic rock
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Rock formed by metamorphism of a plutonic igneous protolith.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Metaplutonic_Rock
+
+
+[]{#metasedimentary_rock}
+
+#####  metasedimentary rock
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Rock formed by metamorphism of a sedimentary protolith.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Metasedimentary_Rock
+
+
+[]{#metavolcanic_rock}
+
+#####  metavolcanic rock
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Rock formed by metamorphism of an extrusive igneous protolith.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Metavolcanic_Rock
+
+
+[]{#migmatite}
+
+#####  migmatite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Silicate metamorphic rock that is pervasively heterogeneous on a
+decimeter to meter scale that typically consists of darker and lighter
+parts; the darker parts usually exhibit features of metamorphic rocks
+whereas the lighter parts are of igneous-looking appearance.
+
+- **Source:**
+Fette and Desmons (2007) (http://www.bgs.ac.uk/SCMR/)
+
+- Concept URI token: Migmatite
+
+
+[]{#quartzite}
+
+#####  quartzite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Metamorphic rock consisting of greater than or equal to 75 percent
+quartz; typically granoblastic texture.
+
+- **Source:**
+after Neuendorf et al. 2005
+
+- Concept URI token: Quartzite
+
+
+[]{#serpentinite}
+
+#####  serpentinite
+
+
+- Child of:
+ [`Metamorphic_Rock`](#metamorphic_rock)
+
+- Rock consisting of more than 75 percent serpentine-group minerals,
+eg. antigorite, chrysotile or lizardite; accessory chlorite, talc and
+magnetite may be present; derived from hydration of ferromagnesian
+silicate minerals such as olivine and pyroxene.
+
+- **Source:**
+Neuendorf et al. 2005
+
+- Concept URI token: Serpentinite
+
+
+[]{#metasomatic_rock}
+
+####  metasomatic rock
+
+
+- Child of:
+ [`rock`](#rock)
+ [`Composite_Genesis_Rock`](#composite_genesis_rock)
+
+- SLTTm (2004) proposed the following criteria to distinguish
+hydrothermally altered or metasomatic rock from igneous rock. "The
+rock is classified as metamorphic if (1) the texture has been modified
+such that it can no longer be considered igneous, (2) the bulk
+composition of the rock is inconsistent with compositions that can be
+derived purely from a magma and associated processes such as
+assimilation and differentiation, or (3) minerals inconsistent with
+magmatic crystallization are present."
+- SLTTm (2004) proposed the following criteria to distinguish
+hydrothermally altered or metasomatic rock from igneous rock. "The
+rock is classified as metasomatic if (1) the texture has been modified
+such that it can no longer be considered igneous, (2) the bulk
+composition of the rock is inconsistent with compositions that can be
+derived purely from a magma and associated processes such as
+assimilation and differentiation, or (3) minerals inconsistent with
+magmatic crystallization are present."
+- Rock that has fabric and composition indicating open-system
+mineralogical and chemical changes in response to interaction with a
+fluid phase, typically water rich.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Metasomatic_Rock
+
+
+[]{#altered_rock}
+
+#####  Altered, type not specified
+
+
+- Child of:
+ [`Metasomatic_Rock`](#metasomatic_rock)
+
+- Rock material has been changed by some subsurface alteration
+process, but the nature of the alteration is not specified.
+- Concept URI token: Altered_Rock
+
+
+[]{#advanced_argillic_altered_rock}
+
+######  advanced argillic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Advanced argillic alteration occurs under lower pH and higher
+temperature conditions than argillic alteration. Kaolinite and dickite
+occur at lower temperatures whereas pyrophyllite and andalusite occur
+under high temperature conditions (T > 300°C). Quartz deposition is
+common. Alunite, topaz, zunyite, tourmaline, enargite and tennantite
+may also occur. In many cases, advanced argillic alteration zones, or
+“lithocaps”, develop at shallow levels above porphyry Cu–Au deposits
+(e.g., Lepanto-Far Southeast, Philippines; Maricunga, Chile). Advanced
+argillic alteration mineral assemblages precipitate from SO2- and HCl-
+rich magmatic vapor, which arises from an underlying intrusive source,
+and can also form in supergene environments, due to post-hydrothermal
+weathering and oxidation of pyrite, locally creating pH<1 liquid due
+to high concentrations of H2SO4 within the vadose zone, where
+kaolinite and alunite plus Fe hydroxides form.
+
+- **Source:**
+Antonio Arribas, Jeffrey Hedenquist, 2019, Environments of advanced argillic alteration: II) steam-heated, and exploration implications: Conference: Society of Resource Geology Annual SymposiumAt: University of Tokyo, Tokyo (Japan)Volume: 69, accessed at https://www.researchgate.net/publication/334230797_Environments_of_advanced_argillic_alteration_II_steam-heated_and_exploration_implications#fullTextFileContent; Constantinos Mavrogonatos et al., 2018, Mineralogical Study of the Advanced Argillic Alteration Zone at the Konos Hill Mo–Cu–Re–Au Porphyry Prospect, NE Greece: Minerals, 8, 479; doi:10.3390/min8110479;  https://en.wikipedia.org/wiki/Argillic_alteration
+
+- Concept URI token: advanced_argillic_altered_rock
+
+
+[]{#albitic_altered_rock}
+
+######  albitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: albitic_altered_rock
+
+
+[]{#alunitic_altered_rock}
+
+######  alunitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: alunitic_altered_rock
+
+
+[]{#argillic_altered_rock}
+
+######  argillic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Argillic alteration is hydrothermal alteration of wall rock which
+introduces clay minerals including kaolinite, smectite and illite. The
+process generally occurs at low temperatures and may occur in
+atmospheric conditions. Argillic alteration is representative of
+supergene environments where low temperature groundwater becomes
+acidic. Argillic assemblages include kaolinite replacing plagioclase
+and montmorillonite replacing amphibole and plagioclase. Orthoclase is
+generally stable and unaffected. Argillic grades into phyllic
+alteration at higher temperatures in an ore deposit hydrothermal
+system.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Argillic_alteration
+
+- Concept URI token: argillic_altered_rock
+
+
+[]{#calcsilicate_altered_rock}
+
+######  calcsilicate altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: calcsilicate_altered_rock
+
+
+[]{#carbonate_altered_rock}
+
+######  carbonate altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: carbonate_altered_rock
+
+
+[]{#chloritic_altered_rock}
+
+######  chloritic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: chloritic_altered_rock
+
+
+[]{#deuteric_altered_rock}
+
+######  deuteric altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: deuteric_altered_rock
+
+
+[]{#epidote_altered_rock}
+
+######  epidote altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: epidote_altered_rock
+
+
+[]{#greisen}
+
+######  greisen
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Greisen is a class of endoskarn,  formed by self-generated
+alteration of a granite. Greisens appear as partly coarse, crystalline
+granite, partly vuggy with miarolitic cavities, disseminated halide
+minerals such as fluorite, and occasionally metallic oxide and sulfide
+ore minerals, borate minerals (tourmaline) and accessory phases such
+as sphene, beryl or topaz.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Greisen
+
+- Concept URI token: greisen
+
+
+[]{#hematitic_altered_rock}
+
+######  hematitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: hematitic_altered_rock
+
+
+[]{#kaolinitic_altered_rock}
+
+######  kaolinitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: kaolinitic_altered_rock
+
+
+[]{#phyllic_altered_rock}
+
+######  phyllic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Altered rock characterised by the assemblage of quartz + sericite +
+pyrite, and occurs at high temperatures and moderately acidic (low pH)
+conditions. Typically associated with copper porphyry ore deposits in
+calc-alkaline rocks.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Phyllic_alteration
+
+- Concept URI token: phyllic_altered_rock
+
+
+[]{#potassic_altered_rock}
+
+######  potassic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: potassic_altered_rock
+
+
+[]{#propylitic_altered_rock}
+
+######  propylitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: propylitic_altered_rock
+
+
+[]{#pyritic_altered_rock}
+
+######  pyritic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: pyritic_altered_rock
+
+
+[]{#red_rock_altered_rock}
+
+######  red rock altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Alteration characterized by finely dispersed hematite
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24, 
+Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
+
+- Concept URI token: red_rock_altered_rock
+
+
+[]{#saussuritised_rock}
+
+######  saussuritised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Rock in which calcium-bearing plagioclase feldspar is altered to an
+assemblage of minerals called saussurite, typically including zoisite,
+chlorite, amphibole, and carbonate minerals. Residual fluids present
+during the late stages of magmatic crystallization can react with
+previously formed plagioclase feldspar to form saussurite; the
+saussurite will be spread through the plagioclase or located near its
+outer margin. The plagioclase may be reconstituted into a more sodium-
+rich variety (albite), although the original form of the crystal is
+retained. Later hydrothermal alteration can produce the same result.
+Mafic rocks are especially susceptible to saussuritization owing to
+their high calcium content; the more calcium-rich portions of
+plagioclase in acidic rocks also are often saussuritized.
+
+- **Source:**
+https://www.britannica.com/science/saussuritization
+
+- Concept URI token: saussuritised_rock
+
+
+[]{#sericitic_altered_rock}
+
+######  sericitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Rock in which plagioclase feldspar has been converted to sericite,
+an informal term for  fine-grained white phyllosilicate minerals.
+Commonly associated with phyllic altered rocks, used to describe less
+intense alteration.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Sericitic_alteration
+
+- Concept URI token: sericitic_altered_rock
+
+
+[]{#serpentinised_rock}
+
+######  serpentinised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: serpentinised_rock
+
+
+[]{#silicified_rock}
+
+######  silicificed rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: silicified_rock
+
+
+[]{#uralitised_rock}
+
+######  uralitised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: uralitised_rock
+
+
+[]{#zeolitic_altered_rock}
+
+######  zeolitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: zeolitic_altered_rock
+
+
+[]{#hydrothermal_massive_sulphide}
+
+#####  Hydrothermal Massive Sulphide
+
+
+- Child of:
+ [`Massive_Sulphide`](#massive_sulphide)
+ [`Metasomatic_Rock`](#metasomatic_rock)
+
+- Rock consisting of greater that 50% sulphide or sulfosalt minerals
+formed by hydrothermal mineralization processes.
+
+- **Alternate labels:**
+Hydrothermal Massive Sulfide
+
+
+- **Source:**
+provisional by SMR 2020-06-07
+
+- Concept URI token: Hydrothermal_Massive_Sulphide
+
+
+[]{#skarn}
+
+#####  skarn
+
+
+- Child of:
+ [`Metasomatic_Rock`](#metasomatic_rock)
+
+- Metasomatic rock consisting mainly of Ca-, Mg-, Fe-, or Mn-silicate
+minerals, which are free from or poor in water. Typically formed at
+the contact between a silicate rock or magma and a carbonate rock.
+
+- **Alternate labels:**
+exoskarn, 
+tactite, 
+
+
+- **Source:**
+Fettes and Desmons, 2007, p195
+
+- Concept URI token: Skarn
+
+
+[]{#spilite}
+
+#####  spilite
+
+
+- Child of:
+ [`Metasomatic_Rock`](#metasomatic_rock)
+
+- Altered basic to intermediate composition fine-grained igneous rock
+in which the feldspar is partially or completely composed of of
+albite, typically accompanied by chlorite, calcite, quartz, epidote,
+prehnite, and low-tempaerature hydrous crystallization products.
+Preservation of eruptive volcanic features is typical.
+
+- **Source:**
+Fettes and Desmon, 2007; Best, M.G., 1982, Igneous and metamorphic petrology: New York, W.H. Freeman and company, p. 398; Neuendorf et al. 2005, p. 619.
+
+- Concept URI token: Spilite
+
+
 []{#sedimentary_rock}
 
 ####  Sedimentary rock
@@ -3897,6 +5587,11 @@ smr provisional 2020-06-07
  [`rock`](#rock)
  [`Sedimentary_Material`](#sedimentary_material)
 
+- Rock formed by accumulation and cementation of solid fragmental
+material deposited by air, water or ice, or as a result of other
+natural agents, such as precipitation from solution, the accumulation
+of organic material, or from biogenic processes, including secretion
+by organisms. Includes epiclastic deposits.
 
 - **Source:**
 SLTTs 2004
@@ -4072,8 +5767,6 @@ Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., a
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that consists of greater than 50 percent carbonate minerals
-of any origin in the mud size fraction.
 - Not a subcategory of carbonate sedimentary rock because definition
 does not specify 'carbonate minerals of intrabasinal origin', but is
 agnostic on origin of carbonate. Schnurrenberger et al. 2003 point out
@@ -4085,6 +5778,8 @@ good one to use in a general purpose classification system.
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Mudstone that consists of greater than 50 percent carbonate minerals
+of any origin in the mud size fraction.
 
 - **Alternate labels:**
 marlstone
@@ -4317,11 +6012,11 @@ This vocabulary
 - Child of:
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
 
+- Note that this category overlaps with 'carbonate mudstone'.
 - Carbonate sedimentary rock with discernible grain supported
 depositional texture, containing greater than 10 percent grains, and
 constituent particles are of intrabasinal origin; intergranular spaces
 are filled by matrix.
-- Note that this category overlaps with 'carbonate mudstone'.
 
 - **Source:**
 Hallsworth and Knox 1999
@@ -4460,10 +6155,6 @@ Dunham 1962
  [`Sedimentary_Rock`](#sedimentary_rock)
  [`Clastic_Sedimentary_Material`](#clastic_sedimentary_material)
 
-- Sedimentary rock in which at least 50 percent of the constituent
-particles were derived from erosion, weathering, or mass-wasting of
-pre-existing earth materials, and transported to the place of
-deposition by mechanical agents such as water, wind, ice and gravity.
 - The conglomerate, sandstone, mudstone, and wackestone categories are
 not defined as kinds of clastic sedimentary rocks because rocks
 meeting their purely grainsize based definitions might also be iron-
@@ -4478,6 +6169,10 @@ carbonate mudstone terminology may be dermined by a priori knowledge
 about the rock being categorized. If it is associated with other
 clastic rocks, the clastic categories will be favored, if with
 cabonate rocks, the carbonate categories will be favored.
+- Sedimentary rock in which at least 50 percent of the constituent
+particles were derived from erosion, weathering, or mass-wasting of
+pre-existing earth materials, and transported to the place of
+deposition by mechanical agents such as water, wind, ice and gravity.
 
 - **Source:**
 SLTTs 2004; Neuendorf et al. 2005
@@ -4517,6 +6212,9 @@ Fairbridge and Bourgeois 1978
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Conglomerate`](#generic_conglomerate)
 
+- Note this category is equivalent to category labeled 'Conglomeratic
+rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
+that system.
 - Clastic sedimentary rock composed of at least 30 percent rounded to
 subangular fragments larger than 2 mm in diameter; typically contains
 finer grained material in interstices between larger fragments. If
@@ -4525,9 +6223,6 @@ clastic or diagenetic origin and the fabric is matrix supported, may
 also be categorized as wackestone. If rock has unsorted or poorly
 sorted texture with a wide range of particle sizes, may also be
 categorized as diamictite.
-- Note this category is equivlanet to category labeled 'Conglomeratic
-rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
-that system.
 
 - **Alternate labels:**
 conglomeratic rock
@@ -4548,8 +6243,6 @@ Neuendorf et al. 2005; SLTTs 2004
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Clastic sedimentary rock consisting of less than 30 percent gravel-
-size (2 mm) particles and with a mud to sand ratio greater than 1.
 - Distinction of intrabasinal, diagenetic, or clastic genesis for very
 fine-grained carbonate minerals is interpretive in many cases. If
 there is uncertainty on the mudstone category based on intrabasinal vs
@@ -4564,6 +6257,8 @@ labeled 'Mudstone' adopted by that system from Folk (1954).
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Clastic sedimentary rock consisting of less than 30 percent gravel-
+size (2 mm) particles and with a mud to sand ratio greater than 1.
 
 - **Alternate labels:**
 clastic mudstone, 
@@ -4601,10 +6296,10 @@ This vocabulary
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Laminated mudstone that will part or break along thin, closely
-spaced layers parallel to stratification.
 - Note definition does not specify carbonate vs. siliclastic nature of
 mud.
+- Laminated mudstone that will part or break along thin, closely
+spaced layers parallel to stratification.
 
 - **Source:**
 NADM SLTT sedimentary, 2004
@@ -4620,9 +6315,8 @@ NADM SLTT sedimentary, 2004
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Mudstone that contains detectable silt. (see comments)
-- Use of 'dectable silt' in the criteria for this category is based on
-the observation that in practice, distinction of claystone from
+- Use of 'detectable silt' in the criteria for this category is based
+on the observation that in practice, distinction of claystone from
 'siltstone' is typically based on a qualitative assessment of
 'grittiness' (e.g. rubbing with fingers, or chewing); the property
 that these tests can determine is the presence or absence of silty
@@ -4630,6 +6324,7 @@ particles in the material. Quantitative grain size analysis in the the
 clay/silt fraction of a lithified sediment is difficult at best, and
 of questionable significance because diagensis has altered the size
 and mineralogy of original sedimentary particles.
+- Mudstone that contains detectable silt. (see comments)
 
 - **Alternate labels:**
 Silt bearing mudstone
@@ -4650,12 +6345,12 @@ This vocabulary
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Sandstone`](#generic_sandstone)
 
-- Clastic sedimentary rock in which less than 30 percent of particles
-are greater than 2 mm in diameter (gravel) and the sand to mud ratio
-is at least 1.
 - Note this category is equivalent to cagetory labeled 'sandy rock' in
 SLTTs (2004), not to the much more restricted category labeled
 'Sandstone' in that system.
+- Clastic sedimentary rock in which less than 30 percent of particles
+are greater than 2 mm in diameter (gravel) and the sand to mud ratio
+is at least 1.
 
 - **Alternate labels:**
 clastic sandstone, 
@@ -4696,9 +6391,6 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 - Child of:
  [`Clastic_Sandstone`](#clastic_sandstone)
 
-- Clastic sandstone with more than 10 percent matrix of indeterminate
-detrital or diagenetic nature. Matrix is mud size silicate minerals
-(clay, feldspar, quartz, rock fragments, and alteration products).
 - Distinction from mudstone is based on inference that less that 50
 percent of the mud size fraction (matrix) is original mud size
 detrital particles. May also grade into diamictite or conglomerate
@@ -4713,6 +6405,9 @@ interpretation of undiscernible matrix in diagenetically altered
 lithic clastic rocks. Dickinson, W.R., 1970, Interpreting detrital
 modes of graywacke and arkose: Journal of Sedimentary Petrology, v.
 40, p. 695-707.
+- Clastic sandstone with more than 10 percent matrix of indeterminate
+detrital or diagenetic nature. Matrix is mud size silicate minerals
+(clay, feldspar, quartz, rock fragments, and alteration products).
 
 - **Source:**
 Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p.
@@ -4752,6 +6447,9 @@ Neuendorf et al. 2005; SLTTs 2004; particle sizes defined from Krumbein phi scal
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Conglomerate`](#generic_conglomerate)
 
+- Note this category is equivalent to category labeled 'Conglomeratic
+rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
+that system.
 - Clastic sedimentary rock composed of at least 30 percent rounded to
 subangular fragments larger than 2 mm in diameter; typically contains
 finer grained material in interstices between larger fragments. If
@@ -4760,9 +6458,6 @@ clastic or diagenetic origin and the fabric is matrix supported, may
 also be categorized as wackestone. If rock has unsorted or poorly
 sorted texture with a wide range of particle sizes, may also be
 categorized as diamictite.
-- Note this category is equivlanet to category labeled 'Conglomeratic
-rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
-that system.
 
 - **Alternate labels:**
 conglomeratic rock
@@ -4809,8 +6504,6 @@ Pettijohn et al. 1987 referenced in Hallsworth and Knox 1999; extrapolated from 
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that consists of greater than 50 percent carbonate minerals
-of any origin in the mud size fraction.
 - Not a subcategory of carbonate sedimentary rock because definition
 does not specify 'carbonate minerals of intrabasinal origin', but is
 agnostic on origin of carbonate. Schnurrenberger et al. 2003 point out
@@ -4822,6 +6515,8 @@ good one to use in a general purpose classification system.
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Mudstone that consists of greater than 50 percent carbonate minerals
+of any origin in the mud size fraction.
 
 - **Alternate labels:**
 marlstone
@@ -4869,8 +6564,6 @@ This vocabulary
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Clastic sedimentary rock consisting of less than 30 percent gravel-
-size (2 mm) particles and with a mud to sand ratio greater than 1.
 - Distinction of intrabasinal, diagenetic, or clastic genesis for very
 fine-grained carbonate minerals is interpretive in many cases. If
 there is uncertainty on the mudstone category based on intrabasinal vs
@@ -4885,6 +6578,8 @@ labeled 'Mudstone' adopted by that system from Folk (1954).
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Clastic sedimentary rock consisting of less than 30 percent gravel-
+size (2 mm) particles and with a mud to sand ratio greater than 1.
 
 - **Alternate labels:**
 clastic mudstone, 
@@ -4922,10 +6617,10 @@ This vocabulary
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Laminated mudstone that will part or break along thin, closely
-spaced layers parallel to stratification.
 - Note definition does not specify carbonate vs. siliclastic nature of
 mud.
+- Laminated mudstone that will part or break along thin, closely
+spaced layers parallel to stratification.
 
 - **Source:**
 NADM SLTT sedimentary, 2004
@@ -4941,9 +6636,8 @@ NADM SLTT sedimentary, 2004
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Mudstone that contains detectable silt. (see comments)
-- Use of 'dectable silt' in the criteria for this category is based on
-the observation that in practice, distinction of claystone from
+- Use of 'detectable silt' in the criteria for this category is based
+on the observation that in practice, distinction of claystone from
 'siltstone' is typically based on a qualitative assessment of
 'grittiness' (e.g. rubbing with fingers, or chewing); the property
 that these tests can determine is the presence or absence of silty
@@ -4951,6 +6645,7 @@ particles in the material. Quantitative grain size analysis in the the
 clay/silt fraction of a lithified sediment is difficult at best, and
 of questionable significance because diagensis has altered the size
 and mineralogy of original sedimentary particles.
+- Mudstone that contains detectable silt. (see comments)
 
 - **Alternate labels:**
 Silt bearing mudstone
@@ -5011,11 +6706,11 @@ Dunham 1962
 - Child of:
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that contains less than 10 percent carbonate minerals.
 - Operational distinction of this category will typically be based on
 whether or not the rock fizzes when hydrochloric acid is applied--the
 rock is silicate mudstone if it does not fizz. The quantitative '10
 percent' criteria is fuzzy.
+- Mudstone that contains less than 10 percent carbonate minerals.
 
 - **Source:**
 This vocabulary
@@ -5051,12 +6746,12 @@ SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scal
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Sandstone`](#generic_sandstone)
 
-- Clastic sedimentary rock in which less than 30 percent of particles
-are greater than 2 mm in diameter (gravel) and the sand to mud ratio
-is at least 1.
 - Note this category is equivalent to cagetory labeled 'sandy rock' in
 SLTTs (2004), not to the much more restricted category labeled
 'Sandstone' in that system.
+- Clastic sedimentary rock in which less than 30 percent of particles
+are greater than 2 mm in diameter (gravel) and the sand to mud ratio
+is at least 1.
 
 - **Alternate labels:**
 clastic sandstone, 
@@ -5097,9 +6792,6 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 - Child of:
  [`Clastic_Sandstone`](#clastic_sandstone)
 
-- Clastic sandstone with more than 10 percent matrix of indeterminate
-detrital or diagenetic nature. Matrix is mud size silicate minerals
-(clay, feldspar, quartz, rock fragments, and alteration products).
 - Distinction from mudstone is based on inference that less that 50
 percent of the mud size fraction (matrix) is original mud size
 detrital particles. May also grade into diamictite or conglomerate
@@ -5114,6 +6806,9 @@ interpretation of undiscernible matrix in diagenetically altered
 lithic clastic rocks. Dickinson, W.R., 1970, Interpreting detrital
 modes of graywacke and arkose: Journal of Sedimentary Petrology, v.
 40, p. 695-707.
+- Clastic sandstone with more than 10 percent matrix of indeterminate
+detrital or diagenetic nature. Matrix is mud size silicate minerals
+(clay, feldspar, quartz, rock fragments, and alteration products).
 
 - **Source:**
 Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p.
@@ -5368,6 +7063,15 @@ cutoff with epiclastic rock is in contrast with LeMaitre et al., but
 is used for consistentency with other sedimentary rock categories
 following the pattern that the rock name reflects the predominant
 constituent.
+- synonym: volcaniclastic rock
+- In practice, it is likely that any rock for which there is suspicion
+that it may consist of redeposited pyroclastic material, usually based
+on sedimentary structures, irrespective of the presence or percentage
+of clearly epiclastic particles, would be called a tuffite. 50 percent
+cutoff with epiclastic rock is in contrast with LeMaitre et al., but
+is used for consistentency with other sedimentary rock categories
+following the pattern that the rock name reflects the predominant
+constituent.
 - Rock consists of more than 50 percent particles of indeterminate
 pyroclastic or epiclastic origin and less than 75 percent particles of
 clearly pyroclastic origin. commonly the rock is laminated or exhibits
@@ -5382,6 +7086,28 @@ Volcaniclastic rock
 LeMaitre et al. 2002; Murawski and Meyer 1998
 
 - Concept URI token: Tuffite
+
+
+[]{#residual_material}
+
+####  residual material
+
+
+- Child of:
+ [`rock`](#rock)
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
+
+- Material of composite origin resulting from weathering processes at
+the Earth's surface, with genesis dominated by removal of chemical
+constituents by aqueous leaching. Minor clastic, chemical, or organic
+input may also contribute. Consolidation state is not inherent in
+definition, but typically material is unconsolidated or weakly
+consolidated.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: residual_material
 
 
 []{#composite_genesis_rock}
@@ -5430,9 +7156,11 @@ Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NA
 []{#metamorphic_rock}
 
 #####  Metamorphic rock
+* `metamorphic rock`
 
 
 - Child of:
+ [`rock`](#rock)
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
 
 - Robertson (1999, Classification of metamorphic rocks: British
@@ -5452,6 +7180,26 @@ stilpnomelane is taken to indicate the lower limit of metamorphism
 50° C in silicate rocks. Many lithologies may show no change in
 mineralogy under these conditions and hence the recognition of the
 onset of metamorphism will vary with bulk composition.”
+- Robertson (1999, Classification of metamorphic rocks: British
+Geological Survey Research Report, RR 99–02) defines the boundary
+between diagenesis and metamorphism in sedimentary rocks as follows:
+“…the boundary between diagenesis and metamorphism is somewhat
+arbitrary and strongly dependent on the lithologies involved. For
+example changes take place in organic materials at lower temperatures
+than in rocks dominated by silicate minerals. In mudrocks, a white
+mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
+obtained by X-ray diffraction analysis, is used to define the onset of
+metamorphism (Kisch, 1991). In this scheme, the first appearance of
+glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
+stilpnomelane is taken to indicate the lower limit of metamorphism
+(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
+1998). Most workers agree that such mineral growth starts at 150 +/-
+50° C in silicate rocks. Many lithologies may show no change in
+mineralogy under these conditions and hence the recognition of the
+onset of metamorphism will vary with bulk composition.”
+- Rock formed by solid-state mineralogical, chemical and/or structural
+changes to a pre-existing rock, in response to marked changes in
+temperature, pressure, shearing stress and chemical environment.
 
 - **Source:**
 Jackson 1997
@@ -5530,9 +7278,6 @@ This vocabulary
 - Child of:
  [`Metamorphic_Rock`](#metamorphic_rock)
 
-- Metamorphic rock characterized by 50 percent or more of combined
-chlorite, actinolite and epidote. Category for rocks generally named
-greenschist or greenstone.
 - Rock classified as Greenschist is difficult to categorize in the CGI
 SimpleLithology scheme. This stems in part from the variation in usage
 and the general fuzzy definition of the term. The definition of
@@ -5548,6 +7293,9 @@ it would not be called greenschist. Thus, 'greenschist' would
 correspond most closely to a chlorite + actinolite rich 'Foliated
 metamorphic rock', but if it actually meets the definition of 'Schist'
 it would be a chlorite + actinolite 'Schist'.
+- Metamorphic rock characterized by 50 percent or more of combined
+chlorite, actinolite and epidote. Category for rocks generally named
+greenschist or greenstone.
 
 - **Source:**
 This vocabulary
@@ -5740,9 +7488,6 @@ SLTTm 2004; Neuendorf et al. 2005
 - Child of:
  [`Schist`](#schist)
 
-- A schist that consists of more than 50 percent mica minerals,
-typically muscovite or biotite. Special type included to distinguish
-this common variety of schist.
 - Include single subcategory of schist to indicate this common kind of
 schist. 'Mica rich metamorphic rock' for compound use with schist
 fabric term would be more compatible with treatment of blueschist
@@ -5750,6 +7495,9 @@ fabric term would be more compatible with treatment of blueschist
 (Chlorite actinolite epidote metamorphic rock), but based on the
 assumption that schist is the only rock type that will meet the mica-
 rich criteria, it seems reasonable to include as a subtype of schist.
+- A schist that consists of more than 50 percent mica minerals,
+typically muscovite or biotite. Special type included to distinguish
+this common variety of schist.
 
 - **Source:**
 This vocabulary
@@ -5784,14 +7532,14 @@ NADM metamorphic rock vocabulary SLTTm1.0; Neuendorf et al. 2005
 - Child of:
  [`Metamorphic_Rock`](#metamorphic_rock)
 
+- Fabric is weakly developed in this rock in many cases, so the fabric
+categories 'foliated metamorphic rock, 'schist' or 'granofels' may
+apply.
 - A metamorphic rock of roughly basaltic composition, defined by the
 presence of glaucophane with lawsonite or epidote. Other minerals that
 may be present include jadeite, albite, chlorite, garnet, and
 muscovite (phengitic white mica). Typically fine-grained, dark
 colored. Category for rocks commonly referred to as blueschist.
-- Fabric is weakly developed in this rock in many cases, so the fabric
-categories 'foliated metamorphic rock, 'schist' or 'granofels' may
-apply.
 
 - **Alternate labels:**
 blauschiefer
@@ -5848,13 +7596,6 @@ IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)
 - Child of:
  [`Metamorphic_Rock`](#metamorphic_rock)
 
-- Metamorphic rock of high metamorphic grade in which Fe-Mg silicate
-minerals are dominantly hydroxl-free; feldspar must be present, and
-muscovite is absent; rock contains less than 90 percent mafic
-minerals, less than 75 percent calcite and/or dolomite, less than 75
-percent quartz, less than 50 percent iron-bearing minerals (hematite,
-magnetite, limonite-group, siderite, iron-sulfides), and less than 50
-percent calc-silicate minerals.
 - Wimmenauer (1985) requires granulite to consist of at least 20
 percent feldspar. Garnet is frequently present; some hornblende or
 biotite may be present. The rock has a granoblastic texture and
@@ -5869,6 +7610,13 @@ epidote group minerals, hydrogrossular, johannsenite, prehnite,
 pumpellyite, titanite, vesuvianite, wollastonite. Note that the shale
 and siltstone categories may apply to any of the mineralogically
 defined mudstone categories.
+- Metamorphic rock of high metamorphic grade in which Fe-Mg silicate
+minerals are dominantly hydroxl-free; feldspar must be present, and
+muscovite is absent; rock contains less than 90 percent mafic
+minerals, less than 75 percent calcite and/or dolomite, less than 75
+percent quartz, less than 50 percent iron-bearing minerals (hematite,
+magnetite, limonite-group, siderite, iron-sulfides), and less than 50
+percent calc-silicate minerals.
 
 - **Source:**
 Fettes and Desmons (2007). See also Wimmenauer (1985), Winkler (1979) (D.R. Bowes (1989), The Encyclopedia of Igneous and Metamorphic Petrology; Van Nostrand Reinhold ISBN: 0-442-20623-2 ; wikipedia, http://en.wikipedia.org/wiki/Granulite accessed 5/30/09
@@ -6003,11 +7751,9 @@ Neuendorf et al. 2005
 
 
 - Child of:
+ [`rock`](#rock)
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
 
-- Rock that has fabric and composition indicating open-system
-mineralogical and chemical changes in response to interaction with a
-fluid phase, typically water rich.
 - SLTTm (2004) proposed the following criteria to distinguish
 hydrothermally altered or metasomatic rock from igneous rock. "The
 rock is classified as metamorphic if (1) the texture has been modified
@@ -6016,11 +7762,448 @@ composition of the rock is inconsistent with compositions that can be
 derived purely from a magma and associated processes such as
 assimilation and differentiation, or (3) minerals inconsistent with
 magmatic crystallization are present."
+- SLTTm (2004) proposed the following criteria to distinguish
+hydrothermally altered or metasomatic rock from igneous rock. "The
+rock is classified as metasomatic if (1) the texture has been modified
+such that it can no longer be considered igneous, (2) the bulk
+composition of the rock is inconsistent with compositions that can be
+derived purely from a magma and associated processes such as
+assimilation and differentiation, or (3) minerals inconsistent with
+magmatic crystallization are present."
+- Rock that has fabric and composition indicating open-system
+mineralogical and chemical changes in response to interaction with a
+fluid phase, typically water rich.
 
 - **Source:**
 This vocabulary
 
 - Concept URI token: Metasomatic_Rock
+
+
+[]{#altered_rock}
+
+######  Altered, type not specified
+
+
+- Child of:
+ [`Metasomatic_Rock`](#metasomatic_rock)
+
+- Rock material has been changed by some subsurface alteration
+process, but the nature of the alteration is not specified.
+- Concept URI token: Altered_Rock
+
+
+[]{#advanced_argillic_altered_rock}
+
+#######  advanced argillic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Advanced argillic alteration occurs under lower pH and higher
+temperature conditions than argillic alteration. Kaolinite and dickite
+occur at lower temperatures whereas pyrophyllite and andalusite occur
+under high temperature conditions (T > 300°C). Quartz deposition is
+common. Alunite, topaz, zunyite, tourmaline, enargite and tennantite
+may also occur. In many cases, advanced argillic alteration zones, or
+“lithocaps”, develop at shallow levels above porphyry Cu–Au deposits
+(e.g., Lepanto-Far Southeast, Philippines; Maricunga, Chile). Advanced
+argillic alteration mineral assemblages precipitate from SO2- and HCl-
+rich magmatic vapor, which arises from an underlying intrusive source,
+and can also form in supergene environments, due to post-hydrothermal
+weathering and oxidation of pyrite, locally creating pH<1 liquid due
+to high concentrations of H2SO4 within the vadose zone, where
+kaolinite and alunite plus Fe hydroxides form.
+
+- **Source:**
+Antonio Arribas, Jeffrey Hedenquist, 2019, Environments of advanced argillic alteration: II) steam-heated, and exploration implications: Conference: Society of Resource Geology Annual SymposiumAt: University of Tokyo, Tokyo (Japan)Volume: 69, accessed at https://www.researchgate.net/publication/334230797_Environments_of_advanced_argillic_alteration_II_steam-heated_and_exploration_implications#fullTextFileContent; Constantinos Mavrogonatos et al., 2018, Mineralogical Study of the Advanced Argillic Alteration Zone at the Konos Hill Mo–Cu–Re–Au Porphyry Prospect, NE Greece: Minerals, 8, 479; doi:10.3390/min8110479;  https://en.wikipedia.org/wiki/Argillic_alteration
+
+- Concept URI token: advanced_argillic_altered_rock
+
+
+[]{#albitic_altered_rock}
+
+#######  albitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: albitic_altered_rock
+
+
+[]{#alunitic_altered_rock}
+
+#######  alunitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: alunitic_altered_rock
+
+
+[]{#argillic_altered_rock}
+
+#######  argillic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Argillic alteration is hydrothermal alteration of wall rock which
+introduces clay minerals including kaolinite, smectite and illite. The
+process generally occurs at low temperatures and may occur in
+atmospheric conditions. Argillic alteration is representative of
+supergene environments where low temperature groundwater becomes
+acidic. Argillic assemblages include kaolinite replacing plagioclase
+and montmorillonite replacing amphibole and plagioclase. Orthoclase is
+generally stable and unaffected. Argillic grades into phyllic
+alteration at higher temperatures in an ore deposit hydrothermal
+system.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Argillic_alteration
+
+- Concept URI token: argillic_altered_rock
+
+
+[]{#calcsilicate_altered_rock}
+
+#######  calcsilicate altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: calcsilicate_altered_rock
+
+
+[]{#carbonate_altered_rock}
+
+#######  carbonate altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: carbonate_altered_rock
+
+
+[]{#chloritic_altered_rock}
+
+#######  chloritic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: chloritic_altered_rock
+
+
+[]{#deuteric_altered_rock}
+
+#######  deuteric altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: deuteric_altered_rock
+
+
+[]{#epidote_altered_rock}
+
+#######  epidote altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: epidote_altered_rock
+
+
+[]{#greisen}
+
+#######  greisen
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Greisen is a class of endoskarn,  formed by self-generated
+alteration of a granite. Greisens appear as partly coarse, crystalline
+granite, partly vuggy with miarolitic cavities, disseminated halide
+minerals such as fluorite, and occasionally metallic oxide and sulfide
+ore minerals, borate minerals (tourmaline) and accessory phases such
+as sphene, beryl or topaz.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Greisen
+
+- Concept URI token: greisen
+
+
+[]{#hematitic_altered_rock}
+
+#######  hematitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: hematitic_altered_rock
+
+
+[]{#kaolinitic_altered_rock}
+
+#######  kaolinitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: kaolinitic_altered_rock
+
+
+[]{#phyllic_altered_rock}
+
+#######  phyllic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Altered rock characterised by the assemblage of quartz + sericite +
+pyrite, and occurs at high temperatures and moderately acidic (low pH)
+conditions. Typically associated with copper porphyry ore deposits in
+calc-alkaline rocks.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Phyllic_alteration
+
+- Concept URI token: phyllic_altered_rock
+
+
+[]{#potassic_altered_rock}
+
+#######  potassic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: potassic_altered_rock
+
+
+[]{#propylitic_altered_rock}
+
+#######  propylitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: propylitic_altered_rock
+
+
+[]{#pyritic_altered_rock}
+
+#######  pyritic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: pyritic_altered_rock
+
+
+[]{#red_rock_altered_rock}
+
+#######  red rock altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Alteration characterized by finely dispersed hematite
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24, 
+Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
+
+- Concept URI token: red_rock_altered_rock
+
+
+[]{#saussuritised_rock}
+
+#######  saussuritised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Rock in which calcium-bearing plagioclase feldspar is altered to an
+assemblage of minerals called saussurite, typically including zoisite,
+chlorite, amphibole, and carbonate minerals. Residual fluids present
+during the late stages of magmatic crystallization can react with
+previously formed plagioclase feldspar to form saussurite; the
+saussurite will be spread through the plagioclase or located near its
+outer margin. The plagioclase may be reconstituted into a more sodium-
+rich variety (albite), although the original form of the crystal is
+retained. Later hydrothermal alteration can produce the same result.
+Mafic rocks are especially susceptible to saussuritization owing to
+their high calcium content; the more calcium-rich portions of
+plagioclase in acidic rocks also are often saussuritized.
+
+- **Source:**
+https://www.britannica.com/science/saussuritization
+
+- Concept URI token: saussuritised_rock
+
+
+[]{#sericitic_altered_rock}
+
+#######  sericitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Rock in which plagioclase feldspar has been converted to sericite,
+an informal term for  fine-grained white phyllosilicate minerals.
+Commonly associated with phyllic altered rocks, used to describe less
+intense alteration.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Sericitic_alteration
+
+- Concept URI token: sericitic_altered_rock
+
+
+[]{#serpentinised_rock}
+
+#######  serpentinised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: serpentinised_rock
+
+
+[]{#silicified_rock}
+
+#######  silicificed rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: silicified_rock
+
+
+[]{#uralitised_rock}
+
+#######  uralitised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: uralitised_rock
+
+
+[]{#zeolitic_altered_rock}
+
+#######  zeolitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: zeolitic_altered_rock
 
 
 []{#hydrothermal_massive_sulphide}
@@ -6088,432 +8271,6 @@ Fettes and Desmon, 2007; Best, M.G., 1982, Igneous and metamorphic petrology: Ne
 - Concept URI token: Spilite
 
 
-[]{#altered_rock}
-
-######  Altered, type not specified
-
-
-- Child of:
- [`Metasomatic_Rock`](#metasomatic_rock)
-
-- Rock material has been changed by some subsurface alteration
-process, but the nature of the alteration is not specified.
-- Concept URI token: altered_rock
-
-
-[]{#advanced_argillic_altered_rock}
-
-#######  advanced argillic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Advanced argillic alteration occurs under lower pH and higher
-temperature conditions than argillic alteration. Kaolinite and dickite
-occur at lower temperatures whereas pyrophyllite and andalusite occur
-under high temperature conditions (T > 300°C). Quartz deposition is
-common. Alunite, topaz, zunyite, tourmaline, enargite and tennantite
-may also occur. In many cases, advanced argillic alteration zones, or
-“lithocaps”, develop at shallow levels above porphyry Cu–Au deposits
-(e.g., Lepanto-Far Southeast, Philippines; Maricunga, Chile). Advanced
-argillic alteration mineral assemblages precipitate from SO2- and HCl-
-rich magmatic vapor, which arises from an underlying intrusive source,
-and can also form in supergene environments, due to post-hydrothermal
-weathering and oxidation of pyrite, locally creating pH<1 liquid due
-to high concentrations of H2SO4 within the vadose zone, where
-kaolinite and alunite plus Fe hydroxides form.
-
-- **Source:**
-Antonio Arribas, Jeffrey Hedenquist, 2019, Environments of advanced argillic alteration: II) steam-heated, and exploration implications: Conference: Society of Resource Geology Annual SymposiumAt: University of Tokyo, Tokyo (Japan)Volume: 69, accessed at https://www.researchgate.net/publication/334230797_Environments_of_advanced_argillic_alteration_II_steam-heated_and_exploration_implications#fullTextFileContent; Constantinos Mavrogonatos et al., 2018, Mineralogical Study of the Advanced Argillic Alteration Zone at the Konos Hill Mo–Cu–Re–Au Porphyry Prospect, NE Greece: Minerals, 8, 479; doi:10.3390/min8110479;  https://en.wikipedia.org/wiki/Argillic_alteration
-
-- Concept URI token: advanced_argillic_altered_rock
-
-
-[]{#albitic_altered_rock}
-
-#######  albitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: albitic_altered_rock
-
-
-[]{#alunitic_altered_rock}
-
-#######  alunitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: alunitic_altered_rock
-
-
-[]{#argillic_altered_rock}
-
-#######  argillic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Argillic alteration is hydrothermal alteration of wall rock which
-introduces clay minerals including kaolinite, smectite and illite. The
-process generally occurs at low temperatures and may occur in
-atmospheric conditions. Argillic alteration is representative of
-supergene environments where low temperature groundwater becomes
-acidic. Argillic assemblages include kaolinite replacing plagioclase
-and montmorillonite replacing amphibole and plagioclase. Orthoclase is
-generally stable and unaffected. Argillic grades into phyllic
-alteration at higher temperatures in an ore deposit hydrothermal
-system.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Argillic_alteration
-
-- Concept URI token: argillic_altered_rock
-
-
-[]{#calcsilicate_altered_rock}
-
-#######  calcsilicate altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: calcsilicate_altered_rock
-
-
-[]{#carbonate_altered_rock}
-
-#######  carbonate altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: carbonate_altered_rock
-
-
-[]{#chloritic_altered_rock}
-
-#######  chloritic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: chloritic_altered_rock
-
-
-[]{#deuteric_altered_rock}
-
-#######  deuteric altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: deuteric_altered_rock
-
-
-[]{#epidote_altered_rock}
-
-#######  epidote altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: epidote_altered_rock
-
-
-[]{#greisen}
-
-#######  greisen
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Greisen is a class of endoskarn,  formed by self-generated
-alteration of a granite. Greisens appear as partly coarse, crystalline
-granite, partly vuggy with miarolitic cavities, disseminated halide
-minerals such as fluorite, and occasionally metallic oxide and sulfide
-ore minerals, borate minerals (tourmaline) and accessory phases such
-as sphene, beryl or topaz.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Greisen
-
-- Concept URI token: greisen
-
-
-[]{#hematitic_altered_rock}
-
-#######  hematitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: hematitic_altered_rock
-
-
-[]{#kaolinitic_altered_rock}
-
-#######  kaolinitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: kaolinitic_altered_rock
-
-
-[]{#phyllic_altered_rock}
-
-#######  phyllic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Altered rock characterised by the assemblage of quartz + sericite +
-pyrite, and occurs at high temperatures and moderately acidic (low pH)
-conditions. Typically associated with copper porphyry ore deposits in
-calc-alkaline rocks.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Phyllic_alteration
-
-- Concept URI token: phyllic_altered_rock
-
-
-[]{#potassic_altered_rock}
-
-#######  potassic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: potassic_altered_rock
-
-
-[]{#propylitic_altered_rock}
-
-#######  propylitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: propylitic_altered_rock
-
-
-[]{#pyritic_altered_rock}
-
-#######  pyritic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: pyritic_altered_rock
-
-
-[]{#red_rock_altered_rock}
-
-#######  red rock altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Alteration characterized by finely dispersed hematite
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24, 
-Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
-
-- Concept URI token: red_rock_altered_rock
-
-
-[]{#saussuritised_rock}
-
-#######  saussuritised rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Rock in which calcium-bearing plagioclase feldspar is altered to an
-assemblage of minerals called saussurite, typically including zoisite,
-chlorite, amphibole, and carbonate minerals. Residual fluids present
-during the late stages of magmatic crystallization can react with
-previously formed plagioclase feldspar to form saussurite; the
-saussurite will be spread through the plagioclase or located near its
-outer margin. The plagioclase may be reconstituted into a more sodium-
-rich variety (albite), although the original form of the crystal is
-retained. Later hydrothermal alteration can produce the same result.
-Mafic rocks are especially susceptible to saussuritization owing to
-their high calcium content; the more calcium-rich portions of
-plagioclase in acidic rocks also are often saussuritized.
-
-- **Source:**
-https://www.britannica.com/science/saussuritization
-
-- Concept URI token: saussuritised_rock
-
-
-[]{#sericitic_altered_rock}
-
-#######  sericitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Rock in which plagioclase feldspar has been converted to sericite,
-an informal term for  fine-grained white phyllosilicate minerals.
-Commonly associated with phyllic altered rocks, used to describe less
-intense alteration.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Sericitic_alteration
-
-- Concept URI token: sericitic_altered_rock
-
-
-[]{#serpentinised_rock}
-
-#######  serpentinised rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: serpentinised_rock
-
-
-[]{#silicified_rock}
-
-#######  silicificed rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: silicified_rock
-
-
-[]{#uralitised_rock}
-
-#######  uralitised rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: uralitised_rock
-
-
-[]{#zeolitic_altered_rock}
-
-#######  zeolitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: zeolitic_altered_rock
-
-
 []{#duricrust}
 
 #####  Duricrust
@@ -6521,7 +8278,7 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 
 - Child of:
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
- [`material_formed_in_surficial_environment`](#material_formed_in_surficial_environment)
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
 
 - Rock forming a hard crust or layer at or near the Earth's surface at
 the time of formation, e.g. in the upper horizons of a soil,
@@ -6533,63 +8290,13 @@ This vocabulary
 - Concept URI token: Duricrust
 
 
-[]{#anthropogenic_material}
-
-###  Anthropogenic material
-
-
-- Child of:
- [`Rock_Material`](#rock_material)
-
-- Material known to have artificial (human-related) origin;
-insufficient information to classify in more detail.
-
-- **Source:**
-This vocabulary
-
-- Concept URI token: Anthropogenic_Material
-
-
-[]{#anthropogenic_unconsolidated_material}
-
-####  Anthropogenic unconsolidated material
-
-
-- Child of:
- [`Anthropogenic_Material`](#anthropogenic_material)
- [`Unconsolidated_Material`](#unconsolidated_material)
-
-- Unconsolidated material known to have artificial (human-related)
-origin.
-
-- **Source:**
-This vocabulary
-
-- Concept URI token: Anthropogenic_Unconsolidated_Material
-
-
-[]{#breccia}
-
-###  Breccia
-
-
-- Child of:
- [`Rock_Material`](#rock_material)
-
-
-- **Source:**
-Neuendorf et al. 2005
-
-- Concept URI token: Breccia
-
-
 []{#composite_genesis_material}
 
 ###  Composite genesis material
 
 
 - Child of:
- [`Rock_Material`](#rock_material)
+ [`rockorsediment`](#rockorsediment)
 
 - Material of unspecified consolidation state formed by geological
 modification of pre-existing materials outside the realm of igneous
@@ -6611,6 +8318,7 @@ SLTTm 2004
 
 
 - Child of:
+ [`rock`](#rock)
  [`Composite_Genesis_Material`](#composite_genesis_material)
 
 - Material formed as a result brittle faulting, composed of greater
@@ -6712,6 +8420,7 @@ SLTTm 2004
 
 
 - Child of:
+ [`rock`](#rock)
  [`Composite_Genesis_Material`](#composite_genesis_material)
 
 - Material that contains features indicative of shock metamorphism,
@@ -6771,9 +8480,11 @@ Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NA
 []{#metamorphic_rock}
 
 #####  Metamorphic rock
+* `metamorphic rock`
 
 
 - Child of:
+ [`rock`](#rock)
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
 
 - Robertson (1999, Classification of metamorphic rocks: British
@@ -6793,6 +8504,26 @@ stilpnomelane is taken to indicate the lower limit of metamorphism
 50° C in silicate rocks. Many lithologies may show no change in
 mineralogy under these conditions and hence the recognition of the
 onset of metamorphism will vary with bulk composition.”
+- Robertson (1999, Classification of metamorphic rocks: British
+Geological Survey Research Report, RR 99–02) defines the boundary
+between diagenesis and metamorphism in sedimentary rocks as follows:
+“…the boundary between diagenesis and metamorphism is somewhat
+arbitrary and strongly dependent on the lithologies involved. For
+example changes take place in organic materials at lower temperatures
+than in rocks dominated by silicate minerals. In mudrocks, a white
+mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
+obtained by X-ray diffraction analysis, is used to define the onset of
+metamorphism (Kisch, 1991). In this scheme, the first appearance of
+glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
+stilpnomelane is taken to indicate the lower limit of metamorphism
+(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
+1998). Most workers agree that such mineral growth starts at 150 +/-
+50° C in silicate rocks. Many lithologies may show no change in
+mineralogy under these conditions and hence the recognition of the
+onset of metamorphism will vary with bulk composition.”
+- Rock formed by solid-state mineralogical, chemical and/or structural
+changes to a pre-existing rock, in response to marked changes in
+temperature, pressure, shearing stress and chemical environment.
 
 - **Source:**
 Jackson 1997
@@ -6871,9 +8602,6 @@ This vocabulary
 - Child of:
  [`Metamorphic_Rock`](#metamorphic_rock)
 
-- Metamorphic rock characterized by 50 percent or more of combined
-chlorite, actinolite and epidote. Category for rocks generally named
-greenschist or greenstone.
 - Rock classified as Greenschist is difficult to categorize in the CGI
 SimpleLithology scheme. This stems in part from the variation in usage
 and the general fuzzy definition of the term. The definition of
@@ -6889,6 +8617,9 @@ it would not be called greenschist. Thus, 'greenschist' would
 correspond most closely to a chlorite + actinolite rich 'Foliated
 metamorphic rock', but if it actually meets the definition of 'Schist'
 it would be a chlorite + actinolite 'Schist'.
+- Metamorphic rock characterized by 50 percent or more of combined
+chlorite, actinolite and epidote. Category for rocks generally named
+greenschist or greenstone.
 
 - **Source:**
 This vocabulary
@@ -7081,9 +8812,6 @@ SLTTm 2004; Neuendorf et al. 2005
 - Child of:
  [`Schist`](#schist)
 
-- A schist that consists of more than 50 percent mica minerals,
-typically muscovite or biotite. Special type included to distinguish
-this common variety of schist.
 - Include single subcategory of schist to indicate this common kind of
 schist. 'Mica rich metamorphic rock' for compound use with schist
 fabric term would be more compatible with treatment of blueschist
@@ -7091,6 +8819,9 @@ fabric term would be more compatible with treatment of blueschist
 (Chlorite actinolite epidote metamorphic rock), but based on the
 assumption that schist is the only rock type that will meet the mica-
 rich criteria, it seems reasonable to include as a subtype of schist.
+- A schist that consists of more than 50 percent mica minerals,
+typically muscovite or biotite. Special type included to distinguish
+this common variety of schist.
 
 - **Source:**
 This vocabulary
@@ -7125,14 +8856,14 @@ NADM metamorphic rock vocabulary SLTTm1.0; Neuendorf et al. 2005
 - Child of:
  [`Metamorphic_Rock`](#metamorphic_rock)
 
+- Fabric is weakly developed in this rock in many cases, so the fabric
+categories 'foliated metamorphic rock, 'schist' or 'granofels' may
+apply.
 - A metamorphic rock of roughly basaltic composition, defined by the
 presence of glaucophane with lawsonite or epidote. Other minerals that
 may be present include jadeite, albite, chlorite, garnet, and
 muscovite (phengitic white mica). Typically fine-grained, dark
 colored. Category for rocks commonly referred to as blueschist.
-- Fabric is weakly developed in this rock in many cases, so the fabric
-categories 'foliated metamorphic rock, 'schist' or 'granofels' may
-apply.
 
 - **Alternate labels:**
 blauschiefer
@@ -7189,13 +8920,6 @@ IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)
 - Child of:
  [`Metamorphic_Rock`](#metamorphic_rock)
 
-- Metamorphic rock of high metamorphic grade in which Fe-Mg silicate
-minerals are dominantly hydroxl-free; feldspar must be present, and
-muscovite is absent; rock contains less than 90 percent mafic
-minerals, less than 75 percent calcite and/or dolomite, less than 75
-percent quartz, less than 50 percent iron-bearing minerals (hematite,
-magnetite, limonite-group, siderite, iron-sulfides), and less than 50
-percent calc-silicate minerals.
 - Wimmenauer (1985) requires granulite to consist of at least 20
 percent feldspar. Garnet is frequently present; some hornblende or
 biotite may be present. The rock has a granoblastic texture and
@@ -7210,6 +8934,13 @@ epidote group minerals, hydrogrossular, johannsenite, prehnite,
 pumpellyite, titanite, vesuvianite, wollastonite. Note that the shale
 and siltstone categories may apply to any of the mineralogically
 defined mudstone categories.
+- Metamorphic rock of high metamorphic grade in which Fe-Mg silicate
+minerals are dominantly hydroxl-free; feldspar must be present, and
+muscovite is absent; rock contains less than 90 percent mafic
+minerals, less than 75 percent calcite and/or dolomite, less than 75
+percent quartz, less than 50 percent iron-bearing minerals (hematite,
+magnetite, limonite-group, siderite, iron-sulfides), and less than 50
+percent calc-silicate minerals.
 
 - **Source:**
 Fettes and Desmons (2007). See also Wimmenauer (1985), Winkler (1979) (D.R. Bowes (1989), The Encyclopedia of Igneous and Metamorphic Petrology; Van Nostrand Reinhold ISBN: 0-442-20623-2 ; wikipedia, http://en.wikipedia.org/wiki/Granulite accessed 5/30/09
@@ -7344,11 +9075,9 @@ Neuendorf et al. 2005
 
 
 - Child of:
+ [`rock`](#rock)
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
 
-- Rock that has fabric and composition indicating open-system
-mineralogical and chemical changes in response to interaction with a
-fluid phase, typically water rich.
 - SLTTm (2004) proposed the following criteria to distinguish
 hydrothermally altered or metasomatic rock from igneous rock. "The
 rock is classified as metamorphic if (1) the texture has been modified
@@ -7357,11 +9086,448 @@ composition of the rock is inconsistent with compositions that can be
 derived purely from a magma and associated processes such as
 assimilation and differentiation, or (3) minerals inconsistent with
 magmatic crystallization are present."
+- SLTTm (2004) proposed the following criteria to distinguish
+hydrothermally altered or metasomatic rock from igneous rock. "The
+rock is classified as metasomatic if (1) the texture has been modified
+such that it can no longer be considered igneous, (2) the bulk
+composition of the rock is inconsistent with compositions that can be
+derived purely from a magma and associated processes such as
+assimilation and differentiation, or (3) minerals inconsistent with
+magmatic crystallization are present."
+- Rock that has fabric and composition indicating open-system
+mineralogical and chemical changes in response to interaction with a
+fluid phase, typically water rich.
 
 - **Source:**
 This vocabulary
 
 - Concept URI token: Metasomatic_Rock
+
+
+[]{#altered_rock}
+
+######  Altered, type not specified
+
+
+- Child of:
+ [`Metasomatic_Rock`](#metasomatic_rock)
+
+- Rock material has been changed by some subsurface alteration
+process, but the nature of the alteration is not specified.
+- Concept URI token: Altered_Rock
+
+
+[]{#advanced_argillic_altered_rock}
+
+#######  advanced argillic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Advanced argillic alteration occurs under lower pH and higher
+temperature conditions than argillic alteration. Kaolinite and dickite
+occur at lower temperatures whereas pyrophyllite and andalusite occur
+under high temperature conditions (T > 300°C). Quartz deposition is
+common. Alunite, topaz, zunyite, tourmaline, enargite and tennantite
+may also occur. In many cases, advanced argillic alteration zones, or
+“lithocaps”, develop at shallow levels above porphyry Cu–Au deposits
+(e.g., Lepanto-Far Southeast, Philippines; Maricunga, Chile). Advanced
+argillic alteration mineral assemblages precipitate from SO2- and HCl-
+rich magmatic vapor, which arises from an underlying intrusive source,
+and can also form in supergene environments, due to post-hydrothermal
+weathering and oxidation of pyrite, locally creating pH<1 liquid due
+to high concentrations of H2SO4 within the vadose zone, where
+kaolinite and alunite plus Fe hydroxides form.
+
+- **Source:**
+Antonio Arribas, Jeffrey Hedenquist, 2019, Environments of advanced argillic alteration: II) steam-heated, and exploration implications: Conference: Society of Resource Geology Annual SymposiumAt: University of Tokyo, Tokyo (Japan)Volume: 69, accessed at https://www.researchgate.net/publication/334230797_Environments_of_advanced_argillic_alteration_II_steam-heated_and_exploration_implications#fullTextFileContent; Constantinos Mavrogonatos et al., 2018, Mineralogical Study of the Advanced Argillic Alteration Zone at the Konos Hill Mo–Cu–Re–Au Porphyry Prospect, NE Greece: Minerals, 8, 479; doi:10.3390/min8110479;  https://en.wikipedia.org/wiki/Argillic_alteration
+
+- Concept URI token: advanced_argillic_altered_rock
+
+
+[]{#albitic_altered_rock}
+
+#######  albitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: albitic_altered_rock
+
+
+[]{#alunitic_altered_rock}
+
+#######  alunitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: alunitic_altered_rock
+
+
+[]{#argillic_altered_rock}
+
+#######  argillic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Argillic alteration is hydrothermal alteration of wall rock which
+introduces clay minerals including kaolinite, smectite and illite. The
+process generally occurs at low temperatures and may occur in
+atmospheric conditions. Argillic alteration is representative of
+supergene environments where low temperature groundwater becomes
+acidic. Argillic assemblages include kaolinite replacing plagioclase
+and montmorillonite replacing amphibole and plagioclase. Orthoclase is
+generally stable and unaffected. Argillic grades into phyllic
+alteration at higher temperatures in an ore deposit hydrothermal
+system.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Argillic_alteration
+
+- Concept URI token: argillic_altered_rock
+
+
+[]{#calcsilicate_altered_rock}
+
+#######  calcsilicate altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: calcsilicate_altered_rock
+
+
+[]{#carbonate_altered_rock}
+
+#######  carbonate altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: carbonate_altered_rock
+
+
+[]{#chloritic_altered_rock}
+
+#######  chloritic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: chloritic_altered_rock
+
+
+[]{#deuteric_altered_rock}
+
+#######  deuteric altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: deuteric_altered_rock
+
+
+[]{#epidote_altered_rock}
+
+#######  epidote altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: epidote_altered_rock
+
+
+[]{#greisen}
+
+#######  greisen
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Greisen is a class of endoskarn,  formed by self-generated
+alteration of a granite. Greisens appear as partly coarse, crystalline
+granite, partly vuggy with miarolitic cavities, disseminated halide
+minerals such as fluorite, and occasionally metallic oxide and sulfide
+ore minerals, borate minerals (tourmaline) and accessory phases such
+as sphene, beryl or topaz.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Greisen
+
+- Concept URI token: greisen
+
+
+[]{#hematitic_altered_rock}
+
+#######  hematitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: hematitic_altered_rock
+
+
+[]{#kaolinitic_altered_rock}
+
+#######  kaolinitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: kaolinitic_altered_rock
+
+
+[]{#phyllic_altered_rock}
+
+#######  phyllic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Altered rock characterised by the assemblage of quartz + sericite +
+pyrite, and occurs at high temperatures and moderately acidic (low pH)
+conditions. Typically associated with copper porphyry ore deposits in
+calc-alkaline rocks.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Phyllic_alteration
+
+- Concept URI token: phyllic_altered_rock
+
+
+[]{#potassic_altered_rock}
+
+#######  potassic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: potassic_altered_rock
+
+
+[]{#propylitic_altered_rock}
+
+#######  propylitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: propylitic_altered_rock
+
+
+[]{#pyritic_altered_rock}
+
+#######  pyritic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: pyritic_altered_rock
+
+
+[]{#red_rock_altered_rock}
+
+#######  red rock altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Alteration characterized by finely dispersed hematite
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24, 
+Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
+
+- Concept URI token: red_rock_altered_rock
+
+
+[]{#saussuritised_rock}
+
+#######  saussuritised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Rock in which calcium-bearing plagioclase feldspar is altered to an
+assemblage of minerals called saussurite, typically including zoisite,
+chlorite, amphibole, and carbonate minerals. Residual fluids present
+during the late stages of magmatic crystallization can react with
+previously formed plagioclase feldspar to form saussurite; the
+saussurite will be spread through the plagioclase or located near its
+outer margin. The plagioclase may be reconstituted into a more sodium-
+rich variety (albite), although the original form of the crystal is
+retained. Later hydrothermal alteration can produce the same result.
+Mafic rocks are especially susceptible to saussuritization owing to
+their high calcium content; the more calcium-rich portions of
+plagioclase in acidic rocks also are often saussuritized.
+
+- **Source:**
+https://www.britannica.com/science/saussuritization
+
+- Concept URI token: saussuritised_rock
+
+
+[]{#sericitic_altered_rock}
+
+#######  sericitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- Rock in which plagioclase feldspar has been converted to sericite,
+an informal term for  fine-grained white phyllosilicate minerals.
+Commonly associated with phyllic altered rocks, used to describe less
+intense alteration.
+
+- **Source:**
+https://en.wikipedia.org/wiki/Sericitic_alteration
+
+- Concept URI token: sericitic_altered_rock
+
+
+[]{#serpentinised_rock}
+
+#######  serpentinised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: serpentinised_rock
+
+
+[]{#silicified_rock}
+
+#######  silicificed rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: silicified_rock
+
+
+[]{#uralitised_rock}
+
+#######  uralitised rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: uralitised_rock
+
+
+[]{#zeolitic_altered_rock}
+
+#######  zeolitic altered rock
+
+
+- Child of:
+ [`Altered_Rock`](#altered_rock)
+
+- definition missing
+
+- **Source:**
+CGI alterationtype SKOS vocabulary 2012-11-24
+
+- Concept URI token: zeolitic_altered_rock
 
 
 []{#hydrothermal_massive_sulphide}
@@ -7429,432 +9595,6 @@ Fettes and Desmon, 2007; Best, M.G., 1982, Igneous and metamorphic petrology: Ne
 - Concept URI token: Spilite
 
 
-[]{#altered_rock}
-
-######  Altered, type not specified
-
-
-- Child of:
- [`Metasomatic_Rock`](#metasomatic_rock)
-
-- Rock material has been changed by some subsurface alteration
-process, but the nature of the alteration is not specified.
-- Concept URI token: altered_rock
-
-
-[]{#advanced_argillic_altered_rock}
-
-#######  advanced argillic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Advanced argillic alteration occurs under lower pH and higher
-temperature conditions than argillic alteration. Kaolinite and dickite
-occur at lower temperatures whereas pyrophyllite and andalusite occur
-under high temperature conditions (T > 300°C). Quartz deposition is
-common. Alunite, topaz, zunyite, tourmaline, enargite and tennantite
-may also occur. In many cases, advanced argillic alteration zones, or
-“lithocaps”, develop at shallow levels above porphyry Cu–Au deposits
-(e.g., Lepanto-Far Southeast, Philippines; Maricunga, Chile). Advanced
-argillic alteration mineral assemblages precipitate from SO2- and HCl-
-rich magmatic vapor, which arises from an underlying intrusive source,
-and can also form in supergene environments, due to post-hydrothermal
-weathering and oxidation of pyrite, locally creating pH<1 liquid due
-to high concentrations of H2SO4 within the vadose zone, where
-kaolinite and alunite plus Fe hydroxides form.
-
-- **Source:**
-Antonio Arribas, Jeffrey Hedenquist, 2019, Environments of advanced argillic alteration: II) steam-heated, and exploration implications: Conference: Society of Resource Geology Annual SymposiumAt: University of Tokyo, Tokyo (Japan)Volume: 69, accessed at https://www.researchgate.net/publication/334230797_Environments_of_advanced_argillic_alteration_II_steam-heated_and_exploration_implications#fullTextFileContent; Constantinos Mavrogonatos et al., 2018, Mineralogical Study of the Advanced Argillic Alteration Zone at the Konos Hill Mo–Cu–Re–Au Porphyry Prospect, NE Greece: Minerals, 8, 479; doi:10.3390/min8110479;  https://en.wikipedia.org/wiki/Argillic_alteration
-
-- Concept URI token: advanced_argillic_altered_rock
-
-
-[]{#albitic_altered_rock}
-
-#######  albitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: albitic_altered_rock
-
-
-[]{#alunitic_altered_rock}
-
-#######  alunitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: alunitic_altered_rock
-
-
-[]{#argillic_altered_rock}
-
-#######  argillic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Argillic alteration is hydrothermal alteration of wall rock which
-introduces clay minerals including kaolinite, smectite and illite. The
-process generally occurs at low temperatures and may occur in
-atmospheric conditions. Argillic alteration is representative of
-supergene environments where low temperature groundwater becomes
-acidic. Argillic assemblages include kaolinite replacing plagioclase
-and montmorillonite replacing amphibole and plagioclase. Orthoclase is
-generally stable and unaffected. Argillic grades into phyllic
-alteration at higher temperatures in an ore deposit hydrothermal
-system.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Argillic_alteration
-
-- Concept URI token: argillic_altered_rock
-
-
-[]{#calcsilicate_altered_rock}
-
-#######  calcsilicate altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: calcsilicate_altered_rock
-
-
-[]{#carbonate_altered_rock}
-
-#######  carbonate altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: carbonate_altered_rock
-
-
-[]{#chloritic_altered_rock}
-
-#######  chloritic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: chloritic_altered_rock
-
-
-[]{#deuteric_altered_rock}
-
-#######  deuteric altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: deuteric_altered_rock
-
-
-[]{#epidote_altered_rock}
-
-#######  epidote altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: epidote_altered_rock
-
-
-[]{#greisen}
-
-#######  greisen
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Greisen is a class of endoskarn,  formed by self-generated
-alteration of a granite. Greisens appear as partly coarse, crystalline
-granite, partly vuggy with miarolitic cavities, disseminated halide
-minerals such as fluorite, and occasionally metallic oxide and sulfide
-ore minerals, borate minerals (tourmaline) and accessory phases such
-as sphene, beryl or topaz.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Greisen
-
-- Concept URI token: greisen
-
-
-[]{#hematitic_altered_rock}
-
-#######  hematitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: hematitic_altered_rock
-
-
-[]{#kaolinitic_altered_rock}
-
-#######  kaolinitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: kaolinitic_altered_rock
-
-
-[]{#phyllic_altered_rock}
-
-#######  phyllic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Altered rock characterised by the assemblage of quartz + sericite +
-pyrite, and occurs at high temperatures and moderately acidic (low pH)
-conditions. Typically associated with copper porphyry ore deposits in
-calc-alkaline rocks.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Phyllic_alteration
-
-- Concept URI token: phyllic_altered_rock
-
-
-[]{#potassic_altered_rock}
-
-#######  potassic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: potassic_altered_rock
-
-
-[]{#propylitic_altered_rock}
-
-#######  propylitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: propylitic_altered_rock
-
-
-[]{#pyritic_altered_rock}
-
-#######  pyritic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: pyritic_altered_rock
-
-
-[]{#red_rock_altered_rock}
-
-#######  red rock altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Alteration characterized by finely dispersed hematite
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24, 
-Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
-
-- Concept URI token: red_rock_altered_rock
-
-
-[]{#saussuritised_rock}
-
-#######  saussuritised rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Rock in which calcium-bearing plagioclase feldspar is altered to an
-assemblage of minerals called saussurite, typically including zoisite,
-chlorite, amphibole, and carbonate minerals. Residual fluids present
-during the late stages of magmatic crystallization can react with
-previously formed plagioclase feldspar to form saussurite; the
-saussurite will be spread through the plagioclase or located near its
-outer margin. The plagioclase may be reconstituted into a more sodium-
-rich variety (albite), although the original form of the crystal is
-retained. Later hydrothermal alteration can produce the same result.
-Mafic rocks are especially susceptible to saussuritization owing to
-their high calcium content; the more calcium-rich portions of
-plagioclase in acidic rocks also are often saussuritized.
-
-- **Source:**
-https://www.britannica.com/science/saussuritization
-
-- Concept URI token: saussuritised_rock
-
-
-[]{#sericitic_altered_rock}
-
-#######  sericitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- Rock in which plagioclase feldspar has been converted to sericite,
-an informal term for  fine-grained white phyllosilicate minerals.
-Commonly associated with phyllic altered rocks, used to describe less
-intense alteration.
-
-- **Source:**
-https://en.wikipedia.org/wiki/Sericitic_alteration
-
-- Concept URI token: sericitic_altered_rock
-
-
-[]{#serpentinised_rock}
-
-#######  serpentinised rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: serpentinised_rock
-
-
-[]{#silicified_rock}
-
-#######  silicificed rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: silicified_rock
-
-
-[]{#uralitised_rock}
-
-#######  uralitised rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: uralitised_rock
-
-
-[]{#zeolitic_altered_rock}
-
-#######  zeolitic altered rock
-
-
-- Child of:
- [`altered_rock`](#altered_rock)
-
-- definition missing
-
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
-
-- Concept URI token: zeolitic_altered_rock
-
-
 []{#duricrust}
 
 #####  Duricrust
@@ -7862,7 +9602,7 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 
 - Child of:
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
- [`material_formed_in_surficial_environment`](#material_formed_in_surficial_environment)
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
 
 - Rock forming a hard crust or layer at or near the Earth's surface at
 the time of formation, e.g. in the upper horizons of a soil,
@@ -7890,7 +9630,7 @@ pressure.
 - **Source:**
 This vocabulary
 
-- Concept URI token: material_formed_in_surficial_environment
+- Concept URI token: Material_Formed_In_Surficial_Environment
 
 
 []{#residual_material}
@@ -7899,11 +9639,12 @@ This vocabulary
 
 
 - Child of:
- [`material_formed_in_surficial_environment`](#material_formed_in_surficial_environment)
+ [`rock`](#rock)
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
 
 - Material of composite origin resulting from weathering processes at
 the Earth's surface, with genesis dominated by removal of chemical
-constituents by aqueous leaching. Miinor clastic, chemical, or organic
+constituents by aqueous leaching. Minor clastic, chemical, or organic
 input may also contribute. Consolidation state is not inherent in
 definition, but typically material is unconsolidated or weakly
 consolidated.
@@ -7914,6 +9655,51 @@ This vocabulary
 - Concept URI token: residual_material
 
 
+[]{#soil}
+
+#####  Soil
+
+
+- Child of:
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
+ [`Natural_Unconsolidated_Material`](#natural_unconsolidated_material)
+
+- Mixed granular mineral and organic matter modified by interaction
+between earth material, biosphere, and atmosphere, consisting of
+varying proportions of sand, silt, and clay, organic material such as
+humus, gases, liquids, and a broad range of resident micro- and
+macroorganisms. (https://en.wikipedia.org/wiki/Soil) Soil consists of
+horizons near the Earth's surface that, in contrast to the underlying
+parent material, have been altered by the interactions of climate,
+relief, and living organisms over time. (http://www.nrcs.usda.gov/wps/
+portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280)
+(http://purl.obolibrary.org/obo/ENVO_00001998)
+
+- See Also:
+* [<http://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280>](http://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280)
+- Concept URI token: soil
+
+
+[]{#bauxite}
+
+#####  bauxite
+
+
+- Child of:
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
+
+- Highly aluminous material containing abundant aluminium hydroxides
+(gibbsite, less commonly boehmite, diaspore) and aluminium-substituted
+iron oxides or hydroxides and generally minor or negligible kaolin
+minerals; may contain up to 20 percent quartz. commonly has a
+pisolitic or nodular texture, and may be cemented.
+
+- **Source:**
+Eggleton 2001
+
+- Concept URI token: Bauxite
+
+
 []{#duricrust}
 
 #####  Duricrust
@@ -7921,7 +9707,7 @@ This vocabulary
 
 - Child of:
  [`Composite_Genesis_Rock`](#composite_genesis_rock)
- [`material_formed_in_surficial_environment`](#material_formed_in_surficial_environment)
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
 
 - Rock forming a hard crust or layer at or near the Earth's surface at
 the time of formation, e.g. in the upper horizons of a soil,
@@ -7933,33 +9719,13 @@ This vocabulary
 - Concept URI token: Duricrust
 
 
-[]{#bauxite}
-
-#####  bauxite
-
-
-- Child of:
- [`material_formed_in_surficial_environment`](#material_formed_in_surficial_environment)
-
-- Highly aluminous material containing abundant aluminium hydroxides
-(gibbsite, less commonly boehmite, diaspore) and aluminium-substituted
-iron oxides or hydroxides and generally minor or negligible kaolin
-minerals; may contain up to 20 percent quartz. commonly has a
-pisolitic or nodular texture, and may be cemented.
-
-- **Source:**
-Eggleton 2001
-
-- Concept URI token: bauxite
-
-
 []{#igneous_material}
 
 ###  Igneous material
 
 
 - Child of:
- [`Rock_Material`](#rock_material)
+ [`rockorsediment`](#rockorsediment)
 
 - Earth material formed as a result of igneous processes, eg.
 intrusion and cooling of magma in the crust, volcanic eruption.
@@ -7973,13 +9739,14 @@ This vocabulary
 []{#igneous_rock}
 
 ####  Igneous rock
-* `igneous rock`
 
 
 - Child of:
  [`rock`](#rock)
  [`Igneous_Material`](#igneous_material)
 
+- rock formed as a result of igneous processes, for example intrusion
+and cooling of magma in the crust, or volcanic eruption.
 
 - **Source:**
 Neuendorf et al 2005
@@ -8256,18 +10023,12 @@ LeMaitre et al. 2002
 []{#basic_igneous_rock}
 
 #####  basic igneous rock
-* `doleritic rock`
 
 
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
  [`Basic_Igneous_Material`](#basic_igneous_material)
 
-- Dark colored gabbroic (basaltic) or dioritic (andesitic) rock
-intermediate in grain size between basalt and gabbro and composed of
-plagioclase, pyroxene and opaque minerals; often with ophitic texture.
-Typically occurs as hypabyssal intrusions. Includes dolerite,
-microdiorite, diabase and microgabbro.
 - Igneous rock with between 45 and 52 percent SiO2.
 
 - **Source:**
@@ -8314,6 +10075,11 @@ after LeMaitre et al. 2002
 - Child of:
  [`Basalt`](#basalt)
 
+- The definition of tholeiite and alkali basalt here are more
+prescriptive than those found in most reference authorities. This is
+to actually provide some descriptive criteria to allow assignment of
+rocks on a hand sample basis to the tholeiite or alkali basalt
+categories if detailed petrographic or chemical data are available.
 - Alkali olivine basalt is silica-undersaturated, characterized by the
 absence of orthopyroxene, absence of quartz, presence of olivine, and
 typically contains some feldspathoid mineral, alkali feldspar or
@@ -8321,11 +10087,6 @@ phlogopite in the groundmass. Feldspar phenocrysts typically are
 labradorite to andesine in composition. Augite is rich in titanium
 compared to augite in tholeiitic basalt. Alkali olivine basalt is
 relatively rich in sodium.
-- The definition of tholeiite and alkali basalt here are more
-prescriptive than those found in most reference authorities. This is
-to actually provide some descriptive criteria to allow assignment of
-rocks on a hand sample basis to the tholeiite or alkali basalt
-categories if detailed petrographic or chemical data are available.
 
 - **Source:**
 http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43.
@@ -8409,12 +10170,12 @@ LeMaitre et al. 2002
 - Child of:
  [`Gabbroic_Rock`](#gabbroic_rock)
 
-- Gabbroic rock that contains between 0 and 5 percent quartz and no
-feldspathoid mineral in the QAPF fraction. Includes rocks defined
-modally in QAPF Field 10 as gabbro.
 - Note that this category includes gabbro (sensu stricto) of LeMaitre
 et al. 2002, but is broader, including the other rock types defined by
 orthopyroxene-clinopyroxene-olivine-hornblende mineral ratios.
+- Gabbroic rock that contains between 0 and 5 percent quartz and no
+feldspathoid mineral in the QAPF fraction. Includes rocks defined
+modally in QAPF Field 10 as gabbro.
 
 - **Source:**
 LeMaitre et al. 2002
@@ -8437,6 +10198,26 @@ QAPF fraction. QAPF field 10*.
 LeMaitre et al. 2002
 
 - Concept URI token: Quartz_Gabbro
+
+
+[]{#doleritic_rock}
+
+#####  doleritic rock
+
+
+- Child of:
+ [`Igneous_Rock`](#igneous_rock)
+
+- Dark colored gabbroic (basaltic) or dioritic (andesitic) rock
+intermediate in grain size between basalt and gabbro and composed of
+plagioclase, pyroxene and opaque minerals; often with ophitic texture.
+Typically occurs as hypabyssal intrusions. Includes dolerite,
+microdiorite, diabase and microgabbro.
+
+- **Source:**
+Neuendorf et al 2005; LeMaitre et al. 2002; Gillespie and Styles 1999
+
+- Concept URI token: Doleritic_Rock
 
 
 []{#exotic_composition_igneous_rock}
@@ -8521,14 +10302,14 @@ based on LeMaitre et al. 2002
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
 
+- Need to make decision as to whether devitrified glass should be
+considered glass or microcrystalline framework for purposes of
+categorization
 - Igneous rock in which the framework of the rock consists of crystals
 that are too small to determine mineralogy with the unaided eye;
 framework may include up to 50 percent glass. A significant percentage
 of the rock by volume may be phenocrysts. Includes rocks that are
 generally called volcanic rocks.
-- Need to make decision as to whether devitrified glass should be
-considered glass or microcrystalline framework for purposes of
-categorization
 
 - **Alternate labels:**
 volcanic rock
@@ -8549,6 +10330,10 @@ Gillespie and Styles 1999; LeMaitre et al. 2002
  [`Fine_Grained_Igneous_Rock`](#fine_grained_igneous_rock)
  [`Intermediate_Composition_Igneous_Rock`](#intermediate_composition_igneous_rock)
 
+- Note the mela-andesite and leuco-basalt categories are not
+recommended in this system. If chemical analytical data are available
+to constrain the silica content, the basalt or andesite category
+should be used.
 - Fine-grained igneous rock with less than 20 percent quartz and less
 than 10 percent feldspathoid minerals in the QAPF fraction, in which
 the ratio of plagioclase to total feldspar is greater 0.65. Includes
@@ -8562,10 +10347,6 @@ than 35 percent mafic minerals by volume or greater than 40 percent
 mafic minerals by weight. Typically consists of plagioclase
 (frequently zoned from labradorite to oligoclase), pyroxene,
 hornblende and/or biotite. Fine grained equivalent of dioritic rock.
-- Note the mela-andesite and leuco-basalt categories are not
-recommended in this system. If chemical analytical data are available
-to constrain the silica content, the basalt or andesite category
-should be used.
 
 - **Source:**
 after LeMaitre et al. 2002
@@ -8630,6 +10411,11 @@ after LeMaitre et al. 2002
 - Child of:
  [`Basalt`](#basalt)
 
+- The definition of tholeiite and alkali basalt here are more
+prescriptive than those found in most reference authorities. This is
+to actually provide some descriptive criteria to allow assignment of
+rocks on a hand sample basis to the tholeiite or alkali basalt
+categories if detailed petrographic or chemical data are available.
 - Alkali olivine basalt is silica-undersaturated, characterized by the
 absence of orthopyroxene, absence of quartz, presence of olivine, and
 typically contains some feldspathoid mineral, alkali feldspar or
@@ -8637,11 +10423,6 @@ phlogopite in the groundmass. Feldspar phenocrysts typically are
 labradorite to andesine in composition. Augite is rich in titanium
 compared to augite in tholeiitic basalt. Alkali olivine basalt is
 relatively rich in sodium.
-- The definition of tholeiite and alkali basalt here are more
-prescriptive than those found in most reference authorities. This is
-to actually provide some descriptive criteria to allow assignment of
-rocks on a hand sample basis to the tholeiite or alkali basalt
-categories if detailed petrographic or chemical data are available.
 
 - **Source:**
 http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43.
@@ -9321,6 +11102,7 @@ LeMaitre et al. 2002
 
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
+ [`rock`](#rock)
  [`Fragmental_Igneous_Material`](#fragmental_igneous_material)
 
 - Igneous rock in which greater than 75 percent of the rock consists
@@ -9333,6 +11115,64 @@ intrusive breccias. Excludes deposits reworked by epiclastic processes
 This vocabulary
 
 - Concept URI token: Fragmental_Igneous_Rock
+
+
+[]{#pyroclastic_rock}
+
+######  pyroclastic rock
+
+
+- Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
+ [`Volcanic_Rock`](#volcanic_rock)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Fragmental igneous rock that consists of greater than 75 percent
+fragments produced as a direct result of eruption or extrusion of
+magma from within the earth onto its surface. Includes autobreccia
+associated with lava flows and excludes deposits reworked by
+epiclastic processes.
+
+- **Source:**
+based on LeMaitre et al. 2002
+
+- Concept URI token: Pyroclastic_Rock
+
+
+[]{#ash_tuff_lapillistone_and_lapilli_tuff}
+
+#######  ash tuff lapillistone and lapilli tuff
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which less than 25 percent of rock by volume are
+more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and
+lapillistone.
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+
+
+[]{#tuff_breccia_agglomerate_or_pyroclastic_breccia}
+
+#######  tuff breccia agglomerate or pyroclastic breccia
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which greater than 25 percent of particles are
+greater than 64 mm in largest dimension. Includes agglomerate,
+pyroclastic breccia of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
 
 
 []{#glass_rich_igneous_rock}
@@ -9359,10 +11199,10 @@ This vocabulary, based on Gillespie and Styles 1999
 - Child of:
  [`Glass_Rich_Igneous_Rock`](#glass_rich_igneous_rock)
 
-- Igneous rock that consists of greater than 80 percent massive glass.
 - Note that this category is used for massive glassy rocks. Much of
 the pyroclastic material in a pyroclastic rock may be composed of
 glass, but the rock is named based on its fragmental nature.
+- Igneous rock that consists of greater than 80 percent massive glass.
 
 - **Source:**
 This vocabulary
@@ -9415,6 +11255,10 @@ after LeMaitre et al. 2002
  [`Fine_Grained_Igneous_Rock`](#fine_grained_igneous_rock)
  [`Intermediate_Composition_Igneous_Rock`](#intermediate_composition_igneous_rock)
 
+- Note the mela-andesite and leuco-basalt categories are not
+recommended in this system. If chemical analytical data are available
+to constrain the silica content, the basalt or andesite category
+should be used.
 - Fine-grained igneous rock with less than 20 percent quartz and less
 than 10 percent feldspathoid minerals in the QAPF fraction, in which
 the ratio of plagioclase to total feldspar is greater 0.65. Includes
@@ -9428,10 +11272,6 @@ than 35 percent mafic minerals by volume or greater than 40 percent
 mafic minerals by weight. Typically consists of plagioclase
 (frequently zoned from labradorite to oligoclase), pyroxene,
 hornblende and/or biotite. Fine grained equivalent of dioritic rock.
-- Note the mela-andesite and leuco-basalt categories are not
-recommended in this system. If chemical analytical data are available
-to constrain the silica content, the basalt or andesite category
-should be used.
 
 - **Source:**
 after LeMaitre et al. 2002
@@ -9662,6 +11502,14 @@ Neuendorf et al. 2005
 - Child of:
  [`Phaneritic_Igneous_Rock`](#phaneritic_igneous_rock)
 
+- Anorthositic rock term invented to label the combined QAPF fields
+10, 10*, and 10', in order to construct hierarchy in this vocabulary.
+- Leucocratic phaneritic crystalline igneous rock consisting
+essentially of plagioclase, often with small amounts of pyroxene. By
+definition, colour index M is less than 10, and plagiclase to total
+feldspar ratio is greater than 0.9. Less than 20 percent quartz and
+less than 10 percent feldspathoid in the QAPF fraction. QAPF field 10,
+10*, and 10'.
 - Anorthositic rock term invented to label the combined QAPF fields
 10, 10*, and 10', in order to construct hierarchy in this vocabulary.
 - Leucocratic phaneritic crystalline igneous rock consisting
@@ -10168,12 +12016,12 @@ LeMaitre et al. 2002
 - Child of:
  [`Gabbroic_Rock`](#gabbroic_rock)
 
-- Gabbroic rock that contains between 0 and 5 percent quartz and no
-feldspathoid mineral in the QAPF fraction. Includes rocks defined
-modally in QAPF Field 10 as gabbro.
 - Note that this category includes gabbro (sensu stricto) of LeMaitre
 et al. 2002, but is broader, including the other rock types defined by
 orthopyroxene-clinopyroxene-olivine-hornblende mineral ratios.
+- Gabbroic rock that contains between 0 and 5 percent quartz and no
+feldspathoid mineral in the QAPF fraction. Includes rocks defined
+modally in QAPF Field 10 as gabbro.
 
 - **Source:**
 LeMaitre et al. 2002
@@ -10888,6 +12736,93 @@ crystals set in abundant glass. Includes komatiite and meimechite.
 LeMaitre et al. 2002
 
 - Concept URI token: Komatiitic_Rock
+
+
+[]{#volcanic_rock}
+
+#####  volcanic rock
+* `volcanic rock`
+
+
+- Child of:
+ [`Igneous_Rock`](#igneous_rock)
+ [`Volcanic_Material`](#volcanic_material)
+
+- Rock that exhibits direct evidence of extrusive igneous processes in
+its genesis.
+- Concept URI token: Volcanic_Rock
+
+
+[]{#pyroclastic_rock}
+
+######  pyroclastic rock
+
+
+- Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
+ [`Volcanic_Rock`](#volcanic_rock)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Fragmental igneous rock that consists of greater than 75 percent
+fragments produced as a direct result of eruption or extrusion of
+magma from within the earth onto its surface. Includes autobreccia
+associated with lava flows and excludes deposits reworked by
+epiclastic processes.
+
+- **Source:**
+based on LeMaitre et al. 2002
+
+- Concept URI token: Pyroclastic_Rock
+
+
+[]{#ash_tuff_lapillistone_and_lapilli_tuff}
+
+#######  ash tuff lapillistone and lapilli tuff
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which less than 25 percent of rock by volume are
+more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and
+lapillistone.
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+
+
+[]{#tuff_breccia_agglomerate_or_pyroclastic_breccia}
+
+#######  tuff breccia agglomerate or pyroclastic breccia
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which greater than 25 percent of particles are
+greater than 64 mm in largest dimension. Includes agglomerate,
+pyroclastic breccia of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
+
+
+[]{#lava}
+
+######  Lava
+* `Lava`
+
+
+- Child of:
+ [`Volcanic_Rock`](#volcanic_rock)
+
+- Volcanic Rock with features indicating origin by extrusive lava
+flow.
+- Concept URI token: Lava
 
 
 []{#acidic_igneous_material}
@@ -11191,18 +13126,12 @@ after LeMaitre et al. 2002
 []{#basic_igneous_rock}
 
 #####  basic igneous rock
-* `doleritic rock`
 
 
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
  [`Basic_Igneous_Material`](#basic_igneous_material)
 
-- Dark colored gabbroic (basaltic) or dioritic (andesitic) rock
-intermediate in grain size between basalt and gabbro and composed of
-plagioclase, pyroxene and opaque minerals; often with ophitic texture.
-Typically occurs as hypabyssal intrusions. Includes dolerite,
-microdiorite, diabase and microgabbro.
 - Igneous rock with between 45 and 52 percent SiO2.
 
 - **Source:**
@@ -11249,6 +13178,11 @@ after LeMaitre et al. 2002
 - Child of:
  [`Basalt`](#basalt)
 
+- The definition of tholeiite and alkali basalt here are more
+prescriptive than those found in most reference authorities. This is
+to actually provide some descriptive criteria to allow assignment of
+rocks on a hand sample basis to the tholeiite or alkali basalt
+categories if detailed petrographic or chemical data are available.
 - Alkali olivine basalt is silica-undersaturated, characterized by the
 absence of orthopyroxene, absence of quartz, presence of olivine, and
 typically contains some feldspathoid mineral, alkali feldspar or
@@ -11256,11 +13190,6 @@ phlogopite in the groundmass. Feldspar phenocrysts typically are
 labradorite to andesine in composition. Augite is rich in titanium
 compared to augite in tholeiitic basalt. Alkali olivine basalt is
 relatively rich in sodium.
-- The definition of tholeiite and alkali basalt here are more
-prescriptive than those found in most reference authorities. This is
-to actually provide some descriptive criteria to allow assignment of
-rocks on a hand sample basis to the tholeiite or alkali basalt
-categories if detailed petrographic or chemical data are available.
 
 - **Source:**
 http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43.
@@ -11344,12 +13273,12 @@ LeMaitre et al. 2002
 - Child of:
  [`Gabbroic_Rock`](#gabbroic_rock)
 
-- Gabbroic rock that contains between 0 and 5 percent quartz and no
-feldspathoid mineral in the QAPF fraction. Includes rocks defined
-modally in QAPF Field 10 as gabbro.
 - Note that this category includes gabbro (sensu stricto) of LeMaitre
 et al. 2002, but is broader, including the other rock types defined by
 orthopyroxene-clinopyroxene-olivine-hornblende mineral ratios.
+- Gabbroic rock that contains between 0 and 5 percent quartz and no
+feldspathoid mineral in the QAPF fraction. Includes rocks defined
+modally in QAPF Field 10 as gabbro.
 
 - **Source:**
 LeMaitre et al. 2002
@@ -11399,6 +13328,7 @@ CGI concept definition task group
 
 - Child of:
  [`Igneous_Rock`](#igneous_rock)
+ [`rock`](#rock)
  [`Fragmental_Igneous_Material`](#fragmental_igneous_material)
 
 - Igneous rock in which greater than 75 percent of the rock consists
@@ -11411,6 +13341,64 @@ intrusive breccias. Excludes deposits reworked by epiclastic processes
 This vocabulary
 
 - Concept URI token: Fragmental_Igneous_Rock
+
+
+[]{#pyroclastic_rock}
+
+######  pyroclastic rock
+
+
+- Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
+ [`Volcanic_Rock`](#volcanic_rock)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Fragmental igneous rock that consists of greater than 75 percent
+fragments produced as a direct result of eruption or extrusion of
+magma from within the earth onto its surface. Includes autobreccia
+associated with lava flows and excludes deposits reworked by
+epiclastic processes.
+
+- **Source:**
+based on LeMaitre et al. 2002
+
+- Concept URI token: Pyroclastic_Rock
+
+
+[]{#ash_tuff_lapillistone_and_lapilli_tuff}
+
+#######  ash tuff lapillistone and lapilli tuff
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which less than 25 percent of rock by volume are
+more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and
+lapillistone.
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+
+
+[]{#tuff_breccia_agglomerate_or_pyroclastic_breccia}
+
+#######  tuff breccia agglomerate or pyroclastic breccia
+
+
+- Child of:
+ [`Pyroclastic_Rock`](#pyroclastic_rock)
+
+- Pyroclastic rock in which greater than 25 percent of particles are
+greater than 64 mm in largest dimension. Includes agglomerate,
+pyroclastic breccia of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
 
 
 []{#pyroclastic_material}
@@ -11437,6 +13425,7 @@ LeMaitre et al. 2002
 
 
 - Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
  [`Volcanic_Rock`](#volcanic_rock)
  [`Pyroclastic_Material`](#pyroclastic_material)
 
@@ -11491,11 +13480,18 @@ Schmid 1981; LeMaitre et al. 2002
 []{#tephra}
 
 ######  Tephra
+* `tephra`
 
 
 - Child of:
+ [`sediment`](#sediment)
  [`Pyroclastic_Material`](#pyroclastic_material)
 
+- Unconsolidated pyroclastic material in which greater than 75 percent
+of the fragments are deposited as a direct result of volcanic
+processes and the deposit has not been reworked by epiclastic
+processes. Includes ash, lapilli tephra, bomb tephra, block tephra and
+unconsolidated agglomerate.
 
 - **Source:**
 Hallsworth and Knox 1999; LeMaitre et al. 2002
@@ -11580,6 +13576,10 @@ after LeMaitre et al. 2002
  [`Fine_Grained_Igneous_Rock`](#fine_grained_igneous_rock)
  [`Intermediate_Composition_Igneous_Rock`](#intermediate_composition_igneous_rock)
 
+- Note the mela-andesite and leuco-basalt categories are not
+recommended in this system. If chemical analytical data are available
+to constrain the silica content, the basalt or andesite category
+should be used.
 - Fine-grained igneous rock with less than 20 percent quartz and less
 than 10 percent feldspathoid minerals in the QAPF fraction, in which
 the ratio of plagioclase to total feldspar is greater 0.65. Includes
@@ -11593,10 +13593,6 @@ than 35 percent mafic minerals by volume or greater than 40 percent
 mafic minerals by weight. Typically consists of plagioclase
 (frequently zoned from labradorite to oligoclase), pyroxene,
 hornblende and/or biotite. Fine grained equivalent of dioritic rock.
-- Note the mela-andesite and leuco-basalt categories are not
-recommended in this system. If chemical analytical data are available
-to constrain the silica content, the basalt or andesite category
-should be used.
 
 - **Source:**
 after LeMaitre et al. 2002
@@ -11812,11 +13808,15 @@ origin. Consolidated or non-consolidated {@en}
 []{#volcanic_rock}
 
 #####  volcanic rock
+* `volcanic rock`
 
 
 - Child of:
+ [`Igneous_Rock`](#igneous_rock)
  [`Volcanic_Material`](#volcanic_material)
 
+- Rock that exhibits direct evidence of extrusive igneous processes in
+its genesis.
 - Concept URI token: Volcanic_Rock
 
 
@@ -11826,6 +13826,7 @@ origin. Consolidated or non-consolidated {@en}
 
 
 - Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
  [`Volcanic_Rock`](#volcanic_rock)
  [`Pyroclastic_Material`](#pyroclastic_material)
 
@@ -11915,6 +13916,7 @@ LeMaitre et al. 2002
 
 
 - Child of:
+ [`Fragmental_Igneous_Rock`](#fragmental_igneous_rock)
  [`Volcanic_Rock`](#volcanic_rock)
  [`Pyroclastic_Material`](#pyroclastic_material)
 
@@ -11969,11 +13971,18 @@ Schmid 1981; LeMaitre et al. 2002
 []{#tephra}
 
 ######  Tephra
+* `tephra`
 
 
 - Child of:
+ [`sediment`](#sediment)
  [`Pyroclastic_Material`](#pyroclastic_material)
 
+- Unconsolidated pyroclastic material in which greater than 75 percent
+of the fragments are deposited as a direct result of volcanic
+processes and the deposit has not been reworked by epiclastic
+processes. Includes ash, lapilli tephra, bomb tephra, block tephra and
+unconsolidated agglomerate.
 
 - **Source:**
 Hallsworth and Knox 1999; LeMaitre et al. 2002
@@ -12022,7 +14031,7 @@ Schmid 1981; LeMaitre et al. 2002
 
 
 - Child of:
- [`Rock_Material`](#rock_material)
+ [`rockorsediment`](#rockorsediment)
 
 - Material formed by accumulation of solid fragmental material
 deposited by air, water or ice, or material that accumulated by other
@@ -12047,12 +14056,16 @@ SLTTs 2004
 
 
 - Child of:
+ [`sediment`](#sediment)
  [`Sedimentary_Material`](#sedimentary_material)
 
 - Sedimentary material that consists of at least 50 percent material
 produced by inorganic chemical processes within the basin of
 deposition. Includes inorganic siliceous, carbonate, evaporite, iron-
-rich, and phosphatic sediment classes.
+rich, and phosphatic sediment classes, as well as chemical sediments
+associated with submarine hot springs ('black smokers'). Note that
+these sediments might crystallize as a solid as they are deposited,
+thus similar to rock....
 
 - **Source:**
 SLTTs 2004
@@ -12245,6 +14258,11 @@ Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., a
  [`rock`](#rock)
  [`Sedimentary_Material`](#sedimentary_material)
 
+- Rock formed by accumulation and cementation of solid fragmental
+material deposited by air, water or ice, or as a result of other
+natural agents, such as precipitation from solution, the accumulation
+of organic material, or from biogenic processes, including secretion
+by organisms. Includes epiclastic deposits.
 
 - **Source:**
 SLTTs 2004
@@ -12420,8 +14438,6 @@ Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., a
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that consists of greater than 50 percent carbonate minerals
-of any origin in the mud size fraction.
 - Not a subcategory of carbonate sedimentary rock because definition
 does not specify 'carbonate minerals of intrabasinal origin', but is
 agnostic on origin of carbonate. Schnurrenberger et al. 2003 point out
@@ -12433,6 +14449,8 @@ good one to use in a general purpose classification system.
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Mudstone that consists of greater than 50 percent carbonate minerals
+of any origin in the mud size fraction.
 
 - **Alternate labels:**
 marlstone
@@ -12665,11 +14683,11 @@ This vocabulary
 - Child of:
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
 
+- Note that this category overlaps with 'carbonate mudstone'.
 - Carbonate sedimentary rock with discernible grain supported
 depositional texture, containing greater than 10 percent grains, and
 constituent particles are of intrabasinal origin; intergranular spaces
 are filled by matrix.
-- Note that this category overlaps with 'carbonate mudstone'.
 
 - **Source:**
 Hallsworth and Knox 1999
@@ -12808,10 +14826,6 @@ Dunham 1962
  [`Sedimentary_Rock`](#sedimentary_rock)
  [`Clastic_Sedimentary_Material`](#clastic_sedimentary_material)
 
-- Sedimentary rock in which at least 50 percent of the constituent
-particles were derived from erosion, weathering, or mass-wasting of
-pre-existing earth materials, and transported to the place of
-deposition by mechanical agents such as water, wind, ice and gravity.
 - The conglomerate, sandstone, mudstone, and wackestone categories are
 not defined as kinds of clastic sedimentary rocks because rocks
 meeting their purely grainsize based definitions might also be iron-
@@ -12826,6 +14840,10 @@ carbonate mudstone terminology may be dermined by a priori knowledge
 about the rock being categorized. If it is associated with other
 clastic rocks, the clastic categories will be favored, if with
 cabonate rocks, the carbonate categories will be favored.
+- Sedimentary rock in which at least 50 percent of the constituent
+particles were derived from erosion, weathering, or mass-wasting of
+pre-existing earth materials, and transported to the place of
+deposition by mechanical agents such as water, wind, ice and gravity.
 
 - **Source:**
 SLTTs 2004; Neuendorf et al. 2005
@@ -12865,6 +14883,9 @@ Fairbridge and Bourgeois 1978
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Conglomerate`](#generic_conglomerate)
 
+- Note this category is equivalent to category labeled 'Conglomeratic
+rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
+that system.
 - Clastic sedimentary rock composed of at least 30 percent rounded to
 subangular fragments larger than 2 mm in diameter; typically contains
 finer grained material in interstices between larger fragments. If
@@ -12873,9 +14894,6 @@ clastic or diagenetic origin and the fabric is matrix supported, may
 also be categorized as wackestone. If rock has unsorted or poorly
 sorted texture with a wide range of particle sizes, may also be
 categorized as diamictite.
-- Note this category is equivlanet to category labeled 'Conglomeratic
-rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
-that system.
 
 - **Alternate labels:**
 conglomeratic rock
@@ -12896,8 +14914,6 @@ Neuendorf et al. 2005; SLTTs 2004
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Clastic sedimentary rock consisting of less than 30 percent gravel-
-size (2 mm) particles and with a mud to sand ratio greater than 1.
 - Distinction of intrabasinal, diagenetic, or clastic genesis for very
 fine-grained carbonate minerals is interpretive in many cases. If
 there is uncertainty on the mudstone category based on intrabasinal vs
@@ -12912,6 +14928,8 @@ labeled 'Mudstone' adopted by that system from Folk (1954).
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Clastic sedimentary rock consisting of less than 30 percent gravel-
+size (2 mm) particles and with a mud to sand ratio greater than 1.
 
 - **Alternate labels:**
 clastic mudstone, 
@@ -12949,10 +14967,10 @@ This vocabulary
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Laminated mudstone that will part or break along thin, closely
-spaced layers parallel to stratification.
 - Note definition does not specify carbonate vs. siliclastic nature of
 mud.
+- Laminated mudstone that will part or break along thin, closely
+spaced layers parallel to stratification.
 
 - **Source:**
 NADM SLTT sedimentary, 2004
@@ -12968,9 +14986,8 @@ NADM SLTT sedimentary, 2004
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Mudstone that contains detectable silt. (see comments)
-- Use of 'dectable silt' in the criteria for this category is based on
-the observation that in practice, distinction of claystone from
+- Use of 'detectable silt' in the criteria for this category is based
+on the observation that in practice, distinction of claystone from
 'siltstone' is typically based on a qualitative assessment of
 'grittiness' (e.g. rubbing with fingers, or chewing); the property
 that these tests can determine is the presence or absence of silty
@@ -12978,6 +14995,7 @@ particles in the material. Quantitative grain size analysis in the the
 clay/silt fraction of a lithified sediment is difficult at best, and
 of questionable significance because diagensis has altered the size
 and mineralogy of original sedimentary particles.
+- Mudstone that contains detectable silt. (see comments)
 
 - **Alternate labels:**
 Silt bearing mudstone
@@ -12998,12 +15016,12 @@ This vocabulary
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Sandstone`](#generic_sandstone)
 
-- Clastic sedimentary rock in which less than 30 percent of particles
-are greater than 2 mm in diameter (gravel) and the sand to mud ratio
-is at least 1.
 - Note this category is equivalent to cagetory labeled 'sandy rock' in
 SLTTs (2004), not to the much more restricted category labeled
 'Sandstone' in that system.
+- Clastic sedimentary rock in which less than 30 percent of particles
+are greater than 2 mm in diameter (gravel) and the sand to mud ratio
+is at least 1.
 
 - **Alternate labels:**
 clastic sandstone, 
@@ -13044,9 +15062,6 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 - Child of:
  [`Clastic_Sandstone`](#clastic_sandstone)
 
-- Clastic sandstone with more than 10 percent matrix of indeterminate
-detrital or diagenetic nature. Matrix is mud size silicate minerals
-(clay, feldspar, quartz, rock fragments, and alteration products).
 - Distinction from mudstone is based on inference that less that 50
 percent of the mud size fraction (matrix) is original mud size
 detrital particles. May also grade into diamictite or conglomerate
@@ -13061,6 +15076,9 @@ interpretation of undiscernible matrix in diagenetically altered
 lithic clastic rocks. Dickinson, W.R., 1970, Interpreting detrital
 modes of graywacke and arkose: Journal of Sedimentary Petrology, v.
 40, p. 695-707.
+- Clastic sandstone with more than 10 percent matrix of indeterminate
+detrital or diagenetic nature. Matrix is mud size silicate minerals
+(clay, feldspar, quartz, rock fragments, and alteration products).
 
 - **Source:**
 Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p.
@@ -13100,6 +15118,9 @@ Neuendorf et al. 2005; SLTTs 2004; particle sizes defined from Krumbein phi scal
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Conglomerate`](#generic_conglomerate)
 
+- Note this category is equivalent to category labeled 'Conglomeratic
+rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
+that system.
 - Clastic sedimentary rock composed of at least 30 percent rounded to
 subangular fragments larger than 2 mm in diameter; typically contains
 finer grained material in interstices between larger fragments. If
@@ -13108,9 +15129,6 @@ clastic or diagenetic origin and the fabric is matrix supported, may
 also be categorized as wackestone. If rock has unsorted or poorly
 sorted texture with a wide range of particle sizes, may also be
 categorized as diamictite.
-- Note this category is equivlanet to category labeled 'Conglomeratic
-rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
-that system.
 
 - **Alternate labels:**
 conglomeratic rock
@@ -13157,8 +15175,6 @@ Pettijohn et al. 1987 referenced in Hallsworth and Knox 1999; extrapolated from 
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that consists of greater than 50 percent carbonate minerals
-of any origin in the mud size fraction.
 - Not a subcategory of carbonate sedimentary rock because definition
 does not specify 'carbonate minerals of intrabasinal origin', but is
 agnostic on origin of carbonate. Schnurrenberger et al. 2003 point out
@@ -13170,6 +15186,8 @@ good one to use in a general purpose classification system.
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Mudstone that consists of greater than 50 percent carbonate minerals
+of any origin in the mud size fraction.
 
 - **Alternate labels:**
 marlstone
@@ -13217,8 +15235,6 @@ This vocabulary
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Clastic sedimentary rock consisting of less than 30 percent gravel-
-size (2 mm) particles and with a mud to sand ratio greater than 1.
 - Distinction of intrabasinal, diagenetic, or clastic genesis for very
 fine-grained carbonate minerals is interpretive in many cases. If
 there is uncertainty on the mudstone category based on intrabasinal vs
@@ -13233,6 +15249,8 @@ labeled 'Mudstone' adopted by that system from Folk (1954).
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Clastic sedimentary rock consisting of less than 30 percent gravel-
+size (2 mm) particles and with a mud to sand ratio greater than 1.
 
 - **Alternate labels:**
 clastic mudstone, 
@@ -13270,10 +15288,10 @@ This vocabulary
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Laminated mudstone that will part or break along thin, closely
-spaced layers parallel to stratification.
 - Note definition does not specify carbonate vs. siliclastic nature of
 mud.
+- Laminated mudstone that will part or break along thin, closely
+spaced layers parallel to stratification.
 
 - **Source:**
 NADM SLTT sedimentary, 2004
@@ -13289,9 +15307,8 @@ NADM SLTT sedimentary, 2004
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Mudstone that contains detectable silt. (see comments)
-- Use of 'dectable silt' in the criteria for this category is based on
-the observation that in practice, distinction of claystone from
+- Use of 'detectable silt' in the criteria for this category is based
+on the observation that in practice, distinction of claystone from
 'siltstone' is typically based on a qualitative assessment of
 'grittiness' (e.g. rubbing with fingers, or chewing); the property
 that these tests can determine is the presence or absence of silty
@@ -13299,6 +15316,7 @@ particles in the material. Quantitative grain size analysis in the the
 clay/silt fraction of a lithified sediment is difficult at best, and
 of questionable significance because diagensis has altered the size
 and mineralogy of original sedimentary particles.
+- Mudstone that contains detectable silt. (see comments)
 
 - **Alternate labels:**
 Silt bearing mudstone
@@ -13359,11 +15377,11 @@ Dunham 1962
 - Child of:
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that contains less than 10 percent carbonate minerals.
 - Operational distinction of this category will typically be based on
 whether or not the rock fizzes when hydrochloric acid is applied--the
 rock is silicate mudstone if it does not fizz. The quantitative '10
 percent' criteria is fuzzy.
+- Mudstone that contains less than 10 percent carbonate minerals.
 
 - **Source:**
 This vocabulary
@@ -13399,12 +15417,12 @@ SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scal
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Sandstone`](#generic_sandstone)
 
-- Clastic sedimentary rock in which less than 30 percent of particles
-are greater than 2 mm in diameter (gravel) and the sand to mud ratio
-is at least 1.
 - Note this category is equivalent to cagetory labeled 'sandy rock' in
 SLTTs (2004), not to the much more restricted category labeled
 'Sandstone' in that system.
+- Clastic sedimentary rock in which less than 30 percent of particles
+are greater than 2 mm in diameter (gravel) and the sand to mud ratio
+is at least 1.
 
 - **Alternate labels:**
 clastic sandstone, 
@@ -13445,9 +15463,6 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 - Child of:
  [`Clastic_Sandstone`](#clastic_sandstone)
 
-- Clastic sandstone with more than 10 percent matrix of indeterminate
-detrital or diagenetic nature. Matrix is mud size silicate minerals
-(clay, feldspar, quartz, rock fragments, and alteration products).
 - Distinction from mudstone is based on inference that less that 50
 percent of the mud size fraction (matrix) is original mud size
 detrital particles. May also grade into diamictite or conglomerate
@@ -13462,6 +15477,9 @@ interpretation of undiscernible matrix in diagenetically altered
 lithic clastic rocks. Dickinson, W.R., 1970, Interpreting detrital
 modes of graywacke and arkose: Journal of Sedimentary Petrology, v.
 40, p. 695-707.
+- Clastic sandstone with more than 10 percent matrix of indeterminate
+detrital or diagenetic nature. Matrix is mud size silicate minerals
+(clay, feldspar, quartz, rock fragments, and alteration products).
 
 - **Source:**
 Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p.
@@ -13700,13 +15718,24 @@ HallsworthandKnox 1999, Jackson 1997
 
 []{#sediment}
 
-####  sediment
+####  Sediment
 
 
 - Child of:
  [`Natural_Unconsolidated_Material`](#natural_unconsolidated_material)
  [`Sedimentary_Material`](#sedimentary_material)
 
+- Solid granular material transported by wind, water, or gravity, not
+modified by interaction with biosphere or atmosphere (to differentiate
+from soil). Particles derived by erosion of pre-existing rock, from
+shell or other body parts from organisms, precipitated chemically in
+the surficial environment, or generated by explosive volcanic
+activity.
+(http://resource.geosciml.org/classifier/cgi/lithology/sediment).
+Sediment is not consolidated, i.e. Particulate constituents of a
+compound material do not adhere to each other strongly enough that the
+aggregate can be considered a solid material in its own right. Similar
+to http://purl.obolibrary.org/obo/ENVO_00002007
 - Unconsolidated material consisting of an aggregation of particles
 transported or deposited by air, water or ice, or that accumulated by
 other natural agents, such as chemical precipitation, and that forms
@@ -13749,12 +15778,12 @@ SLTTs 2004
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Mud_Size_Sediment`](#mud_size_sediment)
 
-- Biogenic sediment consisting of less than 1 percent gravel-size
-(greater than or equal to 2 mm) particles, with a sand to mud ratio
-less than 1 to 9, and less than 50 percent carbonate minerals.
 - Neuendorf et al. 2005 put cutoff at 30 percent skeletal remains;
 this is raised to 50 percent in This vocabulary for consistency with
 definition of other Biogenic sediment category
+- Biogenic sediment consisting of less than 1 percent gravel-size
+(greater than or equal to 2 mm) particles, with a sand to mud ratio
+less than 1 to 9, and less than 50 percent carbonate minerals.
 
 - **Alternate labels:**
 biogenic mud
@@ -13793,7 +15822,7 @@ This vocabulary
  [`Ooze`](#ooze)
  [`Silicate_Mud`](#silicate_mud)
 
-- ooze that consists of more than 50 percent siliceous skeletal
+- Ooze that consists of more than 50 percent siliceous skeletal
 remains
 
 - **Source:**
@@ -13811,14 +15840,14 @@ This vocabulary
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Organic_Rich_Sedimentary_Material`](#organic_rich_sedimentary_material)
 
-- Sediment with color, composition, texture and apparent density
-indicating greater than 50 percent organic content by weight on a
-moisture-free basis.
 - The broader relation from organic rich sediment to biogenic sediment
 is based on the inference that organic rich material is always
 biogenic in origin. Biogenic is a broader category because not all
 biogenic materials are organic rich, for example shells or phosphatic
 bone.
+- Sediment with color, composition, texture and apparent density
+indicating greater than 50 percent organic content by weight on a
+moisture-free basis.
 
 - **Source:**
 SLTTs 2004
@@ -14191,6 +16220,204 @@ This vocabulary
 - Concept URI token: Pure_Dolomitic_Sediment
 
 
+[]{#chemical_sedimentary_material}
+
+#####  chemical sedimentary material
+
+
+- Child of:
+ [`sediment`](#sediment)
+ [`Sedimentary_Material`](#sedimentary_material)
+
+- Sedimentary material that consists of at least 50 percent material
+produced by inorganic chemical processes within the basin of
+deposition. Includes inorganic siliceous, carbonate, evaporite, iron-
+rich, and phosphatic sediment classes, as well as chemical sediments
+associated with submarine hot springs ('black smokers'). Note that
+these sediments might crystallize as a solid as they are deposited,
+thus similar to rock....
+
+- **Source:**
+SLTTs 2004
+
+- Concept URI token: Chemical_Sedimentary_Material
+
+
+[]{#evaporite}
+
+######  evaporite
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+
+- Nonclastic sedimentary rock composed of at least 50 percent non-
+carbonate salts, including chloride, sulfate or borate minerals;
+formed through precipitation of mineral salts from a saline solution
+(non-carbonate salt rock).
+
+- **Source:**
+Jackson 1997; SLTTs 2004
+
+- Concept URI token: Evaporite
+
+
+[]{#exotic_evaporite}
+
+#######  exotic evaporite
+
+
+- Child of:
+ [`Evaporite`](#evaporite)
+
+- Category represents evaporite material that is not mostly
+gypsum/anhydrite or halite. These are generally not very common, thus
+the 'exotic' name
+- Evaporite that is not 50 percent halite or 50 percent gypsum or
+anhydrite.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Exotic_Evaporite
+
+
+[]{#rock_gypsum_or_anhydrite}
+
+#######  gypsum or anhydrite
+
+
+- Child of:
+ [`Evaporite`](#evaporite)
+
+- Evaporite composed of at least 50 percent gypsum or anhydrite.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Rock_Gypsum_Or_Anhydrite
+
+
+[]{#rock_salt}
+
+#######  rock salt
+
+
+- Child of:
+ [`Evaporite`](#evaporite)
+
+- Evaporite composed of at least 50 percent halite.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Rock_Salt
+
+
+[]{#iron_rich_sedimentary_material}
+
+######  iron rich sedimentary material
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+
+- Sedimentary material of unspecified consolidation state that
+consists of at least 50 percent iron-bearing minerals (hematite,
+magnetite, limonite-group, siderite, iron-sulfides), as determined by
+hand-lens or petrographic analysis. Corresponds to a rock typically
+containing 15 percent iron by weight.
+
+- **Source:**
+SLTTs 2004
+
+- Concept URI token: Iron_Rich_Sedimentary_Material
+
+
+[]{#iron_rich_sediment}
+
+#######  iron rich sediment
+
+
+- Child of:
+ [`sediment`](#sediment)
+ [`Iron_Rich_Sedimentary_Material`](#iron_rich_sedimentary_material)
+
+- Sediment that consists of at least 50 percent iron-bearing minerals
+(hematite, magnetite, limonite-group, siderite, iron-sulfides), as
+determined by hand-lens or petrographic analysis. Corresponds to a
+rock typically containing 15 percent iron by weight.
+
+- **Source:**
+SLTTs 2004
+
+- Concept URI token: Iron_Rich_Sediment
+
+
+[]{#iron_rich_sedimentary_rock}
+
+#######  iron rich sedimentary rock
+
+
+- Child of:
+ [`Sedimentary_Rock`](#sedimentary_rock)
+ [`Iron_Rich_Sedimentary_Material`](#iron_rich_sedimentary_material)
+
+- Sedimentary rock that consists of at least 50 percent iron-bearing
+minerals (hematite, magnetite, limonite-group, siderite, iron-
+sulfides), as determined by hand-lens or petrographic analysis.
+Corresponds to a rock typically containing 15 percent iron by weight.
+
+- **Source:**
+Hallsworth and Knox 1999; SLTTs 2004
+
+- Concept URI token: Iron_Rich_Sedimentary_Rock
+
+
+[]{#sedimentary_massive_sulphide}
+
+######  Sedimentary Massive Sulphide
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+ [`Massive_Sulphide`](#massive_sulphide)
+
+- rock consisting of greater than 50% sulphide or sulfosalt minerals
+formed by sedimentary exhalative processes.
+
+- **Alternate labels:**
+Sedimentary Massive Sulfide
+
+
+- **Source:**
+smr provisional 2020-06-07
+
+- Concept URI token: Sedimentary_Massive_Sulphide
+
+
+[]{#travertine}
+
+######  travertine
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+ [`Limestone`](#limestone)
+
+- Biotically or abiotically precipitated calcium carbonate, from
+spring-fed, heated, or ambient-temperature water. May be white and
+spongy, various shades of orange, tan or gray, and ranges to dense,
+banded or laminated rock. Macrophytes, bryophytes, algae,
+cyanobacteria and other organisms often colonize the surface of
+travertine and may be preserved, to produce the porous varieties.
+
+- **Source:**
+Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., and Folk, R.L., 1984, Travertine: Depositional morphology an dthe bacterially constructed constituents: J. Sed. Petrology, v. 126, p.57-74.
+
+- Concept URI token: Travertine
+
+
 []{#clastic_sediment}
 
 #####  clastic sediment
@@ -14230,6 +16457,8 @@ SLTTs 2004; Neuendorf et al. 2005
 - Child of:
  [`Clastic_Sediment`](#clastic_sediment)
 
+- definition amplified to help distinguish diamicton, conglomerate and
+wackestone in this version
 - Unsorted or poorly sorted, clastic sediment with a wide range of
 particle sizes, including a muddy matrix. Biogenic materials that have
 such texture are excluded. Distinguished from conglomerate, sandstone,
@@ -14237,8 +16466,6 @@ mudstone based on polymodality and lack of structures related to
 transport and deposition of sediment by moving air or water.
 Assignment to an other size class can be used in conjunction to
 indicate the dominant grain size.
-- definition amplified to help distinguish diamicton, conglomerate and
-wackestone in this version
 
 - **Source:**
 Fairbridge and Bourgeois 1978
@@ -14437,6 +16664,10 @@ Wentworth size scale
 - Child of:
  [`sediment`](#sediment)
 
+- Sediment that does not fit any of the other sediment
+composition/genesis categories. Sediment consisting of three or more
+components which form more than 5 percent but less than 50 precent of
+the material.
 
 - **Source:**
 Hallsworth and Knox, 1999
@@ -14472,6 +16703,15 @@ SLTTs 2004
 - Child of:
  [`sediment`](#sediment)
 
+- Sediment consisting of less than 30 percent gravel-size (2 mm)
+particles and with a mud-size to sand-size particle ratio greater than
+1. Clasts may be of any composition or origin.  BGS  (Hallsworth and
+Knox, 1999, p. 9) define the  'upper size limit of mud ... at 32
+micrometers (.032 mm)', but Wentworth scale and Krumbein scale put
+boundary at .064 or .062 mm (inidistinguishable difference in
+rocks...) BGS 'mud-grade sediment' or sedimentary rock definition is
+'over 75% of the clasts smaller than  .032 mm', which is narrower than
+the definition here.
 - Sediment consisting of less than 30 percent gravel-size (2 mm)
 particles and with a mud-size to sand-size particle ratio greater than
 1. Clasts may be of any composition or origin.
@@ -14610,12 +16850,12 @@ based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade s
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Mud_Size_Sediment`](#mud_size_sediment)
 
-- Biogenic sediment consisting of less than 1 percent gravel-size
-(greater than or equal to 2 mm) particles, with a sand to mud ratio
-less than 1 to 9, and less than 50 percent carbonate minerals.
 - Neuendorf et al. 2005 put cutoff at 30 percent skeletal remains;
 this is raised to 50 percent in This vocabulary for consistency with
 definition of other Biogenic sediment category
+- Biogenic sediment consisting of less than 1 percent gravel-size
+(greater than or equal to 2 mm) particles, with a sand to mud ratio
+less than 1 to 9, and less than 50 percent carbonate minerals.
 
 - **Alternate labels:**
 biogenic mud
@@ -14654,7 +16894,7 @@ This vocabulary
  [`Ooze`](#ooze)
  [`Silicate_Mud`](#silicate_mud)
 
-- ooze that consists of more than 50 percent siliceous skeletal
+- Ooze that consists of more than 50 percent siliceous skeletal
 remains
 
 - **Source:**
@@ -14672,7 +16912,7 @@ This vocabulary
  [`Mud_Size_Sediment`](#mud_size_sediment)
 
 - Mud size sediment that consists of less than 50 percent carbonate
-minerals.
+minerals and less than 50 percent clastic particles.
 
 - **Source:**
 This vocabulary
@@ -14689,7 +16929,7 @@ This vocabulary
  [`Ooze`](#ooze)
  [`Silicate_Mud`](#silicate_mud)
 
-- ooze that consists of more than 50 percent siliceous skeletal
+- Ooze that consists of more than 50 percent siliceous skeletal
 remains
 
 - **Source:**
@@ -14707,6 +16947,10 @@ This vocabulary
  [`sediment`](#sediment)
  [`Non_Clastic_Siliceous_Sedimentary_Material`](#non_clastic_siliceous_sedimentary_material)
 
+- Sediment that consists of at least 50 percent silicate mineral
+material, deposited directly by chemical or biological processes at
+the depositional surface, or in particles formed by chemical or
+biological processes within the basin of deposition.
 
 - **Source:**
 NGMDB 2008; Hallsworth and Knox 1999
@@ -14723,6 +16967,8 @@ NGMDB 2008; Hallsworth and Knox 1999
  [`sediment`](#sediment)
  [`Phosphate_Rich_Sedimentary_Material`](#phosphate_rich_sedimentary_material)
 
+- Sediment in which at least 50 percent of the primary and/or
+recrystallized constituents are phosphate minerals.
 
 - **Source:**
 SLTTs 2004
@@ -14738,6 +16984,9 @@ SLTTs 2004
 - Child of:
  [`sediment`](#sediment)
 
+- Sediment in which less than 30 percent of particles are gravel
+(greater than 2 mm in diameter) and the sand to mud ratio is at least
+1. composition or genesis of clasts not specified.
 
 - **Source:**
 Neuendorf et al. 2005 ; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)
@@ -14762,6 +17011,63 @@ least 1. More than half of the particles are of epiclastic origin.
 definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)
 
 - Concept URI token: Sand
+
+
+[]{#tephra}
+
+#####  Tephra
+* `tephra`
+
+
+- Child of:
+ [`sediment`](#sediment)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Unconsolidated pyroclastic material in which greater than 75 percent
+of the fragments are deposited as a direct result of volcanic
+processes and the deposit has not been reworked by epiclastic
+processes. Includes ash, lapilli tephra, bomb tephra, block tephra and
+unconsolidated agglomerate.
+
+- **Source:**
+Hallsworth and Knox 1999; LeMaitre et al. 2002
+
+- Concept URI token: Tephra
+
+
+[]{#ash_and_lapilli}
+
+######  ash and lapilli
+
+
+- Child of:
+ [`Tephra`](#tephra)
+
+- Tephra in which less than 25 percent of fragments are greater than
+64 mm in longest dimension
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_And_Lapilli
+
+
+[]{#ash_breccia_bomb_or_block_tephra}
+
+######  ash breccia bomb or block tephra
+
+
+- Child of:
+ [`Tephra`](#tephra)
+
+- Tephra in which more than 25 percent of particles are greater than
+64 mm in largest dimension. Includes ash breccia, bomb tephra and
+block tephra of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Breccia_Bomb_Or_Block_Tephra
 
 
 []{#carbonate_sedimentary_material}
@@ -15275,8 +17581,6 @@ Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., a
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Mudstone that consists of greater than 50 percent carbonate minerals
-of any origin in the mud size fraction.
 - Not a subcategory of carbonate sedimentary rock because definition
 does not specify 'carbonate minerals of intrabasinal origin', but is
 agnostic on origin of carbonate. Schnurrenberger et al. 2003 point out
@@ -15288,6 +17592,8 @@ good one to use in a general purpose classification system.
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Mudstone that consists of greater than 50 percent carbonate minerals
+of any origin in the mud size fraction.
 
 - **Alternate labels:**
 marlstone
@@ -15520,11 +17826,11 @@ This vocabulary
 - Child of:
  [`Carbonate_Sedimentary_Rock`](#carbonate_sedimentary_rock)
 
+- Note that this category overlaps with 'carbonate mudstone'.
 - Carbonate sedimentary rock with discernible grain supported
 depositional texture, containing greater than 10 percent grains, and
 constituent particles are of intrabasinal origin; intergranular spaces
 are filled by matrix.
-- Note that this category overlaps with 'carbonate mudstone'.
 
 - **Source:**
 Hallsworth and Knox 1999
@@ -16047,6 +18353,8 @@ SLTTs 2004; Neuendorf et al. 2005
 - Child of:
  [`Clastic_Sediment`](#clastic_sediment)
 
+- definition amplified to help distinguish diamicton, conglomerate and
+wackestone in this version
 - Unsorted or poorly sorted, clastic sediment with a wide range of
 particle sizes, including a muddy matrix. Biogenic materials that have
 such texture are excluded. Distinguished from conglomerate, sandstone,
@@ -16054,8 +18362,6 @@ mudstone based on polymodality and lack of structures related to
 transport and deposition of sediment by moving air or water.
 Assignment to an other size class can be used in conjunction to
 indicate the dominant grain size.
-- definition amplified to help distinguish diamicton, conglomerate and
-wackestone in this version
 
 - **Source:**
 Fairbridge and Bourgeois 1978
@@ -16166,10 +18472,6 @@ definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from K
  [`Sedimentary_Rock`](#sedimentary_rock)
  [`Clastic_Sedimentary_Material`](#clastic_sedimentary_material)
 
-- Sedimentary rock in which at least 50 percent of the constituent
-particles were derived from erosion, weathering, or mass-wasting of
-pre-existing earth materials, and transported to the place of
-deposition by mechanical agents such as water, wind, ice and gravity.
 - The conglomerate, sandstone, mudstone, and wackestone categories are
 not defined as kinds of clastic sedimentary rocks because rocks
 meeting their purely grainsize based definitions might also be iron-
@@ -16184,6 +18486,10 @@ carbonate mudstone terminology may be dermined by a priori knowledge
 about the rock being categorized. If it is associated with other
 clastic rocks, the clastic categories will be favored, if with
 cabonate rocks, the carbonate categories will be favored.
+- Sedimentary rock in which at least 50 percent of the constituent
+particles were derived from erosion, weathering, or mass-wasting of
+pre-existing earth materials, and transported to the place of
+deposition by mechanical agents such as water, wind, ice and gravity.
 
 - **Source:**
 SLTTs 2004; Neuendorf et al. 2005
@@ -16223,6 +18529,9 @@ Fairbridge and Bourgeois 1978
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Conglomerate`](#generic_conglomerate)
 
+- Note this category is equivalent to category labeled 'Conglomeratic
+rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
+that system.
 - Clastic sedimentary rock composed of at least 30 percent rounded to
 subangular fragments larger than 2 mm in diameter; typically contains
 finer grained material in interstices between larger fragments. If
@@ -16231,9 +18540,6 @@ clastic or diagenetic origin and the fabric is matrix supported, may
 also be categorized as wackestone. If rock has unsorted or poorly
 sorted texture with a wide range of particle sizes, may also be
 categorized as diamictite.
-- Note this category is equivlanet to category labeled 'Conglomeratic
-rock in SLTTs (2004), not to the category labeled 'Conglomerate' in
-that system.
 
 - **Alternate labels:**
 conglomeratic rock
@@ -16254,8 +18560,6 @@ Neuendorf et al. 2005; SLTTs 2004
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Mudstone`](#generic_mudstone)
 
-- Clastic sedimentary rock consisting of less than 30 percent gravel-
-size (2 mm) particles and with a mud to sand ratio greater than 1.
 - Distinction of intrabasinal, diagenetic, or clastic genesis for very
 fine-grained carbonate minerals is interpretive in many cases. If
 there is uncertainty on the mudstone category based on intrabasinal vs
@@ -16270,6 +18574,8 @@ labeled 'Mudstone' adopted by that system from Folk (1954).
 Schnurrenberger, D., Russell, J. and Kelts, K., 2003, Classification
 of lacustrine sediments based on sedimentary components: Journal of
 Paleolimnology, v.29, p141-154.
+- Clastic sedimentary rock consisting of less than 30 percent gravel-
+size (2 mm) particles and with a mud to sand ratio greater than 1.
 
 - **Alternate labels:**
 clastic mudstone, 
@@ -16307,10 +18613,10 @@ This vocabulary
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Laminated mudstone that will part or break along thin, closely
-spaced layers parallel to stratification.
 - Note definition does not specify carbonate vs. siliclastic nature of
 mud.
+- Laminated mudstone that will part or break along thin, closely
+spaced layers parallel to stratification.
 
 - **Source:**
 NADM SLTT sedimentary, 2004
@@ -16326,9 +18632,8 @@ NADM SLTT sedimentary, 2004
 - Child of:
  [`Clastic_Mudstone`](#clastic_mudstone)
 
-- Mudstone that contains detectable silt. (see comments)
-- Use of 'dectable silt' in the criteria for this category is based on
-the observation that in practice, distinction of claystone from
+- Use of 'detectable silt' in the criteria for this category is based
+on the observation that in practice, distinction of claystone from
 'siltstone' is typically based on a qualitative assessment of
 'grittiness' (e.g. rubbing with fingers, or chewing); the property
 that these tests can determine is the presence or absence of silty
@@ -16336,6 +18641,7 @@ particles in the material. Quantitative grain size analysis in the the
 clay/silt fraction of a lithified sediment is difficult at best, and
 of questionable significance because diagensis has altered the size
 and mineralogy of original sedimentary particles.
+- Mudstone that contains detectable silt. (see comments)
 
 - **Alternate labels:**
 Silt bearing mudstone
@@ -16356,12 +18662,12 @@ This vocabulary
  [`Clastic_Sedimentary_Rock`](#clastic_sedimentary_rock)
  [`Generic_Sandstone`](#generic_sandstone)
 
-- Clastic sedimentary rock in which less than 30 percent of particles
-are greater than 2 mm in diameter (gravel) and the sand to mud ratio
-is at least 1.
 - Note this category is equivalent to cagetory labeled 'sandy rock' in
 SLTTs (2004), not to the much more restricted category labeled
 'Sandstone' in that system.
+- Clastic sedimentary rock in which less than 30 percent of particles
+are greater than 2 mm in diameter (gravel) and the sand to mud ratio
+is at least 1.
 
 - **Alternate labels:**
 clastic sandstone, 
@@ -16402,9 +18708,6 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 - Child of:
  [`Clastic_Sandstone`](#clastic_sandstone)
 
-- Clastic sandstone with more than 10 percent matrix of indeterminate
-detrital or diagenetic nature. Matrix is mud size silicate minerals
-(clay, feldspar, quartz, rock fragments, and alteration products).
 - Distinction from mudstone is based on inference that less that 50
 percent of the mud size fraction (matrix) is original mud size
 detrital particles. May also grade into diamictite or conglomerate
@@ -16419,6 +18722,9 @@ interpretation of undiscernible matrix in diagenetically altered
 lithic clastic rocks. Dickinson, W.R., 1970, Interpreting detrital
 modes of graywacke and arkose: Journal of Sedimentary Petrology, v.
 40, p. 695-707.
+- Clastic sandstone with more than 10 percent matrix of indeterminate
+detrital or diagenetic nature. Matrix is mud size silicate minerals
+(clay, feldspar, quartz, rock fragments, and alteration products).
 
 - **Source:**
 Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p.
@@ -16454,6 +18760,10 @@ SLTTs 2004
  [`sediment`](#sediment)
  [`Non_Clastic_Siliceous_Sedimentary_Material`](#non_clastic_siliceous_sedimentary_material)
 
+- Sediment that consists of at least 50 percent silicate mineral
+material, deposited directly by chemical or biological processes at
+the depositional surface, or in particles formed by chemical or
+biological processes within the basin of deposition.
 
 - **Source:**
 NGMDB 2008; Hallsworth and Knox 1999
@@ -16656,14 +18966,14 @@ Economic commission for Europe, committee on Sustainable Energy- United Nations 
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Organic_Rich_Sedimentary_Material`](#organic_rich_sedimentary_material)
 
-- Sediment with color, composition, texture and apparent density
-indicating greater than 50 percent organic content by weight on a
-moisture-free basis.
 - The broader relation from organic rich sediment to biogenic sediment
 is based on the inference that organic rich material is always
 biogenic in origin. Biogenic is a broader category because not all
 biogenic materials are organic rich, for example shells or phosphatic
 bone.
+- Sediment with color, composition, texture and apparent density
+indicating greater than 50 percent organic content by weight on a
+moisture-free basis.
 
 - **Source:**
 SLTTs 2004
@@ -16741,6 +19051,8 @@ SLTTs 2004
  [`sediment`](#sediment)
  [`Phosphate_Rich_Sedimentary_Material`](#phosphate_rich_sedimentary_material)
 
+- Sediment in which at least 50 percent of the primary and/or
+recrystallized constituents are phosphate minerals.
 
 - **Source:**
 SLTTs 2004
@@ -16769,13 +19081,108 @@ HallsworthandKnox 1999, Jackson 1997
 - Concept URI token: Phosphorite
 
 
-[]{#unconsolidated_material}
 
-###  Unconsolidated material
+[]{#anthropogenic_material}
+
+##  Anthropogenic material
+
+
+- Material known to have artificial (human-related) origin;
+insufficient information to classify in more detail.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Anthropogenic_Material
+
+
+[]{#anthropogenic_unconsolidated_material}
+
+###  Anthropogenic unconsolidated material
 
 
 - Child of:
- [`Rock_Material`](#rock_material)
+ [`Anthropogenic_Material`](#anthropogenic_material)
+ [`Unconsolidated_Material`](#unconsolidated_material)
+
+- Unconsolidated material known to have artificial (human-related)
+origin.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Anthropogenic_Unconsolidated_Material
+
+
+[]{#concrete}
+
+###  Concrete
+
+
+- Child of:
+ [`Anthropogenic_Material`](#anthropogenic_material)
+
+-
+- Concept URI token: Concrete
+
+
+[]{#manufactured_chemical_substance}
+
+###  Manufactured chemical substance
+
+
+- Child of:
+ [`Anthropogenic_Material`](#anthropogenic_material)
+
+- material is an artifically produced sustance consisting of a single
+chemical entity
+- Concept URI token: Manufactured_Chemical_Substance
+
+
+[]{#mineral_processing_product}
+
+###  Mineral processing product
+
+
+- Child of:
+ [`Anthropogenic_Material`](#anthropogenic_material)
+
+- Includes tailings, slag, matte, concentrate etc, materials resulting
+from mineral processing for resource extraction
+- Concept URI token: Mineral_Processing_Product
+
+
+[]{#matte}
+
+####  Matte
+
+
+- Child of:
+ [`Mineral_Processing_Product`](#mineral_processing_product)
+
+- molten metal sulfide phases typically formed during smelting of
+copper, nickel, and other base metals
+(https://en.wikipedia.org/wiki/Matte_(metallurgy) )
+- Concept URI token: Matte
+
+
+[]{#slag}
+
+####  Slag
+
+
+- Child of:
+ [`Mineral_Processing_Product`](#mineral_processing_product)
+
+-
+- Concept URI token: Slag
+
+
+
+[]{#unconsolidated_material}
+
+##  Unconsolidated material
+
 
 - compoundMaterial composed of an aggregation of particles that do not
 adhere to each other strongly enough that the aggregate can be
@@ -16789,7 +19196,7 @@ This vocabulary
 
 []{#anthropogenic_unconsolidated_material}
 
-####  Anthropogenic unconsolidated material
+###  Anthropogenic unconsolidated material
 
 
 - Child of:
@@ -16807,7 +19214,7 @@ This vocabulary
 
 []{#natural_unconsolidated_material}
 
-####  Natural unconsolidated material
+###  Natural unconsolidated material
 
 
 - Child of:
@@ -16824,13 +19231,24 @@ This vocabulary
 
 []{#sediment}
 
-#####  sediment
+####  Sediment
 
 
 - Child of:
  [`Natural_Unconsolidated_Material`](#natural_unconsolidated_material)
  [`Sedimentary_Material`](#sedimentary_material)
 
+- Solid granular material transported by wind, water, or gravity, not
+modified by interaction with biosphere or atmosphere (to differentiate
+from soil). Particles derived by erosion of pre-existing rock, from
+shell or other body parts from organisms, precipitated chemically in
+the surficial environment, or generated by explosive volcanic
+activity.
+(http://resource.geosciml.org/classifier/cgi/lithology/sediment).
+Sediment is not consolidated, i.e. Particulate constituents of a
+compound material do not adhere to each other strongly enough that the
+aggregate can be considered a solid material in its own right. Similar
+to http://purl.obolibrary.org/obo/ENVO_00002007
 - Unconsolidated material consisting of an aggregation of particles
 transported or deposited by air, water or ice, or that accumulated by
 other natural agents, such as chemical precipitation, and that forms
@@ -16844,7 +19262,7 @@ SLTTs 2004
 
 []{#biogenic_sediment}
 
-######  biogenic sediment
+#####  biogenic sediment
 
 
 - Child of:
@@ -16866,19 +19284,19 @@ SLTTs 2004
 
 []{#ooze}
 
-#######  ooze
+######  ooze
 
 
 - Child of:
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Mud_Size_Sediment`](#mud_size_sediment)
 
-- Biogenic sediment consisting of less than 1 percent gravel-size
-(greater than or equal to 2 mm) particles, with a sand to mud ratio
-less than 1 to 9, and less than 50 percent carbonate minerals.
 - Neuendorf et al. 2005 put cutoff at 30 percent skeletal remains;
 this is raised to 50 percent in This vocabulary for consistency with
 definition of other Biogenic sediment category
+- Biogenic sediment consisting of less than 1 percent gravel-size
+(greater than or equal to 2 mm) particles, with a sand to mud ratio
+less than 1 to 9, and less than 50 percent carbonate minerals.
 
 - **Alternate labels:**
 biogenic mud
@@ -16892,7 +19310,7 @@ based on Bates and Jackson 1987 and Hallsworth and Knox 1999
 
 []{#carbonate_ooze}
 
-########  carbonate ooze
+#######  carbonate ooze
 
 
 - Child of:
@@ -16910,14 +19328,14 @@ This vocabulary
 
 []{#siliceous_ooze}
 
-########  siliceous ooze
+#######  siliceous ooze
 
 
 - Child of:
  [`Ooze`](#ooze)
  [`Silicate_Mud`](#silicate_mud)
 
-- ooze that consists of more than 50 percent siliceous skeletal
+- Ooze that consists of more than 50 percent siliceous skeletal
 remains
 
 - **Source:**
@@ -16928,21 +19346,21 @@ This vocabulary
 
 []{#organic_rich_sediment}
 
-#######  organic rich sediment
+######  organic rich sediment
 
 
 - Child of:
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Organic_Rich_Sedimentary_Material`](#organic_rich_sedimentary_material)
 
-- Sediment with color, composition, texture and apparent density
-indicating greater than 50 percent organic content by weight on a
-moisture-free basis.
 - The broader relation from organic rich sediment to biogenic sediment
 is based on the inference that organic rich material is always
 biogenic in origin. Biogenic is a broader category because not all
 biogenic materials are organic rich, for example shells or phosphatic
 bone.
+- Sediment with color, composition, texture and apparent density
+indicating greater than 50 percent organic content by weight on a
+moisture-free basis.
 
 - **Source:**
 SLTTs 2004
@@ -16952,7 +19370,7 @@ SLTTs 2004
 
 []{#peat}
 
-########  peat
+#######  peat
 
 
 - Child of:
@@ -16976,7 +19394,7 @@ Hallsworth and Knox 1999
 
 []{#sapropel}
 
-########  sapropel
+#######  sapropel
 
 
 - Child of:
@@ -16996,7 +19414,7 @@ Neuendorf et al. 2005
 
 []{#carbonate_sediment}
 
-######  carbonate sediment
+#####  carbonate sediment
 
 
 - Child of:
@@ -17016,7 +19434,7 @@ SLTTs 2004
 
 []{#calcareous_carbonate_sediment}
 
-#######  calcareous carbonate sediment
+######  calcareous carbonate sediment
 
 
 - Child of:
@@ -17034,7 +19452,7 @@ after Hallsworth and Knox 1999
 
 []{#impure_calcareous_carbonate_sediment}
 
-########  impure calcareous carbonate sediment
+#######  impure calcareous carbonate sediment
 
 
 - Child of:
@@ -17058,7 +19476,7 @@ This vocabulary
 
 []{#pure_calcareous_carbonate_sediment}
 
-########  pure calcareous carbonate sediment
+#######  pure calcareous carbonate sediment
 
 
 - Child of:
@@ -17082,7 +19500,7 @@ This vocabulary
 
 []{#carbonate_mud}
 
-#######  carbonate mud
+######  carbonate mud
 
 
 - Child of:
@@ -17105,7 +19523,7 @@ follow pattern used for clastic sand and mud categories, based on SLTTs 2004
 
 []{#carbonate_ooze}
 
-########  carbonate ooze
+#######  carbonate ooze
 
 
 - Child of:
@@ -17123,7 +19541,7 @@ This vocabulary
 
 []{#dolomitic_sediment}
 
-#######  dolomitic sediment
+######  dolomitic sediment
 
 
 - Child of:
@@ -17141,7 +19559,7 @@ after SLTTs 2004, Hallsworth and Knox 1999
 
 []{#impure_dolomitic_sediment}
 
-########  impure dolomitic sediment
+#######  impure dolomitic sediment
 
 
 - Child of:
@@ -17165,7 +19583,7 @@ This vocabulary
 
 []{#pure_dolomitic_sediment}
 
-########  pure dolomitic sediment
+#######  pure dolomitic sediment
 
 
 - Child of:
@@ -17185,7 +19603,7 @@ This vocabulary
 
 []{#impure_carbonate_sediment}
 
-#######  impure carbonate sediment
+######  impure carbonate sediment
 
 
 - Child of:
@@ -17207,7 +19625,7 @@ This vocabulary
 
 []{#impure_calcareous_carbonate_sediment}
 
-########  impure calcareous carbonate sediment
+#######  impure calcareous carbonate sediment
 
 
 - Child of:
@@ -17231,7 +19649,7 @@ This vocabulary
 
 []{#impure_dolomitic_sediment}
 
-########  impure dolomitic sediment
+#######  impure dolomitic sediment
 
 
 - Child of:
@@ -17255,7 +19673,7 @@ This vocabulary
 
 []{#pure_carbonate_sediment}
 
-#######  pure carbonate sediment
+######  pure carbonate sediment
 
 
 - Child of:
@@ -17273,7 +19691,7 @@ This vocabulary
 
 []{#pure_calcareous_carbonate_sediment}
 
-########  pure calcareous carbonate sediment
+#######  pure calcareous carbonate sediment
 
 
 - Child of:
@@ -17297,7 +19715,7 @@ This vocabulary
 
 []{#pure_dolomitic_sediment}
 
-########  pure dolomitic sediment
+#######  pure dolomitic sediment
 
 
 - Child of:
@@ -17315,9 +19733,207 @@ This vocabulary
 - Concept URI token: Pure_Dolomitic_Sediment
 
 
+[]{#chemical_sedimentary_material}
+
+#####  chemical sedimentary material
+
+
+- Child of:
+ [`sediment`](#sediment)
+ [`Sedimentary_Material`](#sedimentary_material)
+
+- Sedimentary material that consists of at least 50 percent material
+produced by inorganic chemical processes within the basin of
+deposition. Includes inorganic siliceous, carbonate, evaporite, iron-
+rich, and phosphatic sediment classes, as well as chemical sediments
+associated with submarine hot springs ('black smokers'). Note that
+these sediments might crystallize as a solid as they are deposited,
+thus similar to rock....
+
+- **Source:**
+SLTTs 2004
+
+- Concept URI token: Chemical_Sedimentary_Material
+
+
+[]{#evaporite}
+
+######  evaporite
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+
+- Nonclastic sedimentary rock composed of at least 50 percent non-
+carbonate salts, including chloride, sulfate or borate minerals;
+formed through precipitation of mineral salts from a saline solution
+(non-carbonate salt rock).
+
+- **Source:**
+Jackson 1997; SLTTs 2004
+
+- Concept URI token: Evaporite
+
+
+[]{#exotic_evaporite}
+
+#######  exotic evaporite
+
+
+- Child of:
+ [`Evaporite`](#evaporite)
+
+- Category represents evaporite material that is not mostly
+gypsum/anhydrite or halite. These are generally not very common, thus
+the 'exotic' name
+- Evaporite that is not 50 percent halite or 50 percent gypsum or
+anhydrite.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Exotic_Evaporite
+
+
+[]{#rock_gypsum_or_anhydrite}
+
+#######  gypsum or anhydrite
+
+
+- Child of:
+ [`Evaporite`](#evaporite)
+
+- Evaporite composed of at least 50 percent gypsum or anhydrite.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Rock_Gypsum_Or_Anhydrite
+
+
+[]{#rock_salt}
+
+#######  rock salt
+
+
+- Child of:
+ [`Evaporite`](#evaporite)
+
+- Evaporite composed of at least 50 percent halite.
+
+- **Source:**
+This vocabulary
+
+- Concept URI token: Rock_Salt
+
+
+[]{#iron_rich_sedimentary_material}
+
+######  iron rich sedimentary material
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+
+- Sedimentary material of unspecified consolidation state that
+consists of at least 50 percent iron-bearing minerals (hematite,
+magnetite, limonite-group, siderite, iron-sulfides), as determined by
+hand-lens or petrographic analysis. Corresponds to a rock typically
+containing 15 percent iron by weight.
+
+- **Source:**
+SLTTs 2004
+
+- Concept URI token: Iron_Rich_Sedimentary_Material
+
+
+[]{#iron_rich_sediment}
+
+#######  iron rich sediment
+
+
+- Child of:
+ [`sediment`](#sediment)
+ [`Iron_Rich_Sedimentary_Material`](#iron_rich_sedimentary_material)
+
+- Sediment that consists of at least 50 percent iron-bearing minerals
+(hematite, magnetite, limonite-group, siderite, iron-sulfides), as
+determined by hand-lens or petrographic analysis. Corresponds to a
+rock typically containing 15 percent iron by weight.
+
+- **Source:**
+SLTTs 2004
+
+- Concept URI token: Iron_Rich_Sediment
+
+
+[]{#iron_rich_sedimentary_rock}
+
+#######  iron rich sedimentary rock
+
+
+- Child of:
+ [`Sedimentary_Rock`](#sedimentary_rock)
+ [`Iron_Rich_Sedimentary_Material`](#iron_rich_sedimentary_material)
+
+- Sedimentary rock that consists of at least 50 percent iron-bearing
+minerals (hematite, magnetite, limonite-group, siderite, iron-
+sulfides), as determined by hand-lens or petrographic analysis.
+Corresponds to a rock typically containing 15 percent iron by weight.
+
+- **Source:**
+Hallsworth and Knox 1999; SLTTs 2004
+
+- Concept URI token: Iron_Rich_Sedimentary_Rock
+
+
+[]{#sedimentary_massive_sulphide}
+
+######  Sedimentary Massive Sulphide
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+ [`Massive_Sulphide`](#massive_sulphide)
+
+- rock consisting of greater than 50% sulphide or sulfosalt minerals
+formed by sedimentary exhalative processes.
+
+- **Alternate labels:**
+Sedimentary Massive Sulfide
+
+
+- **Source:**
+smr provisional 2020-06-07
+
+- Concept URI token: Sedimentary_Massive_Sulphide
+
+
+[]{#travertine}
+
+######  travertine
+
+
+- Child of:
+ [`Chemical_Sedimentary_Material`](#chemical_sedimentary_material)
+ [`Limestone`](#limestone)
+
+- Biotically or abiotically precipitated calcium carbonate, from
+spring-fed, heated, or ambient-temperature water. May be white and
+spongy, various shades of orange, tan or gray, and ranges to dense,
+banded or laminated rock. Macrophytes, bryophytes, algae,
+cyanobacteria and other organisms often colonize the surface of
+travertine and may be preserved, to produce the porous varieties.
+
+- **Source:**
+Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., and Folk, R.L., 1984, Travertine: Depositional morphology an dthe bacterially constructed constituents: J. Sed. Petrology, v. 126, p.57-74.
+
+- Concept URI token: Travertine
+
+
 []{#clastic_sediment}
 
-######  clastic sediment
+#####  clastic sediment
 
 
 - Child of:
@@ -17348,12 +19964,14 @@ SLTTs 2004; Neuendorf et al. 2005
 
 []{#diamicton}
 
-#######  diamicton
+######  diamicton
 
 
 - Child of:
  [`Clastic_Sediment`](#clastic_sediment)
 
+- definition amplified to help distinguish diamicton, conglomerate and
+wackestone in this version
 - Unsorted or poorly sorted, clastic sediment with a wide range of
 particle sizes, including a muddy matrix. Biogenic materials that have
 such texture are excluded. Distinguished from conglomerate, sandstone,
@@ -17361,8 +19979,6 @@ mudstone based on polymodality and lack of structures related to
 transport and deposition of sediment by moving air or water.
 Assignment to an other size class can be used in conjunction to
 indicate the dominant grain size.
-- definition amplified to help distinguish diamicton, conglomerate and
-wackestone in this version
 
 - **Source:**
 Fairbridge and Bourgeois 1978
@@ -17372,7 +19988,7 @@ Fairbridge and Bourgeois 1978
 
 []{#gravel}
 
-#######  gravel
+######  gravel
 
 
 - Child of:
@@ -17391,7 +20007,7 @@ definition of gravel from SLTTs 2004; particle sizes defined from Krumbein phi s
 
 []{#mud}
 
-#######  mud
+######  mud
 
 
 - Child of:
@@ -17410,7 +20026,7 @@ definition of mud from SLTTs 2004 muddy sediment; particle sizes defined from Kr
 
 []{#clay}
 
-########  clay
+#######  clay
 
 
 - Child of:
@@ -17427,7 +20043,7 @@ based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade s
 
 []{#silt}
 
-########  silt
+#######  silt
 
 
 - Child of:
@@ -17447,7 +20063,7 @@ based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade s
 
 []{#sand}
 
-#######  sand
+######  sand
 
 
 - Child of:
@@ -17466,7 +20082,7 @@ definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from K
 
 []{#gravel_size_sediment}
 
-######  gravel size sediment
+#####  gravel size sediment
 
 
 - Child of:
@@ -17484,7 +20100,7 @@ SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L
 
 []{#boulder_gravel_size_sediment}
 
-#######  boulder gravel size sediment
+######  boulder gravel size sediment
 
 
 - Child of:
@@ -17501,7 +20117,7 @@ Wentworth size scale
 
 []{#cobble_gravel_size_sediment}
 
-#######  cobble gravel size sediment
+######  cobble gravel size sediment
 
 
 - Child of:
@@ -17518,7 +20134,7 @@ Wentworth size scale
 
 []{#gravel}
 
-#######  gravel
+######  gravel
 
 
 - Child of:
@@ -17537,7 +20153,7 @@ definition of gravel from SLTTs 2004; particle sizes defined from Krumbein phi s
 
 []{#pebble_gravel_size_sediment}
 
-#######  pebble gravel size sediment
+######  pebble gravel size sediment
 
 
 - Child of:
@@ -17554,13 +20170,17 @@ Wentworth size scale
 
 []{#hybrid_sediment}
 
-######  Hybrid sediment
+#####  Hybrid sediment
 * `hybrid sediment`
 
 
 - Child of:
  [`sediment`](#sediment)
 
+- Sediment that does not fit any of the other sediment
+composition/genesis categories. Sediment consisting of three or more
+components which form more than 5 percent but less than 50 precent of
+the material.
 
 - **Source:**
 Hallsworth and Knox, 1999
@@ -17570,7 +20190,7 @@ Hallsworth and Knox, 1999
 
 []{#iron_rich_sediment}
 
-######  iron rich sediment
+#####  iron rich sediment
 
 
 - Child of:
@@ -17590,12 +20210,21 @@ SLTTs 2004
 
 []{#mud_size_sediment}
 
-######  mud size sediment
+#####  mud size sediment
 
 
 - Child of:
  [`sediment`](#sediment)
 
+- Sediment consisting of less than 30 percent gravel-size (2 mm)
+particles and with a mud-size to sand-size particle ratio greater than
+1. Clasts may be of any composition or origin.  BGS  (Hallsworth and
+Knox, 1999, p. 9) define the  'upper size limit of mud ... at 32
+micrometers (.032 mm)', but Wentworth scale and Krumbein scale put
+boundary at .064 or .062 mm (inidistinguishable difference in
+rocks...) BGS 'mud-grade sediment' or sedimentary rock definition is
+'over 75% of the clasts smaller than  .032 mm', which is narrower than
+the definition here.
 - Sediment consisting of less than 30 percent gravel-size (2 mm)
 particles and with a mud-size to sand-size particle ratio greater than
 1. Clasts may be of any composition or origin.
@@ -17608,7 +20237,7 @@ based on SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein
 
 []{#carbonate_mud}
 
-#######  carbonate mud
+######  carbonate mud
 
 
 - Child of:
@@ -17631,7 +20260,7 @@ follow pattern used for clastic sand and mud categories, based on SLTTs 2004
 
 []{#carbonate_ooze}
 
-########  carbonate ooze
+#######  carbonate ooze
 
 
 - Child of:
@@ -17649,7 +20278,7 @@ This vocabulary
 
 []{#carbonate_rich_mud}
 
-#######  carbonate rich mud
+######  carbonate rich mud
 
 
 - Child of:
@@ -17671,7 +20300,7 @@ This vocabulary
 
 []{#mud}
 
-#######  mud
+######  mud
 
 
 - Child of:
@@ -17690,7 +20319,7 @@ definition of mud from SLTTs 2004 muddy sediment; particle sizes defined from Kr
 
 []{#clay}
 
-########  clay
+#######  clay
 
 
 - Child of:
@@ -17707,7 +20336,7 @@ based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade s
 
 []{#silt}
 
-########  silt
+#######  silt
 
 
 - Child of:
@@ -17727,19 +20356,19 @@ based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade s
 
 []{#ooze}
 
-#######  ooze
+######  ooze
 
 
 - Child of:
  [`Biogenic_Sediment`](#biogenic_sediment)
  [`Mud_Size_Sediment`](#mud_size_sediment)
 
-- Biogenic sediment consisting of less than 1 percent gravel-size
-(greater than or equal to 2 mm) particles, with a sand to mud ratio
-less than 1 to 9, and less than 50 percent carbonate minerals.
 - Neuendorf et al. 2005 put cutoff at 30 percent skeletal remains;
 this is raised to 50 percent in This vocabulary for consistency with
 definition of other Biogenic sediment category
+- Biogenic sediment consisting of less than 1 percent gravel-size
+(greater than or equal to 2 mm) particles, with a sand to mud ratio
+less than 1 to 9, and less than 50 percent carbonate minerals.
 
 - **Alternate labels:**
 biogenic mud
@@ -17753,7 +20382,7 @@ based on Bates and Jackson 1987 and Hallsworth and Knox 1999
 
 []{#carbonate_ooze}
 
-########  carbonate ooze
+#######  carbonate ooze
 
 
 - Child of:
@@ -17771,14 +20400,14 @@ This vocabulary
 
 []{#siliceous_ooze}
 
-########  siliceous ooze
+#######  siliceous ooze
 
 
 - Child of:
  [`Ooze`](#ooze)
  [`Silicate_Mud`](#silicate_mud)
 
-- ooze that consists of more than 50 percent siliceous skeletal
+- Ooze that consists of more than 50 percent siliceous skeletal
 remains
 
 - **Source:**
@@ -17789,14 +20418,14 @@ This vocabulary
 
 []{#silicate_mud}
 
-#######  silicate mud
+######  silicate mud
 
 
 - Child of:
  [`Mud_Size_Sediment`](#mud_size_sediment)
 
 - Mud size sediment that consists of less than 50 percent carbonate
-minerals.
+minerals and less than 50 percent clastic particles.
 
 - **Source:**
 This vocabulary
@@ -17806,14 +20435,14 @@ This vocabulary
 
 []{#siliceous_ooze}
 
-########  siliceous ooze
+#######  siliceous ooze
 
 
 - Child of:
  [`Ooze`](#ooze)
  [`Silicate_Mud`](#silicate_mud)
 
-- ooze that consists of more than 50 percent siliceous skeletal
+- Ooze that consists of more than 50 percent siliceous skeletal
 remains
 
 - **Source:**
@@ -17824,13 +20453,17 @@ This vocabulary
 
 []{#non_clastic_siliceous_sediment}
 
-######  non clastic siliceous sediment
+#####  non clastic siliceous sediment
 
 
 - Child of:
  [`sediment`](#sediment)
  [`Non_Clastic_Siliceous_Sedimentary_Material`](#non_clastic_siliceous_sedimentary_material)
 
+- Sediment that consists of at least 50 percent silicate mineral
+material, deposited directly by chemical or biological processes at
+the depositional surface, or in particles formed by chemical or
+biological processes within the basin of deposition.
 
 - **Source:**
 NGMDB 2008; Hallsworth and Knox 1999
@@ -17840,13 +20473,15 @@ NGMDB 2008; Hallsworth and Knox 1999
 
 []{#phosphate_rich_sediment}
 
-######  phosphate rich sediment
+#####  phosphate rich sediment
 
 
 - Child of:
  [`sediment`](#sediment)
  [`Phosphate_Rich_Sedimentary_Material`](#phosphate_rich_sedimentary_material)
 
+- Sediment in which at least 50 percent of the primary and/or
+recrystallized constituents are phosphate minerals.
 
 - **Source:**
 SLTTs 2004
@@ -17856,12 +20491,15 @@ SLTTs 2004
 
 []{#sand_size_sediment}
 
-######  sand size sediment
+#####  sand size sediment
 
 
 - Child of:
  [`sediment`](#sediment)
 
+- Sediment in which less than 30 percent of particles are gravel
+(greater than 2 mm in diameter) and the sand to mud ratio is at least
+1. composition or genesis of clasts not specified.
 
 - **Source:**
 Neuendorf et al. 2005 ; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)
@@ -17871,7 +20509,7 @@ Neuendorf et al. 2005 ; particle sizes defined from Krumbein phi scale (W C Krum
 
 []{#sand}
 
-#######  sand
+######  sand
 
 
 - Child of:
@@ -17886,6 +20524,88 @@ least 1. More than half of the particles are of epiclastic origin.
 definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)
 
 - Concept URI token: Sand
+
+
+[]{#tephra}
+
+#####  Tephra
+* `tephra`
+
+
+- Child of:
+ [`sediment`](#sediment)
+ [`Pyroclastic_Material`](#pyroclastic_material)
+
+- Unconsolidated pyroclastic material in which greater than 75 percent
+of the fragments are deposited as a direct result of volcanic
+processes and the deposit has not been reworked by epiclastic
+processes. Includes ash, lapilli tephra, bomb tephra, block tephra and
+unconsolidated agglomerate.
+
+- **Source:**
+Hallsworth and Knox 1999; LeMaitre et al. 2002
+
+- Concept URI token: Tephra
+
+
+[]{#ash_and_lapilli}
+
+######  ash and lapilli
+
+
+- Child of:
+ [`Tephra`](#tephra)
+
+- Tephra in which less than 25 percent of fragments are greater than
+64 mm in longest dimension
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_And_Lapilli
+
+
+[]{#ash_breccia_bomb_or_block_tephra}
+
+######  ash breccia bomb or block tephra
+
+
+- Child of:
+ [`Tephra`](#tephra)
+
+- Tephra in which more than 25 percent of particles are greater than
+64 mm in largest dimension. Includes ash breccia, bomb tephra and
+block tephra of Gillespie and Styles (1999)
+
+- **Source:**
+Schmid 1981; LeMaitre et al. 2002
+
+- Concept URI token: Ash_Breccia_Bomb_Or_Block_Tephra
+
+
+[]{#soil}
+
+####  Soil
+
+
+- Child of:
+ [`Material_Formed_In_Surficial_Environment`](#material_formed_in_surficial_environment)
+ [`Natural_Unconsolidated_Material`](#natural_unconsolidated_material)
+
+- Mixed granular mineral and organic matter modified by interaction
+between earth material, biosphere, and atmosphere, consisting of
+varying proportions of sand, silt, and clay, organic material such as
+humus, gases, liquids, and a broad range of resident micro- and
+macroorganisms. (https://en.wikipedia.org/wiki/Soil) Soil consists of
+horizons near the Earth's surface that, in contrast to the underlying
+parent material, have been altered by the interactions of climate,
+relief, and living organisms over time. (http://www.nrcs.usda.gov/wps/
+portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280)
+(http://purl.obolibrary.org/obo/ENVO_00001998)
+
+- See Also:
+* [<http://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280>](http://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280)
+- Concept URI token: soil
 
 
 
