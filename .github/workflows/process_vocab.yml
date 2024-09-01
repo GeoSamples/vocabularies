@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Vocabulary action
-        uses: GeoSamples/vocabularies@main
+        uses: GeoSamples/vocabularies@sampledFeatureExtension
         # input variables 'action', 'path', 'inputttl' and 'inputvocaburi' are defined in action.yml, and assigned values here
         # GitHub creates an environment variable for the input with the name INPUT_<VARIABLE_NAME>
         with:
@@ -42,9 +42,9 @@ jobs:
           path: ${{ github.workspace }}
           # provide ttl file names without extensions; the base file name will be 
           #    used for output files with the appropriate extension.
-          inputttl: SESAR_material_extension_rock_sediment
+          inputttl: SESAR_material_extension_rock_sediment,SESAR_sampled_feature_extension,mineralSKOS
           # these are the URIs for the ConceptScheme; there must be a conceptScheme defined in each vocabulary.
-          inputvocaburi: sesrs:rocksedimentvocabulary
+          inputvocaburi: sesrs:rocksedimentvocabulary,essf:essfvocabulary,gcmin:conceptScheme
 
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
