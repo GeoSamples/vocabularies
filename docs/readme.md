@@ -1,4 +1,4 @@
-# Documentation and vocabulary presentation pages for core iSamples vocabularies
+# Documentation and vocabulary presentation pages for SESAR vocabularies
 
 What's here:
 HTML representations of vocabularies for use describing SESAR sample registrations. 
