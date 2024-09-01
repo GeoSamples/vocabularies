@@ -1,9 +1,9 @@
-# Documentation and vocabulary presentation pages for core iSamples vocabularies
+# Documentation and vocabulary presentation pages for SESAR vocabularies
 
 What's here:
-HTML representations of vocabularies for categorizing material sample type characteristics based on material, specimen or material sample type, and sampled feature. These are the top level vocabularies intended to cover the kinds of samples collected in the Earth and Environmental sciences, biological sciences, and archaeology. 
+HTML representations of vocabularies for SESAR sample descriptions. 
 
-## Concept scheme: iSamples Material Type Vocabulary
+## Concept scheme: SESAR Earth Material Type Extension Vocabulary
 
 [HTML web page version](https://isamplesorg.github.io/vocabularies/material_type.html) 
 
