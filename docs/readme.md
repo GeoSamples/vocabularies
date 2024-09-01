@@ -19,4 +19,5 @@ HTML representations of vocabularies for use describing SESAR sample registratio
 
 [HTML web page version](https://geosamples.github.io/vocabularies/mineralSKOS.html)
 
-[RDF source file](https://raw.githubusercontent.com/isamplesorg/vocabularies/sampledFeatureExtension/vocabulary/mineralSKOS.ttl). This is the authoritative representation. 
+[RDF source file](https://raw.githubusercontent.com/GeoSamples/vocabularies/sampledFeatureExtension/vocabulary/mineralSKOS.ttl). This is the authoritative representation. 
+
