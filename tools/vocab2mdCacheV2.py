@@ -226,16 +226,17 @@ def describeTerm(g, t, depth=0, level=1):
         res.append(f"{hl} {labels[0].strip()}")
         for label in labels[1:]:
             res.append(f"* `{label}`")
-        res.append("")
+        #res.append("")
 
     broader = getObjects(g, t, skosT('broader'))
     if len(broader) > 0:
-        res.append("")
+        #res.append("")
         res.append(f"- **Child of**:")
         for b in broader:
+            blabels = getObjects(g, b, skosT('prefLabel'))
             bt = b.split('/')[-1]
-            res.append(f" [`{bt}`](#{bt.lower()})")
-    res.append("")
+            res.append(f" [`{blabels[0].strip()}`](#{bt.lower()})")
+    #res.append("")
     # The textual description will be present in rdfs:comment or
     # skos:definition. 
     comments = []
@@ -251,7 +252,7 @@ def describeTerm(g, t, depth=0, level=1):
         res += lines
     seealsos = getObjects(g, t, rdfsT('seeAlso'))
     if len(seealsos) > 0:
-        res.append("")
+        #res.append("")
         res.append(f"- **See Also**:")
         for seealso in seealsos:
             res.append(f"* [{seealso.n3(g.namespace_manager)}]({seealso})")
@@ -262,11 +263,11 @@ def describeTerm(g, t, depth=0, level=1):
         delimiter = ""
         if len(altlabels) > 1:
             delimiter = ", "
-        res.append("")
+        #res.append("")
         res.append(f"- **Alternate labels:**")
         for altlabel in altlabels:
             res.append(f"{altlabel}{delimiter}")
-        res.append("")
+        #res.append("")
 
     sources = []
     for source in getObjects(g, t, dctT('source')):
@@ -275,14 +276,14 @@ def describeTerm(g, t, depth=0, level=1):
         delimiter = ""
         if len(sources) > 1:
             delimiter = ", "
-        res.append("")
+        #res.append("")
         res.append(f"- **Source:**")
         for source in sources:
             res.append(f"{source}{delimiter}")
-        res.append("")
+        #res.append("")
 
     res.append(f"- **Concept URI:** {t}")
-    res.append("")
+    #res.append("")
 
     describeMineral(g,t, res)
 
@@ -293,19 +294,22 @@ def describeMineral(g, t, res):
     #res = []
     thevalues = []
     delimiter = ": "
-    res.append(f"- Description:")
+    res.append(f"- **Other Properties:**")
     for term in minprops:
         thevalues = getObjects(g, t, minT(term))
         for thevalue in thevalues:
             if len(thevalue) > 0:
                 res.append(f"  - **{term}**{delimiter}")
-                if len(thevalue) > 70:
-                    lines = textwrap.wrap(thevalue,70)
-                    res += lines
+                # wrapping splits <sub> and <sup> markup in chemical formulas...
+                # if len(thevalue) > 70:
+                #     lines = textwrap.wrap(thevalue,70)
+                #     res += lines
+                # else:
+                if "url" in term:
+                    res.append(f"[{thevalue}]({thevalue})")
                 else:
                     res.append(f"{thevalue}")
-                res.append(" ")
-
+#                res.append(" ")
     return
 
 def describeNarrowerTerms(g, v, r, depth=0, level=[]):
