@@ -1,9 +1,11 @@
 # Documentation and vocabulary presentation pages for SESAR vocabularies
 
 What's here:
-HTML representations of vocabularies for use describing SESAR sample registrations. 
 
-## Concept scheme: SESAR Earth Materials extension vocabulary
+HTML representations of vocabularies for SESAR sample descriptions. 
+
+## Concept scheme: SESAR Earth Material Type Extension Vocabulary
+
 
 [HTML web page version](https://geosamples.github.io/vocabularies/SESAR_material_extension_rock_sediment.html) 
 
