@@ -90,23 +90,9 @@ gsmlee:abyssal
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abyssal> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel " ²œ­´½¹¾¦½´÷©ì½-©ñ®-Àìò¡"@lo ;
-  skos:prefLabel "abis"@ms ;
-  skos:prefLabel "abisal"@es ;
-  skos:prefLabel "abisal"@id ;
-  skos:prefLabel "abissal'nyj"@ru ;
-  skos:prefLabel "abissale"@it ;
-  skos:prefLabel "abyssaalinen"@fi ;
+
   skos:prefLabel "abyssal setting"@en ;
-  skos:prefLabel "abyssal"@de ;
-  skos:prefLabel "abyssal"@fr ;
-  skos:prefLabel "abyssal"@sv ;
-  skos:prefLabel "biển thẳm"@vi ;
-  skos:prefLabel "én)atsmuRTrWénTIeRCAhYsRbmaN"@km ;
-  skos:prefLabel "ระดับลึก"@th ;
-  skos:prefLabel "深海の"@ja ;
-  skos:prefLabel "深海的"@zh ;
-  skos:prefLabel "심해성"@ko ;
+
 .
 gsmlee:active_continental_margin_setting
   rdf:type skos:Concept ;
@@ -118,12 +104,7 @@ gsmlee:active_continental_margin_setting
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
   skos:prefLabel "active continental margin setting"@en ;
-  skos:prefLabel "aktiiviset reunat"@fi ;
-  skos:prefLabel "aktiv kontinentrand"@sv ;
-  skos:prefLabel "aktiver Kontinentalrand"@de ;
-  skos:prefLabel "margen continental activo"@es ;
-  skos:prefLabel "margine continentale attivo"@it ;
-  skos:prefLabel "okraina kontinental'naya aktivnaya"@ru ;
+  
 .
 gsmlee:active_spreading_center
   rdf:type skos:Concept ;
@@ -174,13 +155,9 @@ gsmlee:alluvial_fan
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialFan> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Schwemmfächer"@de ;
-  skos:prefLabel "abanico fluvial"@es ;
-  skos:prefLabel "alluviaalikeilat"@fi ;
+
   skos:prefLabel "alluvial fan setting"@en ;
-  skos:prefLabel "alluvialkon"@sv ;
-  skos:prefLabel "conoide alluvionale"@it ;
-  skos:prefLabel "konus vynosa allyuvial'nyj"@ru ;
+
 .
 gsmlee:alluvial_plain
   rdf:type skos:Concept ;
@@ -191,13 +168,9 @@ gsmlee:alluvial_plain
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialPlain> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Alluvialfläche"@de ;
-  skos:prefLabel "alluviaalitasangot"@fi ;
+ 
   skos:prefLabel "alluvial plain setting"@en ;
-  skos:prefLabel "alluvialslätt"@sv ;
-  skos:prefLabel "llanura aluvial"@es ;
-  skos:prefLabel "piana alluvionale"@it ;
-  skos:prefLabel "ravnina allyuvial'naya"@ru ;
+  
 .
 gsmlee:anoxic_setting
   rdf:type skos:Concept ;
@@ -208,13 +181,9 @@ gsmlee:anoxic_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/anoxicSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "ambiente anossico"@it ;
-  skos:prefLabel "anaerob miljö"@sv ;
-  skos:prefLabel "anoksinen ympäristö"@fi ;
+  
   skos:prefLabel "anoxic setting"@en ;
-  skos:prefLabel "anoxisches Milieu"@de ;
-  skos:prefLabel "medio anóxico"@es ;
-  skos:prefLabel "sreda anaehrobnaya"@ru ;
+  
 .
 gsmlee:arid_or_semi_arid_environment_setting
   rdf:type skos:Concept ;
@@ -263,13 +232,9 @@ gsmlee:barrier_beach
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierBeach> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Barrierestrand"@de ;
-  skos:prefLabel "barra costiera"@it ;
+  
   skos:prefLabel "barrier beach setting"@en ;
-  skos:prefLabel "barriärkust"@sv ;
-  skos:prefLabel "playa barrera"@es ;
-  skos:prefLabel "rantasärkät"@fi ;
-  skos:prefLabel "val bar'ernyj"@ru ;
+  
 .
 gsmlee:barrier_island_coastline_setting
   rdf:type skos:Concept ;
@@ -330,13 +295,9 @@ gsmlee:bathyal
   skos:narrower gsmlee:lower_bathyal ;
   skos:narrower gsmlee:middle_bathyal ;
   skos:narrower gsmlee:upper_bathyal ;
-  skos:prefLabel "Bathyalmilieu"@de ;
-  skos:prefLabel "ambiente batiale"@it ;
+
   skos:prefLabel "bathyal setting"@en ;
-  skos:prefLabel "batial'nyj"@ru ;
-  skos:prefLabel "batyaalinen ympäristö"@fi ;
-  skos:prefLabel "batyal miljö"@sv ;
-  skos:prefLabel "medio batial"@es ;
+ 
 .
 gsmlee:beach
   rdf:type skos:Concept ;
@@ -348,13 +309,9 @@ gsmlee:beach
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:barrier_beach ;
-  skos:prefLabel "Strand"@de ;
+
   skos:prefLabel "beach setting"@en ;
-  skos:prefLabel "hiekkarannat"@fi ;
-  skos:prefLabel "playa"@es ;
-  skos:prefLabel "plyazh"@ru ;
-  skos:prefLabel "spiaggia"@it ;
-  skos:prefLabel "strand"@sv ;
+  
 .
 gsmlee:below_carbonate_compensation_depth_setting
   rdf:type skos:Concept ;
@@ -404,13 +361,9 @@ gsmlee:bog
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:basin_bog ;
   skos:narrower gsmlee:blanket_bog ;
-  skos:prefLabel "Morast"@de ;
-  skos:prefLabel "acquitrino"@it ;
+  
   skos:prefLabel "bog setting"@en ;
-  skos:prefLabel "boloto"@ru ;
-  skos:prefLabel "cie!naga"@es ;
-  skos:prefLabel "mosse"@sv ;
-  skos:prefLabel "suot"@fi ;
+  
 .
 gsmlee:braided_channel
   rdf:type skos:Concept ;
@@ -443,13 +396,9 @@ gsmlee:cave
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/cave> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Kaverne"@de ;
+  
   skos:prefLabel "cave setting"@en ;
-  skos:prefLabel "caverna"@es ;
-  skos:prefLabel "grotta"@it ;
-  skos:prefLabel "grotta"@sv ;
-  skos:prefLabel "kaverna"@ru ;
-  skos:prefLabel "luolastot"@fi ;
+  
 .
 gsmlee:coastal_dune_field
   rdf:type skos:Concept ;
@@ -472,13 +421,9 @@ gsmlee:coastal_plain_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalPlainSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Küstenebene"@de ;
+ 
   skos:prefLabel "coastal plain setting"@en ;
-  skos:prefLabel "kustslätt"@sv ;
-  skos:prefLabel "llanura costera"@es ;
-  skos:prefLabel "piana costiera"@it ;
-  skos:prefLabel "rantatasanteet"@fi ;
-  skos:prefLabel "ravnina pribrezhnaya"@ru ;
+  
 .
 gsmlee:collisional_setting
   rdf:type skos:Concept ;
@@ -512,23 +457,9 @@ gsmlee:continental_borderland_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalBorderlandSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "RBMRbTl;TVib/x½NÐTVIb"@km ;
-  skos:prefLabel "Schelf"@de ;
-  skos:prefLabel "batas benua"@id ;
-  skos:prefLabel "borderlend kontinental'nyj"@ru ;
+  
   skos:prefLabel "continental borderland setting"@en ;
-  skos:prefLabel "kontinentalgränsområde"@sv ;
-  skos:prefLabel "mantereen rajavyöhyke"@fi ;
-  skos:prefLabel "marge continentale complexe"@fr ;
-  skos:prefLabel "margen continental complejo"@es ;
-  skos:prefLabel "margine continentale complesso"@it ;
-  skos:prefLabel "tepian benua"@ms ;
-  skos:prefLabel "ven lục địa"@vi ;
-  skos:prefLabel "À¢©Á©­¢º¤ê½¸ó®"@lo ;
-  skos:prefLabel "ชายของทวีป"@th ;
-  skos:prefLabel "大陆边缘区"@zh ;
-  skos:prefLabel "大陸縁辺地域"@ja ;
-  skos:prefLabel "대륙 연변부"@ko ;
+  
 .
 gsmlee:continental_crust
   rdf:type skos:Concept ;
@@ -562,30 +493,15 @@ gsmlee:continental_shelf_setting
   rdf:type skos:Concept ;
   dcterm:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:altLabel "陆棚"@zh ;
-  skos:altLabel "陸棚"@ja ;
+
   skos:broader gsmlee:marine_setting ;
   skos:definition "That part of the ocean floor that is between the shoreline and the continental slope (or, when there is no noticeable continental slope, a depth of 200 m). It is characterized by its gentle slope of 0.1 degree (Jackson, 1997, p. 138). Continental shelves have a classic shoreline-shelf-slope profile termed 'clinoform'."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalShelfSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Kontinentaltafel"@de ;
+  
   skos:prefLabel "continental shelf setting"@en ;
-  skos:prefLabel "kontinentalsockel"@sv ;
-  skos:prefLabel "mannerjalusta"@fi ;
-  skos:prefLabel "paparan benua"@id ;
-  skos:prefLabel "pentas benua"@ms ;
-  skos:prefLabel "piattaforma continentale"@it ;
-  skos:prefLabel "plataforma continental"@es ;
-  skos:prefLabel "plateforme continentale"@fr ;
-  skos:prefLabel "shel'f kontinental'nyj"@ru ;
-  skos:prefLabel "thềm lục địa"@vi ;
-  skos:prefLabel "x<g;rab)atsmuRT"@km ;
-  skos:prefLabel "ÄìÈê½¸ó®"@lo ;
-  skos:prefLabel "ไหล่ทวีป"@th ;
-  skos:prefLabel "大陆架"@zh ;
-  skos:prefLabel "大陸棚"@ja ;
-  skos:prefLabel "대륙붕"@ko ;
+  
 .
 gsmlee:crust
   rdf:type skos:Concept ;
@@ -758,13 +674,9 @@ gsmlee:estuary_setting
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:estuarine_delta ;
   skos:narrower gsmlee:estuarine_lagoon ;
-  skos:prefLabel "Aestuar"@de ;
-  skos:prefLabel "ehstuarij"@ru ;
-  skos:prefLabel "estuario"@es ;
-  skos:prefLabel "estuario"@it ;
-  skos:prefLabel "estuarium"@sv ;
+  
   skos:prefLabel "estuary setting"@en ;
-  skos:prefLabel "suistot"@fi ;
+  
 .
 gsmlee:extended_terrane
   rdf:type skos:Concept ;
@@ -825,30 +737,13 @@ gsmlee:foreland_setting
   rdf:type skos:Concept ;
   dcterm:provenance "1-GE WP3, Neuendorf et al.(2005), p. 250"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:altLabel "대륙전면분지"@ko ;
   skos:broader gsmlee:continental_crust ;
   skos:broader gsmlee:tectonic_setting ;
   skos:definition "The exterior area of an orogenic belt where deformation occurs without significant metamorphism. Generally the foreland is closer to the continental interior than other portions of the orogenic belt are."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forelandSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "GagelIdIBImun"@km ;
-  skos:prefLabel "Vorlandbecken"@de ;
-  skos:prefLabel "avampaese"@it ;
-  skos:prefLabel "bassin avant pays"@fr ;
-  skos:prefLabel "bồn trước lục địa"@vi ;
-  skos:prefLabel "cekungan depan"@id ;
-  skos:prefLabel "cuenca antepaís"@es ;
-  skos:prefLabel "etumaastot"@fi ;
   skos:prefLabel "foreland setting"@en ;
-  skos:prefLabel "forland"@ru ;
-  skos:prefLabel "förlandsbäcken"@sv ;
-  skos:prefLabel "lembangan tanjung"@ms ;
-  skos:prefLabel "ºú¾¤Ã¡É±„¤"@lo ;
-  skos:prefLabel "แอ่งหน้าผืนแผ่นดิน"@th ;
-  skos:prefLabel "前緑海盆"@ja ;
-  skos:prefLabel "前陆盆地"@zh ;
-  skos:prefLabel "전지분지"@ko ;
 .
 gsmlee:forereef
   rdf:type skos:Concept ;
@@ -962,13 +857,9 @@ gsmlee:hot_spot_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hotSpotSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "hetfläck"@sv ;
+ 
   skos:prefLabel "hot spot setting"@en ;
-  skos:prefLabel "hot spot"@de ;
-  skos:prefLabel "kuumat pisteet"@fi ;
-  skos:prefLabel "punto caldo"@it ;
-  skos:prefLabel "punto caliente"@es ;
-  skos:prefLabel "tochka peregreva"@ru ;
+ 
 .
 gsmlee:humid_temperate_climatic_setting
   rdf:type skos:Concept ;
@@ -1042,30 +933,16 @@ gsmlee:intertidal
   rdf:type skos:Concept ;
   dcterm:provenance "Neuendorf et al., 2005"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:altLabel "lingkungan litoral"@id ;
+
   skos:broader gsmlee:subaqueous_setting ;
   skos:broader gsmlee:tidal_setting ;
   skos:definition "Pertaining to the benthic ocean environment or depth zone between high water and low water, also, pertaining to the organisms of that environment"@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intertidal> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Gezeitenmilieu"@de ;
-  skos:prefLabel "ambiente intertidale"@it ;
-  skos:prefLabel "brisßanenAcenøaHTwkeLIg-cuH"@km ;
+  
   skos:prefLabel "intertidal setting"@en ;
-  skos:prefLabel "lingkungan antar pasut"@id ;
-  skos:prefLabel "litoraalinen ympäristö"@fi ;
-  skos:prefLabel "litoral miljö"@sv ;
-  skos:prefLabel "medio intertidal"@es ;
-  skos:prefLabel "milieu intertidal"@fr ;
-  skos:prefLabel "môi trường gian triều"@vi ;
-  skos:prefLabel "persekitaran antara pasang-surut"@ms ;
-  skos:prefLabel "prilivno-otlivnyj"@ru ;
-  skos:prefLabel "¦…¤Á¸©ìÉº´­Õ¢œ­­Õìö¤"@lo ;
-  skos:prefLabel "สภาพแวดล้อมน้ำขึ้นน้ำลง"@th ;
-  skos:prefLabel "潮間環境"@ja ;
-  skos:prefLabel "潮间环境"@zh ;
-  skos:prefLabel "조간대환경"@ko ;
+  
 .
 gsmlee:intraplate_tectonic_setting
   rdf:type skos:Concept ;
@@ -1096,37 +973,21 @@ gsmlee:lacustrine_setting
   rdf:type skos:Concept ;
   dcterm:provenance "this vocabulary"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:altLabel "호수환경"@ko ;
+
   skos:broader gsmlee:terrestrial_setting ;
   skos:definition "Setting associated with a lake. Always overlaps with terrestrial, may overlap with subaerial, subaqueous, or shoreline."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:lacustrine_delta ;
-  skos:prefLabel "ambiente lacustre"@it ;
-  skos:prefLabel "brisßanenAtamtMbn;bwg"@km ;
-  skos:prefLabel "fatsiya ozernaya"@ru ;
+
   skos:prefLabel "lacustrine setting"@en ;
-  skos:prefLabel "lakustrin miljö"@sv ;
-  skos:prefLabel "lakustrinen ympäristö"@fi ;
-  skos:prefLabel "limnisches Milieu"@de ;
-  skos:prefLabel "lingkungan lakustrin"@id ;
-  skos:prefLabel "medio lacustre"@es ;
-  skos:prefLabel "milieu lacustre"@fr ;
-  skos:prefLabel "môi trường hồ"@vi ;
-  skos:prefLabel "persekitaran lakustrin"@ms ;
-  skos:prefLabel "¦½-²¾®-Á¸©-ìÉº´-ê½-Àì-¦¾®"@lo ;
-  skos:prefLabel "สภาพแวดล้อมทะเลสาป"@th ;
-  skos:prefLabel "湖沼環境"@ja ;
-  skos:prefLabel "湖泊环境"@zh ;
-  skos:prefLabel "호성환경"@ko ;
 .
 gsmlee:lagoonal_setting
   rdf:type skos:Concept ;
   dcterm:provenance "generalize from Jackson 1997 and North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:altLabel "lingkungan goba"@id ;
-  skos:altLabel "礁湖環境"@ja ;
+
   skos:broader gsmlee:shoreline_settings ;
   skos:definition "A shallow stretch of salt or brackish water, partly or completely separated from a sea or lake by an offshore reef, barrier island, sand or spit (Jackson, 1997). Water is shallow, tidal and wave-produced effects on sediments, strong light reaches sediment.."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lagoonalSetting> ;
@@ -1134,23 +995,9 @@ gsmlee:lagoonal_setting
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:barrier_lagoon ;
   skos:narrower gsmlee:estuarine_lagoon ;
-  skos:prefLabel "ambiente lagunare"@it ;
-  skos:prefLabel "brisßantMbn;bwgTwkéRb"@km ;
-  skos:prefLabel "fatsiya lagunnaya"@ru ;
+
   skos:prefLabel "lagoonal setting"@en ;
-  skos:prefLabel "lagunaeres Milieu"@de ;
-  skos:prefLabel "lagunmiljö"@sv ;
-  skos:prefLabel "laguuniympäristö"@fi ;
-  skos:prefLabel "lingkungan laguna"@id ;
-  skos:prefLabel "medio albufera"@es ;
-  skos:prefLabel "milieu lagunaire"@fr ;
-  skos:prefLabel "môi trường đầm phá"@vi ;
-  skos:prefLabel "persekitaran lagun"@ms ;
-  skos:prefLabel "¦½-²¾®-Á¸©©-ìÉº´-Á®®ì¾-¡ø­"@lo ;
-  skos:prefLabel "สภาพแวดล้อมแบบลากูน"@th ;
-  skos:prefLabel "ラグーン環境"@ja ;
-  skos:prefLabel "泻湖环境"@zh ;
-  skos:prefLabel "석호환경"@ko ;
+
 .
 gsmlee:low_energy_shoreline_setting
   rdf:type skos:Concept ;
@@ -1215,30 +1062,15 @@ gsmlee:lower_mantle
   rdf:type skos:Concept ;
   dcterm:provenance "Neuendorf et al., 2005"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:altLabel "mantel bawah"@id ;
+
   skos:broader gsmlee:mantle ;
   skos:definition "That part of the mantle that lies below a depth of about 660 km. With increasing depth, density increases from ~4.4 g/cm3-to ~5.6 g/cm3, and velocity of compressional seismic waves increases from ~10.7 km/s to ~13.7 km/s (Dziewonski and Anderson, 1981)."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerMantle> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "alavaippa"@fi ;
-  skos:prefLabel "binnenste aardmantel"@nl ;
+ 
   skos:prefLabel "lower mantle setting"@en ;
-  skos:prefLabel "manteau inférieur"@fr ;
-  skos:prefLabel "mantel bawah"@ms ;
-  skos:prefLabel "mantello inferiore"@it ;
-  skos:prefLabel "manti dưới"@vi ;
-  skos:prefLabel "mantiya nizhnyaya"@ru ;
-  skos:prefLabel "manto globo inferior"@es ;
-  skos:prefLabel "selubung bawah"@id ;
-  skos:prefLabel "sm½ykalénkarRKbdNþb;"@km ;
-  skos:prefLabel "undre manteln"@sv ;
-  skos:prefLabel "unterer Erdmantel"@de ;
-  skos:prefLabel "Á´­Àêóì§˜­ì÷È´"@lo ;
-  skos:prefLabel "แมนทัลชั้นล่าง"@th ;
-  skos:prefLabel "下地幔"@zh ;
-  skos:prefLabel "下部マントル"@ja ;
-  skos:prefLabel "하부맨틀"@ko ;
+  
 .
 gsmlee:lower_oceanic_crustal_setting
   rdf:type skos:Concept ;
@@ -1263,24 +1095,7 @@ gsmlee:mantle
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:lower_mantle ;
   skos:narrower gsmlee:upper_mantle ;
-  skos:prefLabel "Erdmantel"@de ;
-  skos:prefLabel "aardmantel"@nl ;
-  skos:prefLabel "manteau"@fr ;
-  skos:prefLabel "mantel"@ms ;
-  skos:prefLabel "mantello"@it ;
-  skos:prefLabel "manteln"@sv ;
-  skos:prefLabel "manti"@vi ;
-  skos:prefLabel "mantiya"@ru ;
   skos:prefLabel "mantle setting"@en ;
-  skos:prefLabel "manto globo"@es ;
-  skos:prefLabel "selubung"@id ;
-  skos:prefLabel "tMbn;RsTab;EpndICMerA3480KILÚEm:Rt"@km ;
-  skos:prefLabel "vaippa"@fi ;
-  skos:prefLabel "§˜­Á´­Àêóì"@lo ;
-  skos:prefLabel "แมนเทิล"@th ;
-  skos:prefLabel "マントル"@ja ;
-  skos:prefLabel "地幔"@zh ;
-  skos:prefLabel "맨틀"@ko ;
 .
 gsmlee:marginal_marine_sabkha_setting
   rdf:type skos:Concept ;
@@ -1403,17 +1218,12 @@ gsmlee:mud_flat_setting
   dcterm:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Jackson, 1997"@en ;
   rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:broader gsmlee:low_energy_shoreline_setting ;
-  skos:definition "A relatively level area of fine grained material (e.g. silt) along a shore (as in a sheltered estuary or chenier-plain) or around an island, alternately covered and uncovered by the tide or covered by shallow water, and barren of vegetation. Includes most tidal flats, but lacks denotation of tidal influence.."@en ;
+  skos:definition "A relatively level area of fine grained material (e.g. silt) along a shore (as in a sheltered estuary or chenier-plain) or around an island, alternately covered and uncovered by the tide or covered by shallow water, and barren of vegetation. Includes most tidal flats, but lacks denotation of tidal influence."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mudFlatSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Schlickkueste"@de ;
-  skos:prefLabel "liejutasanteet"@fi ;
-  skos:prefLabel "marisma"@es ;
-  skos:prefLabel "moddplan"@sv ;
+
   skos:prefLabel "mud flat setting"@en ;
-  skos:prefLabel "otmel' ilistaya"@ru ;
-  skos:prefLabel "piana di fango"@it ;
 .
 gsmlee:neritic
   rdf:type skos:Concept ;
@@ -1487,13 +1297,7 @@ gsmlee:passive_continental_margin_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/passiveContinentalMarginSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "margen continental pasivo"@es ;
-  skos:prefLabel "margine passivo"@it ;
-  skos:prefLabel "okraina kontinental'naya passivnaya"@ru ;
-  skos:prefLabel "passiiviset reunat"@fi ;
-  skos:prefLabel "passiv kontinentalrand"@sv ;
   skos:prefLabel "passive continental margin setting"@en ;
-  skos:prefLabel "passiver Kontinentalrand"@de ;
 .
 gsmlee:pediment_setting
   rdf:type skos:Concept ;
@@ -1504,13 +1308,9 @@ gsmlee:pediment_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/pedimentSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Pediment"@de ;
+
   skos:prefLabel "pediment setting"@en ;
-  skos:prefLabel "pediment"@ru ;
-  skos:prefLabel "pediment"@sv ;
-  skos:prefLabel "pedimentit"@fi ;
-  skos:prefLabel "pedimento"@es ;
-  skos:prefLabel "pedimento"@it ;
+
 .
 gsmlee:piedmont_slope_system_setting
   rdf:type skos:Concept ;
@@ -1568,13 +1368,9 @@ gsmlee:playa_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/playaSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Playa"@de ;
-  skos:prefLabel "bacino salino"@it ;
-  skos:prefLabel "plajya"@ru ;
-  skos:prefLabel "playa sebkha"@es ;
+
   skos:prefLabel "playa setting"@en ;
-  skos:prefLabel "playa"@sv ;
-  skos:prefLabel "playat"@fi ;
+
 .
 gsmlee:polar_climatic_setting
   rdf:type skos:Concept ;
@@ -1697,12 +1493,7 @@ gsmlee:seamount_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/seamountSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Seamount"@de ;
-  skos:prefLabel "djuphavsberg"@sv ;
-  skos:prefLabel "gora podvodnaya"@ru ;
-  skos:prefLabel "guyot"@es ;
-  skos:prefLabel "guyot"@it ;
-  skos:prefLabel "merivuoret"@fi ;
+
   skos:prefLabel "seamount setting"@en ;
 .
 gsmlee:shoreline_settings
@@ -1786,13 +1577,9 @@ gsmlee:subduction_zone_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subductionZoneSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Subduktionszone"@de ;
+
   skos:prefLabel "subduction zone setting"@en ;
-  skos:prefLabel "subduktionszon"@sv ;
-  skos:prefLabel "subduktiovyöhykkeet"@fi ;
-  skos:prefLabel "zona di subduzione"@it ;
-  skos:prefLabel "zona subducción"@es ;
-  skos:prefLabel "zona subduktsii"@ru ;
+
 .
 gsmlee:subglacial_setting
   rdf:type skos:Concept ;
@@ -1814,13 +1601,8 @@ gsmlee:submarine_fan_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/submarineFanSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "cono submarino"@es ;
-  skos:prefLabel "conoide sottomarina"@it ;
-  skos:prefLabel "konus vynosa podvodnyj"@ru ;
-  skos:prefLabel "merenalaiset keilat"@fi ;
-  skos:prefLabel "submarin kon"@sv ;
+
   skos:prefLabel "submarine fan setting"@en ;
-  skos:prefLabel "submariner Schuettungsfaecher"@de ;
 .
 gsmlee:supraglacial_setting
   rdf:type skos:Concept ;
@@ -1881,7 +1663,6 @@ gsmlee:tectonic_setting
   skos:narrower gsmlee:passive_continental_margin_setting ;
   skos:narrower gsmlee:plate_margin_setting ;
   skos:narrower gsmlee:plate_spreading_center ;
-  skos:prefLabel "Tectonic Setting "@en ;
   skos:prefLabel "tectonically defined setting"@en ;
 .
 gsmlee:terrestrial_setting
@@ -1903,23 +1684,8 @@ gsmlee:terrestrial_setting
   skos:narrower gsmlee:river_plain_system_setting ;
   skos:narrower gsmlee:sand_plain ;
   skos:narrower gsmlee:upper_delta_plain ;
-  skos:prefLabel "ambiente terrestre"@it ;
-  skos:prefLabel "briyakasEpndI"@km ;
-  skos:prefLabel "lingkungan darat"@id ;
-  skos:prefLabel "medio terrestre"@es ;
-  skos:prefLabel "milieu terrestre"@fr ;
-  skos:prefLabel "môi trường đất liền"@vi ;
-  skos:prefLabel "nazemnyj"@ru ;
-  skos:prefLabel "persekitaran terestrial"@ms ;
+
   skos:prefLabel "terrestrial setting"@en ;
-  skos:prefLabel "terrestrinen ympäristö"@fi ;
-  skos:prefLabel "terrestrisches Milieu"@de ;
-  skos:prefLabel "terrestrisk miljö"@sv ;
-  skos:prefLabel "¦½²¾®Á¸©ìÉº´À¢©²ñ¡Á£´ª¾±„¤Á´È­Õ"@lo ;
-  skos:prefLabel "สิ่งแวดล้อมบนบก"@th ;
-  skos:prefLabel "地球環境"@ja ;
-  skos:prefLabel "陆地环境"@zh ;
-  skos:prefLabel "육성환경"@ko ;
 .
 gsmlee:tidal_channel
   rdf:type skos:Concept ;
@@ -1931,13 +1697,7 @@ gsmlee:tidal_channel
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalChannel> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Priel"@de ;
-  skos:prefLabel "canal marea"@es ;
-  skos:prefLabel "canale di marea"@it ;
-  skos:prefLabel "kanal prilivno-otlivnyj"@ru ;
   skos:prefLabel "tidal channel setting"@en ;
-  skos:prefLabel "tidvattenkanal"@sv ;
-  skos:prefLabel "vuorovesikanavat"@fi ;
 .
 gsmlee:tidal_flat_setting
   rdf:type skos:Concept ;
@@ -1948,13 +1708,7 @@ gsmlee:tidal_flat_setting
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalFlatSetting> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Schlick"@de ;
-  skos:prefLabel "estero"@es ;
-  skos:prefLabel "otmel' prilivno-otlivnaya"@ru ;
-  skos:prefLabel "piana tidale"@it ;
   skos:prefLabel "tidal flat setting"@en ;
-  skos:prefLabel "tidvattenplan"@sv ;
-  skos:prefLabel "vuorovesitasanteet"@fi ;
 .
 gsmlee:tidal_marsh
   rdf:type skos:Concept ;
@@ -1982,13 +1736,7 @@ gsmlee:tidal_setting
   skos:narrower gsmlee:lower_delta_plain ;
   skos:narrower gsmlee:tidal_channel ;
   skos:narrower gsmlee:tidal_flat_setting ;
-  skos:prefLabel "Tidalmilieu"@de ;
-  skos:prefLabel "ambiente tidale"@it ;
-  skos:prefLabel "medio tidal"@es ;
-  skos:prefLabel "prilivnyj"@ru ;
   skos:prefLabel "tidal setting"@en ;
-  skos:prefLabel "tidvattenmiljö"@sv ;
-  skos:prefLabel "vuorovesiympäristö"@fi ;
 .
 gsmlee:transform_plate_boundary_setting
   rdf:type skos:Concept ;
@@ -2066,24 +1814,7 @@ gsmlee:upper_mantle
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperMantle> ;
   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:inScheme essf:essfvocabulary ;
-  skos:prefLabel "Em:nf½lxagelI"@km ;
-  skos:prefLabel "astenosfären"@sv ;
-  skos:prefLabel "bovenste aardmantel"@nl ;
-  skos:prefLabel "manteau supérieur"@fr ;
-  skos:prefLabel "mantel atas"@ms ;
-  skos:prefLabel "mantello superiore"@it ;
-  skos:prefLabel "manti trên"@vi ;
-  skos:prefLabel "mantiya verkhnyaya"@ru ;
-  skos:prefLabel "manto globo superior"@es ;
-  skos:prefLabel "oberer Erdmantel"@de ;
-  skos:prefLabel "selubung atas"@id ;
   skos:prefLabel "upper mantle setting"@en ;
-  skos:prefLabel "ylävaippa"@fi ;
-  skos:prefLabel "Á´­Àêóìªº­Àêó¤"@lo ;
-  skos:prefLabel "แมนเทิลตอนบน"@th ;
-  skos:prefLabel "上地幔"@zh ;
-  skos:prefLabel "上部マントル"@ja ;
-  skos:prefLabel "상부맨틀"@ko ;
 .
 gsmlee:upper_oceanic_crustal_setting
   rdf:type skos:Concept ;
@@ -2118,12 +1849,6 @@ gsmlee:wetland_setting
   skos:inScheme essf:essfvocabulary ;
   skos:narrower gsmlee:bog ;
   skos:narrower gsmlee:swamp_or_marsh_setting ;
-  skos:prefLabel "Feuchtgebiet"@de ;
-  skos:prefLabel "humedal"@es ;
-  skos:prefLabel "kosteikot"@fi ;
-  skos:prefLabel "pochva zabolochennaya"@ru ;
-  skos:prefLabel "terre umide"@it ;
-  skos:prefLabel "våtmark"@sv ;
   skos:prefLabel "wetland setting"@en ;
 .
 <https://linked.data.gov.au/org/cgi>
@@ -2297,13 +2022,6 @@ sf:earthinterior
   skos:narrower gsmlee:ultra_high_pressure_crustal_setting ;
   skos:note "Sampled feature is solid material from within the Earth.  Fluids in pore space in earth interior sample 'Subsurface fluid reservoir'"@en ;
   skos:prefLabel "Earth interior"@en ;
-  skos:prefLabel "Erdaufbau"@de ;
-  skos:prefLabel "Maan sisus"@fi ;
-  skos:prefLabel "constitución Tierra"@es ;
-  skos:prefLabel "earth interior setting"@en ;
-  skos:prefLabel "interno della Terra"@it ;
-  skos:prefLabel "jordklotets inre"@sv ;
-  skos:prefLabel "stroenie glubinnoe Zemli"@ru ;
 .
 sf:earthsurface
   rdf:type owl:NamedIndividual ;

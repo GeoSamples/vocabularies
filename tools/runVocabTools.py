@@ -41,12 +41,16 @@ def main(command, path):
     path = '../docs'
 # *******************
 #    input1 = "SESAR_material_extension_rock_sediment|SESAR_sampled_feature_extension|mineralSKOS"
-    input1 = "mineralSKOS"
+    input1 = "SESAR_sampled_feature_extension"
+
+#    input1 = "mineralSKOS"
     inputttl = input1.split('|')
 # inputttl is a list of skos rdf vocabulary filenames with Turtle serialization
 # vocab_source_dir is the path to the directory that contains the source files
+
 #    input1 = "sesrs:rocksedimentvocabulary|essf:essfvocabulary|gcmin:conceptScheme"
-    input1 = "gcmin:conceptScheme"
+    input1 = "essf:essfvocabulary"
+#    input1 = "gcmin:conceptScheme"
     inputvocaburi = input1.split('|')
 # make sure have cache directory -- this is where the sqlAlchemy db will be
     cachepath = "../cache/vocabularies.db"
