@@ -81,7 +81,8 @@ NS = {
     "owl": "http://www.w3.org/2002/07/owl#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "obo": "http://purl.obolibrary.org/obo/",
-    "dcterm": "http://purl.org/dc/terms/"
+    "dcterm": "http://purl.org/dc/terms/",
+    "gcmin":"https://w3id.org/geochem/1.0/min/"
 }
 
 PFX = """
@@ -108,6 +109,9 @@ def rdfsT(term):
 
 def dctT(term):
     return rdflib.URIRef(f"{NS['dcterm']}{term}")
+
+def minT(term):
+    return rdflib.URIRef(f"{NS['gcmin']}{term}")
 
 
 def listVocabularies(g):
@@ -212,6 +216,8 @@ def describeTerm(g, t, depth=0, level=1):
     _target = t.split("/")[-1]
     res.append("[]{" + f"#{_labelToLink(_target).lower()}" + "}")
     res.append("")
+    L = getLogger()
+    L.debug(f"describe term {_target}")
 # heading for this term
     hl = f"{'#' * (depth + 1)} "
     if len(labels) < 1:
@@ -220,16 +226,17 @@ def describeTerm(g, t, depth=0, level=1):
         res.append(f"{hl} {labels[0].strip()}")
         for label in labels[1:]:
             res.append(f"* `{label}`")
-        res.append("")
+        #res.append("")
 
     broader = getObjects(g, t, skosT('broader'))
     if len(broader) > 0:
-        res.append("")
-        res.append(f"- Child of:")
+        #res.append("")
+        res.append(f"- **Child of**:")
         for b in broader:
+            blabels = getObjects(g, b, skosT('prefLabel'))
             bt = b.split('/')[-1]
-            res.append(f" [`{bt}`](#{bt.lower()})")
-    res.append("")
+            res.append(f" [`{blabels[0].strip()}`](#{bt.lower()})")
+    #res.append("")
     # The textual description will be present in rdfs:comment or
     # skos:definition. 
     comments = []
@@ -245,8 +252,8 @@ def describeTerm(g, t, depth=0, level=1):
         res += lines
     seealsos = getObjects(g, t, rdfsT('seeAlso'))
     if len(seealsos) > 0:
-        res.append("")
-        res.append(f"- See Also:")
+        #res.append("")
+        res.append(f"- **See Also**:")
         for seealso in seealsos:
             res.append(f"* [{seealso.n3(g.namespace_manager)}]({seealso})")
     altlabels = []
@@ -256,11 +263,11 @@ def describeTerm(g, t, depth=0, level=1):
         delimiter = ""
         if len(altlabels) > 1:
             delimiter = ", "
-        res.append("")
+        #res.append("")
         res.append(f"- **Alternate labels:**")
         for altlabel in altlabels:
             res.append(f"{altlabel}{delimiter}")
-        res.append("")
+        #res.append("")
 
     sources = []
     for source in getObjects(g, t, dctT('source')):
@@ -269,17 +276,41 @@ def describeTerm(g, t, depth=0, level=1):
         delimiter = ""
         if len(sources) > 1:
             delimiter = ", "
-        res.append("")
+        #res.append("")
         res.append(f"- **Source:**")
         for source in sources:
             res.append(f"{source}{delimiter}")
-        res.append("")
+        #res.append("")
 
-    res.append(f"- Concept URI token: {t.split('/')[-1]}")
-    res.append("")
+    res.append(f"- **Concept URI:** {t}")
+    #res.append("")
+
+    describeMineral(g,t, res)
 
     return res
 
+def describeMineral(g, t, res):
+    minprops = ['crystalsystem','imachemistry','imanumber','mindaturl','statusnotes']
+    #res = []
+    thevalues = []
+    delimiter = ": "
+    res.append(f"- **Other Properties:**")
+    for term in minprops:
+        thevalues = getObjects(g, t, minT(term))
+        for thevalue in thevalues:
+            if len(thevalue) > 0:
+                res.append(f"  - **{term}**{delimiter}")
+                # wrapping splits <sub> and <sup> markup in chemical formulas...
+                # if len(thevalue) > 70:
+                #     lines = textwrap.wrap(thevalue,70)
+                #     res += lines
+                # else:
+                if "url" in term:
+                    res.append(f"[{thevalue}]({thevalue})")
+                else:
+                    res.append(f"{thevalue}")
+#                res.append(" ")
+    return
 
 def describeNarrowerTerms(g, v, r, depth=0, level=[]):
     res = []
@@ -387,6 +418,10 @@ def conceptschemelist(G):
 # @click.argument("ttl")  #this is from the text file version
 #def main(ttl):
 def main(source, vocabulary):
+
+# def main():
+#     source = '../cache/vocabularies.db'
+#     vocabulary = 'gcmin:conceptScheme'
     """Generate Pandoc markdown from a SKOS vocabulary in Turtle.
     TTL may be a local file or URL.
     Output to STDOUT.
@@ -410,7 +445,7 @@ def main(source, vocabulary):
     res = []
 
     vocabulary = store.expand_name(vocabulary)
-    L.debug(f"vocabulary name: {vocabulary}")
+    L.debug(f"vocabulary concept scheme: {vocabulary}")
     theMarkdown = describeVocabulary(store._g, vocabulary)
     res.append(theMarkdown)
 

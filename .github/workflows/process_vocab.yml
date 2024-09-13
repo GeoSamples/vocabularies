@@ -42,9 +42,11 @@ jobs:
           path: ${{ github.workspace }}
           # provide ttl file names without extensions; the base file name will be 
           #    used for output files with the appropriate extension.
-          inputttl: SESAR_material_extension_rock_sediment,SESAR_sampled_feature_extension,mineralSKOS
+
+          inputttl: SESAR_material_extension_rock_sediment|SESAR_sampled_feature_extension|mineralSKOS
           # these are the URIs for the ConceptScheme; there must be a conceptScheme defined in each vocabulary.
-          inputvocaburi: sesrs:rocksedimentvocabulary,essf:essfvocabulary,gcmin:conceptScheme
+          inputvocaburi: sesrs:rocksedimentvocabulary|essf:essfvocabulary|gcmin:conceptScheme
+
 
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
