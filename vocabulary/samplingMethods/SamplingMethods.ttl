@@ -1219,11 +1219,11 @@ secm:ses233
   rdf:type skos:Concept ;
   dcterm:creator secm:stephen_richard ;
   skos:broader secm:sm100 ;
-  skos:definition "" ;
+  skos:definition "Sampling a fluid (liquid, gas, colloid, suspension...) by drawing it into a sample collection container using a pressure gradient."@en ;
   skos:inScheme secm:samplingmethods ;
   skos:narrower secm:ses212 ;
   skos:narrower secm:slurpsampling ;
-  skos:prefLabel "Suction Sampler"@en ;
+  skos:prefLabel "Suction Sampling"@en ;
 .
 secm:ses234
   rdf:type skos:Concept ;

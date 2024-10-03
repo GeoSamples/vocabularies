@@ -96,12 +96,14 @@ rksd:Aphanite
   rdf:type skos:Concept ;
   dcterm:source "This vocabulary"@en ;
   rdfs:label "Aphanite"@en ;
+  rdfs:label "aphanite"@en ;
   skos:broader mat:rock ;
   skos:closeMatch gsrm:Aphanite ;
   skos:definition "Rock that is too fine grained to categorize in more detail."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Aphanite"@en ;
+  skos:prefLabel "aphanite"@en ;
 .
 rksd:Aplite
   rdf:type skos:Concept ;
@@ -155,6 +157,7 @@ rksd:Breccia
   rdf:type skos:Concept ;
   dcterm:source "Neuendorf et al. 2005"@en ;
   rdfs:label "Breccia"@en ;
+  rdfs:label "breccia"@en ;
   skos:broader mat:rock ;
   skos:broader mat:rockorsediment ;
   skos:closeMatch gsrm:Breccia ;
@@ -162,6 +165,7 @@ rksd:Breccia
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Breccia"@en ;
+  skos:prefLabel "breccia"@en ;
 .
 rksd:Carbonate_Sediment
   rdf:type skos:Concept ;
@@ -324,6 +328,7 @@ rksd:Fault_Related_Material
   rdf:type skos:Concept ;
   dcterm:source "This vocabulary; SLTTm 2004"@en ;
   rdfs:label "Fault related material"@en ;
+  rdfs:label "fault related material"@en ;
   skos:broader mat:rock ;
   skos:broader sesrs:Composite_Genesis_Material ;
   skos:closeMatch gsrm:fault_related_material ;
@@ -331,6 +336,7 @@ rksd:Fault_Related_Material
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Fault related material"@en ;
+  skos:prefLabel "fault related material"@en ;
 .
 rksd:Fine_Grained_Igneous_Rock
   rdf:type skos:Concept ;
@@ -465,12 +471,14 @@ rksd:Generic_Sandstone
   rdf:type skos:Concept ;
   dcterm:source "SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
   rdfs:label "Generic sandstone"@en ;
+  rdfs:label "generic sandstone"@en ;
   skos:broader rksd:Sedimentary_Rock ;
   skos:closeMatch gsrm:Generic_Sandstone ;
   skos:definition "Sedimentary rock in which less than 30 percent of particles are greater than 2 mm in diameter (gravel) and the sand to mud ratio is at least 1."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Generic sandstone"@en ;
+  skos:prefLabel "generic sandstone"@en ;
 .
 rksd:Glass_Rich_Igneous_Rock
   rdf:type skos:Concept ;
@@ -556,12 +564,14 @@ rksd:Hybrid_Sediment
   rdf:type skos:Concept ;
   dcterm:source "Hallsworth and Knox, 1999"@en ;
   rdfs:label "Hybrid sediment"@en ;
+  rdfs:label "hybrid sediment"@en ;
   skos:broader mat:sediment ;
   skos:closeMatch gsrm:Hybrid_Sediment ;
   skos:definition "Sediment that does not fit any of the other sediment composition/genesis categories. Sediment consisting of three or more components which form more than 5 percent but less than 50 precent of the material."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Hybrid sediment"@en ;
+  skos:prefLabel "hybrid sediment"@en ;
 .
 rksd:Hybrid_Sedimentary_Rock
   rdf:type skos:Concept ;
@@ -601,6 +611,7 @@ rksd:Impact_Generated_Material
   rdf:type skos:Concept ;
   dcterm:source "Stöffler and Grieve 2007; Jackson 1997"@en ;
   rdfs:label "Impact generated material"@en ;
+  rdfs:label "impact generated material"@en ;
   skos:broader mat:rock ;
   skos:broader sesrs:Composite_Genesis_Material ;
   skos:closeMatch gsrm:impact_generated_material ;
@@ -608,6 +619,7 @@ rksd:Impact_Generated_Material
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Impact generated material"@en ;
+  skos:prefLabel "impact generated material"@en ;
 .
 rksd:Intermediate_Composition_Igneous_Rock
   rdf:type skos:Concept ;
@@ -649,31 +661,38 @@ rksd:Massive_Sulphide
   rdf:type skos:Concept ;
   dcterm:source "Provisional SMR 2020-06-07"@en ;
   rdfs:label "Massive sulphide"@en ;
+  rdfs:label "massive sulphide"@en ;
   skos:altLabel "Massive Sulfide"@en ;
+  skos:altLabel "massive Sulfide"@en ;
   skos:broader mat:rock ;
   skos:closeMatch gsrm:Massive_Sulphide ;
   skos:definition "rock consisting of greater than 50% sulphide or sulfosalt minerals formed by any processes. Includes hydrothermal and sedimentary ehalative sulfide."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Massive sulphide"@en ;
+  skos:prefLabel "massive sulphide"@en ;
 .
 rksd:Metamorphic_Rock
   rdf:type skos:Concept ;
   dcterm:source "Jackson 1997"@en ;
   rdfs:comment "Robertson (1999, Classification of metamorphic rocks: British Geological Survey Research Report, RR 99–02) defines the boundary between diagenesis and metamorphism in sedimentary rocks as follows: “…the boundary between diagenesis and metamorphism is somewhat arbitrary and strongly dependent on the lithologies involved. For example changes take place in organic materials at lower temperatures than in rocks dominated by silicate minerals. In mudrocks, a white mica (illite) crystallinity value of less than 0.42 Delta 2 Theta obtained by X-ray diffraction analysis, is used to define the onset of metamorphism (Kisch, 1991). In this scheme, the first appearance of glaucophane, lawsonite, paragonite, prehnite, pumpellyite or stilpnomelane is taken to indicate the lower limit of metamorphism (Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson, 1998). Most workers agree that such mineral growth starts at 150 +/- 50° C in silicate rocks. Many lithologies may show no change in mineralogy under these conditions and hence the recognition of the onset of metamorphism will vary with bulk composition.”"@en ;
   rdfs:label "Metamorphic rock"@en ;
+  rdfs:label "metamorphic rock"@en ;
   skos:broader mat:rock ;
   skos:broader sesrs:Composite_Genesis_Rock ;
   skos:closeMatch gsrm:Metamorphic_Rock ;
+  skos:definition "Robertson (1999, Classification of metamorphic rocks: British Geological Survey Research Report, RR 99–02) defines the boundary between diagenesis and metamorphism in sedimentary rocks as follows: “…the boundary between diagenesis and metamorphism is somewhat arbitrary and strongly dependent on the lithologies involved. For example changes take place in organic materials at lower temperatures than in rocks dominated by silicate minerals. In mudrocks, a white mica (illite) crystallinity value of less than 0.42 Delta 2 Theta obtained by X-ray diffraction analysis, is used to define the onset of metamorphism (Kisch, 1991). In this scheme, the first appearance of glaucophane, lawsonite, paragonite, prehnite, pumpellyite or stilpnomelane is taken to indicate the lower limit of metamorphism (Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson, 1998). Most workers agree that such mineral growth starts at 150 +/- 50° C in silicate rocks. Many lithologies may show no change in mineralogy under these conditions and hence the recognition of the onset of metamorphism will vary with bulk composition.”"@en ;
   skos:definition "Rock formed by solid-state mineralogical, chemical and/or structural changes to a pre-existing rock, in response to marked changes in temperature, pressure, shearing stress and chemical environment."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Metamorphic rock"@en ;
+  skos:prefLabel "metamorphic rock"@en ;
 .
 rksd:Metasomatic_Rock
   rdf:type skos:Concept ;
   dcterm:source "This vocabulary"@en ;
   rdfs:comment "SLTTm (2004) proposed the following criteria to distinguish hydrothermally altered or metasomatic rock from igneous rock. \"The rock is classified as metamorphic if (1) the texture has been modified such that it can no longer be considered igneous, (2) the bulk composition of the rock is inconsistent with compositions that can be derived purely from a magma and associated processes such as assimilation and differentiation, or (3) minerals inconsistent with magmatic crystallization are present.\""@en ;
+  rdfs:comment "SLTTm (2004) proposed the following criteria to distinguish hydrothermally altered or metasomatic rock from igneous rock. \"The rock is classified as metasomatic if (1) the texture has been modified such that it can no longer be considered igneous, (2) the bulk composition of the rock is inconsistent with compositions that can be derived purely from a magma and associated processes such as assimilation and differentiation, or (3) minerals inconsistent with magmatic crystallization are present.\""@en ;
   rdfs:label "metasomatic rock"@en ;
   skos:broader mat:rock ;
   skos:broader sesrs:Composite_Genesis_Rock ;
@@ -917,6 +936,7 @@ rksd:Sedimentary_Rock
   rdf:type skos:Concept ;
   dcterm:source "SLTTs 2004"@en ;
   rdfs:label "Sedimentary rock"@en ;
+  rdfs:label "sedimentary rock"@en ;
   skos:broader mat:rock ;
   skos:broader sesrs:Sedimentary_Material ;
   skos:closeMatch gsrm:Sedimentary_Rock ;
@@ -924,6 +944,7 @@ rksd:Sedimentary_Rock
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Sedimentary rock"@en ;
+  skos:prefLabel "sedimentary rock"@en ;
 .
 rksd:Syenitoid
   rdf:type skos:Concept ;
@@ -940,6 +961,7 @@ rksd:Tephra
   rdf:type skos:Concept ;
   dcterm:source "Hallsworth and Knox 1999; LeMaitre et al. 2002"@en ;
   rdfs:label "Tephra"@en ;
+  rdfs:label "tephra"@en ;
   skos:broader mat:sediment ;
   skos:broader sesrs:Pyroclastic_Material ;
   skos:closeMatch gsrm:Tephra ;
@@ -947,6 +969,7 @@ rksd:Tephra
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Tephra"@en ;
+  skos:prefLabel "tephra"@en ;
 .
 rksd:Tephritoid
   rdf:type skos:Concept ;
@@ -989,14 +1012,17 @@ rksd:Tuffite
   rdfs:comment "synonym: volcaniclastic rock"@en ;
   rdfs:label "Tuffite"@en ;
   rdfs:label "tuffit"@de ;
+  rdfs:label "tuffite"@en ;
   skos:altLabel "Volcaniclastic rock"@en ;
   skos:broader mat:rock ;
   skos:closeMatch gsrm:Tuffite ;
+  skos:definition "In practice, it is likely that any rock for which there is suspicion that it may consist of redeposited pyroclastic material, usually based on sedimentary structures, irrespective of the presence or percentage of clearly epiclastic particles, would be called a tuffite. 50 percent cutoff with epiclastic rock is in contrast with LeMaitre et al., but is used for consistentency with other sedimentary rock categories following the pattern that the rock name reflects the predominant constituent."@en ;
   skos:definition "Rock consists of more than 50 percent particles of indeterminate pyroclastic or epiclastic origin and less than 75 percent particles of clearly pyroclastic origin. commonly the rock is laminated or exhibits size grading. (based on LeMaitre et al. 2002; Murawski and Meyer 1998)."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "Tuffite"@en ;
   skos:prefLabel "tuffit"@de ;
+  skos:prefLabel "tuffite"@en ;
 .
 rksd:Ultrabasic_Igneous_Rock
   rdf:type skos:Concept ;
@@ -1022,15 +1048,16 @@ rksd:Ultramafic_Igneous_Rock
 .
 rksd:Volcanic_Rock
   rdf:type skos:Concept ;
-  rdfs:label "Volcanic rock"@en ;
+  rdfs:label "volcanic rock "@en ;
   skos:broader rksd:Igneous_Rock ;
   skos:broader sesrs:Volcanic_Material ;
   skos:definition "Rock that exhibits direct evidence of extrusive igneous processes in its genesis."@en ;
   skos:inScheme rksd:rocksedimentvocabulary ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:note "Hand-sample level evidence for extrusive origin includes vesiculation, inclusion of supracrustal fragments, eutaxitic foliation, bread-crust surfaces; weaker evidence includes glassy texture or fragmentation interpreted to be related to flow or eruption processes.  In many cases, rocks are classified as volcanic based on the context in which they are collected; as such the assignement of volcanic genesis is not based on properties directly observable in the sample."@en ;
-  skos:note "This class will overlap with various other classes, including exotic composition, fine-grained igneous, glass-rich igneous, intermediate-composition, porphyry, ultrabasic, ultramafic, depending on how much information is available"@en ;
-  skos:prefLabel "Volcanic rock"@en ;
+  skos:note "This class will overlap with various other classes, including exotic compoistion, fine-grained igneous, glass-rich igneous, intermediate-composition, porphyry, ultrabasic, ultramafic, depending on how much information is available"@en ;
+  skos:prefLabel "volcanic rock "@en ;
+  skos:prefLabel "volcanic rock"@en ;
 .
 rksd:breccia_gouge_series
   rdf:type skos:Concept ;
@@ -1492,7 +1519,6 @@ sesrs:Chlorite_Actinolite_Epidote_Metamorphic_Rock
   dcterm:source "This vocabulary"@en ;
   rdfs:comment "Rock classified as Greenschist is difficult to categorize in the CGI SimpleLithology scheme. This stems in part from the variation in usage and the general fuzzy definition of the term. The definition of greenschist is generally something along the lines of 'metamorphosed rock with a greenish colour, characterized by the presence of actinolite, chlorite and epidote, and containing a planar or linear fabric. The presence or absence of schistose fabric in rocks called 'greenschist' is problematic. The fabric present in many rocks called greenschist is too weak or variably developed to meet the definition of 'schist' per CGI SimpleLithology. Generally if the rock has achieved metamorphic grade such that the term 'gneiss' is applicable, it would not be called greenschist. Thus, 'greenschist' would correspond most closely to a chlorite + actinolite rich 'Foliated metamorphic rock', but if it actually meets the definition of 'Schist' it would be a chlorite + actinolite 'Schist'."@en ;
   rdfs:label "chlorite actinolite epidote metamorphic rock"@en ;
-  skos:altLabel "greenstone"@en ;
   skos:broader rksd:Metamorphic_Rock ;
   skos:definition "Metamorphic rock characterized by 50 percent or more of combined chlorite, actinolite and epidote. Category for rocks generally named greenschist or greenstone."@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
@@ -1930,7 +1956,6 @@ sesrs:Glaucophane_Lawsonite_Epidote_Metamorphic_Rock
   rdfs:label "glaucophane lawsonite epidote metamorphic rock"@en ;
   rdfs:label "glaukophanschiefer"@de ;
   skos:altLabel "blauschiefer"@de ;
-  skos:altLabel "blueschist"@en ;
   skos:broader rksd:Metamorphic_Rock ;
   skos:definition "A metamorphic rock of roughly basaltic composition, defined by the presence of glaucophane with lawsonite or epidote. Other minerals that may be present include jadeite, albite, chlorite, garnet, and muscovite (phengitic white mica). Typically fine-grained, dark colored. Category for rocks commonly referred to as blueschist."@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
@@ -1984,15 +2009,6 @@ sesrs:Gravel
   skos:definition "Clastic sediment containing greater than 30 percent gravel-size particles (greater than 2.0 mm diameter). Gravel in which more than half of the particles are of epiclastic origin"@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "gravel"@en ;
-.
-sesrs:Greisen
-  rdf:type skos:Concept ;
-  dcterm:source "https://en.wikipedia.org/wiki/Greisen"@en ;
-  rdfs:label "Greisen"@en ;
-  skos:broader rksd:Metasomatic_Rock ;
-  skos:definition "Greisen is a class of endoskarn,  formed by self-generated alteration of a granite. Greisens appear as partly coarse, crystalline granite, partly vuggy with miarolitic cavities, disseminated halide minerals such as fluorite, and occasionally metallic oxide and sulfide ore minerals, borate minerals (tourmaline) and accessory phases such as sphene, beryl or topaz."@en ;
-  skos:inScheme sesrs:rocksedimentvocabulary ;
-  skos:prefLabel "Greisen"@en ;
 .
 sesrs:Hornfels
   rdf:type skos:Concept ;
@@ -2150,6 +2166,7 @@ sesrs:Lava
   skos:broader rksd:Volcanic_Rock ;
   skos:definition "Volcanic Rock with features indicating origin by extrusive lava flow."@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "Lava "@en ;
   skos:prefLabel "Lava"@en ;
 .
 sesrs:Lignite
@@ -2687,13 +2704,6 @@ sesrs:Rock_Salt
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "rock salt"@en ;
 .
-sesrs:Rodingite
-  rdf:type skos:Concept ;
-  rdfs:label "Rodingite "@en ;
-  skos:broader rksd:Metasomatic_Rock ;
-  skos:definition "Rodingite is a metasomatic rock composed of grossular-andradite garnet, calcic pyroxene, vesuvianite, epidote and scapolite. Rodingites are common where mafic rocks are in proximity to serpentinized ultramafic rocks. The mafic rocks are altered by high pH, Ca2+ and OH− fluids, which are a byproduct of the serpentinization process, and become rodingites. The mineral content of rodingites is highly variable, their high calcium, low silicon and environment of formation being their defining characteristic. Rodingites are common in ophiolites, serpentinite mélanges, ocean floor peridotites and eclogite massifs. https://en.wikipedia.org/wiki/Rodingite"@en ;
-  skos:prefLabel "Rodingite"@en ;
-.
 sesrs:Sand
   rdf:type skos:Concept ;
   dcterm:source "definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
@@ -2963,18 +2973,21 @@ sesrs:Volcanic_Material
   rdf:type skos:Concept ;
   rdfs:label "Volcanic Material "@en ;
   skos:broader sesrs:Igneous_Material ;
-  skos:definition "Material exhibiting features demonstrating an extrusive igneous origin. Consolidated or non-consolidated"@en ;
+  skos:definition "Material exhibiting features demonstrating an extrusive igneous origin. Consolidated or non-consolidated {@en} " ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "Volcanic Material "@en ;
   skos:prefLabel "Volcanic Material"@en ;
 .
 sesrs:Wacke
   rdf:type skos:Concept ;
   dcterm:source "Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p."@en ;
   rdfs:comment "Distinction from mudstone is based on inference that less that 50 percent of the mud size fraction (matrix) is original mud size detrital particles. May also grade into diamictite or conglomerate based on size distribution of discernible particles. If more than 50 percent of rock is detrital particles of intrabasinal orgin and carbonate composition, categorize as carbonate wackestone. Term is typically applied to diagenetically altered volcanic-lithic clastic rocks in which the definition of the original clasts has been obscured. Suggested boundaries between wacke and arenite range from 5 to 15 percent matrix. See Dickinson (1970) for discussion of interpretation of undiscernible matrix in diagenetically altered lithic clastic rocks. Dickinson, W.R., 1970, Interpreting detrital modes of graywacke and arkose: Journal of Sedimentary Petrology, v. 40, p. 695-707."@en ;
+  rdfs:label "piedra"@es ;
   rdfs:label "wacke"@en ;
   skos:broader sesrs:Clastic_Sandstone ;
   skos:definition "Clastic sandstone with more than 10 percent matrix of indeterminate detrital or diagenetic nature. Matrix is mud size silicate minerals (clay, feldspar, quartz, rock fragments, and alteration products)."@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "piedra"@es ;
   skos:prefLabel "wacke"@en ;
 .
 sesrs:advanced_argillic_altered_rock
@@ -3040,6 +3053,22 @@ sesrs:chloritic_altered_rock
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "chloritic altered rock"@en ;
 .
+sesrs:consolidated
+  rdf:type skos:Concept ;
+  dcterm:source "CGI consolidationdegree SKOS vocabulary 2012-11-24"@en ;
+  rdfs:label "consolidated"@en ;
+  skos:definition "Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right."@en ;
+  skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "consolidated"@en ;
+.
+sesrs:consolidation_variable
+  rdf:type skos:Concept ;
+  dcterm:source "CGI consolidationdegree SKOS vocabulary 2012-11-24"@en ;
+  rdfs:label "consolidation variable"@en ;
+  skos:definition "Consolidation ranges from unconsolidated to indurated on scale of description"@en ;
+  skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "consolidation variable"@en ;
+.
 sesrs:deuteric_altered_rock
   rdf:type skos:Concept ;
   dcterm:source "CGI alterationtype SKOS vocabulary 2012-11-24"@en ;
@@ -3058,14 +3087,21 @@ sesrs:epidote_altered_rock
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "epidote altered rock"@en ;
 .
+sesrs:greisen
+  rdf:type skos:Concept ;
+  dcterm:source "https://en.wikipedia.org/wiki/Greisen"@en ;
+  rdfs:label "greisen"@en ;
+  skos:broader sesrs:Altered_Rock ;
+  skos:definition "Greisen is a class of endoskarn,  formed by self-generated alteration of a granite. Greisens appear as partly coarse, crystalline granite, partly vuggy with miarolitic cavities, disseminated halide minerals such as fluorite, and occasionally metallic oxide and sulfide ore minerals, borate minerals (tourmaline) and accessory phases such as sphene, beryl or topaz."@en ;
+  skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "greisen"@en ;
+.
 sesrs:hematitic_altered_rock
   rdf:type skos:Concept ;
   dcterm:source "CGI alterationtype SKOS vocabulary 2012-11-24"@en ;
-  dcterm:source "Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382" ;
   rdfs:label "hematitic altered rock"@en ;
-  skos:altLabel "red rock altered rock"@en ;
   skos:broader sesrs:Altered_Rock ;
-  skos:definition "Alteration characterized by finely dispersed hematite"@en ;
+  skos:definition "definition missing"@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "hematitic altered rock"@en ;
 .
@@ -3113,6 +3149,16 @@ sesrs:pyritic_altered_rock
   skos:definition "definition missing"@en ;
   skos:inScheme sesrs:rocksedimentvocabulary ;
   skos:prefLabel "pyritic altered rock"@en ;
+.
+sesrs:red_rock_altered_rock
+  rdf:type skos:Concept ;
+  dcterm:source "CGI alterationtype SKOS vocabulary 2012-11-24"@en ;
+  dcterm:source "Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382" ;
+  rdfs:label "red rock altered rock"@en ;
+  skos:broader sesrs:Altered_Rock ;
+  skos:definition "Alteration characterized by finely dispersed hematite"@en ;
+  skos:inScheme sesrs:rocksedimentvocabulary ;
+  skos:prefLabel "red rock altered rock"@en ;
 .
 sesrs:rocksedimentvocabulary
   rdf:type owl:Ontology ;
