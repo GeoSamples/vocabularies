@@ -45,7 +45,7 @@ jobs:
 
           inputttl: SESAR_material_extension_rock_sediment|SESAR_sampled_feature_extension|mineralSKOS
           # these are the URIs for the ConceptScheme; there must be a conceptScheme defined in each vocabulary.
-          inputvocaburi: sesrs:rocksedimentvocabulary|essf:essfvocabulary|gcmin:conceptScheme
+          inputvocaburi: sesrs:rocksedimentvocabulary|sessf:sfvocabulary|gcmin:conceptScheme
 
 
       - name: Deploy docs
