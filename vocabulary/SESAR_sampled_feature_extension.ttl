@@ -305,7 +305,7 @@ sf:marinewaterbodybottom
   rdfs:label "Marine water body bottom"@en ;
   skos:altLabel "Sea floor"@en ;
   skos:broader sessf:marine_setting ;
-  skos:definition "Sampled feature is the interface between the solid Earth and a marine or brackish water body. Includes benthic boundary layer:  the bottom layer of water and the uppermost layer of sediment directly influenced by the overlying water."@en ;
+  skos:definition "Sampled feature is the interface between the solid Earth and a marine or brackish water body.  Includes benthic boundary layer: the bottom layer of water and the uppermost layer of sediment directly influenced by the overlying water."@en ;
   skos:inScheme sf:sampledfeaturevocabulary ;
   skos:inScheme sessf:sfvocabulary ;
   skos:narrowMatch <http://purl.obolibrary.org/obo/ENVO_00000482> ;
@@ -2032,7 +2032,7 @@ sessf:melange
   dcterm:source "https://en.wikipedia.org/wiki/M%C3%A9lange" ;
   rdfs:label "Melange "@en ;
   skos:broader sessf:geologic_unit ;
-  skos:definition "A body of rock characterized by a lack of continuous bedding and the inclusion of fragments of rock of all sizes, contained in a fine-grained deformed matrix. The mélange typically consists of a jumble of large blocks of varied lithology."@en ;
+  skos:definition "A body of rock characterized by a lack of continuous bedding and the inclusion of fragments of rock of all sizes, contained in a fine-grained deformed matrix. The melange typically consists of a jumble of large blocks of varied lithology."@en ;
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Melange"@en ;
 .
