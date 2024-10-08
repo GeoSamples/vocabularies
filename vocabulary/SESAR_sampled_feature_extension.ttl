@@ -563,7 +563,7 @@ sessf:arid_or_semi_arid_environment
 sessf:axial_valley
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Ocean ridge axial valley "@en ;
+  rdfs:label "Ocean ridge axial valley"@en ;
   skos:broader sessf:active_ocean_ridge ;
   skos:definition "A linear depression along the crest of an active ocean ridge spreading center."@en ;
   skos:inScheme sessf:sfvocabulary ;
@@ -647,17 +647,6 @@ sessf:basin
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Basin-physiography"@en ;
 .
-sessf:basin_bog
-  rdf:type skos:Concept ;
-  dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  dcterm:source "1-GE WP3; Neuendorf et al.(2005), p. 451"@en ;
-  skos:broader sessf:bog ;
-  skos:closeMatch gsmlee:basin_bog ;
-  skos:definition "An ombrotrophic or ombrogene peat/bog whose nutrient supply is exclusively from rain water (including snow and atmospheric fallout) therefore making nutrients extremely oligotrophic"@en ;
-  skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinBog> ;
-  skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Basin bog"@en ;
-.
 sessf:bathyal_setting
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
@@ -728,17 +717,6 @@ sessf:biological_reef
   skos:narrower sessf:reef_flat ;
   skos:prefLabel "Biological reef"@en ;
 .
-sessf:blanket_bog
-  rdf:type skos:Concept ;
-  dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  dcterm:source "1-GE WP3; Neuendorf et al.(2005), p. 675"@en ;
-  skos:broader sessf:bog ;
-  skos:closeMatch gsmlee:blanket_bog ;
-  skos:definition "Topogeneous bog/peat whose moisture content is largely dependent on surface water. It is relatively rich in plant nutrients, nitrogen, and mineral matter, is mildly acidic to nearly neutral, and contains little or no cellulose, forms in topographic depressions with essential stagnat or non-moving minerotrophic water supply"@en ;
-  skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/blanketBog> ;
-  skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Blanket bog"@en ;
-.
 sessf:bog
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
@@ -749,8 +727,6 @@ sessf:bog
   skos:definition "Waterlogged, spongy ground, consisting primarily of mosses, containing acidic, decaying vegetation that may develop into peat."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bog> ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:narrower sessf:basin_bog ;
-  skos:narrower sessf:blanket_bog ;
   skos:prefLabel "Bog"@en ;
 .
 sessf:braided_channel
@@ -986,11 +962,11 @@ sessf:continental_margin
 sessf:continental_margin_trench
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Continental margin tench "@en ;
+  rdfs:label "Continental margin trench"@en ;
   skos:broader sessf:deep_sea_trench ;
   skos:definition "A deep submarine valley associated with subduction of an oceanic plate underneath a continent."@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Continental margin tench "@en ;
+  skos:prefLabel "Continental margin trench"@en ;
 .
 sessf:continental_rift_setting
   rdf:type skos:Concept ;
@@ -1339,6 +1315,7 @@ sessf:floodplain
   skos:definition "The surface or strip of relatively smooth land adjacent to a river channel, constructed by the present river in its existing regimen and covered with water when the river overflows its banks. It is built of alluvium carried by the river during floods and deposited in the sluggish water beyond the influence of the swiftest current. A river has one floodplain and may have one or more terraces representing abandoned floodplains"@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/floodplain> ;
   skos:inScheme sessf:sfvocabulary ;
+  skos:note "Include riparian habitat along a river"@en ;
   skos:prefLabel "Floodplain"@en ;
 .
 sessf:fold
@@ -1452,6 +1429,14 @@ sessf:geologic_unit
   skos:narrower sessf:thrust_sheet ;
   skos:narrower sessf:xenolith ;
   skos:prefLabel "Geologic unit"@en ;
+.
+sessf:geothermal_water
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Geothermal water"@en ;
+  skos:broader sf:subsurfacefluidreservoir ;
+  skos:definition "Water that has been heated by interaction with hot rock bodies in the subsurface"@en ;
+  skos:prefLabel "Geothermal water"@en ;
 .
 sessf:gibber_plain
   rdf:type skos:Concept ;
@@ -1633,11 +1618,11 @@ sessf:igneous_system
 sessf:impact_structure
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Impact structure "@en ;
+  rdfs:label "Impact structure"@en ;
   skos:broader sf:earthsurface ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Impact structure "@en ;
+  skos:prefLabel "Impact structure"@en ;
 .
 sessf:inactive_spreading_center
   rdf:type skos:Concept ;
@@ -1828,7 +1813,7 @@ sessf:lake_fresh_water
   dcterm:source "IMLGS sampled feature" ;
   rdfs:label "Fresh water lake "@en ;
   skos:broader sessf:lake ;
-  skos:definition "" ;
+  skos:definition "Natural lakes or human impounded fresh water resevoirs." ;
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Fresh water lake "@en ;
 .
@@ -2118,6 +2103,15 @@ sessf:mountain_range
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Mountain range"@en ;
 .
+sessf:mountain_stream_valley
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Mountain stream valley"@en ;
+  skos:altLabel "Gulch"@en ;
+  skos:broader sessf:physiographic_feature ;
+  skos:definition "V-shaped valley formed by erosion in mountainous terran. It may contain a small stream or dry creek bed with a steep gradient and is usually larger in size than a gully."@en ;
+  skos:prefLabel "Mountain stream valley"@en ;
+.
 sessf:mud_flat
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
@@ -2322,7 +2316,7 @@ sessf:plate_margin
 sessf:plate_spreading_center
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
-  skos:broader sessf:tectonic_setting ;
+  skos:broader sessf:extended_terrane ;
   skos:closeMatch gsmlee:plate_spreading_center ;
   skos:definition "Tectonic setting where new oceanic crust is being or has been formed at a divergent plate boundary. Includes active and inactive spreading centers."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateSpreadingCenter> ;
@@ -2458,15 +2452,15 @@ sessf:ridge
   skos:narrower sessf:submarine_ridge ;
   skos:prefLabel "Ridge"@en ;
 .
-sessf:rift
+sessf:rift_zone
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Rift"@en ;
-  skos:broader sessf:tectonic_setting ;
-  skos:definition "Extended terrane in a zone of plate or plate-fragement divergence"@en ;
+  rdfs:label "Rift zone"@en ;
+  skos:broader sessf:extended_terrane ;
+  skos:definition "A regional extended terrane in a zone of plate or plate-fragement divergence"@en ;
   skos:inScheme sessf:sfvocabulary ;
   skos:note "Includes extended terranes at ocean spreading centers, and intracontinental rifts."@en ;
-  skos:prefLabel "Rift"@en ;
+  skos:prefLabel "Rift zone"@en ;
 .
 sessf:rise_continental
   rdf:type skos:Concept ;
@@ -2503,7 +2497,7 @@ sessf:river_channel
 sessf:river_stream
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "River or stream "@en ;
+  rdfs:label "River or stream"@en ;
   skos:broader sf:terrestrialwaterbody ;
   skos:definition "A body of fresh water flowing in a channel to the sea, a lake, or another such flowing body of water."@en ;
   skos:inScheme sessf:sfvocabulary ;
@@ -2806,7 +2800,7 @@ sessf:submarine_fan
 sessf:submarine_ridge
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Submarine ridge "@en ;
+  rdfs:label "Submarine ridge"@en ;
   skos:broader sessf:ocean_highland ;
   skos:broader sessf:ridge ;
   skos:definition "A ridge on the ocean floor"@en ;
@@ -2816,16 +2810,16 @@ sessf:submarine_ridge
   skos:narrower sessf:ocean_ridge_crest ;
   skos:narrower sessf:ocean_ridge_flank ;
   skos:note "Most submarine ridges are associated with active or abandoned spreading centers at divergent margins between ocean plates."@en ;
-  skos:prefLabel "Submarine ridge "@en ;
+  skos:prefLabel "Submarine ridge"@en ;
 .
 sessf:submarine_vent
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Submarine vent "@en ;
+  rdfs:label "Submarine vent"@en ;
   skos:broader sessf:active_ocean_ridge ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Submarine vent "@en ;
+  skos:prefLabel "Submarine vent"@en ;
 .
 sessf:supraglacial_setting
   rdf:type skos:Concept ;
@@ -2883,7 +2877,7 @@ sessf:tectonic_setting
   skos:narrower sessf:passive_continental_margin ;
   skos:narrower sessf:plate_margin ;
   skos:narrower sessf:plate_spreading_center ;
-  skos:narrower sessf:rift ;
+  skos:narrower sessf:rift_zone ;
   skos:narrower sessf:triple_junction ;
   skos:prefLabel "Tectonically defined setting"@en ;
 .
