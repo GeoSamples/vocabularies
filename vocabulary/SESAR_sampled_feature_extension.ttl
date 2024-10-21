@@ -2628,7 +2628,7 @@ sessf:sfvocabulary
   rdfs:label "SESAR sampled feature extension"@en ;
   owl:imports dcterm: ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  skos:definition "Terms to categorize sampled features in more detail. This vocabualary extends the iSamples Sampled FEature Type vocabulary with concepts from the GeoSciML envent environment vocabulary, and adds several additional concepts."@en ;
+  skos:definition "Terms to categorize sampled features in more detail. This vocabulary extends the iSamples Sampled Feature Type vocabulary with concepts from the GeoSciML event environment vocabulary, and adds several additional concepts."@en ;
   skos:hasTopConcept sf:anysampledfeature ;
   skos:historyNote "2024-08-26 SMR generate to account for sampled features in SESAR"@en ;
   skos:historyNote "2024-10-03 SMR add terms to cover data in SESAR legacy data, map to IMLGS sampled feature, and SESAR physiographic features vocabulary (https://www.geosamples.org/vocabularies/physiographic-feature).  Continue to refine structure of vocabulary, add and update definitions, mapping to ENVO terms."@en ;

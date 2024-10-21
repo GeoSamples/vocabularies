@@ -1,4 +1,8 @@
-# iSamples Vocabularies
+# Vocabularies For GeoSamples.org
+
+Vocabularies to support update to SESAR sample registration system
+
+HTML view of vocabularies is available at https://geosamples.github.io/vocabularies. Vocabulary source files are in the vocabulary directory. 
 
 ## Vocabulary documents
 This repository hosts vocabularies for populating SESAR sample descriptions.  The authoritative source files are rdf SKOS vocabularies serialized using Turtle syntax. These are in the **vocabulary** folder. The **docs** folder contains Markdown and HTML presentations of the vocabulary content.  
