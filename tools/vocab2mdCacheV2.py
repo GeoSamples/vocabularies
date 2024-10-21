@@ -82,7 +82,8 @@ NS = {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "obo": "http://purl.obolibrary.org/obo/",
     "dcterm": "http://purl.org/dc/terms/",
-    "gcmin":"https://w3id.org/geochem/1.0/min/"
+    "gcmin":"https://w3id.org/geochem/1.0/min/",
+    "sessf":"https://w3id.org/sesar/sampledfeature/"
 }
 
 PFX = """

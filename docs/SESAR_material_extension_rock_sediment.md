@@ -17,7 +17,7 @@ execute:
 
 # **Concept scheme:** SESAR - Rock and sediment materials vocabulary
 
-Vocabulary last modified:  2024-08-19
+Vocabulary last modified:  2024-09-26
 
 subtitle: 
   Rock and sediment categories for SESAR materialType classification. Extends the iSamples Earth and Environment rock and sediment extension, which extends the base iSamples Material Type vocabulary.
@@ -195,11 +195,11 @@ Namespace:
                 - [peridotite](#peridotite)
                 - [pyroxenite](#pyroxenite)
                 - [komatiitic rock](#komatiitic_rock)
-            - [volcanic rock ](#volcanic_rock)
+            - [Volcanic rock](#volcanic_rock)
                 - [pyroclastic rock](#pyroclastic_rock)
                     - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
                     - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
-                - [Lava ](#lava)
+                - [Lava](#lava)
         - [Impact generated material](#impact_generated_material)
         - [Massive sulphide](#massive_sulphide)
             - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
@@ -242,20 +242,19 @@ Namespace:
                 - [chloritic altered rock](#chloritic_altered_rock)
                 - [deuteric altered rock](#deuteric_altered_rock)
                 - [epidote altered rock](#epidote_altered_rock)
-                - [greisen](#greisen)
                 - [hematitic altered rock](#hematitic_altered_rock)
                 - [kaolinitic altered rock](#kaolinitic_altered_rock)
                 - [phyllic altered rock](#phyllic_altered_rock)
                 - [potassic altered rock](#potassic_altered_rock)
                 - [propylitic altered rock](#propylitic_altered_rock)
                 - [pyritic altered rock](#pyritic_altered_rock)
-                - [red rock altered rock](#red_rock_altered_rock)
                 - [saussuritised rock](#saussuritised_rock)
                 - [sericitic altered rock](#sericitic_altered_rock)
                 - [serpentinised rock](#serpentinised_rock)
                 - [silicificed rock](#silicified_rock)
                 - [uralitised rock](#uralitised_rock)
                 - [zeolitic altered rock](#zeolitic_altered_rock)
+            - [Greisen](#greisen)
             - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
             - [skarn](#skarn)
             - [spilite](#spilite)
@@ -294,7 +293,7 @@ Namespace:
                     - [siltstone](#siltstone)
                 - [sandstone](#clastic_sandstone)
                     - [arenit](#arenite)
-                    - [piedra](#wacke)
+                    - [wacke](#wacke)
             - [generic conglomerate](#generic_conglomerate)
                 - [conglomerate](#clastic_conglomerate)
             - [generic mudstone](#generic_mudstone)
@@ -310,7 +309,7 @@ Namespace:
             - [Generic sandstone](#generic_sandstone)
                 - [sandstone](#clastic_sandstone)
                     - [arenit](#arenite)
-                    - [piedra](#wacke)
+                    - [wacke](#wacke)
             - [hybrid sedimentary rock](#hybrid_sedimentary_rock)
             - [iron rich sedimentary rock](#iron_rich_sedimentary_rock)
             - [non clastic siliceous sedimentary rock](#non_clastic_siliceous_sedimentary_rock)
@@ -363,20 +362,19 @@ Namespace:
                     - [chloritic altered rock](#chloritic_altered_rock)
                     - [deuteric altered rock](#deuteric_altered_rock)
                     - [epidote altered rock](#epidote_altered_rock)
-                    - [greisen](#greisen)
                     - [hematitic altered rock](#hematitic_altered_rock)
                     - [kaolinitic altered rock](#kaolinitic_altered_rock)
                     - [phyllic altered rock](#phyllic_altered_rock)
                     - [potassic altered rock](#potassic_altered_rock)
                     - [propylitic altered rock](#propylitic_altered_rock)
                     - [pyritic altered rock](#pyritic_altered_rock)
-                    - [red rock altered rock](#red_rock_altered_rock)
                     - [saussuritised rock](#saussuritised_rock)
                     - [sericitic altered rock](#sericitic_altered_rock)
                     - [serpentinised rock](#serpentinised_rock)
                     - [silicificed rock](#silicified_rock)
                     - [uralitised rock](#uralitised_rock)
                     - [zeolitic altered rock](#zeolitic_altered_rock)
+                - [Greisen](#greisen)
                 - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
                 - [skarn](#skarn)
                 - [spilite](#spilite)
@@ -428,20 +426,19 @@ Namespace:
                     - [chloritic altered rock](#chloritic_altered_rock)
                     - [deuteric altered rock](#deuteric_altered_rock)
                     - [epidote altered rock](#epidote_altered_rock)
-                    - [greisen](#greisen)
                     - [hematitic altered rock](#hematitic_altered_rock)
                     - [kaolinitic altered rock](#kaolinitic_altered_rock)
                     - [phyllic altered rock](#phyllic_altered_rock)
                     - [potassic altered rock](#potassic_altered_rock)
                     - [propylitic altered rock](#propylitic_altered_rock)
                     - [pyritic altered rock](#pyritic_altered_rock)
-                    - [red rock altered rock](#red_rock_altered_rock)
                     - [saussuritised rock](#saussuritised_rock)
                     - [sericitic altered rock](#sericitic_altered_rock)
                     - [serpentinised rock](#serpentinised_rock)
                     - [silicificed rock](#silicified_rock)
                     - [uralitised rock](#uralitised_rock)
                     - [zeolitic altered rock](#zeolitic_altered_rock)
+                - [Greisen](#greisen)
                 - [Hydrothermal Massive Sulphide](#hydrothermal_massive_sulphide)
                 - [skarn](#skarn)
                 - [spilite](#spilite)
@@ -604,11 +601,11 @@ Namespace:
                 - [peridotite](#peridotite)
                 - [pyroxenite](#pyroxenite)
                 - [komatiitic rock](#komatiitic_rock)
-            - [volcanic rock ](#volcanic_rock)
+            - [Volcanic rock](#volcanic_rock)
                 - [pyroclastic rock](#pyroclastic_rock)
                     - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
                     - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
-                - [Lava ](#lava)
+                - [Lava](#lava)
         - [acidic igneous material](#acidic_igneous_material)
             - [acidic igneous rock](#acidic_igneous_rock)
                 - [dacite](#dacite)
@@ -657,12 +654,12 @@ Namespace:
                         - [foid bearing monzodiorite](#foid_bearing_monzodiorite)
                         - [monzodiorite](#monzodiorite)
                         - [quartz monzodiorite](#quartz_monzodiorite)
-        - [Volcanic Material ](#volcanic_material)
-            - [volcanic rock ](#volcanic_rock)
+        - [Volcanic Material](#volcanic_material)
+            - [Volcanic rock](#volcanic_rock)
                 - [pyroclastic rock](#pyroclastic_rock)
                     - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
                     - [tuff breccia agglomerate or pyroclastic breccia](#tuff_breccia_agglomerate_or_pyroclastic_breccia)
-                - [Lava ](#lava)
+                - [Lava](#lava)
             - [pyroclastic material](#pyroclastic_material)
                 - [pyroclastic rock](#pyroclastic_rock)
                     - [ash tuff lapillistone and lapilli tuff](#ash_tuff_lapillistone_and_lapilli_tuff)
@@ -716,7 +713,7 @@ Namespace:
                     - [siltstone](#siltstone)
                 - [sandstone](#clastic_sandstone)
                     - [arenit](#arenite)
-                    - [piedra](#wacke)
+                    - [wacke](#wacke)
             - [generic conglomerate](#generic_conglomerate)
                 - [conglomerate](#clastic_conglomerate)
             - [generic mudstone](#generic_mudstone)
@@ -732,7 +729,7 @@ Namespace:
             - [Generic sandstone](#generic_sandstone)
                 - [sandstone](#clastic_sandstone)
                     - [arenit](#arenite)
-                    - [piedra](#wacke)
+                    - [wacke](#wacke)
             - [hybrid sedimentary rock](#hybrid_sedimentary_rock)
             - [iron rich sedimentary rock](#iron_rich_sedimentary_rock)
             - [non clastic siliceous sedimentary rock](#non_clastic_siliceous_sedimentary_rock)
@@ -883,7 +880,7 @@ Namespace:
                     - [siltstone](#siltstone)
                 - [sandstone](#clastic_sandstone)
                     - [arenit](#arenite)
-                    - [piedra](#wacke)
+                    - [wacke](#wacke)
         - [non clastic siliceous sedimentary material](#non_clastic_siliceous_sedimentary_material)
             - [non clastic siliceous sediment](#non_clastic_siliceous_sediment)
             - [non clastic siliceous sedimentary rock](#non_clastic_siliceous_sedimentary_rock)
@@ -995,7 +992,6 @@ sediment from rock.
 []{#breccia}
 
 ###  Breccia
-* `breccia`
 - **Child of**:
  [`Rock`](#rock)
  [`Rock or sediment`](#rockorsediment)
@@ -1043,7 +1039,6 @@ Jackson, 1997; NADM C1 2004; Neuendorf et al 2005
 []{#aphanite}
 
 ####  Aphanite
-* `aphanite`
 - **Child of**:
  [`Rock`](#rock)
 - Rock that is too fine grained to categorize in more detail.
@@ -1055,7 +1050,6 @@ This vocabulary
 []{#breccia}
 
 ####  Breccia
-* `breccia`
 - **Child of**:
  [`Rock`](#rock)
  [`Rock or sediment`](#rockorsediment)
@@ -1080,7 +1074,6 @@ Neuendorf et al. 2005
 []{#fault_related_material}
 
 ####  Fault related material
-* `fault related material`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis material`](#composite_genesis_material)
@@ -1176,7 +1169,7 @@ This vocabulary
 #####  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -2251,7 +2244,7 @@ This vocabulary
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -3440,8 +3433,7 @@ LeMaitre et al. 2002
 
 []{#volcanic_rock}
 
-#####  volcanic rock
-* `volcanic rock`
+#####  Volcanic rock
 - **Child of**:
  [`Igneous rock`](#igneous_rock)
  [`Volcanic Material`](#volcanic_material)
@@ -3455,7 +3447,7 @@ its genesis.
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -3496,9 +3488,8 @@ Schmid 1981; LeMaitre et al. 2002
 []{#lava}
 
 ######  Lava
-* `Lava`
 - **Child of**:
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
 - Volcanic Rock with features indicating origin by extrusive lava
 flow.
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Lava
@@ -3507,7 +3498,6 @@ flow.
 []{#impact_generated_material}
 
 ####  Impact generated material
-* `impact generated material`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis material`](#composite_genesis_material)
@@ -3523,15 +3513,13 @@ Stöffler and Grieve 2007; Jackson 1997
 []{#massive_sulphide}
 
 ####  Massive sulphide
-* `massive sulphide`
 - **Child of**:
  [`Rock`](#rock)
 - rock consisting of greater than 50% sulphide or sulfosalt minerals
 formed by any processes. Includes hydrothermal and sedimentary
 ehalative sulfide.
 - **Alternate labels:**
-Massive Sulfide, 
-massive Sulfide, 
+Massive Sulfide
 - **Source:**
 Provisional SMR 2020-06-07
 - **Concept URI:** https://w3id.org/isample/earthenv/rocksediment/1.0/Massive_Sulphide
@@ -3570,27 +3558,9 @@ smr provisional 2020-06-07
 []{#metamorphic_rock}
 
 ####  Metamorphic rock
-* `metamorphic rock`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis rock`](#composite_genesis_rock)
-- Robertson (1999, Classification of metamorphic rocks: British
-Geological Survey Research Report, RR 99–02) defines the boundary
-between diagenesis and metamorphism in sedimentary rocks as follows:
-“…the boundary between diagenesis and metamorphism is somewhat
-arbitrary and strongly dependent on the lithologies involved. For
-example changes take place in organic materials at lower temperatures
-than in rocks dominated by silicate minerals. In mudrocks, a white
-mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
-obtained by X-ray diffraction analysis, is used to define the onset of
-metamorphism (Kisch, 1991). In this scheme, the first appearance of
-glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
-stilpnomelane is taken to indicate the lower limit of metamorphism
-(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
-1998). Most workers agree that such mineral growth starts at 150 +/-
-50° C in silicate rocks. Many lithologies may show no change in
-mineralogy under these conditions and hence the recognition of the
-onset of metamorphism will vary with bulk composition.”
 - Robertson (1999, Classification of metamorphic rocks: British
 Geological Survey Research Report, RR 99–02) defines the boundary
 between diagenesis and metamorphism in sedimentary rocks as follows:
@@ -3687,6 +3657,8 @@ it would be a chlorite + actinolite 'Schist'.
 - Metamorphic rock characterized by 50 percent or more of combined
 chlorite, actinolite and epidote. Category for rocks generally named
 greenschist or greenstone.
+- **Alternate labels:**
+greenstone
 - **Source:**
 This vocabulary
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Chlorite_Actinolite_Epidote_Metamorphic_Rock
@@ -3872,7 +3844,8 @@ may be present include jadeite, albite, chlorite, garnet, and
 muscovite (phengitic white mica). Typically fine-grained, dark
 colored. Category for rocks commonly referred to as blueschist.
 - **Alternate labels:**
-blauschiefer
+blauschiefer, 
+blueschist, 
 - **Source:**
 This vocabulary
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Glaucophane_Lawsonite_Epidote_Metamorphic_Rock
@@ -4036,14 +4009,6 @@ composition of the rock is inconsistent with compositions that can be
 derived purely from a magma and associated processes such as
 assimilation and differentiation, or (3) minerals inconsistent with
 magmatic crystallization are present."
-- SLTTm (2004) proposed the following criteria to distinguish
-hydrothermally altered or metasomatic rock from igneous rock. "The
-rock is classified as metasomatic if (1) the texture has been modified
-such that it can no longer be considered igneous, (2) the bulk
-composition of the rock is inconsistent with compositions that can be
-derived purely from a magma and associated processes such as
-assimilation and differentiation, or (3) minerals inconsistent with
-magmatic crystallization are present."
 - Rock that has fabric and composition indicating open-system
 mineralogical and chemical changes in response to interaction with a
 fluid phase, typically water rich.
@@ -4183,30 +4148,17 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/epidote_altered_rock
 - **Other Properties:**
 
-[]{#greisen}
-
-######  greisen
-- **Child of**:
- [`Altered, type not specified`](#altered_rock)
-- Greisen is a class of endoskarn,  formed by self-generated
-alteration of a granite. Greisens appear as partly coarse, crystalline
-granite, partly vuggy with miarolitic cavities, disseminated halide
-minerals such as fluorite, and occasionally metallic oxide and sulfide
-ore minerals, borate minerals (tourmaline) and accessory phases such
-as sphene, beryl or topaz.
-- **Source:**
-https://en.wikipedia.org/wiki/Greisen
-- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/greisen
-- **Other Properties:**
-
 []{#hematitic_altered_rock}
 
 ######  hematitic altered rock
 - **Child of**:
  [`Altered, type not specified`](#altered_rock)
-- definition missing
+- Alteration characterized by finely dispersed hematite
+- **Alternate labels:**
+red rock altered rock
 - **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
+CGI alterationtype SKOS vocabulary 2012-11-24, 
+Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/hematitic_altered_rock
 - **Other Properties:**
 
@@ -4266,18 +4218,6 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Source:**
 CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/pyritic_altered_rock
-- **Other Properties:**
-
-[]{#red_rock_altered_rock}
-
-######  red rock altered rock
-- **Child of**:
- [`Altered, type not specified`](#altered_rock)
-- Alteration characterized by finely dispersed hematite
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24, 
-Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
-- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/red_rock_altered_rock
 - **Other Properties:**
 
 []{#saussuritised_rock}
@@ -4360,6 +4300,22 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/zeolitic_altered_rock
 - **Other Properties:**
 
+[]{#greisen}
+
+#####  Greisen
+- **Child of**:
+ [`metasomatic rock`](#metasomatic_rock)
+- Greisen is a class of endoskarn,  formed by self-generated
+alteration of a granite. Greisens appear as partly coarse, crystalline
+granite, partly vuggy with miarolitic cavities, disseminated halide
+minerals such as fluorite, and occasionally metallic oxide and sulfide
+ore minerals, borate minerals (tourmaline) and accessory phases such
+as sphene, beryl or topaz.
+- **Source:**
+https://en.wikipedia.org/wiki/Greisen
+- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Greisen
+- **Other Properties:**
+
 []{#hydrothermal_massive_sulphide}
 
 #####  Hydrothermal Massive Sulphide
@@ -4409,7 +4365,6 @@ Fettes and Desmon, 2007; Best, M.G., 1982, Igneous and metamorphic petrology: Ne
 []{#sedimentary_rock}
 
 ####  Sedimentary rock
-* `sedimentary rock`
 - **Child of**:
  [`Rock`](#rock)
  [`Sedimentary material`](#sedimentary_material)
@@ -5012,8 +4967,7 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 
 []{#wacke}
 
-#######  piedra
-* `wacke`
+#######  wacke
 - **Child of**:
  [`sandstone`](#clastic_sandstone)
 - Distinction from mudstone is based on inference that less that 50
@@ -5272,7 +5226,6 @@ This vocabulary
 []{#generic_sandstone}
 
 #####  Generic sandstone
-* `generic sandstone`
 - **Child of**:
  [`Sedimentary rock`](#sedimentary_rock)
 - Sedimentary rock in which less than 30 percent of particles are
@@ -5319,8 +5272,7 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 
 []{#wacke}
 
-#######  piedra
-* `wacke`
+#######  wacke
 - **Child of**:
  [`sandstone`](#clastic_sandstone)
 - Distinction from mudstone is based on inference that less that 50
@@ -5522,7 +5474,6 @@ HallsworthandKnox 1999, Jackson 1997
 
 ####  Tuffite
 * `tuffit`
-* `tuffite`
 - **Child of**:
  [`Rock`](#rock)
 - In practice, it is likely that any rock for which there is suspicion
@@ -5534,14 +5485,6 @@ is used for consistentency with other sedimentary rock categories
 following the pattern that the rock name reflects the predominant
 constituent.
 - synonym: volcaniclastic rock
-- In practice, it is likely that any rock for which there is suspicion
-that it may consist of redeposited pyroclastic material, usually based
-on sedimentary structures, irrespective of the presence or percentage
-of clearly epiclastic particles, would be called a tuffite. 50 percent
-cutoff with epiclastic rock is in contrast with LeMaitre et al., but
-is used for consistentency with other sedimentary rock categories
-following the pattern that the rock name reflects the predominant
-constituent.
 - Rock consists of more than 50 percent particles of indeterminate
 pyroclastic or epiclastic origin and less than 75 percent particles of
 clearly pyroclastic origin. commonly the rock is laminated or exhibits
@@ -5607,27 +5550,9 @@ Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NA
 []{#metamorphic_rock}
 
 #####  Metamorphic rock
-* `metamorphic rock`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis rock`](#composite_genesis_rock)
-- Robertson (1999, Classification of metamorphic rocks: British
-Geological Survey Research Report, RR 99–02) defines the boundary
-between diagenesis and metamorphism in sedimentary rocks as follows:
-“…the boundary between diagenesis and metamorphism is somewhat
-arbitrary and strongly dependent on the lithologies involved. For
-example changes take place in organic materials at lower temperatures
-than in rocks dominated by silicate minerals. In mudrocks, a white
-mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
-obtained by X-ray diffraction analysis, is used to define the onset of
-metamorphism (Kisch, 1991). In this scheme, the first appearance of
-glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
-stilpnomelane is taken to indicate the lower limit of metamorphism
-(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
-1998). Most workers agree that such mineral growth starts at 150 +/-
-50° C in silicate rocks. Many lithologies may show no change in
-mineralogy under these conditions and hence the recognition of the
-onset of metamorphism will vary with bulk composition.”
 - Robertson (1999, Classification of metamorphic rocks: British
 Geological Survey Research Report, RR 99–02) defines the boundary
 between diagenesis and metamorphism in sedimentary rocks as follows:
@@ -5724,6 +5649,8 @@ it would be a chlorite + actinolite 'Schist'.
 - Metamorphic rock characterized by 50 percent or more of combined
 chlorite, actinolite and epidote. Category for rocks generally named
 greenschist or greenstone.
+- **Alternate labels:**
+greenstone
 - **Source:**
 This vocabulary
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Chlorite_Actinolite_Epidote_Metamorphic_Rock
@@ -5909,7 +5836,8 @@ may be present include jadeite, albite, chlorite, garnet, and
 muscovite (phengitic white mica). Typically fine-grained, dark
 colored. Category for rocks commonly referred to as blueschist.
 - **Alternate labels:**
-blauschiefer
+blauschiefer, 
+blueschist, 
 - **Source:**
 This vocabulary
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Glaucophane_Lawsonite_Epidote_Metamorphic_Rock
@@ -6073,14 +6001,6 @@ composition of the rock is inconsistent with compositions that can be
 derived purely from a magma and associated processes such as
 assimilation and differentiation, or (3) minerals inconsistent with
 magmatic crystallization are present."
-- SLTTm (2004) proposed the following criteria to distinguish
-hydrothermally altered or metasomatic rock from igneous rock. "The
-rock is classified as metasomatic if (1) the texture has been modified
-such that it can no longer be considered igneous, (2) the bulk
-composition of the rock is inconsistent with compositions that can be
-derived purely from a magma and associated processes such as
-assimilation and differentiation, or (3) minerals inconsistent with
-magmatic crystallization are present."
 - Rock that has fabric and composition indicating open-system
 mineralogical and chemical changes in response to interaction with a
 fluid phase, typically water rich.
@@ -6220,30 +6140,17 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/epidote_altered_rock
 - **Other Properties:**
 
-[]{#greisen}
-
-#######  greisen
-- **Child of**:
- [`Altered, type not specified`](#altered_rock)
-- Greisen is a class of endoskarn,  formed by self-generated
-alteration of a granite. Greisens appear as partly coarse, crystalline
-granite, partly vuggy with miarolitic cavities, disseminated halide
-minerals such as fluorite, and occasionally metallic oxide and sulfide
-ore minerals, borate minerals (tourmaline) and accessory phases such
-as sphene, beryl or topaz.
-- **Source:**
-https://en.wikipedia.org/wiki/Greisen
-- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/greisen
-- **Other Properties:**
-
 []{#hematitic_altered_rock}
 
 #######  hematitic altered rock
 - **Child of**:
  [`Altered, type not specified`](#altered_rock)
-- definition missing
+- Alteration characterized by finely dispersed hematite
+- **Alternate labels:**
+red rock altered rock
 - **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
+CGI alterationtype SKOS vocabulary 2012-11-24, 
+Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/hematitic_altered_rock
 - **Other Properties:**
 
@@ -6303,18 +6210,6 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Source:**
 CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/pyritic_altered_rock
-- **Other Properties:**
-
-[]{#red_rock_altered_rock}
-
-#######  red rock altered rock
-- **Child of**:
- [`Altered, type not specified`](#altered_rock)
-- Alteration characterized by finely dispersed hematite
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24, 
-Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
-- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/red_rock_altered_rock
 - **Other Properties:**
 
 []{#saussuritised_rock}
@@ -6395,6 +6290,22 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Source:**
 CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/zeolitic_altered_rock
+- **Other Properties:**
+
+[]{#greisen}
+
+######  Greisen
+- **Child of**:
+ [`metasomatic rock`](#metasomatic_rock)
+- Greisen is a class of endoskarn,  formed by self-generated
+alteration of a granite. Greisens appear as partly coarse, crystalline
+granite, partly vuggy with miarolitic cavities, disseminated halide
+minerals such as fluorite, and occasionally metallic oxide and sulfide
+ore minerals, borate minerals (tourmaline) and accessory phases such
+as sphene, beryl or topaz.
+- **Source:**
+https://en.wikipedia.org/wiki/Greisen
+- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Greisen
 - **Other Properties:**
 
 []{#hydrothermal_massive_sulphide}
@@ -6476,7 +6387,6 @@ SLTTm 2004
 []{#fault_related_material}
 
 ####  Fault related material
-* `fault related material`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis material`](#composite_genesis_material)
@@ -6553,7 +6463,6 @@ SLTTm 2004
 []{#impact_generated_material}
 
 ####  Impact generated material
-* `impact generated material`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis material`](#composite_genesis_material)
@@ -6602,27 +6511,9 @@ Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NA
 []{#metamorphic_rock}
 
 #####  Metamorphic rock
-* `metamorphic rock`
 - **Child of**:
  [`Rock`](#rock)
  [`Composite genesis rock`](#composite_genesis_rock)
-- Robertson (1999, Classification of metamorphic rocks: British
-Geological Survey Research Report, RR 99–02) defines the boundary
-between diagenesis and metamorphism in sedimentary rocks as follows:
-“…the boundary between diagenesis and metamorphism is somewhat
-arbitrary and strongly dependent on the lithologies involved. For
-example changes take place in organic materials at lower temperatures
-than in rocks dominated by silicate minerals. In mudrocks, a white
-mica (illite) crystallinity value of less than 0.42 Delta 2 Theta
-obtained by X-ray diffraction analysis, is used to define the onset of
-metamorphism (Kisch, 1991). In this scheme, the first appearance of
-glaucophane, lawsonite, paragonite, prehnite, pumpellyite or
-stilpnomelane is taken to indicate the lower limit of metamorphism
-(Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson,
-1998). Most workers agree that such mineral growth starts at 150 +/-
-50° C in silicate rocks. Many lithologies may show no change in
-mineralogy under these conditions and hence the recognition of the
-onset of metamorphism will vary with bulk composition.”
 - Robertson (1999, Classification of metamorphic rocks: British
 Geological Survey Research Report, RR 99–02) defines the boundary
 between diagenesis and metamorphism in sedimentary rocks as follows:
@@ -6719,6 +6610,8 @@ it would be a chlorite + actinolite 'Schist'.
 - Metamorphic rock characterized by 50 percent or more of combined
 chlorite, actinolite and epidote. Category for rocks generally named
 greenschist or greenstone.
+- **Alternate labels:**
+greenstone
 - **Source:**
 This vocabulary
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Chlorite_Actinolite_Epidote_Metamorphic_Rock
@@ -6904,7 +6797,8 @@ may be present include jadeite, albite, chlorite, garnet, and
 muscovite (phengitic white mica). Typically fine-grained, dark
 colored. Category for rocks commonly referred to as blueschist.
 - **Alternate labels:**
-blauschiefer
+blauschiefer, 
+blueschist, 
 - **Source:**
 This vocabulary
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Glaucophane_Lawsonite_Epidote_Metamorphic_Rock
@@ -7068,14 +6962,6 @@ composition of the rock is inconsistent with compositions that can be
 derived purely from a magma and associated processes such as
 assimilation and differentiation, or (3) minerals inconsistent with
 magmatic crystallization are present."
-- SLTTm (2004) proposed the following criteria to distinguish
-hydrothermally altered or metasomatic rock from igneous rock. "The
-rock is classified as metasomatic if (1) the texture has been modified
-such that it can no longer be considered igneous, (2) the bulk
-composition of the rock is inconsistent with compositions that can be
-derived purely from a magma and associated processes such as
-assimilation and differentiation, or (3) minerals inconsistent with
-magmatic crystallization are present."
 - Rock that has fabric and composition indicating open-system
 mineralogical and chemical changes in response to interaction with a
 fluid phase, typically water rich.
@@ -7215,30 +7101,17 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/epidote_altered_rock
 - **Other Properties:**
 
-[]{#greisen}
-
-#######  greisen
-- **Child of**:
- [`Altered, type not specified`](#altered_rock)
-- Greisen is a class of endoskarn,  formed by self-generated
-alteration of a granite. Greisens appear as partly coarse, crystalline
-granite, partly vuggy with miarolitic cavities, disseminated halide
-minerals such as fluorite, and occasionally metallic oxide and sulfide
-ore minerals, borate minerals (tourmaline) and accessory phases such
-as sphene, beryl or topaz.
-- **Source:**
-https://en.wikipedia.org/wiki/Greisen
-- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/greisen
-- **Other Properties:**
-
 []{#hematitic_altered_rock}
 
 #######  hematitic altered rock
 - **Child of**:
  [`Altered, type not specified`](#altered_rock)
-- definition missing
+- Alteration characterized by finely dispersed hematite
+- **Alternate labels:**
+red rock altered rock
 - **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24
+CGI alterationtype SKOS vocabulary 2012-11-24, 
+Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/hematitic_altered_rock
 - **Other Properties:**
 
@@ -7298,18 +7171,6 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Source:**
 CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/pyritic_altered_rock
-- **Other Properties:**
-
-[]{#red_rock_altered_rock}
-
-#######  red rock altered rock
-- **Child of**:
- [`Altered, type not specified`](#altered_rock)
-- Alteration characterized by finely dispersed hematite
-- **Source:**
-CGI alterationtype SKOS vocabulary 2012-11-24, 
-Williams, P.J., 1994, Aust. J. Earth Science, v41, p381-382, 
-- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/red_rock_altered_rock
 - **Other Properties:**
 
 []{#saussuritised_rock}
@@ -7390,6 +7251,22 @@ CGI alterationtype SKOS vocabulary 2012-11-24
 - **Source:**
 CGI alterationtype SKOS vocabulary 2012-11-24
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/zeolitic_altered_rock
+- **Other Properties:**
+
+[]{#greisen}
+
+######  Greisen
+- **Child of**:
+ [`metasomatic rock`](#metasomatic_rock)
+- Greisen is a class of endoskarn,  formed by self-generated
+alteration of a granite. Greisens appear as partly coarse, crystalline
+granite, partly vuggy with miarolitic cavities, disseminated halide
+minerals such as fluorite, and occasionally metallic oxide and sulfide
+ore minerals, borate minerals (tourmaline) and accessory phases such
+as sphene, beryl or topaz.
+- **Source:**
+https://en.wikipedia.org/wiki/Greisen
+- **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Greisen
 - **Other Properties:**
 
 []{#hydrothermal_massive_sulphide}
@@ -8582,7 +8459,7 @@ This vocabulary
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -9771,8 +9648,7 @@ LeMaitre et al. 2002
 
 []{#volcanic_rock}
 
-#####  volcanic rock
-* `volcanic rock`
+#####  Volcanic rock
 - **Child of**:
  [`Igneous rock`](#igneous_rock)
  [`Volcanic Material`](#volcanic_material)
@@ -9786,7 +9662,7 @@ its genesis.
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -9827,9 +9703,8 @@ Schmid 1981; LeMaitre et al. 2002
 []{#lava}
 
 ######  Lava
-* `Lava`
 - **Child of**:
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
 - Volcanic Rock with features indicating origin by extrusive lava
 flow.
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Lava
@@ -10229,7 +10104,7 @@ This vocabulary
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -10285,7 +10160,7 @@ LeMaitre et al. 2002
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -10326,7 +10201,6 @@ Schmid 1981; LeMaitre et al. 2002
 []{#tephra}
 
 ######  Tephra
-* `tephra`
 - **Child of**:
  [`Sediment`](#sediment)
  [`pyroclastic material`](#pyroclastic_material)
@@ -10560,18 +10434,16 @@ LeMaitre et al. 2002
 []{#volcanic_material}
 
 ####  Volcanic Material
-* `Volcanic Material`
 - **Child of**:
  [`Igneous material`](#igneous_material)
 - Material exhibiting features demonstrating an extrusive igneous
-origin. Consolidated or non-consolidated {@en}
+origin. Consolidated or non-consolidated
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Volcanic_Material
 - **Other Properties:**
 
 []{#volcanic_rock}
 
-#####  volcanic rock
-* `volcanic rock`
+#####  Volcanic rock
 - **Child of**:
  [`Igneous rock`](#igneous_rock)
  [`Volcanic Material`](#volcanic_material)
@@ -10585,7 +10457,7 @@ its genesis.
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -10626,9 +10498,8 @@ Schmid 1981; LeMaitre et al. 2002
 []{#lava}
 
 ######  Lava
-* `Lava`
 - **Child of**:
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
 - Volcanic Rock with features indicating origin by extrusive lava
 flow.
 - **Concept URI:** https://w3id.org/sesar/rocksediment/0.1/Lava
@@ -10652,7 +10523,7 @@ LeMaitre et al. 2002
 ######  pyroclastic rock
 - **Child of**:
  [`fragmental igneous rock`](#fragmental_igneous_rock)
- [`volcanic rock`](#volcanic_rock)
+ [`Volcanic rock`](#volcanic_rock)
  [`pyroclastic material`](#pyroclastic_material)
 - Fragmental igneous rock that consists of greater than 75 percent
 fragments produced as a direct result of eruption or extrusion of
@@ -10693,7 +10564,6 @@ Schmid 1981; LeMaitre et al. 2002
 []{#tephra}
 
 ######  Tephra
-* `tephra`
 - **Child of**:
  [`Sediment`](#sediment)
  [`pyroclastic material`](#pyroclastic_material)
@@ -10901,7 +10771,6 @@ Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., a
 []{#sedimentary_rock}
 
 ####  Sedimentary rock
-* `sedimentary rock`
 - **Child of**:
  [`Rock`](#rock)
  [`Sedimentary material`](#sedimentary_material)
@@ -11504,8 +11373,7 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 
 []{#wacke}
 
-#######  piedra
-* `wacke`
+#######  wacke
 - **Child of**:
  [`sandstone`](#clastic_sandstone)
 - Distinction from mudstone is based on inference that less that 50
@@ -11764,7 +11632,6 @@ This vocabulary
 []{#generic_sandstone}
 
 #####  Generic sandstone
-* `generic sandstone`
 - **Child of**:
  [`Sedimentary rock`](#sedimentary_rock)
 - Sedimentary rock in which less than 30 percent of particles are
@@ -11811,8 +11678,7 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 
 []{#wacke}
 
-#######  piedra
-* `wacke`
+#######  wacke
 - **Child of**:
  [`sandstone`](#clastic_sandstone)
 - Distinction from mudstone is based on inference that less that 50
@@ -12705,7 +12571,6 @@ Wentworth size scale
 []{#hybrid_sediment}
 
 #####  Hybrid sediment
-* `hybrid sediment`
 - **Child of**:
  [`Sediment`](#sediment)
 - Sediment that does not fit any of the other sediment
@@ -12965,7 +12830,6 @@ definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from K
 []{#tephra}
 
 #####  Tephra
-* `tephra`
 - **Child of**:
  [`Sediment`](#sediment)
  [`pyroclastic material`](#pyroclastic_material)
@@ -14209,8 +14073,7 @@ Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 
 
 []{#wacke}
 
-#######  piedra
-* `wacke`
+#######  wacke
 - **Child of**:
  [`sandstone`](#clastic_sandstone)
 - Distinction from mudstone is based on inference that less that 50
@@ -15303,7 +15166,6 @@ Wentworth size scale
 []{#hybrid_sediment}
 
 #####  Hybrid sediment
-* `hybrid sediment`
 - **Child of**:
  [`Sediment`](#sediment)
 - Sediment that does not fit any of the other sediment
@@ -15563,7 +15425,6 @@ definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from K
 []{#tephra}
 
 #####  Tephra
-* `tephra`
 - **Child of**:
  [`Sediment`](#sediment)
  [`pyroclastic material`](#pyroclastic_material)

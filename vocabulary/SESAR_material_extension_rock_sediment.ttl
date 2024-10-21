@@ -3120,12 +3120,11 @@ sesrs:rocksedimentvocabulary
   dcterm:created "2024-08-19"^^xsd:date ;
   dcterm:creator <https://orcid.org/0000-0001-6041-5302> ;
   dcterm:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-  dcterm:modified "2024-08-19"^^xsd:date ;
+  dcterm:modified "2024-09-26"^^xsd:date ;
   dcterm:source "<http://resource.geosciml.org/classifierScheme/cgi/2016.01/simplelithology>" ;
   dcterm:source "<https://w3id.org/gso/rockmaterial/ontology>" ;
-  schema:codeRepository <https://github.com/isamplesorg/metadata_profile_earth_science/tree/main/vocabulary> ;
+  schema:codeRepository <https://github.com/GeoSamples/vocabularies/blob/main/vocabulary/SESAR_material_extension_rock_sediment.ttl> ;
   schema:funding <AWDID:2004562> ;
-  schema:provider <https://vocabs.ardc.edu.au/> ;
   rdfs:label "SESAR - Rock and sediment materials vocabulary"@en ;
   owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;

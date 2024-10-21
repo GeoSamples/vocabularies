@@ -177,10 +177,10 @@ sf:earthinterior
   skos:narrower sessf:geologic_unit ;
   skos:narrower sessf:high_pressure_low_temperature_earth_interior_setting ;
   skos:narrower sessf:hypabyssal_setting ;
+  skos:narrower sessf:intrusive_igneous_complex ;
   skos:narrower sessf:low_pressure_high_temperature_setting ;
   skos:narrower sessf:mantle ;
   skos:narrower sessf:mineralized_body ;
-  skos:narrower sessf:plutonic_setting ;
   skos:narrower sessf:regional_metamorphic_setting ;
   skos:narrower sessf:ultra_high_pressure_crustal_setting ;
   skos:note "Sampled feature is solid material from within the Earth.  Fluids in pore space in earth interior sample 'Subsurface fluid reservoir'"@en ;
@@ -208,7 +208,6 @@ sf:earthsurface
   skos:narrower sessf:humid_tropical_climatic_setting ;
   skos:narrower sessf:impact_structure ;
   skos:narrower sessf:island ;
-  skos:narrower sessf:lava_flow ;
   skos:narrower sessf:mineralized_body ;
   skos:narrower sessf:outcrop ;
   skos:narrower sessf:physiographic_feature ;
@@ -474,11 +473,11 @@ sessf:agricultural_site
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
   dcterm:source "https://en.wikipedia.org/wiki/Agriculture" ;
-  rdfs:label "Agricultural site "@en ;
+  rdfs:label "Agricultural site"@en ;
   skos:broader sf:activehumanoccupationsite ;
   skos:definition "Site involved in crop cultivation, livestock production, aquaculture, or forestry to produce food or non-food products."@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Agricultural site "@en ;
+  skos:prefLabel "Agricultural site"@en ;
 .
 sessf:algal_flat
   rdf:type skos:Concept ;
@@ -490,6 +489,14 @@ sessf:algal_flat
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/algalFlatSetting> ;
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Algal flat"@en ;
+.
+sessf:alkalic_igneous_complex
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Alkalic igneous complex"@en ;
+  skos:broader sessf:igneous_system ;
+  skos:definition "Intrusive and extrusive igneous rock suites with unusual alkalic or alkaline composition."@en ;
+  skos:prefLabel "Alkalic igneous complex"@en ;
 .
 sessf:alluvial_fan
   rdf:type skos:Concept ;
@@ -753,7 +760,7 @@ sessf:butte
 sessf:canal
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Canal "@en ;
+  rdfs:label "Canal"@en ;
   skos:broader sf:activehumanoccupationsite ;
   skos:broader sf:waterbody ;
   skos:definition "A human manufactured water channel to manage surface water resources for irrigation, transportation, or human consumption."@en ;
@@ -805,6 +812,14 @@ Treatise on Geomorphology (Second Edition), 2022 (https://www.sciencedirect.com/
   skos:inScheme sessf:sfvocabulary ;
   skos:note "carbonate mud-dominated deposits with topographic relief and few or no stromatolites, thrombolites or in place skeletons. Low Relief Carbonate Mud Mounds are typically thin. High Relief Carbonate Mud Mounds are thick, and internal bedding, slumping, stromatactis cavity systems, and steep marginal slopes may be common. Whereas Organic Reefs are biogenic, calcareous, and are created by essentially in place organisms, Carbonate Mud Mounds can be organic and/or inorganic in origin and it can be difficult to distinguish their origins. (Riding, 2002, https://doi.org/10.1016/S0012-8252(01)00089-7)"@en ;
   skos:prefLabel "Carbonate mound"@en ;
+.
+sessf:carbonatite_complex
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Carbonatite complex"@en ;
+  skos:broader sessf:igneous_system ;
+  skos:definition "Intrusive or extrusive rocks in suite with abundant carbonatite and similar exotic composition rocks"@en ;
+  skos:prefLabel "Carbonatite complex"@en ;
 .
 sessf:cave
   rdf:type skos:Concept ;
@@ -1093,6 +1108,14 @@ sessf:deltaic_system
   skos:narrower sessf:prodelta ;
   skos:prefLabel "Deltaic system"@en ;
 .
+sessf:diatreme_or_kimberlite
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Diatreme or kimberlite"@en ;
+  skos:broader sessf:igneous_system ;
+  skos:definition "" ;
+  skos:prefLabel "Diatreme or kimberlite"@en ;
+.
 sessf:distributary_channel
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
@@ -1152,12 +1175,12 @@ sessf:dune
   rdf:type skos:Concept ;
   dcterm:source "Neuendorf et al., 2005, Glossary of Geology" ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Dune "@en ;
+  rdfs:label "Dune"@en ;
   skos:broader sessf:eolian_process_setting ;
   skos:broader sessf:physiographic_feature ;
   skos:definition "a mound or hill of loose, windblown granular material (typically sand), capable of wind-driven movement, while  retaining its characteristic shape"@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Dune "@en ;
+  skos:prefLabel "Dune"@en ;
 .
 sessf:dunefield
   rdf:type skos:Concept ;
@@ -1299,12 +1322,12 @@ sessf:fiord
   rdf:type skos:Concept ;
   dcterm:source "<http://purl.obolibrary.org/obo/ENVO_00000039>" ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "FJord "@en ;
+  rdfs:label "FJord"@en ;
   skos:broader sf:marinewaterbody ;
   skos:closeMatch <http://purl.obolibrary.org/obo/ENVO_00000039> ;
   skos:definition "A long and narrow sea inlet with high steeply sloped walled sides. A fjord is a landform created during a period of glaciation."@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Fjord "@en ;
+  skos:prefLabel "Fjord"@en ;
 .
 sessf:floodplain
   rdf:type skos:Concept ;
@@ -1485,6 +1508,14 @@ sessf:glacier_terminus
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Glacier terminus"@en ;
 .
+sessf:granitoid_intrusive_complex
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Granitic intrusive igneous complex"@en ;
+  skos:broader sessf:intrusive_igneous_complex ;
+  skos:definition "Broadly granitic suites of cogentic intrusive rocks ranging from diorite to granite; mostly medium to coarse grained, might include finer grained bodies as well as very coarse-grained pegmatite"@en ;
+  skos:prefLabel "Granitic intrusive igneous complex"@en ;
+.
 sessf:hadal_setting
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
@@ -1611,7 +1642,7 @@ sessf:igneous_system
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
   skos:narrower sessf:hypabyssal_setting ;
-  skos:narrower sessf:plutonic_setting ;
+  skos:narrower sessf:intrusive_igneous_complex ;
   skos:narrower sessf:volcanic_setting ;
   skos:prefLabel "Igneous system"@en ;
 .
@@ -1619,7 +1650,7 @@ sessf:impact_structure
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
   rdfs:label "Impact structure"@en ;
-  skos:broader sf:earthsurface ;
+  skos:broader sessf:geologic_structure ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Impact structure"@en ;
@@ -1632,6 +1663,7 @@ sessf:inactive_spreading_center
   skos:altLabel "Aseismic ocean ridge"@en ;
   skos:broader sessf:intraplate_tectonic_setting ;
   skos:broader sessf:submarine_ridge ;
+  skos:broader sessf:volcanic_setting ;
   skos:closeMatch gsmlee:inactive_spreading_center ;
   skos:definition "Setting on oceanic crust formed at a spreading center that has been abandoned."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/inactiveSpreadingCenter> ;
@@ -1673,7 +1705,7 @@ sessf:intermittent_stream_channel
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
   dcterm:source "https://en.wikipedia.org/wiki/Arroyo_(watercourse)" ;
-  rdfs:label "Intermittent stream channel "@en ;
+  rdfs:label "Intermittent stream channel"@en ;
   skos:altLabel "Arroyo"@en ;
   skos:altLabel "Dry gulch"@en ;
   skos:altLabel "Dry valley"@en ;
@@ -1683,7 +1715,7 @@ sessf:intermittent_stream_channel
   skos:broader sessf:channel ;
   skos:definition "a watercourse that temporarily or seasonally fills and flows after sufficient rain."@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Intermittent stream channel "@en ;
+  skos:prefLabel "Intermittent stream channel"@en ;
 .
 sessf:intertidal
   rdf:type skos:Concept ;
@@ -1700,11 +1732,11 @@ sessf:intertidal
 sessf:intraoceanic_trench
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Intraoceanic trench "@en ;
+  rdfs:label "Intraoceanic trench"@en ;
   skos:broader sessf:deep_sea_trench ;
   skos:definition "A deep submarine valley associated with a subduction zone between oceanic tectonic plates"@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Intraoceanic trench "@en ;
+  skos:prefLabel "Intraoceanic trench"@en ;
 .
 sessf:intraplate_tectonic_setting
   rdf:type skos:Concept ;
@@ -1719,6 +1751,16 @@ sessf:intraplate_tectonic_setting
   skos:narrower sessf:seamount ;
   skos:prefLabel "Intraplate tectonic setting"@en ;
 .
+sessf:intrusive_igneous_complex
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy data" ;
+  rdfs:label "Intrusive igneous complex"@en ;
+  skos:broader sf:earthinterior ;
+  skos:broader sessf:igneous_system ;
+  skos:definition "Features related to igneous activity wholly within the Earth, characterized by slow cooling to produce generally medium to coarse-grained intrusive igneous rocks."@en ;
+  skos:inScheme sessf:sfvocabulary ;
+  skos:prefLabel "Intrusive igneous complex"@en ;
+.
 sessf:island
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
@@ -1731,11 +1773,11 @@ sessf:island
 sessf:island_arc
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Island arc "@en ;
+  rdfs:label "Island arc"@en ;
   skos:broader sessf:volcanic_arc ;
   skos:definition "A volcanic arc related to an intraoceanic subduction zone, consisting of a chain of islands formed by volcanos above a subduction zone."@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Island arc "@en ;
+  skos:prefLabel "Island arc"@en ;
 .
 sessf:isthmus
   rdf:type skos:Concept ;
@@ -1798,7 +1840,7 @@ sessf:lagoonal_setting
 sessf:lake
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Lake "@en ;
+  rdfs:label "Lake"@en ;
   skos:altLabel "Pond"@en ;
   skos:broader sf:terrestrialwaterbody ;
   skos:broader sessf:lacustrine_setting ;
@@ -1806,44 +1848,43 @@ sessf:lake
   skos:inScheme sessf:sfvocabulary ;
   skos:narrower sessf:lake_fresh_water ;
   skos:narrower sessf:lake_saline ;
-  skos:prefLabel "Lake "@en ;
+  skos:prefLabel "Lake"@en ;
 .
 sessf:lake_fresh_water
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Fresh water lake "@en ;
+  rdfs:label "Fresh water lake"@en ;
   skos:broader sessf:lake ;
   skos:definition "Natural lakes or human impounded fresh water resevoirs." ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Fresh water lake "@en ;
+  skos:prefLabel "Fresh water lake"@en ;
 .
 sessf:lake_saline
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Saline lake "@en ;
+  rdfs:label "Saline lake"@en ;
   skos:broader sessf:lake ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Saline lake "@en ;
+  skos:prefLabel "Saline lake"@en ;
 .
 sessf:landslide
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Landslide "@en ;
+  rdfs:label "Landslide"@en ;
   skos:broader sessf:hillslope_setting ;
   skos:definition "a mass of rock, debris, or earth that has moved down a slope under the influence of gravity"@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Landslide "@en ;
+  skos:prefLabel "Landslide"@en ;
 .
 sessf:lava_flow
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Lava flow "@en ;
-  skos:broader sf:earthsurface ;
-  skos:broader sessf:volcanic_setting ;
+  rdfs:label "Lava flow"@en ;
+  skos:broader sessf:volcanic_complex ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Lava flow "@en ;
+  skos:prefLabel "Lava flow"@en ;
 .
 sessf:low_energy_shoreline_setting
   rdf:type skos:Concept ;
@@ -1921,6 +1962,14 @@ sessf:lower_oceanic_crust
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerOceanicCrustalSetting> ;
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Lower oceanic crust"@en ;
+.
+sessf:mafic_to_ultramafic_intrusive_complex
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Mafic to ultramafic intrusive igenous complex"@en ;
+  skos:broader sessf:intrusive_igneous_complex ;
+  skos:definition "" ;
+  skos:prefLabel "Mafic to ultramafic intrusive igenous complex"@en ;
 .
 sessf:mantle
   rdf:type skos:Concept ;
@@ -2058,7 +2107,6 @@ sessf:mineralized_body
   dcterm:source "sessf:sfvocabulary" ;
   rdfs:label "Mineralized system"@en ;
   skos:broader sf:earthinterior ;
-  skos:broader sf:earthsurface ;
   skos:definition "Sampled feature is a part of the Earth that has been enriched in elements of economic interest"@en ;
   skos:inScheme sessf:sfvocabulary ;
   skos:note "Subclasses for mineral deposit time would be an extension vocabulary."@en ;
@@ -2067,11 +2115,11 @@ sessf:mineralized_body
 sessf:mining_site
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Mining site "@en ;
+  rdfs:label "Mining site"@en ;
   skos:broader sf:activehumanoccupationsite ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Mining site "@en ;
+  skos:prefLabel "Mining site"@en ;
 .
 sessf:moraine
   rdf:type skos:Concept ;
@@ -2317,8 +2365,9 @@ sessf:plate_spreading_center
   rdf:type skos:Concept ;
   dcterm:source <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
   skos:broader sessf:extended_terrane ;
+  skos:broader sessf:volcanic_setting ;
   skos:closeMatch gsmlee:plate_spreading_center ;
-  skos:definition "Tectonic setting where new oceanic crust is being or has been formed at a divergent plate boundary. Includes active and inactive spreading centers."@en ;
+  skos:definition "Tectonic setting where new oceanic crust is being or has been formed at a divergent plate boundary."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateSpreadingCenter> ;
   skos:inScheme sessf:sfvocabulary ;
   skos:narrower sessf:inactive_spreading_center ;
@@ -2350,15 +2399,13 @@ sessf:playa
   skos:inScheme sessf:sfvocabulary ;
   skos:prefLabel "Playa"@en ;
 .
-sessf:plutonic_setting
+sessf:pluton
   rdf:type skos:Concept ;
-  dcterm:source "SESAR legacy data" ;
-  rdfs:label "Plutonic setting"@en ;
-  skos:broader sf:earthinterior ;
-  skos:broader sessf:igneous_system ;
-  skos:definition "Igneous environment deep in the Earth, characterized by slow cooling to produce generally medium to coarse-grained intrusive igneous rocks."@en ;
-  skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Plutonic setting"@en ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Pluton"@en ;
+  skos:broader sessf:intrusive_igneous_complex ;
+  skos:definition "" ;
+  skos:prefLabel "Pluton"@en ;
 .
 sessf:polar_climatic_setting
   rdf:type skos:Concept ;
@@ -2413,11 +2460,11 @@ sessf:proglacial_setting
 sessf:quarry
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Quarry "@en ;
+  rdfs:label "Quarry"@en ;
   skos:broader sf:anthropogenicenvironment ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Quarry "@en ;
+  skos:prefLabel "Quarry"@en ;
 .
 sessf:reef_flat
   rdf:type skos:Concept ;
@@ -2457,7 +2504,7 @@ sessf:rift_zone
   dcterm:source "SESAR legacy localities" ;
   rdfs:label "Rift zone"@en ;
   skos:broader sessf:extended_terrane ;
-  skos:definition "A regional extended terrane in a zone of plate or plate-fragement divergence"@en ;
+  skos:definition "A regional extended terrane in a zone of plate or plate-fragment divergence"@en ;
   skos:inScheme sessf:sfvocabulary ;
   skos:note "Includes extended terranes at ocean spreading centers, and intracontinental rifts."@en ;
   skos:prefLabel "Rift zone"@en ;
@@ -2465,11 +2512,11 @@ sessf:rift_zone
 sessf:rise_continental
   rdf:type skos:Concept ;
   dcterm:source "IMLGS sampled feature" ;
-  rdfs:label "Seafloor rise, continental "@en ;
+  rdfs:label "Seafloor rise, continental"@en ;
   skos:broader sessf:slope_rise_setting ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Seafloor rise, continental "@en ;
+  skos:prefLabel "Seafloor rise, continental"@en ;
 .
 sessf:rise_insular
   rdf:type skos:Concept ;
@@ -2548,6 +2595,7 @@ sessf:seamount
   dcterm:source "Reading 1978"@en ;
   skos:broader sessf:intraplate_tectonic_setting ;
   skos:broader sessf:ocean_highland ;
+  skos:broader sessf:volcanic_setting ;
   skos:closeMatch gsmlee:seamount_setting ;
   skos:definition "Setting that consists of a conical mountain on the ocean floor (guyot). Typically characterized by active volcanism, pelagic sedimentation. If the mountain is high enough to reach the photic zone, carbonate production may result in reef building to produce a carbonate platform or atoll setting."@en ;
   skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/seamountSetting> ;
@@ -2699,11 +2747,11 @@ sessf:subaerial_escarpment
 sessf:subaqueous_bar
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Subaqueous bar "@en ;
+  rdfs:label "Subaqueous bar"@en ;
   skos:broader sessf:subaqueous_setting ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Subaqueous bar "@en ;
+  skos:prefLabel "Subaqueous bar"@en ;
 .
 sessf:subaqueous_setting
   rdf:type skos:Concept ;
@@ -2749,11 +2797,11 @@ sessf:submarine_bank
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
   dcterm:source "https://en.wikipedia.org/wiki/Ocean_bank" ;
-  rdfs:label "Submarine bank "@en ;
+  rdfs:label "Submarine bank"@en ;
   skos:broader sessf:marine_setting ;
   skos:definition "a part of the seabed that is shallow compared to its surrounding area."@en ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Submarine bank "@en ;
+  skos:prefLabel "Submarine bank"@en ;
 .
 sessf:submarine_canyon
   rdf:type skos:Concept ;
@@ -2779,12 +2827,12 @@ sessf:submarine_channel
 sessf:submarine_escarpment
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Submarine escarpment "@en ;
+  rdfs:label "Submarine escarpment"@en ;
   skos:broader sf:marinewaterbodybottom ;
   skos:broader sessf:escarpment ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Submarine escarpment "@en ;
+  skos:prefLabel "Submarine escarpment"@en ;
 .
 sessf:submarine_fan
   rdf:type skos:Concept ;
@@ -3073,11 +3121,11 @@ sessf:urban_setting
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
   dcterm:source "https://en.wikipedia.org/wiki/Urban_area" ;
-  rdfs:label "Urban setting "@en ;
+  rdfs:label "Urban setting"@en ;
   skos:broader sf:activehumanoccupationsite ;
   skos:definition "a densely populated area with many human-made structures; a human settlement with a high population density and an infrastructure of built environment" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Urban setting "@en ;
+  skos:prefLabel "Urban setting"@en ;
 .
 sessf:valley
   rdf:type skos:Concept ;
@@ -3103,12 +3151,20 @@ sessf:volcanic_arc
   skos:narrower sessf:island_arc ;
   skos:prefLabel "Volcanic arc"@en ;
 .
+sessf:volcanic_complex
+  rdf:type skos:Concept ;
+  dcterm:source "SESAR legacy localities" ;
+  rdfs:label "Volcanic complex"@en ;
+  skos:broader sessf:geologic_unit ;
+  skos:definition "A geologic unit consisting of extrusive igneous rocks, with associated pyroclastic rocks, tuffite, and subvolcanic instrusive rocks."@en ;
+  skos:prefLabel "Volcanic complex"@en ;
+.
 sessf:volcanic_setting
   rdf:type skos:Concept ;
   dcterm:source "sessf:sfvocabulary" ;
   rdfs:label "Volcanic Setting"@en ;
   skos:broader sessf:igneous_system ;
-  skos:definition "Settings related to the eruption of lava near, at, or above the earth surface. Might include atmospheric products of volcanic eruption, in terrestrial, lacustrine, or marine environments, related hypabyssal intrusions or hydrothermal systems."@en ;
+  skos:definition "Features related to the eruption of lava near, at, or above the earth surface. Might include atmospheric products of volcanic eruption, in terrestrial, lacustrine, or marine environments, related hypabyssal intrusions or hydrothermal systems."@en ;
   skos:inScheme sessf:sfvocabulary ;
   skos:narrower sessf:lava_flow ;
   skos:narrower sessf:volcanic_arc ;
@@ -3119,12 +3175,12 @@ sessf:volcanic_setting
 sessf:volcano
   rdf:type skos:Concept ;
   dcterm:source "SESAR legacy localities" ;
-  rdfs:label "Volcano "@en ;
+  rdfs:label "Volcano"@en ;
   skos:broader sf:earthsurface ;
   skos:broader sessf:volcanic_setting ;
   skos:definition "" ;
   skos:inScheme sessf:sfvocabulary ;
-  skos:prefLabel "Volcano "@en ;
+  skos:prefLabel "Volcano"@en ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/ENVO_00000247> ;
 .
 sessf:wetland
