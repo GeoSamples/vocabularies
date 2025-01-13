@@ -515,6 +515,15 @@ secm:core_spike
   skos:inScheme secm:samplingmethods ;
   skos:prefLabel "core spike"@en ;
 .
+secm:ctd_sampler
+  rdf:type skos:Concept ;
+  dcterm:source "https://oceanexplorer.noaa.gov/facts/ctd.html" ;
+  rdfs:label "CTD sampler "@en ;
+  skos:broader secm:sm043 ;
+  skos:definition "Samples collected using water-sampling bottles connected to CTD equipment, used to sample water at different depths.  CTD refers to a package of electronic instruments that measure Conductivity, Temperature, and Depth in a water column. Often, CTDs are attached to a much larger metal frame called a rosette, holding water-sampling bottles that are used to collect water at different depths, as well as other sensors that can measure additional physical or chemical properties."@en ;
+  skos:inScheme secm:samplingmethods ;
+  skos:prefLabel "CTD sampler"@en ;
+.
 secm:densityseparation
   rdf:type skos:Concept ;
   dcterm:creator secm:stephen_richard ;
@@ -748,7 +757,7 @@ secm:lysimeter
   dcterm:source "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/lysimeters" ;
   rdfs:label "Lysimeter water collection "@en ;
   skos:broader secm:sm014 ;
-  skos:definition """A lysimeter is a container used to measure water movement in soil and the quality of water. They are used in hydrology and water quality research to study the natural environment and understand how water moves through soil. 
+  skos:definition """A lysimeter is a container used to measure water movement in soil and the quality of water. They are used in hydrology and water quality research to study the natural environment and understand how water moves through soil. {@en}
 """ ;
   skos:inScheme secm:samplingmethods ;
   skos:prefLabel "Lysimeter water collection"@en ;
@@ -1897,6 +1906,16 @@ secm:sm200
   skos:narrower secm:core_incubation_dark ;
   skos:narrower secm:core_incubation_light ;
   skos:prefLabel "Sediment water incubation sampling"@en ;
+.
+secm:spme
+  rdf:type skos:Concept ;
+  dcterm:source "https://en.wikipedia.org/wiki/Solid-phase_microextraction" ;
+  rdfs:label "Solid phase microextraction"@en ;
+  rdfs:seeAlso <https://www.sciencedirect.com/topics/chemistry/solid-phase-microextraction> ;
+  skos:broader secm:sm100 ;
+  skos:definition "sampling technique a solid support (e.g. a fiber) coated with an extracting phase extracts analytes of interest from a sampled media that can be a liquid or gas phase.  The extracting phase can be a liquid (polymer) or a solid (sorbent).  The quantity of analyte extracted is proportional to its concentration in the sample."@en ;
+  skos:inScheme secm:samplingmethods ;
+  skos:prefLabel "Solid phase microextraction"@en ;
 .
 secm:stephen_richard
   rdf:type schema:Person ;
