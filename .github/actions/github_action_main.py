@@ -87,9 +87,12 @@ def main():
         index = 0
         print(f"input markdown file: {inputttl[index]}, vocab uri: {inputvocaburi[index]}")
         while index < len(inputttl):
-            result = _run_docs_in_container(os.path.join(path, inputttl[index]+".md"), inputvocaburi[index])
+            # Use basename for output file so subdirectory paths (e.g. samplingMethods/foo)
+            # produce output in the flat docs/ directory
+            output_basename = os.path.basename(inputttl[index])
+            result = _run_docs_in_container(os.path.join(path, output_basename+".md"), inputvocaburi[index])
             if result == 0:
-                _quarto_render_html((os.path.join(path, inputttl[index]+".md")),path)
+                _quarto_render_html((os.path.join(path, output_basename+".md")),path)
             else:
                 print(f"problem with {inputttl[index]}, don't call quarto")
             index += 1

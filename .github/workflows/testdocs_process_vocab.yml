@@ -31,32 +31,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Vocabulary action
-        uses: isamplesorg/vocabularies@main
+        uses: GeoSamples/vocabularies@main
         # input variables 'action' and 'path' are defined in action.yml, and assigned values here
         # GitHub creates an environment variable for the input with the name INPUT_<VARIABLE_NAME>
         with:
           action: docs
           path: ${{ github.workspace }}
-          # provide ttl file names without extensions; the base file name will be 
+          # Test with a small subset of vocabularies to validate the pipeline.
+          # provide ttl file names without extensions; the base file name will be
           #    used for output files with the appropriate extension.
-          inputttl: material_sample_object_type|material_type|sampled_feature_type
+          inputttl: SESAR_sampled_feature_extension|SamplingMethods
           # these are the URIs for the ConceptScheme; there must be a conceptScheme defined in each vocabulary.
-          inputvocaburi: msot:conceptscheme|mat:materialsvocabulary|sf:sampledfeaturevocabulary
-
-      - name: Deploy docs
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: main # The branch the action should deploy to.
-          folder: docs # The folder the action should deploy.
-          target-folder: testoutput  #push the contents of the deployment folder into a
-                                 # specific directory on the deployment branch
-          commit-message: "new build of vocabulary display files"
-
-      - name: Deploy vocabulary database
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: main # The branch the action should deploy to.
-          folder: cache # The folder the action should deploy.
-          target-folder: testoutput/cache  #push the contents of the deployment folder into a
-                                 # specific directory on the deployment branch
-          commit-message: "new build of vocabularies.db"
+          inputvocaburi: sessf:sfvocabulary|secm:samplingmethods

@@ -25,6 +25,12 @@
   schema:name "Collaborative Research: Frameworks: Internet of Samples: Toward an Interdisciplinary Cyberinfrastructure for Material Samples" ;
   schema:url "https://nsf.gov/awardsearch/showAward?AWD_ID=2004562" ;
 .
+<http://pubs.usgs.gov/of/2004/1451/sltt/appendixB/appendixB.pdf>
+  rdf:type owl:NamedIndividual ;
+  rdfs:label "Appendix B. Classification of metamorphic and other composite-genesis rocks, including hydrothermally altered, impact-metamorphic, mylonitic, and cataclastic rocks."@en ;
+  skos:definition "Workgroup product with classification of composite-genesis materials for use in digital information systems."@en ;
+  skos:prefLabel "Science Language for composite-genesis materials, v. 1.0 (SLTTM)"@en ;
+.
 gsoc:boyan_brodaric
   rdf:type schema:Person ;
   rdf:type owl:NamedIndividual ;
