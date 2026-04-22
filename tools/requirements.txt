@@ -2,4 +2,4 @@ click
 rdflib
 rdflib-sqlalchemy
 requests
-setuptools
+setuptools<81
