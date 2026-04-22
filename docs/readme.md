@@ -46,3 +46,15 @@ HTML representations of vocabularies for SESAR sample descriptions.
 [HTML web page version](https://geosamples.github.io/vocabularies/sampling-method_GAv1-0.html)
 
 [RDF source file](https://raw.githubusercontent.com/GeoSamples/vocabularies/main/vocabulary/samplingMethods/sampling-method_GAv1-0.ttl). This is the authoritative representation. 
+
+## Concept scheme: SeaDataNet Sample Preparation Devices
+
+[HTML web page version](https://geosamples.github.io/vocabularies/SamplePreparationSeaDataNet.html)
+
+[RDF source file](https://raw.githubusercontent.com/GeoSamples/vocabularies/main/vocabulary/samplingMethods/SamplePreparationSeaDataNet.ttl). This is the authoritative representation. 
+
+## Concept scheme: SeaDataNet Sample Collection Devices
+
+[HTML web page version](https://geosamples.github.io/vocabularies/SampleCollectionSeaDataNet.html)
+
+[RDF source file](https://raw.githubusercontent.com/GeoSamples/vocabularies/main/vocabulary/samplingMethods/SampleCollectionSeaDataNet.ttl). This is the authoritative representation. 
