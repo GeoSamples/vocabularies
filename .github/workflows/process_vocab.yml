@@ -43,10 +43,11 @@ jobs:
           # provide ttl file names without extensions; the base file name will be 
           #    used for output files with the appropriate extension.
 
-          inputttl: SESAR_materials_extension|SESAR_sampled_feature_extension|SamplingMethods|SESAR_material_object_type_extension|mineralSKOS|samplingMethods/samplePreparation_GSQ|samplingMethods/sampling-method_GAv1-0
+          inputttl: SESAR_materials_extension|SESAR_sampled_feature_extension|SamplingMethods|SESAR_material_object_type_extension|samplingMethods/samplePreparation_GSQ|samplingMethods/sampling-method_GAv1-0
           # these are the URIs for the ConceptScheme; there must be a conceptScheme defined in each vocabulary.
           # URIs can be CURIEs (prefix:localname) or full URIs. Order must match inputttl.
-          inputvocaburi: sesrs:materialvocabulary|sessf:sfvocabulary|secm:samplingmethods|sesot:objecttypevocabulary|gcmin:conceptScheme|http://linked.data.gov.au/def/sample-preparation-methods|http://pid.geoscience.gov.au/def/voc/ga/samplingmethod
+          # NOTE: mineralSKOS is processed separately (process_mineralSKOS.yml) due to its large size.
+          inputvocaburi: sesrs:materialvocabulary|sessf:sfvocabulary|secm:samplingmethods|sesot:objecttypevocabulary|http://linked.data.gov.au/def/sample-preparation-methods|http://pid.geoscience.gov.au/def/voc/ga/samplingmethod
 
 
       - name: Deploy docs

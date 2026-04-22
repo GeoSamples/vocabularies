@@ -1,0 +1,33 @@
+# Separate workflow for mineralSKOS vocabulary due to its large size (~9MB, 6299 concepts).
+# Processing takes ~20 minutes. Run independently from the main process_vocab workflow.
+
+name: Process mineralSKOS
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Vocabulary action
+        uses: GeoSamples/vocabularies@main
+        with:
+          action: docs
+          path: ${{ github.workspace }}
+          inputttl: mineralSKOS
+          inputvocaburi: gcmin:conceptScheme
+
+      - name: Deploy docs
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: docs
+          target-folder: docs
+          commit-message: "new build of mineralSKOS display files"
+
+      - name: Deploy vocabulary database
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: cache
+          target-folder: docs/cache
+          commit-message: "new build of mineralSKOS vocabularies.db"
