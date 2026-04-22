@@ -35,7 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="SESAR_material_object_type_extension_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="SESAR_material_object_type_extension_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="SESAR_material_object_type_extension_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="SESAR_material_object_type_extension_files/libs/bootstrap/bootstrap-7f8d28353e1b7aed8a50cdb71f958a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="SESAR_material_object_type_extension_files/libs/bootstrap/bootstrap-6b009d4f49bc6c3d3d224639bf075233.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -85,7 +85,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#experiment-product" id="toc-experiment-product" class="nav-link" data-scroll-target="#experiment-product"><span class="header-section-number">1.1.5.2</span> Experiment product</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#sampling-feature" id="toc-sampling-feature" class="nav-link" data-scroll-target="#sampling-feature"><span class="header-section-number">1.2</span> Sampling feature</a></li>
+  <li><a href="#sampling-feature" id="toc-sampling-feature" class="nav-link" data-scroll-target="#sampling-feature"><span class="header-section-number">1.2</span> Sampling feature</a>
+  <ul class="collapse">
+  <li><a href="#hole" id="toc-hole" class="nav-link" data-scroll-target="#hole"><span class="header-section-number">1.2.1</span> Hole</a></li>
+  <li><a href="#sampling-site" id="toc-sampling-site" class="nav-link" data-scroll-target="#sampling-site"><span class="header-section-number">1.2.2</span> Sampling site</a></li>
+  <li><a href="#terrestrial-section" id="toc-terrestrial-section" class="nav-link" data-scroll-target="#terrestrial-section"><span class="header-section-number">1.2.3</span> Terrestrial section</a></li>
+  </ul></li>
+  <li><a href="#httpsw3id.orgisamplevocabularysampledfeatureanysampledfeature" id="toc-httpsw3id.orgisamplevocabularysampledfeatureanysampledfeature" class="nav-link" data-scroll-target="#httpsw3id.orgisamplevocabularysampledfeatureanysampledfeature"><span class="header-section-number">1.3</span> <code>https://w3id.org/isample/vocabulary/sampledfeature/anysampledfeature</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -270,7 +276,13 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="#experimentalproduct">Experiment product</a></li>
 </ul></li>
 </ul></li>
-<li><p><a href="#samplingfeature">Sampling feature</a></p></li>
+<li><p><a href="#samplingfeature">Sampling feature</a></p>
+<ul>
+<li><a href="#hole">Hole</a></li>
+<li><a href="#site">Sampling site</a></li>
+<li><a href="#terrestrialsection">Terrestrial section</a></li>
+</ul></li>
+<li><p><a href="#anysampledfeature">anysampledfeature</a></p></li>
 </ul>
 <p><strong>Concepts</strong></p>
 <p><span id="materialsample"></span></p>
@@ -1449,6 +1461,47 @@ ul.task-list li input[type="checkbox"] {
 <li>An entity that is the locus of sample collection.</li>
 <li><strong>Source:</strong> SESAR sample types, https://en.wikipedia.org/wiki/Observations_and_Measurements#Sampling_features,</li>
 <li><strong>Concept URI:</strong> https://w3id.org/sesar/objecttype/samplingfeature</li>
+<li><strong>Other Properties:</strong></li>
+</ul>
+<p><span id="hole"></span></p>
+<section id="hole" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" data-anchor-id="hole"><span class="header-section-number">1.2.1</span> Hole</h3>
+<ul>
+<li><strong>Child of</strong>: <a href="#samplingfeature"><code>Sampling feature</code></a></li>
+<li>A sampling feature that is drilled or dug into the Earth surface to obtain material from the subsurface. Boreholes, soil pits, mine shafts are examples.</li>
+<li><strong>Source:</strong> SESAR sample types</li>
+<li><strong>Concept URI:</strong> https://w3id.org/sesar/objecttype/hole</li>
+<li><strong>Other Properties:</strong></li>
+</ul>
+<p><span id="site"></span></p>
+</section>
+<section id="sampling-site" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" data-anchor-id="sampling-site"><span class="header-section-number">1.2.2</span> Sampling site</h3>
+<ul>
+<li><strong>Child of</strong>: <a href="#samplingfeature"><code>Sampling feature</code></a></li>
+<li>A registered location at which samples were collected or observations occurred.</li>
+<li><strong>Source:</strong> SESAR sample types</li>
+<li><strong>Concept URI:</strong> https://w3id.org/sesar/objecttype/site</li>
+<li><strong>Other Properties:</strong></li>
+</ul>
+<p><span id="terrestrialsection"></span></p>
+</section>
+<section id="terrestrial-section" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" data-anchor-id="terrestrial-section"><span class="header-section-number">1.2.3</span> Terrestrial section</h3>
+<ul>
+<li><strong>Child of</strong>: <a href="#samplingfeature"><code>Sampling feature</code></a></li>
+<li>sampling feature is a section of the near-surface Earth, generally in the critical zone.</li>
+<li><strong>Source:</strong> SESAR sample types</li>
+<li><strong>Concept URI:</strong> https://w3id.org/sesar/objecttype/terrestrialsection</li>
+<li><strong>Other Properties:</strong></li>
+</ul>
+<p><span id="anysampledfeature"></span></p>
+</section>
+</section>
+<section id="httpsw3id.orgisamplevocabularysampledfeatureanysampledfeature" class="level2" data-number="1.3">
+<h2 data-number="1.3" data-anchor-id="httpsw3id.orgisamplevocabularysampledfeatureanysampledfeature"><span class="header-section-number">1.3</span> <code>https://w3id.org/isample/vocabulary/sampledfeature/anysampledfeature</code></h2>
+<ul>
+<li><strong>Concept URI:</strong> https://w3id.org/isample/vocabulary/sampledfeature/anysampledfeature</li>
 <li><strong>Other Properties:</strong></li>
 </ul>
 </section>

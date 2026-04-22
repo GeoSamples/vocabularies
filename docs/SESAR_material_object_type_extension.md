@@ -139,6 +139,11 @@ Namespace:
         - [Experiment product](#experimentalproduct)
 
 - [Sampling feature](#samplingfeature)
+    - [Hole](#hole)
+    - [Sampling site](#site)
+    - [Terrestrial section](#terrestrialsection)
+
+- [anysampledfeature](#anysampledfeature)
 
 **Concepts**
 
@@ -1615,6 +1620,50 @@ https://joidesresolution.org/let-them-squeeze-cake-contributor-rachael-gray/
 SESAR sample types, 
 https://en.wikipedia.org/wiki/Observations_and_Measurements#Sampling_features, 
 - **Concept URI:** https://w3id.org/sesar/objecttype/samplingfeature
+- **Other Properties:**
+
+[]{#hole}
+
+###  Hole
+- **Child of**:
+ [`Sampling feature`](#samplingfeature)
+- A sampling feature that is drilled or dug into the Earth surface to
+obtain material from the subsurface. Boreholes, soil pits, mine shafts
+are examples.
+- **Source:**
+SESAR sample types
+- **Concept URI:** https://w3id.org/sesar/objecttype/hole
+- **Other Properties:**
+
+[]{#site}
+
+###  Sampling site
+- **Child of**:
+ [`Sampling feature`](#samplingfeature)
+- A registered location at which samples were collected or
+observations occurred.
+- **Source:**
+SESAR sample types
+- **Concept URI:** https://w3id.org/sesar/objecttype/site
+- **Other Properties:**
+
+[]{#terrestrialsection}
+
+###  Terrestrial section
+- **Child of**:
+ [`Sampling feature`](#samplingfeature)
+- sampling feature is a section of the near-surface Earth, generally
+in the critical zone.
+- **Source:**
+SESAR sample types
+- **Concept URI:** https://w3id.org/sesar/objecttype/terrestrialsection
+- **Other Properties:**
+
+
+[]{#anysampledfeature}
+
+##  `https://w3id.org/isample/vocabulary/sampledfeature/anysampledfeature`
+- **Concept URI:** https://w3id.org/isample/vocabulary/sampledfeature/anysampledfeature
 - **Other Properties:**
 
 

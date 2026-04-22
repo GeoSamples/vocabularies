@@ -63,6 +63,9 @@ Namespace:
                 - [Transitional crust](#transitional_crust)
             - [Geologic unit](#geologic_unit)
                 - [Intrusive igneous complex](#intrusive_igneous_complex)
+                    - [Granitic intrusive igneous complex](#granitic_intrusive_complex)
+                    - [Mafic to ultramafic intrusive igenous complex](#mafic_to_ultramafic_intrusive_complex)
+                    - [Pluton](#pluton)
                 - [Melange](#melange)
                 - [Ophiolite](#ophiolite)
                 - [Soil profile](#soil_profile)
@@ -72,6 +75,9 @@ Namespace:
             - [High-pressure low-temperature earth interior](#high_pressure_low_temperature_earth_interior)
             - [Hypabyssal setting](#hypabyssal_setting)
             - [Intrusive igneous complex](#intrusive_igneous_complex)
+                - [Granitic intrusive igneous complex](#granitic_intrusive_complex)
+                - [Mafic to ultramafic intrusive igenous complex](#mafic_to_ultramafic_intrusive_complex)
+                - [Pluton](#pluton)
             - [Low pressure high temperature setting](#low_pressure_high_temperature_setting)
             - [Mantle](#mantle)
                 - [Lower mantle](#lower_mantle)
@@ -125,6 +131,7 @@ Namespace:
             - [Humid temperate climatic setting](#humid_temperate_climatic_setting)
             - [Humid tropical climatic setting](#humid_tropical_climatic_setting)
             - [Island](#island)
+                - [Volcanic island](#volcanic_island)
             - [Outcrop](#outcrop)
             - [Physiographic feature](#physiographic_feature)
                 - [Arch-natural formation ](#arch_natural_formation)
@@ -365,6 +372,9 @@ Namespace:
         - [Igneous system](#igneous_system)
             - [Hypabyssal setting](#hypabyssal_setting)
             - [Intrusive igneous complex](#intrusive_igneous_complex)
+                - [Granitic intrusive igneous complex](#granitic_intrusive_complex)
+                - [Mafic to ultramafic intrusive igenous complex](#mafic_to_ultramafic_intrusive_complex)
+                - [Pluton](#pluton)
             - [Volcanic setting](#volcanic_setting)
                 - [Inactive spreading center](#inactive_spreading_center)
                 - [Lava flow](#lava_flow)
@@ -607,8 +617,8 @@ environment that the organism inhabits.
  [`Earth interior`](#earthinterior)
 - Zone of metamorphism associated with the contact of an igneous body.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 NADM metamorphic rock vocabulary SLTTm1.0, 2004, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/contact_metamorphic_zone
 - **Other Properties:**
 
@@ -623,8 +633,8 @@ various criteria, including seismic velocity, density and composition,
 that part of the Earth above the Mohorovicic discontinuity, made up of
 the sial and the sima.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/crust
 - **Other Properties:**
 
@@ -641,8 +651,8 @@ crust averages ~2.8 g/cm3 and is ~2.7 g.cm3 in the upper layer. The
 velocities of compressional seismic waves through it average ~6.5 km/s
 and are less than ~7.0 km/sec.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/continental_crust
 - **Other Properties:**
 
@@ -672,8 +682,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 without significant metamorphism. Generally the foreland is closer to
 the continental interior than other portions of the orogenic belt are.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 1-GE WP3, Neuendorf et al.(2005), p. 250, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/foreland_setting
 - **Other Properties:**
 
@@ -770,8 +780,8 @@ compressional seismic-wave velocities travelling through it at 4-7.2
 km/sec. Setting in crust produced by submarine volcanism at a mid
 ocean ridge.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/ocean_crust
 - **Other Properties:**
 
@@ -809,8 +819,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 crust, during the history of continental rifting that culminates in
 the formation of a new ocean.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/transitional_crust
 - **Other Properties:**
 
@@ -839,6 +849,44 @@ grained intrusive igneous rocks.
 - **Source:**
 SESAR legacy data
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/intrusive_igneous_complex
+- **Other Properties:**
+
+[]{#granitic_intrusive_complex}
+
+#######  Granitic intrusive igneous complex
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- Broadly granitic suites of cogentic intrusive rocks ranging from
+diorite to granite; mostly medium to coarse grained, might include
+finer grained bodies as well as very coarse-grained pegmatite
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/granitic_intrusive_complex
+- **Other Properties:**
+
+[]{#mafic_to_ultramafic_intrusive_complex}
+
+#######  Mafic to ultramafic intrusive igenous complex
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- sampled feature is a geologic unit consisting if intrusive
+ultramafic or mafic igneous rocks, e.g. peridotite, harzburgite,
+gabbro...
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/mafic_to_ultramafic_intrusive_complex
+- **Other Properties:**
+
+[]{#pluton}
+
+#######  Pluton
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- Sampled feature is a discrete body of broadly cogenetic intrusive
+igeous rock; might be homogeneous or zoned in various ways.
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/pluton
 - **Other Properties:**
 
 []{#melange}
@@ -959,6 +1007,44 @@ SESAR legacy data
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/intrusive_igneous_complex
 - **Other Properties:**
 
+[]{#granitic_intrusive_complex}
+
+######  Granitic intrusive igneous complex
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- Broadly granitic suites of cogentic intrusive rocks ranging from
+diorite to granite; mostly medium to coarse grained, might include
+finer grained bodies as well as very coarse-grained pegmatite
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/granitic_intrusive_complex
+- **Other Properties:**
+
+[]{#mafic_to_ultramafic_intrusive_complex}
+
+######  Mafic to ultramafic intrusive igenous complex
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- sampled feature is a geologic unit consisting if intrusive
+ultramafic or mafic igneous rocks, e.g. peridotite, harzburgite,
+gabbro...
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/mafic_to_ultramafic_intrusive_complex
+- **Other Properties:**
+
+[]{#pluton}
+
+######  Pluton
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- Sampled feature is a discrete body of broadly cogenetic intrusive
+igeous rock; might be homogeneous or zoned in various ways.
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/pluton
+- **Other Properties:**
+
 []{#low_pressure_high_temperature_setting}
 
 #####  Low pressure high temperature setting
@@ -981,8 +1067,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 divided into the upper mantle and the lower mantle, with a transition
 zone separating them.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/mantle
 - **Other Properties:**
 
@@ -996,8 +1082,8 @@ With increasing depth, density increases from ~4.4 g/cm3-to ~5.6
 g/cm3, and velocity of compressional seismic waves increases from
 ~10.7 km/s to ~13.7 km/s (Dziewonski and Anderson, 1981).
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lower_mantle
 - **Other Properties:**
 
@@ -1013,8 +1099,8 @@ depth and S wave velocity increases from about 4.5 to 6 km/sec with
 depth. It is presumed to be peridotitic in composition. It includes
 the subcrustal lithosphere the asthenosphere and the transition zone,
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/upper_mantle
 - **Other Properties:**
 
@@ -1038,8 +1124,8 @@ sessf:sfvocabulary
 - Metamorphism not obviously localized along contacts of igneous
 bodies, includes burial metamorphism and ocean ridge metamorphism
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 NADM metamorphic rock vocabulary SLTTm1.0, 2004, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/regional_metamorphic_setting
 - **Other Properties:**
 
@@ -1099,8 +1185,8 @@ nearest elevated land, sloping very gently towards the water body.
 Distinguished from alluvial plain by presence of relict shoreline-
 related deposits or morphology.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on Neuendorf et al, 2005, p. 125, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/coastal_plain
 - **Other Properties:**
 
@@ -1157,8 +1243,8 @@ As a characteristic, individual dunes somewhat resemble barchans but
 are highly irregular in shape and crowded, erg areas of the Sahara are
 an example.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/dunefield
 - **Other Properties:**
 
@@ -1170,8 +1256,8 @@ Neuendorf et al., 2005,
 - A dune field on low-lying land recently abandoned or built up by the
 sea, the dunes may ascend a cliff and travel inland.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/coastal_dune_field
 - **Other Properties:**
 
@@ -1184,8 +1270,8 @@ Neuendorf et al., 2005,
  [`Plain`](#plain)
 - A sand-covered plain dominated by aeolian processes.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/sand_plain
 - **Other Properties:**
 
@@ -1212,8 +1298,8 @@ SESAR legacy localities,
 - A desert plain strewn with wind-abraded pebbles, or gibbers, a
 gravelly desert.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/gibber_plain
 - **Other Properties:**
 
@@ -1266,8 +1352,8 @@ the mountain front, and (c) A distal complex of coalescent fans
 to basin-floor depressions with alluvial and temporary lake plains or
 to surfaces associated with through drainage.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Hawley and Parsons, 1980+F98, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/piedmont_slope
 - **Other Properties:**
 
@@ -1286,8 +1372,8 @@ gradient of the stream suddenly decreases, it is steepest near the
 mouth of the valley where its apex points upstream, and it slopes
 gently and convexly outward with gradually decreasing gradient
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/alluvial_fan
 - **Other Properties:**
 
@@ -1307,8 +1393,8 @@ alluvium... Synonym-- wash plain,...river plain, aggraded valley
 plain,... (Jackson, 1997, p. 17). May include one or more River plain
 systems.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/alluvial_plain
 - **Other Properties:**
 
@@ -1330,8 +1416,8 @@ apron and terrace pediments (Cooke and Warren, 1973)), (b) type of
 material eroded, bedrock or regolith, or (c) combinations of the
 above. Compare - Piedmont slope..
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, NRCS, 2001, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/pediment
 - **Other Properties:**
 
@@ -1348,8 +1434,8 @@ parts of closed depressions, such as those occurring on intermontane
 basin floors. Temporary flooding occurs primarily in response to
 precipitation-runoff events.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Based on Hawley and Parsons, 1980, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/playa
 - **Other Properties:**
 
@@ -1396,8 +1482,8 @@ Fluvial setting
 - A drainage channel along which runoff no longer occurs, as on an
 alluvial fan
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/abandoned_channel
 - **Other Properties:**
 
@@ -1410,8 +1496,8 @@ Neuendorf et al., 2005,
 left when the stream formed a cutoff across a narrow meander neck.
 Note that these are typically lakes, thus also lacustrine.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/cutoff_meander
 - **Other Properties:**
 
@@ -1428,8 +1514,8 @@ sluggish water beyond the influence of the swiftest current. A river
 has one floodplain and may have one or more terraces representing
 abandoned floodplains
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/floodplain
 - **Other Properties:**
 
@@ -1444,8 +1530,8 @@ natural passageway or depression of perceptible extent containing
 continuously or periodically flowing water, or forming a connecting
 link between two bodies of water, a watercourse
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/river_channel
 - **Other Properties:**
 
@@ -1462,8 +1548,8 @@ generally believed to indicate an inability to carry all of its load,
 such as an overloaded and aggrading stream flowing in a wide channel
 on a floodplain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/braided_channel
 - **Other Properties:**
 
@@ -1476,8 +1562,8 @@ Neuendorf et al., 2005,
 across its floodplain or shifts its course laterally toward the convex
 side of an original curve
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/meandering_channel
 - **Other Properties:**
 
@@ -1504,8 +1590,8 @@ sessf:sfvocabulary
 continuous for some distance along the coast. It is characterized by
 subparallel beach ridges and swales, in places with associated dunes.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on Jackson 1997, p. 626, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/strandplain
 - **Other Properties:**
 
@@ -1542,8 +1628,8 @@ SESAR legacy localities
 - Pertaining to the shore area marginal to the littoral zone, just
 above high-tide level
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/supratidal_setting
 - **Other Properties:**
 
@@ -1572,8 +1658,8 @@ alternately covered and uncovered by the tide, and consisting of
 unconsolidated sediment (mostly mud and sand). It may form the top
 surface of a deltaic deposit.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_flat
 - **Other Properties:**
 
@@ -1588,8 +1674,8 @@ formed of mud and of the resistant mat of roots of salt-tolerant
 plants, and regularly inundated during high tides, a marshy tidal
 flat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_marsh
 - **Other Properties:**
 
@@ -1614,8 +1700,8 @@ cm) or less. (Jackson, 1997, p. 172). Equivalent to SLTT 'Desert
 setting', but use 'Arid' to emphasize climatic nature of setting
 definition.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/arid_or_semi_arid_environment
 - **Other Properties:**
 
@@ -1630,8 +1716,8 @@ North American Geologic-map Data Model Science Language Technical Team, 2004, Se
 - A desert plain strewn with wind-abraded pebbles, or gibbers, a
 gravelly desert.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/gibber_plain
 - **Other Properties:**
 
@@ -1647,8 +1733,8 @@ saline mineral, tidal-flood, and eolian deposits. Boundaries with
 intertidal setting and non-tidal terrestrial setting are gradational.
 (Jackson, 1997, p. 561).
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, based on Jackson 1997, Neuendorf et al. 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/marginal_marine_sabkha
 - **Other Properties:**
 
@@ -1665,8 +1751,8 @@ parts of closed depressions, such as those occurring on intermontane
 basin floors. Temporary flooding occurs primarily in response to
 precipitation-runoff events.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Based on Hawley and Parsons, 1980, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/playa
 - **Other Properties:**
 
@@ -1679,8 +1765,8 @@ Based on Hawley and Parsons, 1980,
  [`Plain`](#plain)
 - A sand-covered plain dominated by aeolian processes.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/sand_plain
 - **Other Properties:**
 
@@ -1694,8 +1780,8 @@ the surface, is large enough for a person to enter, and extends into
 darkness. The most common type of cave is formed in limestone by
 dissolution.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/cave
 - **Other Properties:**
 
@@ -1712,8 +1798,8 @@ falling, and other downslope movements caused by slope collapse
 induced by gravitational influence on earth materials. May be
 subaerial or subaqueous.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Hawley, J.W., and Parsons, R.B. 1980. Glossary of selected geomorphic and geologic terms. Mimeo. USDA Soil Conservation Service, West National Technical Center, Portland, OR. 30 p., 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/hillslope_setting
 - **Other Properties:**
 
@@ -1737,8 +1823,8 @@ SESAR legacy localities
 - Setting with seasonal climate having hot to cold or humid to arid
 seasons.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200., 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/humid_temperate_climatic_setting
 - **Other Properties:**
 
@@ -1750,8 +1836,8 @@ Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., R
 - Setting with hot humid climate influenced by equatorial air masses,
 no winter season.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200., 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/humid_tropical_climatic_setting
 - **Other Properties:**
 
@@ -1764,6 +1850,19 @@ Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., R
 - **Source:**
 SESAR legacy localities
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/island
+- **Other Properties:**
+
+[]{#volcanic_island}
+
+######  Volcanic island
+- **Child of**:
+ [`Island`](#island)
+ [`Volcanic setting`](#volcanic_setting)
+- Island formed by volcanic eruptions. Might have shoreline biogenic
+reefs.
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/volcanic_island
 - **Other Properties:**
 
 []{#outcrop}
@@ -1903,8 +2002,8 @@ SESAR legacy localities,
 - A divergent stream flowing away from the main stream and not
 returning to it, as in a delta or on an alluvial plain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/distributary_channel
 - **Other Properties:**
 
@@ -1939,8 +2038,8 @@ natural passageway or depression of perceptible extent containing
 continuously or periodically flowing water, or forming a connecting
 link between two bodies of water, a watercourse
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/river_channel
 - **Other Properties:**
 
@@ -1957,8 +2056,8 @@ generally believed to indicate an inability to carry all of its load,
 such as an overloaded and aggrading stream flowing in a wide channel
 on a floodplain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/braided_channel
 - **Other Properties:**
 
@@ -1971,8 +2070,8 @@ Neuendorf et al., 2005,
 across its floodplain or shifts its course laterally toward the convex
 side of an original curve
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/meandering_channel
 - **Other Properties:**
 
@@ -1999,8 +2098,8 @@ split IMLGS submarine canyon or channel into separate concepts,
 - A major channel followed by the tidal currents, extending from
 offshore into a tidal marsh or a tidal flat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_channel
 - **Other Properties:**
 
@@ -2242,8 +2341,8 @@ receive only distal turbidite and pelagic sediments.
 - **Alternate labels:**
 Abyssal plain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Bates & Jackson, 1987, Heezen & Laughton, 1963, Reading, 1978, p. 390, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/abyssal_plain
 - **Other Properties:**
 
@@ -2263,8 +2362,8 @@ alluvium... Synonym-- wash plain,...river plain, aggraded valley
 plain,... (Jackson, 1997, p. 17). May include one or more River plain
 systems.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/alluvial_plain
 - **Other Properties:**
 
@@ -2280,8 +2379,8 @@ nearest elevated land, sloping very gently towards the water body.
 Distinguished from alluvial plain by presence of relict shoreline-
 related deposits or morphology.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on Neuendorf et al, 2005, p. 125, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/coastal_plain
 - **Other Properties:**
 
@@ -2296,8 +2395,8 @@ large or compound delta, strictly, an alluvial plain characterized by
 repeated channel bifurcation and divergence, multiple distributary
 channels, and interdistributary flood basins
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/delta_plain
 - **Other Properties:**
 
@@ -2310,8 +2409,8 @@ Neuendorf et al., 2005,
 - The part of a delta plain which is penetrated by saline water and is
 subject to tidal processes
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lower_delta_plain
 - **Other Properties:**
 
@@ -2325,8 +2424,8 @@ processes. They do not differ substantially from alluvial environments
 except that areas of swamp, marsh and lakes are usually more
 widespread and channels may bifurcate downstream
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/upper_delta_plain
 - **Other Properties:**
 
@@ -2341,8 +2440,8 @@ Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.
 - A desert plain strewn with wind-abraded pebbles, or gibbers, a
 gravelly desert.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/gibber_plain
 - **Other Properties:**
 
@@ -2359,8 +2458,8 @@ parts of closed depressions, such as those occurring on intermontane
 basin floors. Temporary flooding occurs primarily in response to
 precipitation-runoff events.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Based on Hawley and Parsons, 1980, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/playa
 - **Other Properties:**
 
@@ -2373,8 +2472,8 @@ Based on Hawley and Parsons, 1980,
  [`Plain`](#plain)
 - A sand-covered plain dominated by aeolian processes.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/sand_plain
 - **Other Properties:**
 
@@ -2402,8 +2501,8 @@ of the surface above an abyssal sea floor that lies several km deeper.
 Climate and water depths are such that a marine carbonate platform
 does not develop.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/ocean_plateau
 - **Other Properties:**
 
@@ -2479,8 +2578,8 @@ abandoned.
 - **Alternate labels:**
 Aseismic ocean ridge
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 IMLGS sampled feature, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/inactive_spreading_center
 - **Other Properties:**
 
@@ -2527,8 +2626,8 @@ temperature of water. Includes polar deserts because precipitation is
 generally scant at high latitude. Climate controlled by arctic air
 masses, cold dry environment with short summer.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200., 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/polar_climatic_setting
 - **Other Properties:**
 
@@ -2574,8 +2673,8 @@ SESAR legacy localities,
 - Contained, embedded, or carried within the body of a glacier or ice
 sheet, said of meltwater streams, till, drift, moraine
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/englacial_setting
 - **Other Properties:**
 
@@ -2588,8 +2687,8 @@ Neuendorf et al., 2005,
 - Areas adjacent to glacial front dominated by sediment and water
 supplied by glacial melting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/glacial_outwash_plain
 - **Other Properties:**
 
@@ -2614,8 +2713,8 @@ or ice sheet, generally at or near its lower end, said of lakes,
 streams, deposits, and other features produced by or derived from the
 glacier ice
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/proglacial_setting
 - **Other Properties:**
 
@@ -2627,8 +2726,8 @@ Neuendorf et al., 2005,
 - Region of sediment deposition due to melting of glacier ice.
 ablation and flow till setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 NADM SLTTs, 2004, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/glacier_terminus
 - **Other Properties:**
 
@@ -2640,8 +2739,8 @@ NADM SLTTs, 2004,
 - Formed or accumulated in or by the bottom parts of a glacier or ice
 sheet, said of meltwater streams, till, moraine, etc.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/subglacial_setting
 - **Other Properties:**
 
@@ -2655,8 +2754,8 @@ glacier or ice sheet, said of meltwater streams, till, drift, etc.
 (Jackson, 1997, p. 639). Dreimanis (1988, p. 39) recommendation that
 \supraglacial\ supersede \superglacial\ is followed.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/supraglacial_setting
 - **Other Properties:**
 
@@ -2675,8 +2774,8 @@ water bodies.
 - **Alternate labels:**
 Coast
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on Neuendorf et al, 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/shoreline
 - **Other Properties:**
 
@@ -2707,8 +2806,8 @@ separated from it by a lagoon (Shepard, 1954, p.1904), estuary, or
 marsh, it is extended by longshore transport and is rarely more than
 several kilometers long.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/barrier_beach
 - **Other Properties:**
 
@@ -2723,8 +2822,8 @@ the open ocean by a strip of land or by a barrier reef. Tidal
 influence is typically restricted and the lagoon is commonly
 hypersaline.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/barrier_lagoon
 - **Other Properties:**
 
@@ -2742,8 +2841,8 @@ waves), at the shore of a body of water, formed and washed by waves or
 tides, usually covered by sand or gravel, and lacking a bare rocky
 surface.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/beach
 - **Other Properties:**
 
@@ -2759,8 +2858,8 @@ separated from it by a lagoon (Shepard, 1954, p.1904), estuary, or
 marsh, it is extended by longshore transport and is rarely more than
 several kilometers long.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/barrier_beach
 - **Other Properties:**
 
@@ -2802,8 +2901,8 @@ nearest elevated land, sloping very gently towards the water body.
 Distinguished from alluvial plain by presence of relict shoreline-
 related deposits or morphology.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on Neuendorf et al, 2005, p. 125, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/coastal_plain
 - **Other Properties:**
 
@@ -2823,8 +2922,8 @@ accumulation of sediment supplied by the river in such quantities that
 it is not removed by tides, waves, and currents. Adapted from the
 Glossary of Geology definition for delta (Jackson, 1997, p. 167).
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/deltaic_system
 - **Other Properties:**
 
@@ -2838,8 +2937,8 @@ of a continuous sheet of sand, and occurring within the effective
 depth of wave erosion (10 m or less). It is the zone separating the
 prodelta from the delta plain, and it may or may not be steep\
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/delta_front
 - **Other Properties:**
 
@@ -2854,8 +2953,8 @@ large or compound delta, strictly, an alluvial plain characterized by
 repeated channel bifurcation and divergence, multiple distributary
 channels, and interdistributary flood basins
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/delta_plain
 - **Other Properties:**
 
@@ -2868,8 +2967,8 @@ Neuendorf et al., 2005,
 - The part of a delta plain which is penetrated by saline water and is
 subject to tidal processes
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lower_delta_plain
 - **Other Properties:**
 
@@ -2883,8 +2982,8 @@ processes. They do not differ substantially from alluvial environments
 except that areas of swamp, marsh and lakes are usually more
 widespread and channels may bifurcate downstream
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/upper_delta_plain
 - **Other Properties:**
 
@@ -2897,8 +2996,8 @@ Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.
 - A divergent stream flowing away from the main stream and not
 returning to it, as in a delta or on an alluvial plain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/distributary_channel
 - **Other Properties:**
 
@@ -2910,8 +3009,8 @@ Neuendorf et al., 2005,
 - The mouth of a delta distributary channel where fluvial discharge
 moves from confined to unconfined flow conditions
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/distributary_mouth
 - **Other Properties:**
 
@@ -2923,8 +3022,8 @@ Neuendorf et al., 2005,
  [`Estuary`](#estuary)
 - A delta that has filled, or is in the process of filling, an estuary
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/estuarine_delta
 - **Other Properties:**
 
@@ -2938,8 +3037,8 @@ Neuendorf et al., 2005,
 distributaries, occupied by shallow water, and either open to the sea
 or partly enclosed by minor distributaries
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/interdistributary_bay
 - **Other Properties:**
 
@@ -2957,8 +3056,8 @@ resulting from the accumulation of sediment supplied by the river in
 such quantities that it is not removed by waves or currents. Most
 deltas are partly subaerial and partly below water.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lacustrine_delta
 - **Other Properties:**
 
@@ -2974,8 +3073,8 @@ floor of the basin into which the delta is advancing and where clastic
 river sediment ceases to be a significant part of the basin-floor
 deposits, it is entirely below the water level
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/prodelta
 - **Other Properties:**
 
@@ -2989,8 +3088,8 @@ mouth of a river valley where fresh water comes into contact with
 seawater and where tidal effects are evident (adapted from Glossary of
 Geology, Jackson, 1997, p. 217).
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/estuary
 - **Other Properties:**
 
@@ -3002,8 +3101,8 @@ North American Geologic-map Data Model Science Language Technical Team, 2004, Se
  [`Estuary`](#estuary)
 - A delta that has filled, or is in the process of filling, an estuary
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/estuarine_delta
 - **Other Properties:**
 
@@ -3018,8 +3117,8 @@ storm barrier. Such lagoons are usually seasonal and exist until the
 river breaches the barrier, they occur in regions of low or spasmodic
 rainfall
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/estuarine_lagoon
 - **Other Properties:**
 
@@ -3033,8 +3132,8 @@ separated from a sea or lake by an offshore reef, barrier island, sand
 or spit (Jackson, 1997). Water is shallow, tidal and wave-produced
 effects on sediments, strong light reaches sediment..
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 generalize from Jackson 1997 and North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lagoonal_setting
 - **Other Properties:**
 
@@ -3049,8 +3148,8 @@ the open ocean by a strip of land or by a barrier reef. Tidal
 influence is typically restricted and the lagoon is commonly
 hypersaline.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/barrier_lagoon
 - **Other Properties:**
 
@@ -3065,8 +3164,8 @@ storm barrier. Such lagoons are usually seasonal and exist until the
 river breaches the barrier, they occur in regions of low or spasmodic
 rainfall
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/estuarine_lagoon
 - **Other Properties:**
 
@@ -3104,8 +3203,8 @@ well developed algal mats are restricted for the most part to the
 Keys, with Sugarloaf and Crane Keys offering prime examples of algal
 flat habitat. (Audubon, 1991)
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 http://www.audubonofflorida.org/main/wetlands/chp3.htm, Reading, 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/algal_flat
 - **Other Properties:**
 
@@ -3121,8 +3220,8 @@ saline mineral, tidal-flood, and eolian deposits. Boundaries with
 intertidal setting and non-tidal terrestrial setting are gradational.
 (Jackson, 1997, p. 561).
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, based on Jackson 1997, Neuendorf et al. 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/marginal_marine_sabkha
 - **Other Properties:**
 
@@ -3137,8 +3236,8 @@ island, alternately covered and uncovered by the tide or covered by
 shallow water, and barren of vegetation. Includes most tidal flats,
 but lacks denotation of tidal influence.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Jackson, 1997, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/mud_flat
 - **Other Properties:**
 
@@ -3149,8 +3248,8 @@ North American Geologic-map Data Model Science Language Technical Team, 2004, Se
  [`Shoreline`](#shoreline)
 - Shoreline with significant relief and abundant rock outcrop.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/rocky_coast
 - **Other Properties:**
 
@@ -3164,8 +3263,8 @@ North American Geologic-map Data Model Science Language Technical Team, 2004, Se
 continuous for some distance along the coast. It is characterized by
 subparallel beach ridges and swales, in places with associated dunes.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on Jackson 1997, p. 626, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/strandplain
 - **Other Properties:**
 
@@ -3178,8 +3277,8 @@ based on Jackson 1997, p. 626,
 - Pertaining to the shore area marginal to the littoral zone, just
 above high-tide level
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/supratidal_setting
 - **Other Properties:**
 
@@ -3204,8 +3303,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 high water and low water, also, pertaining to the organisms of that
 environment
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/intertidal
 - **Other Properties:**
 
@@ -3218,8 +3317,8 @@ Neuendorf et al., 2005,
 - The part of a delta plain which is penetrated by saline water and is
 subject to tidal processes
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lower_delta_plain
 - **Other Properties:**
 
@@ -3233,8 +3332,8 @@ Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.
 - A major channel followed by the tidal currents, extending from
 offshore into a tidal marsh or a tidal flat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_channel
 - **Other Properties:**
 
@@ -3249,8 +3348,8 @@ alternately covered and uncovered by the tide, and consisting of
 unconsolidated sediment (mostly mud and sand). It may form the top
 surface of a deltaic deposit.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_flat
 - **Other Properties:**
 
@@ -3265,8 +3364,8 @@ formed of mud and of the resistant mat of roots of salt-tolerant
 plants, and regularly inundated during high tides, a marshy tidal
 flat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_marsh
 - **Other Properties:**
 
@@ -3278,8 +3377,8 @@ Neuendorf et al., 2005,
 - Setting situated in or under permanent, standing water. Used for
 marine and lacustrine settings, but not for fluvial settings.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/subaqueous_setting
 - **Other Properties:**
 
@@ -3303,8 +3402,8 @@ and a lake or flowing water body.
 distributaries, occupied by shallow water, and either open to the sea
 or partly enclosed by minor distributaries
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/interdistributary_bay
 - **Other Properties:**
 
@@ -3318,8 +3417,8 @@ Neuendorf et al., 2005,
 high water and low water, also, pertaining to the organisms of that
 environment
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/intertidal
 - **Other Properties:**
 
@@ -3350,8 +3449,8 @@ resulting from the accumulation of sediment supplied by the river in
 such quantities that it is not removed by waves or currents. Most
 deltas are partly subaerial and partly below water.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lacustrine_delta
 - **Other Properties:**
 
@@ -3399,8 +3498,8 @@ IMLGS sampled feature
  [`Subaqueous setting`](#subaqueous_setting)
 - Setting characterized by location under the surface of the sea.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Webster's Encyclopedic Unabridged Dictionary of the English Language, 2001, p. 1894., 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/marine_setting
 - **Other Properties:**
 
@@ -3429,8 +3528,8 @@ receive only distal turbidite and pelagic sediments.
 - **Alternate labels:**
 Abyssal plain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Bates & Jackson, 1987, Heezen & Laughton, 1963, Reading, 1978, p. 390, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/abyssal_plain
 - **Other Properties:**
 
@@ -3444,8 +3543,8 @@ sedentary calcareous organisms, esp. corals, and consisting mostly of
 their remains, it is wave-resistant and stands topographically above
 the surrounding contemporaneously deposited sediment.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/biological_reef
 - **Other Properties:**
 
@@ -3460,8 +3559,8 @@ such as the back-reef facies of lagoonal deposits. In some places, as
 on a platform-edge reef tract, back reef refers to the side of the
 reef away from the open sea, even though no land may be nearby
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/backreef
 - **Other Properties:**
 
@@ -3473,8 +3572,8 @@ Neuendorf et al., 2005,
 - The seaward side of a reef, the slope covered with deposits of
 coarse reef talus
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/forereef_setting
 - **Other Properties:**
 
@@ -3490,8 +3589,8 @@ coral sand. It may include shallow pools, irregular gullies, low
 islands of sand or rubble (often vegetated, esp. by palms), and
 scattered colonies of the more hardy species of coral
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/reef_flat
 - **Other Properties:**
 
@@ -3553,8 +3652,8 @@ of the surface above an abyssal sea floor that lies several km deeper.
 Climate and water depths are such that a marine carbonate platform
 does not develop.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/ocean_plateau
 - **Other Properties:**
 
@@ -3571,8 +3670,8 @@ sedimentation. If the mountain is high enough to reach the photic
 zone, carbonate production may result in reef building to produce a
 carbonate platform or atoll setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/seamount
 - **Other Properties:**
 
@@ -3635,8 +3734,8 @@ abandoned.
 - **Alternate labels:**
 Aseismic ocean ridge
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 IMLGS sampled feature, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/inactive_spreading_center
 - **Other Properties:**
 
@@ -3672,8 +3771,8 @@ IMLGS sampled feature
 setting, which separate the basin from an adjacent landmass, and a
 very low-relief basin plain setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on NADM SLTTs, 2004, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/slope_rise_setting
 - **Other Properties:**
 
@@ -3791,8 +3890,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
  [`Marine setting`](#marine_setting)
 - The ocean environment at water depths between 3500 and 6000 metres
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/abyssal_setting
 - **Other Properties:**
 
@@ -3803,8 +3902,8 @@ Neuendorf et al., 2005,
  [`Marine setting`](#marine_setting)
 - The ocean environment at water depths between 200 and 3500 metres
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/bathyal_setting
 - **Other Properties:**
 
@@ -3815,8 +3914,8 @@ Neuendorf et al., 2005,
  [`Bathyal setting`](#bathyal_setting)
 - The ocean environment at depths between 1000 and 3500 metres
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf, K.K.E., Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p., Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lower_bathyal_setting
 - **Other Properties:**
 
@@ -3827,8 +3926,8 @@ Neuendorf, K.K.E., Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 
  [`Bathyal setting`](#bathyal_setting)
 - The ocean environment at water depths between 600 and 1000 metres
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/middle_bathyal_setting
 - **Other Properties:**
 
@@ -3839,8 +3938,8 @@ Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous ben
  [`Bathyal setting`](#bathyal_setting)
 - The ocean environment at water depths between 200 and 600 metres
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/upper_bathyal_setting
 - **Other Properties:**
 
@@ -3868,8 +3967,8 @@ which are below the depth of the continental shelf. An example is the
 southern California continental borderland,.... (Jackson, 1997, p.
 138)..
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/continental_borderland
 - **Other Properties:**
 
@@ -3883,8 +3982,8 @@ more gentle slope (average 5 degrees) towards the sea, and abundant
 seismic activity on landward side of trench. Does not denote water
 depth, but may be very deep.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/deep_sea_trench
 - **Other Properties:**
 
@@ -3908,8 +4007,8 @@ IMLGS sampled feature
 - The deepest oceanic environment, i.e., over 6000 m in depth. Always
 in deep sea trench.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/hadal_setting
 - **Other Properties:**
 
@@ -3933,8 +4032,8 @@ IMLGS sampled feature
 - Marine setting situated within the interior of the continent, rather
 than at the edge of a continent.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/epicontinental_marine_setting
 - **Other Properties:**
 
@@ -3960,8 +4059,8 @@ a depth of 200 m). It is characterized by its gentle slope of 0.1
 degree (Jackson, 1997, p. 138). Continental shelves have a classic
 shoreline-shelf-slope profile termed 'clinoform'.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/continental_shelf
 - **Other Properties:**
 
@@ -4005,8 +4104,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 metres, or between low-tide level and approximately the edge of the
 continental shelf
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/neritic_setting
 - **Other Properties:**
 
@@ -4034,8 +4133,8 @@ of the surface above an abyssal sea floor that lies several km deeper.
 Climate and water depths are such that a marine carbonate platform
 does not develop.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/ocean_plateau
 - **Other Properties:**
 
@@ -4052,8 +4151,8 @@ sedimentation. If the mountain is high enough to reach the photic
 zone, carbonate production may result in reef building to produce a
 carbonate platform or atoll setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/seamount
 - **Other Properties:**
 
@@ -4116,8 +4215,8 @@ abandoned.
 - **Alternate labels:**
 Aseismic ocean ridge
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 IMLGS sampled feature, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/inactive_spreading_center
 - **Other Properties:**
 
@@ -4153,8 +4252,8 @@ IMLGS sampled feature
 setting, which separate the basin from an adjacent landmass, and a
 very low-relief basin plain setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 based on NADM SLTTs, 2004, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/slope_rise_setting
 - **Other Properties:**
 
@@ -4241,8 +4340,8 @@ floor of the basin into which the delta is advancing and where clastic
 river sediment ceases to be a significant part of the basin-floor
 deposits, it is entirely below the water level
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/prodelta
 - **Other Properties:**
 
@@ -4267,8 +4366,8 @@ SESAR legacy localities
 - A major channel followed by the tidal currents, extending from
 offshore into a tidal marsh or a tidal flat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_channel
 - **Other Properties:**
 
@@ -4294,8 +4393,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 - Waterlogged, spongy ground, consisting primarily of mosses,
 containing acidic, decaying vegetation that may develop into peat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Jackson, 1997, North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/bog
 - **Other Properties:**
 
@@ -4325,8 +4424,8 @@ SESAR legacy localities
 - A desert plain strewn with wind-abraded pebbles, or gibbers, a
 gravelly desert.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/gibber_plain
 - **Other Properties:**
 
@@ -4339,8 +4438,8 @@ Neuendorf et al., 2005,
 - Areas adjacent to glacial front dominated by sediment and water
 supplied by glacial melting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/glacial_outwash_plain
 - **Other Properties:**
 
@@ -4371,8 +4470,8 @@ resulting from the accumulation of sediment supplied by the river in
 such quantities that it is not removed by waves or currents. Most
 deltas are partly subaerial and partly below water.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lacustrine_delta
 - **Other Properties:**
 
@@ -4429,8 +4528,8 @@ the mountain front, and (c) A distal complex of coalescent fans
 to basin-floor depressions with alluvial and temporary lake plains or
 to surfaces associated with through drainage.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Hawley and Parsons, 1980+F98, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/piedmont_slope
 - **Other Properties:**
 
@@ -4449,8 +4548,8 @@ gradient of the stream suddenly decreases, it is steepest near the
 mouth of the valley where its apex points upstream, and it slopes
 gently and convexly outward with gradually decreasing gradient
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/alluvial_fan
 - **Other Properties:**
 
@@ -4470,8 +4569,8 @@ alluvium... Synonym-- wash plain,...river plain, aggraded valley
 plain,... (Jackson, 1997, p. 17). May include one or more River plain
 systems.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/alluvial_plain
 - **Other Properties:**
 
@@ -4493,8 +4592,8 @@ apron and terrace pediments (Cooke and Warren, 1973)), (b) type of
 material eroded, bedrock or regolith, or (c) combinations of the
 above. Compare - Piedmont slope..
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, NRCS, 2001, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/pediment
 - **Other Properties:**
 
@@ -4511,8 +4610,8 @@ parts of closed depressions, such as those occurring on intermontane
 basin floors. Temporary flooding occurs primarily in response to
 precipitation-runoff events.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Based on Hawley and Parsons, 1980, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/playa
 - **Other Properties:**
 
@@ -4541,8 +4640,8 @@ Fluvial setting
 - A drainage channel along which runoff no longer occurs, as on an
 alluvial fan
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/abandoned_channel
 - **Other Properties:**
 
@@ -4555,8 +4654,8 @@ Neuendorf et al., 2005,
 left when the stream formed a cutoff across a narrow meander neck.
 Note that these are typically lakes, thus also lacustrine.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/cutoff_meander
 - **Other Properties:**
 
@@ -4573,8 +4672,8 @@ sluggish water beyond the influence of the swiftest current. A river
 has one floodplain and may have one or more terraces representing
 abandoned floodplains
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/floodplain
 - **Other Properties:**
 
@@ -4589,8 +4688,8 @@ natural passageway or depression of perceptible extent containing
 continuously or periodically flowing water, or forming a connecting
 link between two bodies of water, a watercourse
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/river_channel
 - **Other Properties:**
 
@@ -4607,8 +4706,8 @@ generally believed to indicate an inability to carry all of its load,
 such as an overloaded and aggrading stream flowing in a wide channel
 on a floodplain
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/braided_channel
 - **Other Properties:**
 
@@ -4621,8 +4720,8 @@ Neuendorf et al., 2005,
 across its floodplain or shifts its course laterally toward the convex
 side of an original curve
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/meandering_channel
 - **Other Properties:**
 
@@ -4662,8 +4761,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 - Waterlogged, spongy ground, consisting primarily of mosses,
 containing acidic, decaying vegetation that may develop into peat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Jackson, 1997, North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/bog
 - **Other Properties:**
 
@@ -4678,8 +4777,8 @@ peat. Marshes are characterized by sedges, cattails, rushes, or other
 aquatic and grasslike vegetation. Swamps are characterized by tree and
 brush vegetation.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al 2005, Soil Science Society of America, 1997., 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/swamp_or_marsh
 - **Other Properties:**
 
@@ -4694,8 +4793,8 @@ formed of mud and of the resistant mat of roots of salt-tolerant
 plants, and regularly inundated during high tides, a marshy tidal
 flat.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/tidal_marsh
 - **Other Properties:**
 
@@ -4741,8 +4840,8 @@ SESAR legacy localities,
 - Contained, embedded, or carried within the body of a glacier or ice
 sheet, said of meltwater streams, till, drift, moraine
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/englacial_setting
 - **Other Properties:**
 
@@ -4755,8 +4854,8 @@ Neuendorf et al., 2005,
 - Areas adjacent to glacial front dominated by sediment and water
 supplied by glacial melting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/glacial_outwash_plain
 - **Other Properties:**
 
@@ -4781,8 +4880,8 @@ or ice sheet, generally at or near its lower end, said of lakes,
 streams, deposits, and other features produced by or derived from the
 glacier ice
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/proglacial_setting
 - **Other Properties:**
 
@@ -4794,8 +4893,8 @@ Neuendorf et al., 2005,
 - Region of sediment deposition due to melting of glacier ice.
 ablation and flow till setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 NADM SLTTs, 2004, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/glacier_terminus
 - **Other Properties:**
 
@@ -4807,8 +4906,8 @@ NADM SLTTs, 2004,
 - Formed or accumulated in or by the bottom parts of a glacier or ice
 sheet, said of meltwater streams, till, moraine, etc.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/subglacial_setting
 - **Other Properties:**
 
@@ -4822,8 +4921,8 @@ glacier or ice sheet, said of meltwater streams, till, drift, etc.
 (Jackson, 1997, p. 639). Dreimanis (1988, p. 39) recommendation that
 \supraglacial\ supersede \superglacial\ is followed.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/supraglacial_setting
 - **Other Properties:**
 
@@ -5138,6 +5237,44 @@ SESAR legacy data
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/intrusive_igneous_complex
 - **Other Properties:**
 
+[]{#granitic_intrusive_complex}
+
+######  Granitic intrusive igneous complex
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- Broadly granitic suites of cogentic intrusive rocks ranging from
+diorite to granite; mostly medium to coarse grained, might include
+finer grained bodies as well as very coarse-grained pegmatite
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/granitic_intrusive_complex
+- **Other Properties:**
+
+[]{#mafic_to_ultramafic_intrusive_complex}
+
+######  Mafic to ultramafic intrusive igenous complex
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- sampled feature is a geologic unit consisting if intrusive
+ultramafic or mafic igneous rocks, e.g. peridotite, harzburgite,
+gabbro...
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/mafic_to_ultramafic_intrusive_complex
+- **Other Properties:**
+
+[]{#pluton}
+
+######  Pluton
+- **Child of**:
+ [`Intrusive igneous complex`](#intrusive_igneous_complex)
+- Sampled feature is a discrete body of broadly cogenetic intrusive
+igeous rock; might be homogeneous or zoned in various ways.
+- **Source:**
+SESAR legacy localities
+- **Concept URI:** https://w3id.org/sesar/sampledfeature/pluton
+- **Other Properties:**
+
 []{#volcanic_setting}
 
 #####  Volcanic setting
@@ -5164,8 +5301,8 @@ abandoned.
 - **Alternate labels:**
 Aseismic ocean ridge
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 IMLGS sampled feature, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/inactive_spreading_center
 - **Other Properties:**
 
@@ -5207,8 +5344,8 @@ sedimentation. If the mountain is high enough to reach the photic
 zone, carbonate production may result in reef building to produce a
 carbonate platform or atoll setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/seamount
 - **Other Properties:**
 
@@ -5220,8 +5357,8 @@ Reading 1978,
  [`Volcanic setting`](#volcanic_setting)
 - A generally curvillinear belt of volcanoes above a subduction zone.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 1-GE WP3, Neuendorf et al.(2005), p. 710, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/volcanic_arc
 - **Other Properties:**
 
@@ -5346,8 +5483,8 @@ various criteria, including seismic velocity, density and composition,
 that part of the Earth above the Mohorovicic discontinuity, made up of
 the sial and the sima.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/crust
 - **Other Properties:**
 
@@ -5364,8 +5501,8 @@ crust averages ~2.8 g/cm3 and is ~2.7 g.cm3 in the upper layer. The
 velocities of compressional seismic waves through it average ~6.5 km/s
 and are less than ~7.0 km/sec.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/continental_crust
 - **Other Properties:**
 
@@ -5395,8 +5532,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 without significant metamorphism. Generally the foreland is closer to
 the continental interior than other portions of the orogenic belt are.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 1-GE WP3, Neuendorf et al.(2005), p. 250, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/foreland_setting
 - **Other Properties:**
 
@@ -5493,8 +5630,8 @@ compressional seismic-wave velocities travelling through it at 4-7.2
 km/sec. Setting in crust produced by submarine volcanism at a mid
 ocean ridge.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/ocean_crust
 - **Other Properties:**
 
@@ -5532,8 +5669,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 crust, during the history of continental rifting that culminates in
 the formation of a new ocean.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/transitional_crust
 - **Other Properties:**
 
@@ -5549,8 +5686,8 @@ examples include the North Sea, East Africa, and the Basin and Range
 of the North American Cordillera. Typically applied in continental
 crustal settings.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 This vocabulary, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/extended_terrane
 - **Other Properties:**
 
@@ -5602,8 +5739,8 @@ SESAR legacy localities
 without significant metamorphism. Generally the foreland is closer to
 the continental interior than other portions of the orogenic belt are.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 1-GE WP3, Neuendorf et al.(2005), p. 250, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/foreland_setting
 - **Other Properties:**
 
@@ -5673,8 +5810,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
  [`Tectonically defined setting`](#tectonic_setting)
 - Tectonically stable setting far from any active plate margins.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 This vocabulary, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/intraplate_tectonic_setting
 - **Other Properties:**
 
@@ -5690,8 +5827,8 @@ abandoned.
 - **Alternate labels:**
 Aseismic ocean ridge
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 IMLGS sampled feature, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/inactive_spreading_center
 - **Other Properties:**
 
@@ -5708,8 +5845,8 @@ sedimentation. If the mountain is high enough to reach the photic
 zone, carbonate production may result in reef building to produce a
 carbonate platform or atoll setting.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Reading 1978, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/seamount
 - **Other Properties:**
 
@@ -5723,8 +5860,8 @@ Reading 1978,
 divided into the upper mantle and the lower mantle, with a transition
 zone separating them.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/mantle
 - **Other Properties:**
 
@@ -5738,8 +5875,8 @@ With increasing depth, density increases from ~4.4 g/cm3-to ~5.6
 g/cm3, and velocity of compressional seismic waves increases from
 ~10.7 km/s to ~13.7 km/s (Dziewonski and Anderson, 1981).
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/lower_mantle
 - **Other Properties:**
 
@@ -5755,8 +5892,8 @@ depth and S wave velocity increases from about 4.5 to 6 km/sec with
 depth. It is presumed to be peridotitic in composition. It includes
 the subcrustal lithosphere the asthenosphere and the transition zone,
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al., 2005, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/upper_mantle
 - **Other Properties:**
 
@@ -5790,8 +5927,8 @@ zone of active faulting, i.e. a transform fault or subduction zone.
 - Tectonic setting between a subduction-related trench and a volcanic
 arc
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 1-GE WP3, Neuendorf et al.(2005), p. 249, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/forearc_setting
 - **Other Properties:**
 
@@ -5826,8 +5963,8 @@ http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment
 - Plate boundary at which the adjacent plates are moving laterally
 relative to each other.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 This vocabulary, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/transform_plate_boundary
 - **Other Properties:**
 
@@ -5839,8 +5976,8 @@ This vocabulary,
  [`Volcanic setting`](#volcanic_setting)
 - A generally curvillinear belt of volcanoes above a subduction zone.
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 1-GE WP3, Neuendorf et al.(2005), p. 710, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/sesar/sampledfeature/volcanic_arc
 - **Other Properties:**
 
@@ -5890,8 +6027,8 @@ hydrosphere, or atmosphere.
 - **Alternate labels:**
 Extraterrestrial setting
 - **Source:**
-http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 Neuendorf et al 2005,, 
+http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment, 
 - **Concept URI:** https://w3id.org/isample/vocabulary/sampledfeature/extraterrestrialenvironment
 - **Other Properties:**
 
