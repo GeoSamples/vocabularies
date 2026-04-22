@@ -1184,11 +1184,11 @@ mat:materialsvocabulary
   rdfs:label "iSamples Materials Vocabulary"@en ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   skos:definition "High level vocabulary to specify the kind of material that constitutes a physical sample"@en ;
-  skos:hasTopConcept mat:material ;
   skos:historyNote "2022-01-05 SMR version 0.9, change base uri to https://w3id.org/isample/vocabulary/material/0.9/ for testing with ESIP COR and w3id uri resolution"@en ;
   skos:historyNote "2022-03-11 SMR change definitions from rdfs:comment to skos:definition. Minor fixes to some definitions.  Add skos matches to URIs from other vocabularies; 2023-11-05 version 1.0, in preparation for release. "@en ;
   skos:historyNote "2024-08-14 SMR, various updates since 2023-12:  change seeAlso to closeMatch for Rock mapping to http://resource.geosciml.org/classifier/cgi/lithology/rock; minor edits to align with manuscript about the metadata schema; update vocabularies to use 'material sample' instead of 'specimen'; update schema.org namespace to http://; add provider and codeRepository in conceptScheme metadata; minor typo fixes and definition edits."@en ;
   skos:historyNote "2024-09-13 remove version numbers from URI"@en ;
+  skos:historyNote "2026-04-22 SMR. remove topConcept from this ConceptScheme and put in the SESARextension concept scheme  in the SESAR materials Extension so that the hierarchy displays properly."@en ;
   skos:prefLabel "iSamples Materials Vocabulary "@en ;
 .
 mat:mineral
@@ -2959,6 +2959,7 @@ sesrs:materialvocabulary
   owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   skos:definition "Material categories for SESAR materialType classification. Extends the iSamples Earth and Environment rock and sediment extension, which extends the base iSamples Material Type vocabulary."@en ;
+  skos:hasTopConcept mat:material ;
   skos:historyNote "2024-08-19 SMR generate vocabulary by merging with GSO Rock_Material vocabulary."@en ;
   skos:historyNote "2024-12-11 SMR add iSamples Material vocab into file, reorganize hierarchy for consistency; add biogenic material, felsic, intermediate, mafic in igneous rock classes. For compatibility with SESAR legacy classifications."@en ;
   skos:insScheme mat:materialsvocabulary ;
