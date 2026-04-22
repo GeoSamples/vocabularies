@@ -63,41 +63,36 @@ def main():
         os.chmod(path, 777)
         print(f"Created {path} since it didn't exist.")
 
-    # do function of original Makefile here
-  
-#    for inputf in inputttl:
-#        result=load_cachedb(sourcevocabdir + "/" + inputf + ".ttl", VOCABULARY_CACHE_PATH)
-#        if (result == 0):
-#            print(f"load_cachedb call successful for: {inputf}")
-#        else:
-#            print(f"load_cachedb had problem processing: {inputf}.  Exiting.")
-#            sys.exit(-1)
-
-    index = 0
-    while index < len(inputttl):
-        # for inputf in inputttl:
-        result = load_cachedb(sourcevocabdir + "/" + inputttl[index] + ".ttl", inputvocaburi[index], VOCABULARY_CACHE_PATH)
-        if (result == 0):
-            print(f"load_cachedb call successful for: {inputttl[index]}")
-        else:
-            print(f"load_cachedb had problem processing: {inputttl[index]}")
-        index += 1
-        # ***********************
-
     if command == "uijson":
         print("uijson action has been removed.  json is now fetched dynamically at page load.")
         sys.exit(-1)
     elif command == "docs":
+        # Process each vocabulary independently with a fresh DB so that
+        # vocabularies sharing a ConceptScheme URI (e.g. SeaDataNet files)
+        # don't pollute each other's output.
         print("Generating markdown and html docs")
         index = 0
-        print(f"input markdown file: {inputttl[index]}, vocab uri: {inputvocaburi[index]}")
         while index < len(inputttl):
-            # Use basename for output file so subdirectory paths (e.g. samplingMethods/foo)
-            # produce output in the flat docs/ directory
+            # 1. Fresh DB for each vocabulary
+            if os.path.exists(VOCABULARY_CACHE_PATH):
+                os.remove(VOCABULARY_CACHE_PATH)
+
+            # 2. Load this vocabulary into the DB
+            ttl_path = sourcevocabdir + "/" + inputttl[index] + ".ttl"
+            result = load_cachedb(ttl_path, inputvocaburi[index], VOCABULARY_CACHE_PATH)
+            if result != 0:
+                print(f"load_cachedb had problem processing: {inputttl[index]}, skipping")
+                index += 1
+                continue
+            print(f"load_cachedb call successful for: {inputttl[index]}")
+
+            # 3. Generate markdown and render HTML
+            # Use basename for output so subdirectory paths produce flat output
             output_basename = os.path.basename(inputttl[index])
-            result = _run_docs_in_container(os.path.join(path, output_basename+".md"), inputvocaburi[index])
+            md_path = os.path.join(path, output_basename + ".md")
+            result = _run_docs_in_container(md_path, inputvocaburi[index])
             if result == 0:
-                _quarto_render_html((os.path.join(path, output_basename+".md")),path)
+                _quarto_render_html(md_path, path)
             else:
                 print(f"problem with {inputttl[index]}, don't call quarto")
             index += 1
