@@ -13,14 +13,13 @@ execute:
   echo: false
 ---
 
-[]{#SamplePreparationMethods}
+[]{#ConceptScheme}
 
-# **Concept scheme:** Sample Preparation Methods
+# **Concept scheme:** ConceptScheme
 
-Vocabulary last modified:  2023-03-16
+no modified date
 
 subtitle: 
-  The methods used to prepare samples for analyses.
 
 Namespace: 
 [`http://linked.data.gov.au/def/sample-preparation-methods`](http://linked.data.gov.au/def/sample-preparation-methods)

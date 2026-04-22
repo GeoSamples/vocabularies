@@ -22,7 +22,7 @@ no modified date
 subtitle: 
 
 Namespace: 
-[`https://w3id.org/sesar/rocksediment/0.1/materialvocabulary`](https://w3id.org/sesar/rocksediment/0.1/materialvocabulary)
+[`https://w3id.org/sesar/material/materialvocabulary`](https://w3id.org/sesar/material/materialvocabulary)
 
 **History**
 
