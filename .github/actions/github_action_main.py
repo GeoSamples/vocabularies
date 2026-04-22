@@ -25,6 +25,11 @@ VOCABULARY_CACHE_PATH = f"{PATH_PREFIX}cache/vocabularies.db"
 def main():
     print(f"environment variables are {os.environ}")
 
+    # Remove any stale cache database so we start fresh each run
+    if os.path.exists(VOCABULARY_CACHE_PATH):
+        os.remove(VOCABULARY_CACHE_PATH)
+        print(f"Removed stale cache database: {VOCABULARY_CACHE_PATH}")
+
     command = os.environ["INPUT_ACTION"]
     print("github_action_main: INPUT_ACTION: ", command)
     path = os.environ["INPUT_PATH"]

@@ -98,14 +98,7 @@ PREFIX rdfs: <{NS['rdfs']}>
         
         
         if purge:
-            L.info("navocab init: purging %s", self.storage_uri)
-            try:
-                graph.open(self.storage_uri, create=True)
-                graph.remove((None, None, None))
-                graph.close()
-                graph = rdflib.ConjunctiveGraph("SQLAlchemy", identifier=self.store_identifier)
-            except Exception as e:
-                L.warning("purge failed, continuing: %s", e)
+            L.info("navocab init: purge requested but disabled (purge DB file externally instead)")
 
         graph.open(self.storage_uri, create=True)
         ident = graph.store._interned_id
