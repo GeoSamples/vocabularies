@@ -22,10 +22,16 @@ Each row also carries skos:definition from the matched concept, and Natalie
 Raia's Keep/Remove review decision parsed from REVIEW (a markdown export of the
 MaterialType_Vocabulary_Review Google Doc).
 
-For rows whose concept sits in the gcmin: namespace, mineral detail from
-MINERALS (MineralsList.xlsx) is appended to the description column, matched
-case-insensitively on the local name against that sheet's 's' column, falling
-back to its 'label' column.
+Mineral descriptions are normalized to one style:
+
+  strunz:X. Notes: Y. Elements: Z. Crystal system: W. IMA number: N.
+
+replacing the pipe-delimited style the API returns. Values come from MINERALS
+(MineralsList.xlsx), matched case-insensitively on the gcmin: local name against
+that sheet's 's' column and falling back to its 'label' column, laid over the
+fields parsed back out of the original description -- so nothing the sheet lacks
+is lost, and rows with no sheet row are still reformatted from their own
+content. Empty values drop their whole segment.
 
 Needs openpyxl in addition to rdflib.
 """
@@ -318,8 +324,14 @@ def load_minerals(path):
 #   'strunz:'&[strunz] & '. Notes: '&[notes] & '. Elements: '&[elements]
 #     & '. Crystal system: '&[crystal]
 # An empty cell drops its whole segment rather than emitting a bare label.
+#
+# IMA number is not in that format string but IS one of the five fields the
+# original pipe-delimited descriptions carry (in 1728 of them), so it is kept
+# here -- replacing without it would silently drop data. Drop the last entry to
+# match the requested format exactly.
 SUFFIX_COLS = [("strunz:", "strunz"), ("Notes: ", "notes"),
-               ("Elements: ", "elements"), ("Crystal system: ", "crystal")]
+               ("Elements: ", "elements"), ("Crystal system: ", "crystal"),
+               ("IMA number: ", "ima")]
 
 
 def mineral_suffix(rec):
@@ -332,23 +344,56 @@ def mineral_suffix(rec):
     return ". ".join(parts) + "." if parts else ""
 
 
+# The original descriptions state the same facts in a pipe-delimited style,
+#   status notes: X| strunz code: Y| elements: Z| Crystal system: W| IMA number: N
+# so they are parsed back into fields and the sheet values laid over them. That
+# keeps anything the sheet is missing (a couple of minerals have no strunz cell
+# but do have a strunz code in the description) and lets rows with no sheet row
+# at all still be reformatted from their own content.
+PIPE_KEYS = {"status notes": "notes", "strunz code": "strunz",
+             "elements": "elements", "crystal system": "crystal",
+             "ima number": "ima"}
+
+
+def parse_pipe(desc):
+    fields = {}
+    for seg in (desc or "").split("|"):
+        label, sep, value = seg.partition(":")
+        key = PIPE_KEYS.get(label.strip().lower())
+        if sep and key and value.strip():
+            fields[key] = value.strip()
+    return fields
+
+
 by_s, by_label = load_minerals(MINERALS)
-appended = nomatch = 0
+normalized = nomatch = fromdesc = 0
 for row in out:
     uri = row["skos_concept_uri"]
-    if not uri.startswith(GCMIN_NS):
+    rec = None
+    if uri.startswith(GCMIN_NS):
+        local = uri[len(GCMIN_NS):].strip().lower()
+        rec = by_s.get(local) or by_label.get(local)
+        if rec is None:
+            nomatch += 1
+    fields = parse_pipe(row.get("description"))
+    if rec is not None:                      # sheet wins where it has a value
+        for _, col in SUFFIX_COLS:
+            val = rec.get(col)
+            val = str(val).strip() if val is not None else ""
+            if val:
+                fields[col] = val
+    elif not fields:
         continue
-    local = uri[len(GCMIN_NS):].strip().lower()
-    rec = by_s.get(local) or by_label.get(local)
     if rec is None:
-        nomatch += 1
-        continue
-    suffix = mineral_suffix(rec)
-    if not suffix:
-        continue
-    desc = (row.get("description") or "").strip()
-    row["description"] = f"{desc} {suffix}".strip() if desc else suffix
-    appended += 1
+        fromdesc += 1
+    detail = mineral_suffix(fields)
+    if detail:
+        row["description"] = detail
+        normalized += 1
+
+print(f"mineral descriptions normalized: {normalized} "
+      f"({fromdesc} reformatted from their own description, no sheet row); "
+      f"{nomatch} gcmin rows had no sheet row")
 
 with open(CSV_OUT, "w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=FIELDS + EXTRA)
