@@ -1,0 +1,362 @@
+﻿review_term,review_decision,review_reason,in_api_material_types,in_SESAR_materials_extension,in_mineralSKOS,skos_concept_uri
+acidic igneous material,Modify,Modify - rename to “felsic igneous material”; surface in facets only,no,yes,no,https://w3id.org/sesar/material/Acidic_Igneous_Material
+acidic igneous rock,Modify,Modify - rename to “felsic igneous rock”; surface in facets only,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Acidic_Igneous_Rock
+advanced argillic altered rock,Remove,"Remove - too much overlap with “argillite”, no CGI SimpleLithology definition for this term",no,yes,no,https://w3id.org/sesar/material/advanced_argillic_altered_rock
+albitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/albitic_altered_rock
+alfisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+alkali feldspar granite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Alkali_Feldspar_Granite
+alkali feldspar rhyolite,Remove,Remove - too specific for controlled vocab | Remove - too specific for controlled vocabulary,no,yes,no,https://w3id.org/sesar/material/Alkali_Feldspar_Rhyolite
+alkali feldspar syenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Alkali_Feldspar_Syenite
+alkali feldspar syenitic rock,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Alkali_Feldspar_Syenitic_Rock
+alkali feldspar trachyte,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Alkali_Feldspar_Trachyte
+alkali feldspar trachytic rock,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Alkali_Feldspar_Trachytic_Rock
+alkali olivine basalt,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Alkali-Olivine_Basalt
+"altered, type not specified",Keep,"Keep, do not surface in search or registration; retaining because it provides a parent link into CGI alterationtype SKOS vocabulary 2012-11-24",yes,yes,no,https://w3id.org/sesar/material/altered_rock
+alunitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/alunitic_altered_rock
+amphibolite,Keep,Keep; added “metaigneous rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/amphibolite
+andesite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Andesite
+andisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+animal tissue,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/animal_tissue
+anorthosite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Anorthosite
+anorthositic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Anorthositic_Rock
+anthracite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/anthracite_coal
+anthropogenic material,Keep,Keep - for faceting only | Keep,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/anyanthropogenicmaterial
+anthropogenic unconsolidated material,Remove,Remove- no demonstrated SESAR use case and too generic,no,no,no,
+aphanite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Aphanite
+aplite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Aplite
+aqueous,Modify,Modify - “water”,no,no,no,
+arenit,Modify,Modify - “arenite”,no,yes,no,https://w3id.org/sesar/material/arenite
+argillic altered rock,Remove,"Remove - too much overlap with “argillite”, no CGI SimpleLithology definition for this term",no,yes,no,https://w3id.org/sesar/material/argillic_altered_rock
+argillite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/argillite
+aridisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+ash and lapilli,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/ash_and_lapilli
+ash breccia bomb or block tephra,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/ash_breccia_bomb_or_block_tephra
+ash tuff lapillistone and lapilli tuff,Keep|Retained,Keep | Retained Elsewhere - hasParent:volcanicrock,yes,yes,no,https://w3id.org/sesar/material/Ash_Tuff_Lapillistone_And_Lapilli_Tuff
+basalt,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Basalt
+basanite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Basanite
+basanitic foidite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Basanitic_Foidite
+basic igneous material,Modify,Modify; rename to “Mafic igneous material”,no,yes,no,https://w3id.org/sesar/material/Basic_Igneous_Material
+basic igneous rock,Modify|Keep,Modify - rename to “mafic igneous rock”; surface in facets only | Keep,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Basic_Igneous_Rock
+bauxite,Keep,Keep - add parent: “sedimentary rock”,yes,yes,no,https://w3id.org/sesar/material/bauxite
+biogenic material,Modify,Modify - “biological material”; for faceting only,no,yes,no,https://w3id.org/sesar/material/biogenic_material
+biogenic sediment,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Biogenic_Sediment
+biogenic silica sedimentary rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/biogenic_silica_sedimentary_rock
+bituminous coal,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/bituminous_coal
+boninite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Boninite
+boulder gravel size sediment,Modify,Modify - simplify to “boulder size sediment”,no,yes,no,https://w3id.org/sesar/material/boulder_gravel_size_sediment
+boundstone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/boundstone
+breccia,Remove|Keep,Remove; retained elsewhere - hasParent:Rock | Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Breccia
+breccia gouge series,Remove,Remove - overlaps with “Breccia”,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/breccia_gouge_series
+calc silicate metamorphic rock,Keep|Modify,Keep | Modify - hyphenate to “calc-cilicate metamorphic rock”,no,yes,no,https://w3id.org/sesar/material/calcsilicate_metamorphic_rock
+calcareous carbonate sediment,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/calcareous_carbonate_sediment
+calcareous carbonate sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/calcareous_carbonate_sedimentary_material
+calcareous carbonate sedimentary rock,Remove,Remove - simplifying because only one of two children is retained below,no,yes,no,https://w3id.org/sesar/material/calcareous_carbonate_sedimentary_rock
+calcsilicate altered rock,Remove,"Remove - too much overlap with “calc silicate metamorphic rock”, no CGI SimpleLithology definition for this term",no,yes,no,https://w3id.org/sesar/material/calcsilicate_altered_rock
+carbonate altered rock,Remove,"Remove - too much overlap with “marble” and “skarn”, no CGI SimpleLithology definition for this term",no,yes,no,https://w3id.org/sesar/material/carbonate_altered_rock
+carbonate mud,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/carbonate_mud
+carbonate mudstone,Keep,Keep; new parent = “mudstone”,yes,yes,no,https://w3id.org/sesar/material/carbonate_mudstone
+carbonate ooze,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/carbonate_ooze
+carbonate rich mud,Remove,Remove - too much overlap with “carbonate mud”,no,yes,no,https://w3id.org/sesar/material/carbonate_rich_mud
+carbonate rich mudstone,Remove,Remove - too much overlap with carbonate mudstone,no,yes,no,https://w3id.org/sesar/material/carbonate_rich_mudstone
+carbonate sediment,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Carbonate_Sediment
+carbonate sedimentary material,Keep,Keep- for faceting only,yes,yes,no,https://w3id.org/sesar/material/carbonate_sedimentary_material
+carbonate sedimentary rock,Keep,Keep- for faceting only | Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Carbonate_Sedimentary_Rock
+carbonate wackestone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/carbonate_wackestone
+carbonatite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Carbonatite
+cataclasite series,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Cataclasite_Series
+chalk,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/chalk
+chemical sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Chemical_Sedimentary_Material
+chert,Add,Add - commonly used term,yes,no,no,
+chlorite actinolite epidote metamorphic rock,Modify,Modify - “Greenstone”,no,no,no,
+chloritic altered rock,Remove,"Remove - too much overlap with “chlorite actinolite epidote metamorphic rock” (aka Greenstone), no CGI SimpleLithology definition for this term | Remove - too much overlap with “chlorite actinolite epidote metamorphic rock” (aka “Greenstone”), no CGI SimpleLithology definition for this term",no,yes,no,https://w3id.org/sesar/material/chloritic_altered_rock
+clastic sediment,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/clastic_sediment
+clastic sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/clastic_sedimentary_material
+clastic sedimentary rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Clastic_Sedimentary_Rock
+clay,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/clay
+claystone,Keep,Keep; new parent: “siliciclastic mudstone”,yes,yes,no,https://w3id.org/sesar/material/claystone
+coal,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Coal
+cobble gravel size sediment,Modify,Modify - simplify to “cobble size sediment” | Modify - simplify to “boulder size sediment”,no,yes,no,https://w3id.org/sesar/material/cobble_gravel_size_sediment
+composite genesis material,Keep,"Keep, do not surface in search or registration; keeping as a greater interoperability element given international uptake elsewhere",yes,yes,no,https://w3id.org/sesar/material/composite_genesis_material
+composite genesis rock,Keep,"Keep, do not surface in search or registration; keeping as a greater interoperability element given international uptake elsewhere",yes,yes,no,https://w3id.org/sesar/material/composite_genesis_rock
+concrete,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/concrete
+conglomerate,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/clastic_conglomerate
+coral,Keep,Keep,yes,no,no,
+crystalline carbonate,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/crystalline_carbonate
+dacite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Dacite
+deuteric altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/deuteric_altered_rock
+diamictite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Diamictite
+diamicton,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/diamicton
+diatomite,Add,Add - adding specificity for common terms that SESAR users may want to report for their samples or for search; these terms are provided as examples in the original definition of the parent “biogenic silica sedimentary rock”,yes,no,no,
+diorite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Diorite
+dioritic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/sesar/material/Dioritic_Rock
+dioritoid,Keep,Keep- for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Dioritoid
+doleritic rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Doleritic_Rock
+dolomite,Keep,Keep,yes,yes,yes,https://w3id.org/sesar/material/dolostone
+dolomitic or magnesian sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/dolomitic_or_magnesian_sedimentary_material
+dolomitic or magnesian sedimentary rock,Remove,Remove - simplifying because only one of two children is retained below,no,yes,no,https://w3id.org/sesar/material/dolomitic_or_magnesian_sedimentary_rock
+dolomitic sediment,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/dolomitic_sediment
+duricrust,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/duricrust
+eclogite,Keep,Keep; added “metaigneous rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/eclogite
+entisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+epidote altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/epidote_altered_rock
+evaporite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/evaporite
+exotic alkaline rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/Exotic_Alkaline_Rock
+exotic composition igneous rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Exotic_Composition_Igneous_Rock
+exotic evaporite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/exotic_evaporite
+fault breccia,Add,Add; hasParent:metamorphicrock; hasParent:Fault related material,yes,no,no,
+fault related material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Fault_Related_Material
+ferromanganese crust,Add,Add,yes,no,no,
+fine grained igneous rock,Keep,Keep- for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Fine_Grained_Igneous_Rock
+fluid material,Modify,Modify - “fluid”; for faceting only,no,yes,no,https://w3id.org/isample/vocabulary/material/1.0/fluid
+foid bearing alkali feldspar syenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Alkali_Feldspar_Syenite
+foid bearing alkali feldspar trachyte,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Alkali_Feldspar_Trachyte
+foid bearing anorthosite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Anorthosite
+foid bearing diorite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Diorite
+foid bearing gabbro,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Gabbro
+foid bearing latite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Latite
+foid bearing monzodiorite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Monzodiorite
+foid bearing monzogabbro,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Monzogabbro
+foid bearing monzonite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Monzonite
+foid bearing syenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Syenite
+foid bearing trachyte,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Foid_Bearing_Trachyte
+foid diorite,Remove,Remove - too specific for controlled vocab | Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Diorite
+foid dioritoid,Remove,Remove - too specific for controlled vocab | Remove - too specific for SESAR community,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Foid_Dioritoid
+foid gabbro,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Gabbro
+foid gabbroid,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Foid_Gabbroid
+foid monzodiorite,Remove,Remove - too specific for controlled vocab | Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Monzodiorite
+foid monzogabbro,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Monzogabbro
+foid monzosyenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Monzosyenite
+foid syenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Foid_Syenite
+foid syenitoid,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Foid_Syenitoid
+foidite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Foidite
+foiditoid,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Foiditoid
+foidolite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Foidolite
+foliated metamorphic rock,Keep,Keep - for faceting only | Keep- for faceting only,yes,yes,no,https://w3id.org/sesar/material/foliated_metamorphic_rock
+fragmental igneous material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/Fragmental_Igneous_Material
+fragmental igneous rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Fragmental_Igneous_Rock
+framestone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/framestone
+gabbro,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Gabbro
+gabbroic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Gabbroic_Rock
+gabbroid,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Gabbroid
+gas,Keep,Keep,yes,no,no,
+gelisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+generic conglomerate,Remove,Remove - simplifying to retain only one term below; Note: the has the same exact definition as “conglomerate”,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Generic_Conglomerate
+generic mudstone,Remove,Remove - simplifying to “mudstone” below; Note: has the same definition as “mudstone” | Remove - simplifying to retain only “mudstone” below; Note: has the same definition as “mudstone”,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Generic_Mudstone
+generic sandstone,Remove,Remove - simplifying to retain only one term below; Note: the has the same exact definition as “sandstone”,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Generic_Sandstone
+glass rich igneous rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Glass_Rich_Igneous_Rock
+glassy igneous rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Glassy_Igneous_Rock
+glaucophane lawsonite epidote metamorphic rock,Modify,Modify - “Blueschist”,no,no,no,
+gneiss,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/gneiss
+grainstone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/grainstone
+granite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Granite
+granitoid,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Granitoid
+granodiorite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Granodiorite
+granofels,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/granofels
+granule size sediment,Add,"Add - part of Wentworth size classification scale, was missing from vocabulary",yes,no,no,
+granulite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/granulite
+gravel,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/gravel
+gravel size sediment,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Gravel_Size_Sediment
+greisen,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/greisen
+gypsum or anhydrite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/rock_gypsum_or_anhydrite
+hematitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/hematitic_altered_rock
+high magnesium fine grained igneous rock,Keep,Keep- for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/High_Magnesium_Fine_Grained_Igneous_Rock
+histosol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+hornblendite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Hornblendite
+hornfels,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/hornfels
+hyaloclastite,Add,Add,yes,no,no,
+hybrid sediment,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Hybrid_Sediment
+hybrid sedimentary rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Hybrid_Sedimentary_Rock
+hydrothermal massive sulphide,Remove,Remove - too specific for SESAR community/stay away from source/interpretation-type designations,no,yes,no,https://w3id.org/sesar/material/hydrothermal_massive_sulphide
+hypabyssal intrusive rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Hypabyssal_Intrusive_Rock
+ice,Keep,Keep,yes,no,yes,https://w3id.org/geochem/1.0/min/ice
+igneous rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Igneous_Rock
+ignimbrite,Add,Add,yes,no,no,
+impact generated material,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Impact_Generated_Material
+impure calcareous carbonate sediment,Remove,Remove- too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/impure_calcareous_carbonate_sediment
+impure carbonate sediment,Remove,Remove- too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/impure_carbonate_sediment
+impure carbonate sedimentary rock,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/impure_carbonate_sedimentary_rock
+impure dolomite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/impure_dolostone
+impure dolomitic sediment,Remove,Remove- too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/impure_dolomitic_sediment
+impure limestone,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/impure_limestone
+inceptisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+intermediate color,Remove,Remove - this was a workaround to try to fix a legacy mapping issue - no longer an issue since we are carrying over legacy records verbatim,no,no,no,
+intermediate composition igneous material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/Intermediate_Composition_Igneous_Material
+intermediate composition igneous rock,Keep,Keep- for faceting only | Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Intermediate_Composition_Igneous_Rock
+iron rich sediment,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Iron_Rich_Sediment
+iron rich sedimentary material,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/iron_rich_sedimentary_material
+iron rich sedimentary rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Iron_Rich_Sedimentary_Rock
+kalsilitic and melilitic rocks,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Kalsilitic_And_Melilitic_Rock
+kaolinitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/kaolinitic_altered_rock
+kimberlite,Add,Add,yes,no,no,
+komatiitic rock,Modify,Modify - “komatiite”,no,yes,no,https://w3id.org/sesar/material/Komatiitic_Rock
+lamproite,Add,Add,yes,no,no,
+lamprophyre,Add,Add,yes,no,no,
+latite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Latite
+latitic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/sesar/material/Latitic_Rock
+lava,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Lava
+lignite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/lignite
+limestone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/limestone
+listvenite,Add,Add,yes,no,no,
+manganese nodule,Add,Add,yes,no,no,
+manganese rich sediment,Add,Add,yes,no,no,
+manganese rich sedimentary material,Add,Add,yes,yes,no,https://w3id.org/sesar/material/manganese_rich_sedimentary_material
+manufactured chemical substance,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/manufactured_chemical_substance
+marble,Keep,Keep; added “metasedimentary rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/marble
+massive sulphide,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Massive_Sulphide
+material,Keep,Keep - do not surface in registration or search,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/material
+material formed in surficial environment,Remove,Remove - too vague for SESAR users,no,yes,no,https://w3id.org/sesar/material/material_formed_in_surficial_environment
+matte,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Matte
+metamorphic rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Metamorphic_Rock
+metaplutonic rock,Modify,"Modify - metaplutonic and metavolcanic labels stray too into interpretation: simplify to “metaigneous rocks”. Note that this term is not part of CGI SimpleLithology vocab. Note: this term did not have any children, I added children (conservatively) and have noted this in this document",no,yes,no,https://w3id.org/sesar/material/metaplutonic_rock
+metasedimentary rock,Keep,"Keep. Note: this term did not have any children, I added children (conservatively) and have noted this in this document",yes,yes,no,https://w3id.org/sesar/material/metasedimentary_rock
+metasomatic rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Metasomatic_Rock
+metaultramafic rock,Keep,Keep,yes,no,no,
+metavolcanic rock,Merge,Merge - see metaplutonic above,no,yes,no,https://w3id.org/sesar/material/metavolcanic_rock
+mica schist,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Mica_Schist
+migmatite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/migmatite
+mineral,Keep,Keep,yes,yes,yes,https://w3id.org/isample/vocabulary/material/1.0/mineral
+mineral processing product,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/mineral_processing_product
+"mixed soil, sediment, or rock",Keep,Keep,yes,no,no,
+mollisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+monzodiorite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Monzodiorite
+monzodioritic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/sesar/material/Monzodioritic_Rock
+monzogabbro,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Monzogabbro
+monzogabbroic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Monzogabbroic_Rock
+monzogranite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Monzogranite
+monzonite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Monzonite
+monzonitic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/sesar/material/Monzonitic_Rock
+mud,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/mud
+mud size sediment,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Mud_Size_Sediment
+mudstone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/clastic_mudstone
+mylonitic rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Mylonitic_Rock
+natural solid material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/earthmaterial
+natural unconsolidated material,Keep,"Keep - for faceting only, has new parent: “Rock or Sediment”",no,no,no,
+non clastic siliceous sediment,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Non_Clastic_Siliceous_Sediment
+non clastic siliceous sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/non_clastic_siliceous_sedimentary_material
+non clastic siliceous sedimentary rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Non_Clastic_Siliceous_Sedimentary_Rock
+non-aqueous liquid,Keep,Keep,yes,no,no,
+non-organic biologic material,Modify,Modify - rename to “inorganic biological material”,no,no,no,
+non-volcanic gas,Add,Add,yes,no,no,
+novaculite,Add,Add - adding specificity for common terms that SESAR users may want to report for their samples or for search; these terms are provided as examples in the original definition of the parent “biogenic silica sedimentary rock”,yes,no,no,
+ooze,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/ooze
+ore,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/ore
+organic bearing mudstone,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/organic_bearing_mudstone
+organic biological material,Keep,Keep - for faceting only,yes,no,no,
+organic rich sediment,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/organic_rich_sediment
+organic rich sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/organic_rich_sedimentary_material
+organic rich sedimentary rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Organic_Rich_Sedimentary_Rock
+orthogneiss,Keep,Keep; added “metaigneous rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/orthogneiss
+other anthropogenic material,Keep,Keep,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/otheranthropogenicmaterial
+oxisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+packstone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/packstone
+paragneiss,Keep,Keep; added “metasedimentary rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/paragneiss
+particulate,Keep,Keep,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/particulate
+peat,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/peat
+pebble gravel size sediment,Modify,Modify - simplify to “pebble size sediment” | Modify - simplify to “boulder size sediment”,no,yes,no,https://w3id.org/sesar/material/pebble_gravel_size_sediment
+pegmatite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Pegmatite
+peperite,Add,Add,yes,no,no,
+peridotite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Peridotite
+phaneritic igneous rock,Keep,Keep- for faceting only,yes,no,no,
+phonolite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Phonolilte
+phonolitic basanite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Phonolitic_Basanite
+phonolitic foidite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Phonolitic_Foidite
+phonolitic tephrite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Phonolitic_Tephrite
+phonolitoid,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Phonolitoid
+phosphate rich sediment,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Phosphate_Rich_Sediment
+phosphate rich sedimentary material,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/phosphate_rich_sedimentary_material
+phosphorite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Phosphorite
+phyllic altered rock,Remove,Remove - this is the only non-CGI SimpleLithology term in this child list and overlaps heavily with sericitic alteration; choosing to keep CGI list clean here,no,yes,no,https://w3id.org/sesar/material/phyllic_altered_rock
+phyllite,Keep,Keep; added “metasedimentary rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/phyllite
+phyllonite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/phyllonite
+plant material,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/plant_material
+plutonic rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Phaneritic_Igneous_Rock
+porphyry,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Porphyry
+potassic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/potassic_altered_rock
+propylitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/propylitic_altered_rock
+pure calcareous carbonate sediment,Remove,Remove- too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/pure_calcareous_carbonate_sediment
+pure carbonate mudstone,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/pure_carbonate_mudstone
+pure carbonate sediment,Remove,Remove- too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/pure_carbonate_sediment
+pure carbonate sedimentary rock,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/pure_carbonate_sedimentary_rock
+pure dolomitic sediment,Remove,Remove- too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/pure_dolomitic_sediment
+pyritic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/pyritic_altered_rock
+pyroclastic material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/Pyroclastic_Material
+pyroclastic rock,Keep|Retained,Keep | Retained Elsewhere - hasParent:volcanicrock,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Pyroclastic_Rock
+pyroxenite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Pyroxenite
+quartz alkali feldspar syenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Quartz_Alkali_Feldspar_Syenite
+quartz alkali feldspar trachyte,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Quartz_Alkali_Feldspar_Trachyte
+quartz anorthosite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Quartz_Anorthosite
+quartz diorite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Quartz_Diorite
+quartz gabbro,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Quartz_Gabbro
+quartz latite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Quartz_Latite
+quartz monzodiorite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Quartz_Monzodiorite
+quartz monzogabbro,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Quartz_Monzogabbro
+quartz monzonite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Quartz_Monzonite
+quartz rich igneous rock,Remove,Remove - too specific and also generic for SESAR community,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Quartz_Rich_Igneous_Rock
+quartz syenite,Remove,Remove - too specific for SESAR community,no,yes,no,https://w3id.org/sesar/material/Quartz_Syenite
+quartz trachyte,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Quartz_Trachyte
+quartzite,Keep,Keep; added “metasedimentary rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/quartzite
+radiolarian chert,Add,Add - adding specificity for common terms that SESAR users may want to report for their samples or for search; these terms are provided as examples in the original definition of the parent “biogenic silica sedimentary rock”,yes,no,no,
+residual material,Remove,Remove - too vague for SESAR users,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/residual_material
+rhyolite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Rhyolite
+rhyolitoid,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Rhyolitoid
+rock,Keep,Keep,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/rock
+rock or sediment,Keep,Keep - for faceting only | Keep,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/rockorsediment
+rock salt,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/rock_salt
+rodingite,Add,Add,yes,yes,no,https://w3id.org/sesar/material/rodingite
+sand,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/sand
+sand size sediment,Keep,Keep- for faceting only | Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Sand_Size_Sediment
+sandstone,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/clastic_sandstone
+sapropel,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/sapropel
+saussuritised rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/saussuritised_rock
+schist,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Schist
+sediment,Keep,Keep,yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/sediment
+sedimentary breccia,Add,Add; hasParent:sedimentaryrock,yes,no,no,
+sedimentary massive sulphide,Remove,Remove - too specific for SESAR community/stay away from source/interpretation-type designations,no,yes,no,https://w3id.org/sesar/material/sedimentary_massive_sulphide
+sedimentary material,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/sesar/material/sedimentary_material
+sedimentary rock,Keep,Keep- for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Sedimentary_Rock
+sericitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/sericitic_altered_rock
+serpentinised rock,Remove,"Remove - too much overlap with “serpentinite”, no CGI SimpleLithology definition for this term",no,yes,no,https://w3id.org/sesar/material/serpentinised_rock
+serpentinite,Keep,Keep; added “metaigneous rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/serpentinite
+shale,Keep,Keep; new parent: “siliciclastic mudstone”,yes,yes,no,https://w3id.org/sesar/material/shale
+silicate mud,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/silicate_mud
+silicate mudstone,Modify,"Modify - to “siliciclastic mudstone”, this term is more typically used; new parent = “mudstone”",no,yes,no,https://w3id.org/sesar/material/silicate_mudstone
+siliceous ooze,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/siliceous_ooze
+silicificed rock,Keep,"Keep - modify: fix typo, change to “silicified”",no,yes,no,https://w3id.org/sesar/material/silicified_rock
+silt,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/silt
+siltstone,Keep,Keep; new parent: “siliciclastic mudstone”,yes,yes,no,https://w3id.org/sesar/material/siltstone
+skarn,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/skarn
+slag,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Slag
+slate,Keep,Keep; added “metasedimentary rock” as a parent,yes,yes,no,https://w3id.org/sesar/material/Slate
+soil,Keep,"Keep, has other parents: “Natural unconsolidated material” | Keep",yes,yes,no,https://w3id.org/isample/vocabulary/material/1.0/soil
+spilite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/spilite
+spodosol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+syenite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Syenite
+syenitic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/sesar/material/Syenitic_Rock
+syenitoid,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Syenitoid
+syenogranite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Syenogranite
+talc-carbonate rock,Add,Add,yes,no,no,
+tephra,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Tephra
+tephrite,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Tephrite
+tephritic foidite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Tephritic_Foidite
+tephritic phonolite,Remove,Remove - too specific for controlled vocab,no,yes,no,https://w3id.org/sesar/material/Tephritic_Phonolite
+tephritoid,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Tephritoid
+tholeiitic basalt,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Tholeiitic_Basalt
+tonalite,Keep,Keep,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Tonalite
+trachyte,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/Trachyte
+trachytic rock,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/sesar/material/Trachytic_Rock
+trachytoid,Remove,Remove - simplifying to retain only one term below,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Trachytoid
+travertine,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/travertine
+tuff breccia agglomerate or pyroclastic breccia,Keep|Retained,Keep | Retained Elsewhere - hasParent:volcanicrock,yes,yes,no,https://w3id.org/sesar/material/Tuff_Breccia_Agglomerate_Or_Pyroclastic_Breccia
+tuffite,Keep,"Keep; add parents “volcanic rock” and “sedimentary rock”, remove parent “rock”",yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Tuffite
+ultisol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+ultrabasic igneous rock,Remove,Remove - removing in alignment with treatment of other basic and acidic terms throughout; overlap with “ultramafic igneous rock”,no,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Ultrabasic_Igneous_Rock
+ultramafic igneous rock,Keep,Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Ultramafic_Igneous_Rock
+unconsolidated material,Remove,Remove - only one of two children retained below,no,no,no,
+uralitised rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/uralitised_rock
+veritsol,Add,Add - support for more detailed soil terminology requested from SESAR community; top level term from USDA Soil Taxonomy,no,no,no,
+volcanic breccia,Add,Add; hasParent:volcanicrock,yes,no,no,
+volcanic gas,Add,Add,yes,no,no,
+volcanic material,Keep,Keep- for faceting only,yes,yes,no,https://w3id.org/sesar/material/Volcanic_Material
+volcanic rock,Keep,Keep- for faceting only | Keep - for faceting only,yes,yes,no,https://w3id.org/isample/earthenv/rocksediment/1.0/Volcanic_Rock
+wacke,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/wacke
+zeolitic altered rock,Keep,Keep,yes,yes,no,https://w3id.org/sesar/material/zeolitic_altered_rock

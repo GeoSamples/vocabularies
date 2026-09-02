@@ -17,10 +17,15 @@ gcmin: URI, so the match URI is, in order of preference:
 
 CURIEs on both sides are expanded via the @prefix declarations in the ttl files;
 the API returns a mix of full URIs and unexpanded sesrs:/rksd: CURIEs.
+
+Each row also carries skos:definition from the matched concept, and Natalie
+Raia's Keep/Remove review decision parsed from REVIEW (a markdown export of the
+MaterialType_Vocabulary_Review Google Doc).
 """
 import collections
 import csv
 import json
+import re
 import urllib.request
 
 import rdflib
@@ -29,6 +34,8 @@ from rdflib.namespace import RDF, SKOS
 API = "https://api2.geosamples.org/api/vocab/material-types"
 JSON_OUT = "material-types.json"
 CSV_OUT = "material-types-skos-comparison.csv"
+REVIEW = "MaterialType_Vocabulary_Review.md"
+REVIEW_OUT = "material-type-review-vs-skos.csv"
 VOCABS = [                       # (name, path, match-URI strategy)
     ("SESAR_materials_extension",
      r"C:/GithubC/IEDA/vocabularies/vocabulary/SESAR_materials_extension.ttl", "self"),
@@ -64,6 +71,10 @@ class Vocab:
 
         self.labels = {str(s): [str(o) for o in g.objects(s, SKOS.prefLabel)]
                        for s in concepts}
+        self.definitions = {
+            str(s): [str(o).strip() for o in g.objects(s, SKOS.definition)
+                     if str(o).strip()]
+            for s in concepts}
         self.match_uri = {}
         self.match_uri_source = {}
         for s in concepts:
@@ -101,6 +112,52 @@ for v in reversed(vocabs):          # earlier vocabs win on prefix collisions
     prefixes.update(v.prefixes)
 
 
+# --- Natalie Raia's review ---------------------------------------------------
+# Bullet lines look like:
+#   - [term](https://.../file.html#anchor) \[Keep - for faceting only\]
+#   - Sedimentary breccia \[Add; hasParent:sedimentaryrock\]
+# A term recurs wherever it sits in the hierarchy, so decisions are collected
+# per term and only reported as disagreeing when they actually differ.
+TAG = re.compile(r"\\\[([^\]]*?)\\\]")
+LINK = re.compile(r"\[([^\]]+)\]\(([^)]*)\)")
+
+
+def load_review(path):
+    section = ""
+    seen = collections.defaultdict(lambda: {"decisions": [], "tags": []})
+    for raw in open(path, encoding="utf-8"):
+        if raw.startswith("#"):
+            section = raw.lstrip("#").strip()
+            continue
+        line = raw.strip()
+        if section != "Tab 1" or not line.startswith("-"):
+            continue
+        m = TAG.search(line)
+        if not m:
+            continue
+        body = line[1:].strip()
+        tag = m.group(1).strip()
+        term_part = body[:body.index("\\[")].strip() if "\\[" in body else body
+        # Google Docs splits a link mid-word, e.g. [p](url)[hyllonite](url),
+        # so keep every link's text and concatenate rather than taking one.
+        term = re.sub(r"\[|\]", "", LINK.sub(lambda m: m.group(1), term_part)).strip()
+        if not term:
+            continue
+        word = re.split(r"[\s;,\-–.]", tag, 1)[0].strip().rstrip(":")
+        e = seen[term.lower()]
+        if word not in e["decisions"]:
+            e["decisions"].append(word)
+        if tag not in e["tags"]:
+            e["tags"].append(tag)
+    print(f"loaded review: {len(seen)} distinct terms, "
+          f"{sum(1 for v in seen.values() if len(v['decisions']) > 1)} with "
+          f"disagreeing decisions")
+    return seen
+
+
+review = load_review(REVIEW)
+
+
 def expand(value):
     if not value:
         return None, False
@@ -118,11 +175,14 @@ FIELDS = ["id", "label", "alt_label", "description", "material_type_uri",
           "suppress_from_search"]
 EXTRA = ["skos_match_status", "skos_match_method", "skos_vocabulary",
          "skos_concept_uri", "skos_match_uri", "skos_preflabel",
+         "skos_definition", "review_decision", "review_reason",
          "skos_match_detail", "material_type_uri_expanded"]
 
 counts = collections.Counter()
 methods = collections.Counter()
 vcounts = collections.Counter()
+rcounts = collections.Counter()
+defgap = 0
 out = []
 for r in rows:
     label = (r.get("label") or "").strip()
@@ -187,6 +247,24 @@ for r in rows:
         if v.match_uri_source[concept] != "concept uri":
             detail.append(f"skos match uri from {v.match_uri_source[concept]}")
 
+    definition = ""
+    if hit is not None:
+        definition = " | ".join(hit[0].definitions.get(concept, []))
+    if definition and not (r.get("description") or "").strip():
+        defgap += 1
+
+    # Review terms are matched on the API label, falling back to the matched
+    # concept's prefLabel for the few the reviewer named by prefLabel instead.
+    entry = review.get(label.lower())
+    if entry is None:
+        for p in pref:
+            entry = review.get(p.strip().lower())
+            if entry:
+                break
+    decision = "|".join(entry["decisions"]) if entry else ""
+    reason = " | ".join(entry["tags"]) if entry else ""
+    rcounts[decision or "(not reviewed)"] += 1
+
     counts[status] += 1
     methods[method] += 1
     vcounts[vocab or "(none)"] += 1
@@ -199,6 +277,9 @@ for r in rows:
         "skos_concept_uri": concept,
         "skos_match_uri": muri if muri != concept else "",
         "skos_preflabel": "|".join(pref),
+        "skos_definition": definition,
+        "review_decision": decision,
+        "review_reason": reason,
         "skos_match_detail": "; ".join(detail),
         "material_type_uri_expanded": expanded if (api_uri and expanded != api_uri) else "",
     })
@@ -208,7 +289,25 @@ with open(CSV_OUT, "w", encoding="utf-8-sig", newline="") as f:
     w.writeheader()
     w.writerows(out)
 
-print(f"\napi records: {len(rows)}\nwrote {CSV_OUT}\n")
+# --- review-side output ------------------------------------------------------
+# The API no longer carries the terms marked Remove, so those decisions cannot
+# appear as a column on an API row. This second file is one row per reviewed
+# term, saying where that term still exists.
+api_labels = {(r.get("label") or "").strip().lower() for r in rows}
+with open(REVIEW_OUT, "w", encoding="utf-8-sig", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(["review_term", "review_decision", "review_reason",
+                "in_api_material_types"]
+               + [f"in_{v.name}" for v in vocabs] + ["skos_concept_uri"])
+    for term in sorted(review):
+        e = review[term]
+        hits = [v.by_label.get(term, []) for v in vocabs]
+        first = next((h[0] for h in hits if h), "")
+        w.writerow([term, "|".join(e["decisions"]), " | ".join(e["tags"]),
+                    "yes" if term in api_labels else "no"]
+                   + ["yes" if h else "no" for h in hits] + [first])
+
+print(f"\napi records: {len(rows)}\nwrote {CSV_OUT} and {REVIEW_OUT}\n")
 for k, v in counts.most_common():
     print(f"  {v:5d}  {k}")
 print()
@@ -217,3 +316,16 @@ for k, v in methods.most_common():
 print()
 for k, v in vcounts.most_common():
     print(f"  {v:5d}  vocabulary={k}")
+print()
+for k, v in rcounts.most_common():
+    print(f"  {v:5d}  review={k}")
+print(f"\nrows carrying a skos:definition: "
+      f"{sum(1 for r in out if r['skos_definition'])}")
+print(f"  of which the api description is empty: {defgap}")
+unused = sorted(k for k in review
+                if not any((r["label"] or "").strip().lower() == k
+                           or k in {p.strip().lower()
+                                    for p in (r["skos_preflabel"] or "").split("|")}
+                           for r in out))
+print(f"review terms that join to no api record: {len(unused)} "
+      f"({sum(1 for k in unused if review[k]['decisions'] == ['Add'])} of them 'Add')")
