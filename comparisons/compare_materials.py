@@ -21,6 +21,13 @@ the API returns a mix of full URIs and unexpanded sesrs:/rksd: CURIEs.
 Each row also carries skos:definition from the matched concept, and Natalie
 Raia's Keep/Remove review decision parsed from REVIEW (a markdown export of the
 MaterialType_Vocabulary_Review Google Doc).
+
+For rows whose concept sits in the gcmin: namespace, mineral detail from
+MINERALS (MineralsList.xlsx) is appended to the description column, matched
+case-insensitively on the local name against that sheet's 's' column, falling
+back to its 'label' column.
+
+Needs openpyxl in addition to rdflib.
 """
 import collections
 import csv
@@ -28,6 +35,7 @@ import json
 import re
 import urllib.request
 
+import openpyxl
 import rdflib
 from rdflib.namespace import RDF, SKOS
 
@@ -36,6 +44,8 @@ JSON_OUT = "material-types.json"
 CSV_OUT = "material-types-skos-comparison.csv"
 REVIEW = "MaterialType_Vocabulary_Review.md"
 REVIEW_OUT = "material-type-review-vs-skos.csv"
+MINERALS = r"C:/GithubC/IEDA/vocabularies/vocabulary/MineralsList.xlsx"
+GCMIN_NS = "https://w3id.org/geochem/1.0/min/"
 VOCABS = [                       # (name, path, match-URI strategy)
     ("SESAR_materials_extension",
      r"C:/GithubC/IEDA/vocabularies/vocabulary/SESAR_materials_extension.ttl", "self"),
@@ -283,6 +293,62 @@ for r in rows:
         "skos_match_detail": "; ".join(detail),
         "material_type_uri_expanded": expanded if (api_uri and expanded != api_uri) else "",
     })
+
+# --- append mineral detail from MineralsList.xlsx ----------------------------
+def load_minerals(path):
+    """Index the sheet by lowercased 's' local name and by lowercased label."""
+    ws = openpyxl.load_workbook(path, read_only=True, data_only=True)["MineralsList"]
+    it = ws.iter_rows(values_only=True)
+    hdr = [str(h).strip() for h in next(it)]
+    by_s, by_label = {}, {}
+    n = 0
+    for raw in it:
+        rec = dict(zip(hdr, raw))
+        n += 1
+        if rec.get("s"):
+            by_s.setdefault(str(rec["s"]).split(":", 1)[-1].strip().lower(), rec)
+        if rec.get("label"):
+            by_label.setdefault(str(rec["label"]).strip().lower(), rec)
+    print(f"loaded minerals sheet: {n} rows, {len(by_s)} distinct 's' locals, "
+          f"{len(by_label)} distinct labels")
+    return by_s, by_label
+
+
+# Prefix per column, following the requested
+#   'strunz:'&[strunz] & '. Notes: '&[notes] & '. Elements: '&[elements]
+#     & '. Crystal system: '&[crystal]
+# An empty cell drops its whole segment rather than emitting a bare label.
+SUFFIX_COLS = [("strunz:", "strunz"), ("Notes: ", "notes"),
+               ("Elements: ", "elements"), ("Crystal system: ", "crystal")]
+
+
+def mineral_suffix(rec):
+    parts = []
+    for prefix, col in SUFFIX_COLS:
+        val = rec.get(col)
+        val = str(val).strip() if val is not None else ""
+        if val:
+            parts.append(prefix + val)
+    return ". ".join(parts) + "." if parts else ""
+
+
+by_s, by_label = load_minerals(MINERALS)
+appended = nomatch = 0
+for row in out:
+    uri = row["skos_concept_uri"]
+    if not uri.startswith(GCMIN_NS):
+        continue
+    local = uri[len(GCMIN_NS):].strip().lower()
+    rec = by_s.get(local) or by_label.get(local)
+    if rec is None:
+        nomatch += 1
+        continue
+    suffix = mineral_suffix(rec)
+    if not suffix:
+        continue
+    desc = (row.get("description") or "").strip()
+    row["description"] = f"{desc} {suffix}".strip() if desc else suffix
+    appended += 1
 
 with open(CSV_OUT, "w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=FIELDS + EXTRA)
