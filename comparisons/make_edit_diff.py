@@ -26,8 +26,9 @@ EDITABLE = ["label", "alt_label", "description", "material_type_uri",
             "parent_material_types", "source", "scheme_uri",
             "for_registration", "suppress_from_search"]
 BOOLS = {"for_registration", "suppress_from_search"}
-CONTEXT = ["parent_material_types", "scheme_uri", "for_registration",
-           "suppress_from_search"]
+CONTEXT = ["scheme_uri", "for_registration", "suppress_from_search"]
+PAIRED = ["material_type_uri", "parent_material_types", "source", "alt_label",
+          "description"]
 
 
 def norm(v, col=None):
@@ -54,18 +55,33 @@ alt = {r["id"]: r for r in csv.DictReader(
          encoding="utf-8-sig"))}
 # The blanked URIs line up with terms the review table reassigns to a broader
 # absorbing class, so surface that assignment next to the disagreement.
+#
+# Parent edits live only in the review table, whose `parents` column holds
+# review-term names rather than API labels; neither API-shaped file touched
+# parent_material_types. Compared as case-insensitive sets, since term casing is
+# not significant and the two sources capitalize differently.
 review = {(r["review_term"] or "").strip().lower(): r for r in csv.DictReader(
     open(BASE + "material-type-review-vs-skos.csv", encoding="utf-8-sig"))}
 
+
+def pset(v):
+    return {i.strip().lower() for i in (v or "").split("|") if i.strip()}
+
 CHANGE_COLS = ["material_type_uri", "source", "alt_label", "description",
-               "label", "parent_material_types", "scheme_uri"]
+               "label", "scheme_uri"]
 
 rows_out = []
-tally = {c: 0 for c in CHANGE_COLS}
+tally = {c: 0 for c in CHANGE_COLS + ["parent_material_types"]}
 reformatted = 0
 for rid, edited in primary.items():
     base = api[rid]
+    rev = review.get((base.get("label") or "").strip().lower(), {})
+    proposed_parents = ""
     changed = []
+    if rev and pset(rev.get("parents")) != pset(base.get("parent_material_types")):
+        proposed_parents = rev.get("parents", "")
+        changed.append("parent_material_types")
+        tally["parent_material_types"] += 1
     for c in CHANGE_COLS:
         if c not in edited:
             continue
@@ -87,9 +103,12 @@ for rid, edited in primary.items():
                 if c in other and norm(other.get(c), c) != norm(edited.get(c), c)]
     row = {"id": rid, "label": base.get("label"),
            "changed_fields": "|".join(changed)}
-    for c in ["material_type_uri", "source", "alt_label", "description"]:
+    for c in PAIRED:
         row[f"{c}_original"] = norm(base.get(c), c)
-        row[f"{c}_updated"] = norm(edited.get(c), c) if c in changed else ""
+        if c == "parent_material_types":
+            row[f"{c}_updated"] = proposed_parents
+        else:
+            row[f"{c}_updated"] = norm(edited.get(c), c) if c in changed else ""
     for c in CONTEXT:
         row[f"{c}_original"] = norm(base.get(c), c)
     row["unresolved_disagreement"] = "|".join(disagree)
@@ -101,8 +120,7 @@ for rid, edited in primary.items():
     rows_out.append(row)
 
 fields = (["id", "label", "changed_fields"]
-          + [f"{c}_{k}" for c in ["material_type_uri", "source", "alt_label",
-                                  "description"] for k in ("original", "updated")]
+          + [f"{c}_{k}" for c in PAIRED for k in ("original", "updated")]
           + [f"{c}_original" for c in CONTEXT]
           + ["unresolved_disagreement", "smrMatching_value",
              "review_table_assigns"])
