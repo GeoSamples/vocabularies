@@ -72,22 +72,11 @@ CHANGE_COLS = ["material_type_uri", "source", "alt_label", "description",
                "label", "scheme_uri"]
 
 rows_out = []
-sense_clashes = []
 tally = {c: 0 for c in CHANGE_COLS + ["parent_material_types"]}
 reformatted = 0
 for rid, edited in primary.items():
     base = api[rid]
     rev = review.get((base.get("label") or "").strip().lower(), {})
-    # Label joins can cross senses. The review covers rock/sediment classes, so
-    # a review term must not lend its parents to a mineral record that merely
-    # shares its label -- "dolomite" is the rock in the review (own_uri
-    # Dolostone) and the mineral in the API (a mindat URI, parented under
-    # Carbonate or Nitrate). Transferring there would reclassify the mineral as
-    # a sedimentary rock.
-    if (rev and (base.get("material_type_uri") or "").startswith(MINDAT)
-            and not (rev.get("own_uri") or "").startswith(MINDAT)):
-        sense_clashes.append((rid, base.get("label"), rev.get("own_uri")))
-        rev = {}
     proposed_parents = ""
     changed = []
     if rev and pset(rev.get("parents")) != pset(base.get("parent_material_types")):
@@ -147,12 +136,6 @@ for c, n in tally.items():
     if n:
         print(f"  {c:24} {n}")
 print(f"\ndescriptions treated as reformatting, not edits: {reformatted}")
-if sense_clashes:
-    print()
-    print("label joins refused as a sense clash "
-          "(rock term vs mineral record):")
-    for rid, lab, own in sense_clashes:
-        print(f"  id={rid} api {lab!r} is a mineral; review term maps to {own}")
 print(f"rows flagged as unresolved between the two files: "
       f"{sum(1 for r in rows_out if r['unresolved_disagreement'])}")
 print(f"wrote {OUT}")
