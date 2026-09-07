@@ -223,15 +223,37 @@ for s in rock_sediment.subjects(RDF.type, SKOS.Concept):
 print(f"loaded rock_sediment vocabulary: {len(rs_by_local)} concepts")
 
 
+# Both ttl files declare the prefix sesrs:, but bind it to different
+# namespaces -- sesar/material/ in the materials extension, sesar/rocksediment
+# /0.1/ in the rock_sediment file -- and 213 of the 221 rock_sediment concepts
+# also exist in the materials extension. The materials extension is the one in
+# use, so a rock_sediment hit is mapped onto its equivalent there when one
+# exists. Local names differ in case (Dolostone vs dolostone), so the mapping
+# goes through the local name rather than a prefix swap.
+SESAR_RS = "https://w3id.org/sesar/rocksediment/0.1/"
+SESAR_MAT = "https://w3id.org/sesar/material/"
+mat_local = {}
+for _v in vocabs:
+    for _u in _v.labels:
+        if _u.startswith(SESAR_MAT):
+            mat_local[_u[len(SESAR_MAT):].lower()] = _u
+
+
+def prefer_materials_extension(uri):
+    if uri.startswith(SESAR_RS):
+        return mat_local.get(uri[len(SESAR_RS):].lower(), uri)
+    return uri
+
+
 def term_uri(term):
     """Resolve a reviewed term to a concept URI, or '' if it has none."""
     entry = review.get(term, {})
     for anchor in entry.get("anchors", []):
         hit = rs_by_local.get(anchor.strip().lower())
         if hit:
-            return hit
+            return prefer_materials_extension(hit)
     if term in rs_by_label:
-        return rs_by_label[term]
+        return prefer_materials_extension(rs_by_label[term])
     for v in vocabs:                       # top-level classes live here instead
         hit = v.by_label.get(term)
         if hit:
