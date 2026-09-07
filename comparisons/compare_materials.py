@@ -52,6 +52,8 @@ REVIEW = "MaterialType_Vocabulary_Review.md"
 REVIEW_OUT = "material-type-review-vs-skos.csv"
 MINERALS = r"C:/GithubC/IEDA/vocabularies/vocabulary/MineralsList.xlsx"
 GCMIN_NS = "https://w3id.org/geochem/1.0/min/"
+ROCKSED = (r"C:/GithubC/IEDA/vocabularies/vocabulary/"
+           r"SESAR_material_extension_rock_sediment bkuttl")
 VOCABS = [                       # (name, path, match-URI strategy)
     ("SESAR_materials_extension",
      r"C:/GithubC/IEDA/vocabularies/vocabulary/SESAR_materials_extension.ttl", "self"),
@@ -139,39 +141,133 @@ LINK = re.compile(r"\[([^\]]+)\]\(([^)]*)\)")
 
 
 def load_review(path):
+    """Return (terms, parents).
+
+    Bullet indentation carries the hierarchy (2/6/10/... spaces), so the parent
+    of a bullet is the nearest preceding bullet indented less. A term appears
+    once per position it holds, so it can have several parents.
+    """
     section = ""
-    seen = collections.defaultdict(lambda: {"decisions": [], "tags": []})
+    seen = collections.defaultdict(
+        lambda: {"decisions": [], "tags": [], "anchors": []})
+    parents = collections.defaultdict(set)
+    stack = []
     for raw in open(path, encoding="utf-8"):
+        raw = raw.rstrip("\n")
         if raw.startswith("#"):
             section = raw.lstrip("#").strip()
+            stack = []
             continue
-        line = raw.strip()
-        if section != "Tab 1" or not line.startswith("-"):
+        m = re.match(r"^( *)- (.*)$", raw)
+        if section != "Tab 1" or not m:
             continue
-        m = TAG.search(line)
-        if not m:
-            continue
-        body = line[1:].strip()
-        tag = m.group(1).strip()
+        indent, body = len(m.group(1)), m.group(2).strip()
+        tm = TAG.search(body)
+        tag = tm.group(1).strip() if tm else ""
         term_part = body[:body.index("\\[")].strip() if "\\[" in body else body
         # Google Docs splits a link mid-word, e.g. [p](url)[hyllonite](url),
         # so keep every link's text and concatenate rather than taking one.
-        term = re.sub(r"\[|\]", "", LINK.sub(lambda m: m.group(1), term_part)).strip()
+        anchors = [u.rsplit("#", 1)[1] for _, u in LINK.findall(term_part)
+                   if "#" in u]
+        term = re.sub(r"\[|\]", "",
+                      LINK.sub(lambda x: x.group(1), term_part)).strip()
         if not term:
             continue
-        word = re.split(r"[\s;,\-–.]", tag, 1)[0].strip().rstrip(":")
-        e = seen[term.lower()]
-        if word not in e["decisions"]:
+        key = term.lower()
+
+        while stack and stack[-1][0] >= indent:
+            stack.pop()
+        if stack:
+            parents[key].add(stack[-1][1])
+        stack.append((indent, key))
+
+        e = seen[key]
+        word = re.split(r"[\s;,\-–.]", tag, 1)[0].strip().rstrip(":") if tag else ""
+        if word and word not in e["decisions"]:
             e["decisions"].append(word)
-        if tag not in e["tags"]:
+        if tag and tag not in e["tags"]:
             e["tags"].append(tag)
+        for a in anchors:
+            if a not in e["anchors"]:
+                e["anchors"].append(a)
     print(f"loaded review: {len(seen)} distinct terms, "
           f"{sum(1 for v in seen.values() if len(v['decisions']) > 1)} with "
-          f"disagreeing decisions")
-    return seen
+          f"disagreeing decisions, "
+          f"{sum(1 for v in parents.values() if len(v) > 1)} with >1 parent")
+    return seen, parents
 
 
-review = load_review(REVIEW)
+review, review_parents = load_review(REVIEW)
+
+
+# --- assigning each reviewed term its most specific surviving URI ------------
+# The review prunes the vocabulary, so a term that was Removed no longer has a
+# concept of its own. Rows using it are remapped onto the nearest ancestor that
+# survived, which is the most specific class that still subsumes them.
+#
+# URIs come from the rock_sediment vocabulary the review links to, resolved by
+# the anchor in the link and falling back to prefLabel; terms outside it (the
+# top-level material classes) fall back to the materials extension. This
+# vocabulary is loaded only to resolve URIs -- adding it to VOCABS would change
+# the match columns.
+rock_sediment = rdflib.Graph()
+rock_sediment.parse(ROCKSED, format="turtle")
+rs_by_local, rs_by_label = {}, {}
+for s in rock_sediment.subjects(RDF.type, SKOS.Concept):
+    rs_by_local.setdefault(str(s).rsplit("/", 1)[-1].lower(), str(s))
+    for o in rock_sediment.objects(s, SKOS.prefLabel):
+        rs_by_label.setdefault(str(o).strip().lower(), str(s))
+print(f"loaded rock_sediment vocabulary: {len(rs_by_local)} concepts")
+
+
+def term_uri(term):
+    """Resolve a reviewed term to a concept URI, or '' if it has none."""
+    entry = review.get(term, {})
+    for anchor in entry.get("anchors", []):
+        hit = rs_by_local.get(anchor.strip().lower())
+        if hit:
+            return hit
+    if term in rs_by_label:
+        return rs_by_label[term]
+    for v in vocabs:                       # top-level classes live here instead
+        hit = v.by_label.get(term)
+        if hit:
+            return hit[0]
+    return ""
+
+
+# Decisions that count as "the term survives the review". Keep only, as
+# specified. Adding "Modify" would also treat renamed-but-retained terms as
+# survivors, letting 14 of the 16 keep their own (more specific) URI instead of
+# collapsing to a parent.
+SURVIVING = {"Keep"}
+
+
+def is_kept(term):
+    return bool(SURVIVING & set(review.get(term, {}).get("decisions", [])))
+
+
+def subsuming_uris(term):
+    """Most specific surviving class(es) for a term, as (uris, source_terms).
+
+    A kept term stands for itself. Otherwise walk up a level at a time and stop
+    at the first level holding any kept ancestor, taking every kept term at that
+    level -- a term can sit under more than one parent.
+    """
+    if is_kept(term):
+        return [term_uri(term)], [term]
+    seen_terms = {term}
+    frontier = set(review_parents.get(term, set()))
+    while frontier:
+        kept = sorted(t for t in frontier if is_kept(t))
+        if kept:
+            return [term_uri(t) for t in kept], kept
+        seen_terms |= frontier
+        nxt = set()
+        for t in frontier:
+            nxt |= review_parents.get(t, set()) - seen_terms
+        frontier = nxt
+    return [], []
 
 
 def expand(value):
@@ -192,6 +288,7 @@ FIELDS = ["id", "label", "alt_label", "description", "material_type_uri",
 EXTRA = ["skos_match_status", "skos_match_method", "skos_vocabulary",
          "skos_concept_uri", "skos_match_uri", "skos_preflabel",
          "skos_definition", "review_decision", "review_reason",
+         "assigned_material_type_uri", "assigned_uri_from",
          "skos_match_detail", "material_type_uri_expanded"]
 
 counts = collections.Counter()
@@ -271,14 +368,18 @@ for r in rows:
 
     # Review terms are matched on the API label, falling back to the matched
     # concept's prefLabel for the few the reviewer named by prefLabel instead.
-    entry = review.get(label.lower())
-    if entry is None:
+    rterm = label.lower() if label.lower() in review else ""
+    if not rterm:
         for p in pref:
-            entry = review.get(p.strip().lower())
-            if entry:
+            if p.strip().lower() in review:
+                rterm = p.strip().lower()
                 break
+    entry = review.get(rterm) if rterm else None
     decision = "|".join(entry["decisions"]) if entry else ""
     reason = " | ".join(entry["tags"]) if entry else ""
+    uris, srcs = subsuming_uris(rterm) if rterm else ([], [])
+    assigned = "|".join(u for u in uris if u)
+    assigned_from = "|".join(srcs) if srcs != [rterm] else ""
     rcounts[decision or "(not reviewed)"] += 1
 
     counts[status] += 1
@@ -296,6 +397,8 @@ for r in rows:
         "skos_definition": definition,
         "review_decision": decision,
         "review_reason": reason,
+        "assigned_material_type_uri": assigned,
+        "assigned_uri_from": assigned_from,
         "skos_match_detail": "; ".join(detail),
         "material_type_uri_expanded": expanded if (api_uri and expanded != api_uri) else "",
     })
@@ -409,14 +512,29 @@ with open(REVIEW_OUT, "w", encoding="utf-8-sig", newline="") as f:
     w = csv.writer(f)
     w.writerow(["review_term", "review_decision", "review_reason",
                 "in_api_material_types"]
-               + [f"in_{v.name}" for v in vocabs] + ["skos_concept_uri"])
+               + [f"in_{v.name}" for v in vocabs]
+               + ["skos_concept_uri", "own_uri", "assigned_material_type_uri",
+                  "assigned_uri_from", "parents"])
+    noassign = []
     for term in sorted(review):
         e = review[term]
         hits = [v.by_label.get(term, []) for v in vocabs]
         first = next((h[0] for h in hits if h), "")
+        uris, srcs = subsuming_uris(term)
+        assigned = "|".join(u for u in uris if u)
+        if not assigned:
+            noassign.append(term)
         w.writerow([term, "|".join(e["decisions"]), " | ".join(e["tags"]),
                     "yes" if term in api_labels else "no"]
-                   + ["yes" if h else "no" for h in hits] + [first])
+                   + ["yes" if h else "no" for h in hits]
+                   + [first, term_uri(term), assigned,
+                      "|".join(srcs) if srcs != [term] else "",
+                      "|".join(sorted(review_parents.get(term, set())))])
+    print(f"\nassigned a subsuming uri to {len(review)-len(noassign)} of "
+          f"{len(review)} reviewed terms")
+    if noassign:
+        print(f"  no surviving ancestor resolved for {len(noassign)}: "
+              f"{sorted(noassign)}")
 
 print(f"\napi records: {len(rows)}\nwrote {CSV_OUT} and {REVIEW_OUT}\n")
 for k, v in counts.most_common():
