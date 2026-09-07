@@ -27,9 +27,9 @@ EDITABLE = ["label", "alt_label", "description", "material_type_uri",
             "for_registration", "suppress_from_search"]
 BOOLS = {"for_registration", "suppress_from_search"}
 MINDAT = "https://www.mindat.org/"
-CONTEXT = ["scheme_uri", "for_registration", "suppress_from_search"]
+CONTEXT = ["for_registration", "suppress_from_search"]
 PAIRED = ["material_type_uri", "parent_material_types", "source", "alt_label",
-          "description"]
+          "description", "scheme_uri"]
 
 
 def norm(v, col=None):
