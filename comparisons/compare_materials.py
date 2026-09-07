@@ -236,11 +236,11 @@ def term_uri(term):
     return ""
 
 
-# Decisions that count as "the term survives the review". Keep only, as
-# specified. Adding "Modify" would also treat renamed-but-retained terms as
-# survivors, letting 14 of the 16 keep their own (more specific) URI instead of
-# collapsing to a parent.
-SURVIVING = {"Keep"}
+# Decisions that count as "the term survives the review". Modify is included
+# because it means renamed-but-retained: the concept survives under a new label,
+# so it is still selectable and must not be treated as pruned away. Leaving it
+# out made a kept sibling look like the sole survivor of a parent.
+SURVIVING = {"Keep", "Modify"}
 
 
 def is_kept(term):
