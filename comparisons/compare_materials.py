@@ -96,6 +96,10 @@ class Vocab:
             str(s): [str(o).strip() for o in g.objects(s, SKOS.definition)
                      if str(o).strip()]
             for s in concepts}
+        self.alt_labels = {
+            str(s): [str(o).strip() for o in g.objects(s, SKOS.altLabel)
+                     if str(o).strip()]
+            for s in concepts}
         self.match_uri = {}
         self.match_uri_source = {}
         for s in concepts:
@@ -232,17 +236,36 @@ print(f"loaded rock_sediment vocabulary: {len(rs_by_local)} concepts")
 # goes through the local name rather than a prefix swap.
 SESAR_RS = "https://w3id.org/sesar/rocksediment/0.1/"
 SESAR_MAT = "https://w3id.org/sesar/material/"
-mat_local = {}
+mat_local, mat_by_label = {}, {}
 for _v in vocabs:
-    for _u in _v.labels:
-        if _u.startswith(SESAR_MAT):
-            mat_local[_u[len(SESAR_MAT):].lower()] = _u
+    for _u, _labels in _v.labels.items():
+        if not _u.startswith(SESAR_MAT):
+            continue
+        mat_local[_u[len(SESAR_MAT):].lower()] = _u
+        for _l in _labels + _v.alt_labels.get(_u, []):
+            mat_by_label.setdefault(_l.strip().lower(), _u)
+
+rs_preflabel = {}
+for _s in rock_sediment.subjects(RDF.type, SKOS.Concept):
+    _labels = [str(o).strip().lower() for o in rock_sediment.objects(_s, SKOS.prefLabel)]
+    if _labels:
+        rs_preflabel[str(_s)] = _labels[0]
 
 
 def prefer_materials_extension(uri):
-    if uri.startswith(SESAR_RS):
-        return mat_local.get(uri[len(SESAR_RS):].lower(), uri)
-    return uri
+    """Map a rocksediment/0.1 URI onto its materials-extension equivalent.
+
+    By local name first. Where the review renamed a term the local names differ,
+    so fall back to the label: the new concept keeps the old name as an
+    altLabel, which is how Chlorite_Actinolite_Epidote_Metamorphic_Rock reaches
+    sesar/material/greenstone.
+    """
+    if not uri.startswith(SESAR_RS):
+        return uri
+    hit = mat_local.get(uri[len(SESAR_RS):].lower())
+    if hit:
+        return hit
+    return mat_by_label.get(rs_preflabel.get(uri, ""), uri)
 
 
 def term_uri(term):
