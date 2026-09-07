@@ -1,6 +1,3 @@
 
 /.idea
 *.pyc
-
-# Raw API scrape cached by comparisons/compare_materials.py; regenerable
-comparisons/material-types.json

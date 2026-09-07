@@ -62,7 +62,10 @@ VOCABS = [                       # (name, path, match-URI strategy)
 ]
 MINDAT = "https://www.mindat.org/"
 
-# --- fetch (cached to JSON_OUT so reruns do not re-hit the API) -------------
+# --- fetch --------------------------------------------------------------
+# JSON_OUT is committed: it is the baseline the edit diff is computed
+# against, not a scratch cache. Delete it only to deliberately re-baseline
+# against a fresh download, which invalidates sesar-material-type-edits.csv.
 try:
     rows = json.load(open(JSON_OUT, encoding="utf-8"))["data"]
 except FileNotFoundError:
