@@ -247,27 +247,82 @@ def is_kept(term):
     return bool(SURVIVING & set(review.get(term, {}).get("decisions", [])))
 
 
-def subsuming_uris(term):
-    """Most specific surviving class(es) for a term, as (uris, source_terms).
+review_children = collections.defaultdict(set)
+for _child, _ps in review_parents.items():
+    for _p in _ps:
+        review_children[_p].add(_child)
 
-    A kept term stands for itself. Otherwise walk up a level at a time and stop
-    at the first level holding any kept ancestor, taking every kept term at that
-    level -- a term can sit under more than one parent.
+_survivor_cache = {}
+
+
+def subtree(node, _seen=frozenset()):
+    """Every term under node, node included."""
+    if node in _seen:
+        return set()
+    seen = _seen | {node}
+    out = {node}
+    for child in review_children.get(node, ()):
+        out |= subtree(child, seen)
+    return out
+
+
+def survivors(node):
+    """Kept terms under node, node itself included."""
+    if node not in _survivor_cache:
+        _survivor_cache[node] = {t for t in subtree(node) if is_kept(t)}
+    return _survivor_cache[node]
+
+
+def absorbing(term):
+    """Climb while `term` is the only survivor in the ancestor's subtree.
+
+    Pruning leaves a kept term standing in for everything removed around it. A
+    user holding a quartz anorthosite now has to register it as 'anorthosite',
+    so SESAR's 'anorthosite' covers what 'anorthositic rock' used to cover and
+    has to map to that broader URI. Climbing stops as soon as an ancestor still
+    holds another survivor, because then its coverage is split between them
+    rather than absorbed by this one.
     """
+    current = {term}
+    while True:
+        higher = {p for a in current for p in review_parents.get(a, set())
+                  if survivors(p) == {term}}
+        if not higher:
+            return sorted(current)
+        current = higher
+
+
+def subsuming_uris(term):
+    """(uris, source_terms, absorbed_terms) for a reviewed term."""
     if is_kept(term):
-        return [term_uri(term)], [term]
-    seen_terms = {term}
-    frontier = set(review_parents.get(term, set()))
+        targets = absorbing(term)
+        absorbed = set()
+        for t in targets:
+            absorbed |= {x for x in subtree(t) if not is_kept(x)}
+        return ([term_uri(t) for t in targets], targets,
+                sorted(absorbed - {term}))
+    # A removed term is registered under whichever surviving term absorbed it,
+    # so it resolves to whatever that survivor resolves to -- 'quartz
+    # anorthosite' follows 'anorthosite' to the anorthositic rock URI. The
+    # survivor need not be an ancestor: look for the nearest level whose subtree
+    # still holds one, starting with the term's own.
+    seen_terms = set()
+    frontier = {term}
     while frontier:
-        kept = sorted(t for t in frontier if is_kept(t))
-        if kept:
-            return [term_uri(t) for t in kept], kept
+        choices = sorted({s for f in frontier for s in survivors(f)})
+        if choices:
+            uris, srcs = [], []
+            for c in choices:
+                u, s, _ = subsuming_uris(c)
+                uris += u
+                srcs += s
+            return list(dict.fromkeys(uris)), list(dict.fromkeys(srcs)), []
         seen_terms |= frontier
         nxt = set()
         for t in frontier:
             nxt |= review_parents.get(t, set()) - seen_terms
         frontier = nxt
-    return [], []
+    return [], [], []
 
 
 def expand(value):
@@ -377,7 +432,7 @@ for r in rows:
     entry = review.get(rterm) if rterm else None
     decision = "|".join(entry["decisions"]) if entry else ""
     reason = " | ".join(entry["tags"]) if entry else ""
-    uris, srcs = subsuming_uris(rterm) if rterm else ([], [])
+    uris, srcs, absorbed = subsuming_uris(rterm) if rterm else ([], [], [])
     assigned = "|".join(u for u in uris if u)
     assigned_from = "|".join(srcs) if srcs != [rterm] else ""
     rcounts[decision or "(not reviewed)"] += 1
@@ -514,13 +569,13 @@ with open(REVIEW_OUT, "w", encoding="utf-8-sig", newline="") as f:
                 "in_api_material_types"]
                + [f"in_{v.name}" for v in vocabs]
                + ["skos_concept_uri", "own_uri", "assigned_material_type_uri",
-                  "assigned_uri_from", "parents"])
+                  "assigned_uri_from", "absorbs", "parents"])
     noassign = []
     for term in sorted(review):
         e = review[term]
         hits = [v.by_label.get(term, []) for v in vocabs]
         first = next((h[0] for h in hits if h), "")
-        uris, srcs = subsuming_uris(term)
+        uris, srcs, absorbed = subsuming_uris(term)
         assigned = "|".join(u for u in uris if u)
         if not assigned:
             noassign.append(term)
@@ -529,6 +584,7 @@ with open(REVIEW_OUT, "w", encoding="utf-8-sig", newline="") as f:
                    + ["yes" if h else "no" for h in hits]
                    + [first, term_uri(term), assigned,
                       "|".join(srcs) if srcs != [term] else "",
+                      "|".join(absorbed),
                       "|".join(sorted(review_parents.get(term, set())))])
     print(f"\nassigned a subsuming uri to {len(review)-len(noassign)} of "
           f"{len(review)} reviewed terms")
