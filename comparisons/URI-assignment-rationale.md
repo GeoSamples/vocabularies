@@ -4,7 +4,7 @@ Natalie Raia's review of the SESAR material type vocabulary
 ([google doc](https://docs.google.com/document/d/1p1XlhvBFaulqRWJPdzE2T0rBWc4m6wyUmBAXQi1PC5s/edit))
 marks each term Keep, Remove, Modify or Add. Removing a term does not only
 delete a row. It changes what the surviving terms around it mean in practice,
-and that is what these `material_type_uri` assignments account for.
+and that is what these `material\_type\_uri` assignments account for.
 
 ## The reasoning
 
@@ -20,11 +20,12 @@ siblings, `quartz anorthosite` and `foid bearing anorthosite`, and their parent
 *sensu stricto* — it means what `anorthositic rock` used to mean, and is mapped
 to that concept:
 
-    https://w3id.org/isample/earthenv/rocksediment/1.0/Anorthositic_Rock
+&#x20;   https://w3id.org/isample/earthenv/rocksediment/1.0/Anorthositic\_Rock
+
 
 **Diorite** is the same case: `quartz diorite` and `foid bearing diorite`
 removed, `dioritic rock` removed, so "Diorite" maps to
-`https://w3id.org/sesar/material/Dioritic_Rock`.
+`https://w3id.org/sesar/material/Dioritic\_Rock`.
 
 ## Where the climb stops
 
@@ -43,37 +44,27 @@ Modify count as surviving — they are renamed, not deleted.
 Most are QAPF triples, where "foid bearing X" and "quartz X" are removed and "X"
 is kept:
 
-| term kept | mapped to |
-|---|---|
-| anorthosite | anorthositic rock |
-| diorite | dioritic rock |
-| gabbro | gabbroic rock |
-| latite | latitic rock |
-| monzodiorite | monzodioritic rock |
-| monzogabbro | monzogabbroic rock |
-| monzonite | monzonitic rock |
-| syenite | syenitic rock |
-| trachyte | trachytic rock |
-| foidite | foiditoid |
-| phonolite | phonolitoid |
-| rhyolite | rhyolitoid |
-| conglomerate | generic conglomerate |
-| dolomite | dolomitic or magnesian sedimentary rock |
-| glassy igneous rock | glass rich igneous rock |
+|term kept|mapped to|
+|-|-|
+|anorthosite|anorthositic rock|
+|diorite|dioritic rock|
+|gabbro|gabbroic rock|
+|latite|latitic rock|
+|monzodiorite|monzodioritic rock|
+|monzogabbro|monzogabbroic rock|
+|monzonite|monzonitic rock|
+|syenite|syenitic rock|
+|trachyte|trachytic rock|
+|foidite|foiditoid|
+|phonolite|phonolitoid|
+|rhyolite|rhyolitoid|
+|conglomerate|generic conglomerate|
+|dolomite|dolomitic or magnesian sedimentary rock|
+|glassy igneous rock|glass rich igneous rock|
 
-## Removed terms
 
-A removed term is given the same URI as the surviving term that absorbed it, so
-each family stays internally consistent. `quartz anorthosite`, `foid bearing
-anorthosite` and `anorthositic rock` all resolve to `Anorthositic_Rock`
-alongside `anorthosite`.
-
-## Scope
-
-73 of the 228 surviving terms absorb at least one removed term. Only the 15
-above end up with a broader URI; the others absorb terms narrower than
-themselves and so keep their own.
 
 URIs are drawn from the SESAR material vocabulary
 (`https://w3id.org/sesar/material/materialvocabulary`), falling back to the
 iSamples earth environment rock/sediment vocabulary for classes defined there.
+

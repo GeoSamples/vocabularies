@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git archive:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(grep -i \"\\\\.html$\")",
+      "WebFetch(domain:api.github.com)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(gh run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(git rm:*)",
+      "Bash(gh api:*)"
+    ]
+  }
+}
